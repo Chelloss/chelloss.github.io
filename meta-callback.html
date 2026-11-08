@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Connecting · Oldest Surviving</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+<h1>Connecting…</h1>
+<p>This page hands Facebook's one-time approval code to the channel owner's posting tool, which runs on the owner's
+own computer. It stores nothing and sends nothing anywhere else.</p>
+<p id="msg"></p>
+</main>
+<script>
+// Facebook requires an HTTPS return address for a Live app; the owner's tool listens on this computer only.
+if (location.search) {
+  location.replace("http://localhost:8765/meta-callback" + location.search);
+} else {
+  document.getElementById("msg").textContent = "Nothing to do here.";
+}
+</script>
+</body>
+</html>
