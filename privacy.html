@@ -70,9 +70,11 @@ to the owner's own Facebook Pages and Instagram accounts (for example the Oldest
   <li><strong>What it accesses:</strong> with the owner's one-time approval through Facebook Login for Business, a Page
       access token for the owner's own Pages and the ID of the Instagram account linked to each Page (permissions
       <code>pages_show_list</code>, <code>pages_read_engagement</code>, <code>pages_manage_posts</code>,
-      <code>business_management</code>, <code>instagram_basic</code>, <code>instagram_content_publish</code>).</li>
-  <li><strong>What it sends and receives:</strong> it sends the owner's own video file and caption, and receives the new
-      post's ID and link. It reads no messages, comments, followers or other people's data.</li>
+      <code>business_management</code>, <code>instagram_basic</code>, <code>instagram_content_publish</code>,
+      <code>pages_manage_engagement</code> and <code>pages_read_user_content</code>, which Meta requires alongside it).</li>
+  <li><strong>What it sends and receives:</strong> it sends the owner's own video file and caption, plus one comment from
+      the Page under each of its own Reels with a link to the YouTube video, and receives the new post's or comment's ID
+      and link. It reads no messages, comments, followers or other people's data.</li>
   <li><strong>Storage:</strong> the token is kept in a protected file on the owner's private machine, never in code and
       never shared. A posting log (post IDs and links) is kept as part of the channel's production log.</li>
   <li id="deletion"><strong>Revoking access and deleting data:</strong> remove the app at any time in Facebook under
