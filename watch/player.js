@@ -9,6 +9,10 @@
   var api = null, vttCache = {}, qCache = null;
   function esc(s) { var d = document.createElement("div"); d.textContent = s == null ? "" : s; return d.innerHTML; }
   function L() { return document.documentElement.lang || "en"; }
+  var FULL_ICON = '<svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5" ' +
+    'fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+  var EXIT_ICON = '<svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M9 4v5H4M15 4v5h5M9 20v-5H4M15 20v-5h5" ' +
+    'fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>';
   function base() { return document.body.classList.contains("video") ? "../" : ""; }
 
   function loadApi() {
@@ -55,12 +59,47 @@
     box.innerHTML =
       '<div class="ytbox ' + (opts.format === "long" ? "wide" : "tall") + '">' +
       '<div class="subbar" aria-live="off"><span class="subtext"></span></div>' +
-      '<div class="ytframe"><button type="button" class="ytcover"' + (opts.poster ? ' style="background-image:url(\'' + esc(opts.poster) + '\')"' : "") +
-      ' aria-label="' + esc(OS.t(L(), "play_label")) + '"><span class="playbtn" aria-hidden="true"></span><span class="ytlogo">YouTube</span></button></div>' +
+      '<div class="ytstage"><div class="ytframe"><button type="button" class="ytcover"' + (opts.poster ? ' style="background-image:url(\'' + esc(opts.poster) + '\')"' : "") +
+      ' aria-label="' + esc(OS.t(L(), "play_label")) + '"><span class="playbtn" aria-hidden="true"></span><span class="ytlogo">YouTube</span></button></div></div>' +
       '<div class="cc"><label><span class="ccbadge" aria-hidden="true">CC</span> <span data-i="subtitles">' + esc(OS.t(L(), "subtitles")) + "</span></label>" +
-      '<select class="ccsel" aria-label="' + esc(OS.t(L(), "subtitles")) + '">' + options + "</select></div>" +
+      '<span class="ccright"><select class="ccsel" aria-label="' + esc(OS.t(L(), "subtitles")) + '">' + options + "</select>" +
+      '<button type="button" class="ytfull" aria-pressed="false">' + FULL_ICON + '<span data-i="full_screen">' + esc(OS.t(L(), "full_screen")) +
+      "</span></button></span></div>" +
       '<p class="ytnote" data-i="yt_note">' + esc(OS.t(L(), "yt_note")) + "</p></div>";
     var bar = box.querySelector(".subbar"), text = box.querySelector(".subtext"), sel = box.querySelector(".ccsel");
+    var ybox = box.querySelector(".ytbox"), fullBtn = box.querySelector(".ytfull");
+
+    // Full screen (Mike, 2026-11-12: "the button maximize is not working"). YouTube's own full-screen button would
+    // show only the video and hide our subtitle bar, and some browsers block it inside a page (iPhone, app views).
+    // Ours enlarges the video together with the subtitles: real full screen where the browser allows it, else the
+    // player simply fills the window.
+    function isFull() { return ybox.classList.contains("full"); }
+    function setFull(on) {
+      if (on === isFull()) return;
+      ybox.classList.toggle("full", on);
+      document.documentElement.classList.toggle("ytfull-on", on);
+      fullBtn.setAttribute("aria-pressed", on ? "true" : "false");
+      fullBtn.innerHTML = (on ? EXIT_ICON : FULL_ICON) + '<span data-i="' + (on ? "exit_full" : "full_screen") + '">' +
+        esc(OS.t(L(), on ? "exit_full" : "full_screen")) + "</span>";
+      var fsEl = document.fullscreenElement || document.webkitFullscreenElement;
+      if (on) {
+        var req = ybox.requestFullscreen || ybox.webkitRequestFullscreen;
+        if (req && !fsEl) try { var p = req.call(ybox); if (p && p.catch) p.catch(function () { /* the window view stays */ }); } catch (e) { /* idem */ }
+        fullBtn.focus();
+      } else if (fsEl === ybox) {
+        var ex = document.exitFullscreen || document.webkitExitFullscreen;
+        if (ex) try { var q = ex.call(document); if (q && q.catch) q.catch(function () {}); } catch (e) { /* gone */ }
+      }
+    }
+    fullBtn.addEventListener("click", function () { setFull(!isFull()); });
+    function fsChange() { if (isFull() && !(document.fullscreenElement || document.webkitFullscreenElement)) setFull(false); }
+    document.addEventListener("fullscreenchange", fsChange);
+    document.addEventListener("webkitfullscreenchange", fsChange);
+    // Esc leaves the window view first (and does not also close the story panel behind it)
+    function escKey(e) {
+      if (e.key === "Escape" && isFull()) { e.stopImmediatePropagation(); e.preventDefault(); setFull(false); }
+    }
+    window.addEventListener("keydown", escKey, true);
 
     function show() {
       bar.classList.toggle("off", cur === "off");
@@ -86,8 +125,9 @@
       loadApi().then(function (YT) {
         yt = new YT.Player(slot, {
           host: "https://www.youtube-nocookie.com", videoId: opts.ytid, width: "100%", height: "100%",
+          // fs: 0 hides YouTube's own full-screen button; ours (under the video) keeps the subtitles in view
           playerVars: { autoplay: 1, playsinline: 1, rel: 0, modestbranding: 1, cc_load_policy: 0, iv_load_policy: 3,
-                        enablejsapi: 1, origin: location.origin },
+                        fs: 0, enablejsapi: 1, origin: location.origin },
           events: { onReady: function (e) { e.target.playVideo(); } }
         });
         // read the player's clock a few times a second while this player exists (state events can be late)
@@ -103,7 +143,14 @@
         var cs = box.querySelector(".ccsel");
         if (cs) cs.setAttribute("aria-label", OS.t(l, "subtitles"));
       },
-      stop: function () { clearInterval(timer); if (yt && yt.stopVideo) try { yt.stopVideo(); yt.destroy(); } catch (e) { /* gone */ } }
+      stop: function () {
+        setFull(false);
+        window.removeEventListener("keydown", escKey, true);
+        document.removeEventListener("fullscreenchange", fsChange);
+        document.removeEventListener("webkitfullscreenchange", fsChange);
+        clearInterval(timer);
+        if (yt && yt.stopVideo) try { yt.stopVideo(); yt.destroy(); } catch (e) { /* gone */ }
+      }
     };
   }
 
