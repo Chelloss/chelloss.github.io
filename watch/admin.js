@@ -119,7 +119,9 @@
 
     var titles = {}; catalog.videos.forEach(function (v) { titles[v.id] = v; });
     var pages = group("page"), plays = group("play"), right = group("quiz_right"), wrong = group("quiz_wrong"), com = group("comment");
-    var ids = Object.keys(Object.assign({}, pages, plays, right, wrong, com)).filter(function (k) { return k !== "home"; });
+    var ids = Object.keys(Object.assign({}, pages, plays, right, wrong, com)).filter(function (k) {
+      return k !== "home" && ((pages[k] || 0) + (plays[k] || 0) + (right[k] || 0) + (wrong[k] || 0) + (com[k] || 0)) > 0;
+    });
     ids.sort(function (a, b) { return (plays[b] || 0) - (plays[a] || 0) || (pages[b] || 0) - (pages[a] || 0); });
     var storyRows = ids.map(function (id) {
       var v = titles[id], a = (right[id] || 0) + (wrong[id] || 0);
@@ -128,7 +130,7 @@
     });
 
     var pr2 = group("pair_right"), pw2 = group("pair_wrong");
-    var pairRows = Object.keys(Object.assign({}, pr2, pw2)).map(function (k) {
+    var pairRows = Object.keys(Object.assign({}, pr2, pw2)).filter(function (k) { return (pr2[k] || 0) + (pw2[k] || 0) > 0; }).map(function (k) {
       var names = k.split(".").map(function (x) { return game.items[x] ? game.items[x].label.en : x; }).join("  vs  ");
       var a = (pr2[k] || 0) + (pw2[k] || 0);
       return [esc(names), num(pr2[k]), num(pw2[k]), pct(pr2[k] || 0, a)];
@@ -136,7 +138,7 @@
 
     function simple(name, nameOf) {
       var g = group(name);
-      return Object.keys(g).sort(function (a, b) { return g[b] - g[a]; }).map(function (k) { return [esc(nameOf ? nameOf(k) : k), num(g[k])]; });
+      return Object.keys(g).filter(function (k) { return g[k] > 0; }).sort(function (a, b) { return g[b] - g[a]; }).map(function (k) { return [esc(nameOf ? nameOf(k) : k), num(g[k])]; });
     }
     var region = function (k) { try { return new Intl.DisplayNames(["en"], { type: "region" }).of(k); } catch (e) { return k; } };
     var language = function (k) { try { return new Intl.DisplayNames(["en"], { type: "language" }).of(k); } catch (e) { return k; } };
