@@ -114,6 +114,7 @@
       tile(num(total("comment")), "\"Comment on YouTube\"", "clicks") +
       tile(num(total("signin")), "Sign-ins", num(total("signup")) + " new accounts") +
       tile(num(total("gate")), "\"Sign in to play\" shown", pct(total("signin"), total("gate")) + " then signed in") +
+      tile(num(total("popup")), "Sign-in pop-up shown", pct(total("signin"), total("popup")) + " (all sign-ins per pop-up)") +
       tile(num(total("challenge_share")), "Challenges shared", num(total("challenge_open")) + " opened by friends");
 
     $("charts").innerHTML = bars("Page views", daily("page")) + bars("Video plays", daily("play")) +

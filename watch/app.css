@@ -556,3 +556,20 @@ html.ytfull-on, html.ytfull-on body { overflow: hidden; }
 /* the story panel slides with a transform, which would trap the fixed player inside it */
 html.ytfull-on .sheet.open .sheet-card { transform: none; left: 0; right: 0; width: auto; transition: none; overflow: visible; }
 html.ytfull-on .dock { display: none; }
+
+/* Sign-in pop-up when the site opens (Mike, 2026-11-12): once per visit, never for someone already signed in */
+.popin { position: fixed; inset: 0; z-index: 3000; display: grid; place-items: center; padding: 16px; }
+.popin-back { position: absolute; inset: 0; background: rgba(10, 12, 16, .62); }
+.popin-card { position: relative; width: min(440px, 100%); max-height: calc(100dvh - 32px); overflow: auto; background: var(--bg);
+  color: var(--fg); border-radius: 22px; padding: 22px 20px 14px; box-shadow: 0 20px 60px rgba(0,0,0,.35); text-align: center;
+  animation: rise .25s ease; }
+.popin-card h2 { font: 700 1.5rem/1.2 var(--serif); margin: 4px 40px 10px; }
+.popin-card p { margin: 0 0 12px; }
+.popin-card .small { margin-bottom: 2px; }
+.popin-x { position: absolute; top: 10px; right: 10px; }
+.popin-later { font: 650 1rem/1 var(--sans); color: var(--muted); background: none; border: 0; text-decoration: underline;
+  padding: 10px 14px; cursor: pointer; }
+.popin-later:hover { color: var(--fg); }
+.popin-later:focus-visible, .popin-x:focus-visible { outline: 3px solid var(--gold); outline-offset: 2px; }
+html.popin-on, html.popin-on body { overflow: hidden; }
+@media (prefers-reduced-motion: reduce) { .popin-card { animation: none; } }

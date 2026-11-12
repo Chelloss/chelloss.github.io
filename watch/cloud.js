@@ -107,6 +107,7 @@
   }
 
   function clearLocal() {
+    popDone = true; popMark();   // just signed out or deleted the account: no sign-in pop-up right after that
     OS.progress.clear(); OS.passport.clear();
     OS.store("os-cloud", "0");
     ready = false;
@@ -146,6 +147,58 @@
     if (OS.count) OS.count("gate");   // a plain total: the rules allow no new groups
   }
   function esc(s) { var d = document.createElement("div"); d.textContent = s == null ? "" : s; return d.innerHTML; }
+
+  // ------------------------------------------------------------ sign-in pop-up when the site opens
+  // Mike, 2026-11-12: "Pop-up on open". Shown once per visit (browser session) to visitors who are not signed in.
+  // Someone who signed in before stays signed in (Firebase keeps the session in this browser) and never sees it:
+  // for them it waits until Firebase has answered. "Not now", the X, Esc and a tap outside close it, because
+  // watching and reading stay free.
+  var popDone = false;
+  function popSeen() { try { return sessionStorage.getItem("os-pop") === "1"; } catch (e) { return false; } }
+  function popMark() { try { sessionStorage.setItem("os-pop", "1"); } catch (e) { /* private mode: once per page */ } }
+  function maybePopup() {
+    if (popDone || !known || user || popSeen() || document.querySelector(".popin")) return;
+    popDone = true;
+    popMark();
+    var l = L(), prev = document.activeElement, wrap = document.createElement("div");
+    wrap.className = "popin";
+    wrap.innerHTML = '<div class="popin-back"></div>' +
+      '<div class="popin-card" role="dialog" aria-modal="true" aria-labelledby="popin-t" aria-describedby="popin-d">' +
+      '<button type="button" class="x popin-x" aria-label="' + esc(OS.t(l, "close")) + '">&times;</button>' +
+      '<h2 id="popin-t" data-i="pop_title">' + esc(OS.t(l, "pop_title")) + "</h2>" +
+      '<p id="popin-d" data-i="pop_text">' + esc(OS.t(l, "pop_text")) + "</p>" +
+      '<p><button type="button" class="btn big gbtn"><span class="g" aria-hidden="true">G</span> <span data-i="acc_signin">' +
+      esc(OS.t(l, "acc_signin")) + "</span></button></p>" +
+      '<p><button type="button" class="popin-later" data-i="pop_later">' + esc(OS.t(l, "pop_later")) + "</button></p>" +
+      '<p class="small"><a href="' + base() + 'privacy.html" data-i="acc_age">' + esc(OS.t(l, "acc_age")) + "</a></p></div>";
+    document.body.appendChild(wrap);
+    document.documentElement.classList.add("popin-on");
+    function close() {
+      if (!wrap.parentNode) return;
+      wrap.parentNode.removeChild(wrap);
+      document.documentElement.classList.remove("popin-on");
+      window.removeEventListener("keydown", key, true);
+      if (prev && prev.focus) try { prev.focus(); } catch (e) { /* gone */ }
+    }
+    function key(e) {
+      if (e.key === "Escape") { e.stopImmediatePropagation(); e.preventDefault(); close(); return; }
+      if (e.key !== "Tab") return;
+      var f = wrap.querySelectorAll("button, a[href]"), first = f[0], last = f[f.length - 1];
+      if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
+      else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
+    }
+    window.addEventListener("keydown", key, true);
+    wrap.querySelector(".gbtn").onclick = function () { signIn(); };
+    wrap.querySelector(".popin-later").onclick = close;
+    wrap.querySelector(".popin-x").onclick = close;
+    wrap.querySelector(".popin-back").onclick = close;
+    listeners.push(function (u) { if (u) close(); });
+    wrap.querySelector(".gbtn").focus();
+    if (OS.count) OS.count("popup");   // a plain total, like "gate"
+  }
+  // after the page has set its language; a visitor who signed in before waits for Firebase's answer
+  listeners.push(function () { setTimeout(maybePopup, 300); });
+  setTimeout(maybePopup, 700);
 
   OS.cloud = {
     signIn: signIn, signOut: signOut, deleteAccount: deleteAccount, schedule: schedule, gate: gate,
