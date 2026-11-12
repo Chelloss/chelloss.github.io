@@ -128,7 +128,7 @@
     ids.sort(function (a, b) { return (plays[b] || 0) - (plays[a] || 0) || (pages[b] || 0) - (pages[a] || 0); });
     var storyRows = ids.map(function (id) {
       var v = titles[id], a = (right[id] || 0) + (wrong[id] || 0);
-      var name = v ? '<a href="' + esc(v.page || v.youtube) + '">' + esc(v.title) + "</a>" : esc(id);
+      var name = v ? '<a href="' + esc(v.page || v.youtube) + '"' + (v.page ? "" : ' target="_blank" rel="noopener"') + '>' + esc(v.title) + "</a>" : esc(id);
       return [name, num(pages[id]), num(plays[id]), num(a), pct(right[id] || 0, a), num(com[id])];
     });
 

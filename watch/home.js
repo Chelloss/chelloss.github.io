@@ -148,8 +148,8 @@
   function openSoon(c) {
     openSheet(OS.t(L, "cat_" + c.id), c.channel,
       '<div class="soon"><p>' + esc(OS.t(L, "coming_soon", { channel: c.channel })) + "</p>" +
-      '<p><a class="btn red" href="' + esc(c.youtube) + '" rel="noopener">' + esc(OS.t(L, "open_channel")) + "</a> " +
-      '<a class="btn" href="' + esc(c.subscribe) + '" rel="noopener">' + esc(OS.t(L, "subscribe")) + "</a></p></div>", "soon");
+      '<p><a class="btn red" href="' + esc(c.youtube) + '" target="_blank" rel="noopener">' + esc(OS.t(L, "open_channel")) + "</a> " +
+      '<a class="btn" href="' + esc(c.subscribe) + '" target="_blank" rel="noopener">' + esc(OS.t(L, "subscribe")) + "</a></p></div>", "soon");
   }
 
   // The answer (or any story) plays right here in YouTube's player, with our subtitle bar on top, then its quick question
@@ -158,8 +158,8 @@
     openSheet(title(v), uniq(v.places.map(function (p) { return p.name; })).join(" · "),
       '<div id="pplayer"></div><div id="pquiz" class="pquiz"></div>' +
       '<p class="sheet-links"><a class="btn" href="' + esc(v.page) + '">' + esc(OS.t(L, "read_story")) + "</a>" +
-      '<a class="btn red" href="' + esc(v.youtube) + '" rel="noopener">' + esc(OS.t(L, "watch_on_youtube")) + "</a>" +
-      '<a class="btn" href="' + esc(v.subscribe) + '" rel="noopener" data-ch="' + esc(v.channel_id || "") + '">' + esc(OS.t(L, "subscribe")) + "</a></p>", "player");
+      '<a class="btn red" href="' + esc(v.youtube) + '" target="_blank" rel="noopener">' + esc(OS.t(L, "watch_on_youtube")) + "</a>" +
+      '<a class="btn" href="' + esc(v.subscribe) + '" target="_blank" rel="noopener" data-ch="' + esc(v.channel_id || "") + '">' + esc(OS.t(L, "subscribe")) + "</a></p>", "player");
     if (OS.subscribeLinks) OS.subscribeLinks($("sheet-body"));
     current = OS.player($("pplayer"), { id: v.id, ytid: v.youtube_id, langs: v.subtitles, format: v.format, poster: v.thumb });
     OS.quiz($("pquiz"), v.id, v.places, v.youtube_id);
@@ -552,7 +552,7 @@
   function renderChannels() {
     $("chlist").innerHTML = cat.categories.map(function (c) {
       return '<div class="chrow"><span class="chname"><b>' + esc(c.channel) + "</b><small>" + esc(OS.t(L, "cat_" + c.id)) + "</small></span>" +
-        '<a class="btn red" href="' + esc(c.subscribe) + '" rel="noopener" data-ch="' + esc(c.channel_id || "") + '">' + esc(OS.t(L, "subscribe")) + "</a></div>";
+        '<a class="btn red" href="' + esc(c.subscribe) + '" target="_blank" rel="noopener" data-ch="' + esc(c.channel_id || "") + '">' + esc(OS.t(L, "subscribe")) + "</a></div>";
     }).join("");
     if (OS.subscribeLinks) OS.subscribeLinks($("chlist"));
   }

@@ -527,6 +527,15 @@ var OS = (function () {
 
 
 
+  // Links to YouTube open in a new tab, so this site stays open behind them (Mike, 2026-11-12).
+  document.addEventListener("click", function (e) {
+    var a = e.target && e.target.closest ? e.target.closest("a[href]") : null;
+    if (a && !a.target && /^https?:\/\/([^\/]+\.)?(youtube\.com|youtu\.be)\//.test(a.href)) {
+      a.target = "_blank";
+      a.rel = "noopener";
+    }
+  }, true);
+
   function lang(available) {
     var ok = available || LANGS, saved = store("os-lang");
     if (saved && ok.indexOf(saved) >= 0) return saved;
