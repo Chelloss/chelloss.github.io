@@ -1,5 +1,5 @@
 {
- "made": "2026-11-12T14:50+02:00",
+ "made": "2026-11-12T15:36+02:00",
  "count": 71,
  "categories": [
   {
@@ -7810,7 +7810,12 @@
    "subscribe": "https://www.youtube.com/@oldestsurviving?sub_confirmation=1",
    "thumb": "thumbs/0017-tennis-for-two.jpg",
    "video": null,
-   "subtitles": [],
+   "subtitles": [
+    "en",
+    "es",
+    "el",
+    "de"
+   ],
    "sources": [
     {
      "id": "W1",
@@ -7870,9 +7875,17 @@
    "voice": "AI voice: hexgrad/Kokoro-82M (af_heart), Apache-2.0, made locally from our script",
    "music": "Up And At Em - Nathan Moore",
    "ai_pictures": false,
-   "titles": {},
-   "summaries": {},
-   "page": null
+   "titles": {
+    "es": "La gente hizo cola para este videojuego en 1958",
+    "el": "Ο κόσμος έκανε ουρά για αυτό το βιντεοπαιχνίδι το 1958",
+    "de": "Für dieses Videospiel standen Menschen 1958 Schlange"
+   },
+   "summaries": {
+    "es": "El 18 de octubre de 1958, los visitantes del Laboratorio Nacional de Brookhaven hicieron cola para jugar a Tennis for Two, el juego de tenis de William Higinbotham en la pantalla de un osciloscopio de cinco pulgadas, uno de los primeros videojuegos.",
+    "el": "Στις 18 Οκτωβρίου 1958, επισκέπτες στο Brookhaven National Laboratory έκαναν ουρά για να παίξουν το Tennis for Two, το παιχνίδι τένις του William Higinbotham σε οθόνη παλμογράφου πέντε ιντσών, ένα από τα πρώτα βιντεοπαιχνίδια.",
+    "de": "Am 18. Oktober 1958 standen Besucher im Brookhaven National Laboratory Schlange, um Tennis for Two zu spielen, William Higinbothams Tennisspiel auf einem fünf Zoll großen Oszilloskop-Bildschirm, eines der frühesten Videospiele."
+   },
+   "page": "v/0017-tennis-for-two.html"
   },
   {
    "id": "0012-jeans-pocket",
@@ -9063,7 +9076,12 @@
    "subscribe": "https://www.youtube.com/@oldestsurviving?sub_confirmation=1",
    "thumb": "thumbs/0016-first-website.jpg",
    "video": null,
-   "subtitles": [],
+   "subtitles": [
+    "en",
+    "es",
+    "el",
+    "de"
+   ],
    "sources": [
     {
      "id": "W2",
@@ -9128,9 +9146,17 @@
    "voice": "AI voice: hexgrad/Kokoro-82M (af_heart), Apache-2.0, made locally from our script",
    "music": "Level - The Grey Room _ Density & Time",
    "ai_pictures": false,
-   "titles": {},
-   "summaries": {},
-   "page": null
+   "titles": {
+    "es": "La primera web sigue en línea. ¿De qué trataba?",
+    "el": "Ο πρώτος ιστότοπος είναι ακόμα online. Για τι μιλούσε;",
+    "de": "Die erste Website ist noch online. Worum ging es?"
+   },
+   "summaries": {
+    "es": "La primera web, creada por Tim Berners-Lee en el CERN en un ordenador NeXT, explicaba la propia World Wide Web. El CERN mantiene una copia restaurada en línea en info.cern.ch.",
+    "el": "Ο πρώτος ιστότοπος, που έφτιαξε ο Tim Berners-Lee στο CERN σε έναν υπολογιστή NeXT, εξηγούσε τον ίδιο τον Παγκόσμιο Ιστό, το World Wide Web. Το CERN κρατά online ένα αποκατεστημένο αντίγραφο στο info.cern.ch.",
+    "de": "Die erste Website, erstellt von Tim Berners-Lee am CERN auf einem NeXT-Computer, erklärte das World Wide Web selbst. Das CERN hält eine restaurierte Kopie unter info.cern.ch online."
+   },
+   "page": "v/0016-first-website.html"
   },
   {
    "id": "0015-eniac",
@@ -9870,7 +9896,12 @@
    "subscribe": "https://www.youtube.com/@oldestsurviving?sub_confirmation=1",
    "thumb": "thumbs/0009-sandwich.jpg",
    "video": null,
-   "subtitles": [],
+   "subtitles": [
+    "en",
+    "es",
+    "el",
+    "de"
+   ],
    "sources": [
     {
      "id": "W1",
@@ -9918,9 +9949,17 @@
    "voice": "AI voice: hexgrad/Kokoro-82M (af_heart), Apache-2.0, made locally from our script",
    "music": "Ceremonial Library - Asher Fulero",
    "ai_pictures": false,
-   "titles": {},
-   "summaries": {},
-   "page": null
+   "titles": {
+    "es": "El sándwich se llama así por un conde. La historia famosa se basa en un solo relato",
+    "el": "Το σάντουιτς πήρε το όνομά του από έναν κόμη. Η διάσημη ιστορία στηρίζεται σε μία μόνο μαρτυρία",
+    "de": "Das Sandwich ist nach einem Earl benannt. Die berühmte Geschichte stützt sich auf einen einzigen Bericht"
+   },
+   "summaries": {
+    "es": "El sándwich debe su nombre a John Montagu, 4.º conde de Sandwich. La famosa historia del juego viene de un único viajero francés, y la palabra ya se usaba en 1762.",
+    "el": "Το σάντουιτς πήρε το όνομά του από τον John Montagu, 4ο κόμη του Σάντουιτς. Η διάσημη ιστορία με τον τζόγο προέρχεται από έναν μόνο Γάλλο ταξιδιώτη, και η λέξη χρησιμοποιούνταν ήδη το 1762.",
+    "de": "Das Sandwich ist nach John Montagu benannt, dem 4. Earl of Sandwich. Die berühmte Spielergeschichte stammt von einem einzigen französischen Reisenden, und das Wort war schon 1762 in Gebrauch."
+   },
+   "page": "v/0009-sandwich.html"
   },
   {
    "id": "0004-senet-quiz",
@@ -10057,7 +10096,12 @@
    "subscribe": "https://www.youtube.com/@oldestsurviving?sub_confirmation=1",
    "thumb": "thumbs/0008-ring-finger.jpg",
    "video": null,
-   "subtitles": [],
+   "subtitles": [
+    "en",
+    "es",
+    "el",
+    "de"
+   ],
    "sources": [
     {
      "id": "W1",
@@ -10139,9 +10183,17 @@
    "voice": "AI voice: hexgrad/Kokoro-82M (af_heart), Apache-2.0, made locally from our script",
    "music": "Fact or Friction - The Soundlings",
    "ai_pictures": false,
-   "titles": {},
-   "summaries": {},
-   "page": null
+   "titles": {
+    "es": "¿La «vena del corazón» del dedo anular? No exactamente",
+    "el": "Η «φλέβα της καρδιάς» στον παράμεσο; Όχι ακριβώς",
+    "de": "Die „Herzvene“ im Ringfinger? Nicht ganz"
+   },
+   "summaries": {
+    "es": "No hay ninguna vena que vaya del dedo anular al corazón. Pero la costumbre sí es romana: Aulo Gelio escribió sobre ella en el siglo II, culpando a un «nervio». La «vena» llegó después.",
+    "el": "Δεν υπάρχει φλέβα από τον παράμεσο ως την καρδιά. Το έθιμο όμως είναι ρωμαϊκό: ο Αύλος Γέλλιος έγραψε γι' αυτό τον 2ο αιώνα, κατηγορώντας ένα «νεύρο». Η «φλέβα» ήρθε αργότερα.",
+    "de": "Es gibt keine Vene vom Ringfinger zum Herzen. Der Brauch ist aber römisch: Aulus Gellius schrieb im 2. Jahrhundert darüber und machte einen „Nerv“ verantwortlich. Die „Vene“ kam später."
+   },
+   "page": "v/0008-ring-finger.html"
   },
   {
    "id": "0007-first-selfie",
@@ -10274,7 +10326,12 @@
    "subscribe": "https://www.youtube.com/@oldestsurviving?sub_confirmation=1",
    "thumb": "thumbs/0010-first-bra.jpg",
    "video": null,
-   "subtitles": [],
+   "subtitles": [
+    "en",
+    "es",
+    "el",
+    "de"
+   ],
    "sources": [
     {
      "id": "W1",
@@ -10342,9 +10399,17 @@
    "voice": "AI voice: hexgrad/Kokoro-82M (af_heart), Apache-2.0, made locally from our script",
    "music": "It's Definitely It - Freedom Trail Studio",
    "ai_pictures": false,
-   "titles": {},
-   "summaries": {},
-   "page": null
+   "titles": {
+    "es": "Esta patente de sujetador de 1914 empezó con dos pañuelos",
+    "el": "Αυτό το δίπλωμα ευρεσιτεχνίας για σουτιέν του 1914 ξεκίνησε με δύο μαντίλια",
+    "de": "Dieses BH-Patent von 1914 begann mit zwei Taschentüchern"
+   },
+   "summaries": {
+    "es": "En 1913, Mary Phelps Jacob hizo un sujetador con dos pañuelos y una cinta, y lo patentó en 1914. Pero en 2008 aparecieron en un castillo austriaco cuatro sujetadores de lino de los años 1400.",
+    "el": "Το 1913, η Mary Phelps Jacob έφτιαξε ένα σουτιέν από δύο μαντίλια κι μια κορδέλα, και το κατοχύρωσε το 1914. Όμως το 2008 βρέθηκαν σε ένα αυστριακό κάστρο τέσσερα λινά σουτιέν από τα χρόνια του 1400.",
+    "de": "1913 machte Mary Phelps Jacob einen BH aus zwei Taschentüchern und einem Band und ließ ihn 1914 patentieren. Doch 2008 tauchten in einer österreichischen Burg vier Leinen-BHs aus den 1400er-Jahren auf."
+   },
+   "page": "v/0010-first-bra.html"
   },
   {
    "id": "0005-toilet-paper-quiz",
@@ -10596,7 +10661,12 @@
    "subscribe": "https://www.youtube.com/@oldestsurviving?sub_confirmation=1",
    "thumb": "thumbs/0003-high-heels.jpg",
    "video": null,
-   "subtitles": [],
+   "subtitles": [
+    "en",
+    "es",
+    "el",
+    "de"
+   ],
    "sources": [
     {
      "id": "W1",
@@ -10668,9 +10738,17 @@
    "voice": "AI voice: hexgrad/Kokoro-82M (af_heart), Apache-2.0, made locally from our script",
    "music": "Panoramic Arrival - Asher Fulero",
    "ai_pictures": false,
-   "titles": {},
-   "summaries": {},
-   "page": null
+   "titles": {
+    "es": "Los tacones se hicieron para hombres. La prueba es de 1701",
+    "el": "Τα ψηλά τακούνια φτιάχτηκαν για άντρες. Η απόδειξη είναι από το 1701",
+    "de": "High Heels waren für Männer gemacht. Der Beweis stammt von 1701"
+   },
+   "summaries": {
+    "es": "Los tacones empezaron como calzado de montar de los jinetes persas, según la conservadora del Bata Shoe Museum Elizabeth Semmelhack, y luego fueron un signo de rango para los hombres europeos. Los tacones rojos de Luis XIV aparecen en su retrato de 1701.",
+    "el": "Τα ψηλά τακούνια ξεκίνησαν ως παπούτσια ιππασίας για Πέρσες ιππείς, λέει η επιμελήτρια του Bata Shoe Museum, Elizabeth Semmelhack, και μετά έγιναν σύμβολο κύρους για τους Ευρωπαίους άντρες. Τα κόκκινα τακούνια του Λουδοβίκου ΙΔ΄ φαίνονται στο πορτρέτο του από το 1701.",
+    "de": "High Heels begannen als Reitschuhe persischer Reiter, sagt Elizabeth Semmelhack, Kuratorin des Bata Shoe Museum, und wurden dann zum Statuszeichen europäischer Männer. Ludwigs XIV. rote Absätze sind auf seinem Porträt von 1701 zu sehen."
+   },
+   "page": "v/0003-high-heels.html"
   },
   {
    "id": "0002-glasses",

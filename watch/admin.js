@@ -109,6 +109,8 @@
       tile(num(total("play")), "Video plays", "taps on play") +
       tile(num(qr + qw), "Questions answered", pct(qr, qr + qw) + " right") +
       tile(num(total("game_start")), "Games started", num(total("game_end")) + " finished, " + pct(pr, pr + pw) + " pairs right") +
+      tile(num(total("timeline_start")), "Timelines played", num(total("timeline_perfect")) + " in perfect order") +
+      tile(num(total("where_right") + total("where_wrong")), "\"Where did it happen?\" answers", pct(total("where_right"), total("where_right") + total("where_wrong")) + " right") +
       tile(num(total("comment")), "\"Comment on YouTube\"", "clicks") +
       tile(num(total("signin")), "Sign-ins", num(total("signup")) + " new accounts") +
       tile(num(total("challenge_share")), "Challenges shared", num(total("challenge_open")) + " opened by friends");

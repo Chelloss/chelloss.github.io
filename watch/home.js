@@ -2,7 +2,7 @@
    Fair play (Mike, 2026-11-12): no streaks, no timers, no fake counters, no sounds; progress stays in this browser. */
 (function () {
   var cat = null, game = null, L = "en";
-  var state = { view: "map", cat: "history", fmt: "all", country: null, q: "" };
+  var state = { view: "map", cat: "history", fmt: "all", country: null, q: "", game: "hub" };
   var $ = function (id) { return document.getElementById(id); };
   var reduce = window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches;
 
@@ -23,7 +23,7 @@
       a.classList.toggle("on", on);
       if (on) a.setAttribute("aria-current", "page"); else a.removeAttribute("aria-current");
     });
-    if (state.view === "play" && game) playRound();
+    if (state.view === "play" && game) renderPlay();
     if (state.view === "passport") renderPassport();
     if (state.view === "search") renderGrid();
     window.scrollTo(0, 0);
@@ -32,6 +32,8 @@
   function route() {
     var h = location.hash.slice(1), view = h.split("/")[0];
     if (!$("sheet").hidden) closeSheet();
+    var sub = h.split("/")[1] || "";
+    if (view === "play") state.game = /^c=/.test(sub) ? "older" : (["older", "timeline", "where"].indexOf(sub) >= 0 ? sub : "hub");
     if (view === "play" && h.indexOf("/c=") > 0 && game) { newGame(h); }
     show(view);
   }
@@ -172,7 +174,142 @@
   // ------------------------------------------------------------ "Which is older?"
   var g = { order: [], i: 0, right: 0, played: 0, picked: false, timer: null, run: 0, friend: null };
 
+  function shuffle(a) {
+    a = a.slice();
+    for (var i = a.length - 1; i > 0; i--) { var j = Math.floor(Math.random() * (i + 1)), x = a[i]; a[i] = a[j]; a[j] = x; }
+    return a;
+  }
+  function played(name) {   // a 0-point mark for the "Game explorer" badge
+    OS.progress.add(null, 0, function (p) { if (p.done["g:" + name] === undefined) p.done["g:" + name] = 0; });
+  }
+
+  // ------------------------------------------------------------ the game hub
+  function renderPlay() {
+    ["hub", "older", "timeline", "where"].forEach(function (k) { $(k === "hub" ? "hub" : "g-" + k).hidden = state.game !== k; });
+    if (state.game === "hub") {
+      var keys = Object.keys(game.items);
+      $("hp-older").innerHTML = game.rounds.slice(0, 1).map(function (r) {
+        return '<img alt="" src="' + esc(game.items[r.a].img) + '"><img alt="" src="' + esc(game.items[r.b].img) + '">';
+      }).join("");
+      $("hp-timeline").innerHTML = keys.slice(2, 6).map(function (k) { return '<img alt="" src="' + esc(game.items[k].img) + '">'; }).join("");
+    }
+    if (state.game === "older") playRound();
+    if (state.game === "timeline") { if (!tl.items.length) tlNew(); else tlRender(); }
+    if (state.game === "where") { if (!wh.order.length) whNew(); else whRender(); }
+  }
+
+  // ------------------------------------------------------------ Timeline: four moments, oldest first
+  var tl = { items: [], picked: [], checked: false };
+  function tlNew() {
+    var chosen = [];
+    shuffle(Object.keys(game.items)).forEach(function (k) {
+      if (chosen.length < 4 && chosen.every(function (c) { return Math.abs(game.items[c].sort - game.items[k].sort) >= 30; })) chosen.push(k);
+    });
+    tl = { items: chosen, picked: [], checked: false, n: 0 };
+    played("timeline");
+    if (OS.count) OS.count("timeline_start");
+    $("tlres").textContent = ""; $("tlres").className = "verdict";
+    tlRender();
+  }
+  function tlRender() {
+    var right = tl.items.slice().sort(function (a, b) { return game.items[a].sort - game.items[b].sort; });
+    $("tl").innerHTML = tl.items.map(function (k) {
+      var it = game.items[k], pos = tl.picked.indexOf(k), cls = "tlcard";
+      if (pos >= 0) cls += " placed";
+      if (tl.checked) cls += right[pos] === k ? " good" : " bad";
+      var badge = pos >= 0 ? '<span class="tlnum">' + (pos + 1) + "</span>" : "";
+      var fix = tl.checked && right[pos] !== k ? '<span class="tlfix">→ ' + (right.indexOf(k) + 1) + "</span>" : "";
+      return '<button type="button" class="' + cls + '" data-k="' + k + '"><span class="pimg"><img alt="" src="' + esc(it.img) + '">' +
+        '<span class="when">' + (tl.checked ? esc(it.when[L] || it.when.en) : "") + "</span>" + badge + fix + "</span>" +
+        '<span class="plabel">' + esc(it.label[L] || it.label.en) + "</span></button>";
+    }).join("");
+    $("tl").querySelectorAll(".tlcard").forEach(function (b) {
+      b.onclick = function () {
+        var k = b.getAttribute("data-k"), pos = tl.picked.indexOf(k);
+        if (tl.checked) { var v = byId(game.items[k].production); if (v && v.page) openPlayer(v); return; }
+        if (pos >= 0) tl.picked = tl.picked.slice(0, pos); else tl.picked.push(k);
+        tlRender();
+      };
+    });
+    $("tlcheck").disabled = tl.picked.length < 4 || tl.checked;
+    $("tlcred").innerHTML = OS.t(L, "picture") + ": " + tl.items.map(function (k) {
+      var it = game.items[k];
+      return esc(tl.checked ? it.credit : (it.author || it.credit)) + " (" + esc(it.licence || "") + ")";
+    }).join(" · ");
+  }
+  function tlCheck() {
+    var right = tl.items.slice().sort(function (a, b) { return game.items[a].sort - game.items[b].sort; });
+    var n = tl.picked.filter(function (k, i) { return right[i] === k; }).length;
+    tl.checked = true; tl.n = n;
+    $("tlres").textContent = n === 4 ? OS.t(L, "tl_perfect") : OS.t(L, "tl_result", { r: n });
+    $("tlres").className = "verdict " + (n === 4 ? "ok" : "no");
+    if (n === 4) {
+      if (OS.count) OS.count("timeline_perfect");
+      OS.progress.add("t:" + tl.items.slice().sort().join("."), 10);
+    }
+    tlRender();
+  }
+  $("tlcheck").onclick = tlCheck;
+  $("tlnew").onclick = tlNew;
+
+  // ------------------------------------------------------------ Where did it happen? A story, three countries
+  var wh = { order: [], i: 0, right: 0, played: 0, answered: false };
+  function whNew() {
+    var pool = cat.videos.filter(function (v) { return v.category === "history" && v.places.length && v.page; });
+    if (pool.length < 5) pool = cat.videos.filter(function (v) { return v.places.length; });
+    wh = { order: shuffle(pool).slice(0, 5), i: 0, right: 0, played: 0, answered: false, opts: null };
+    played("where");
+    if (OS.count) OS.count("where_start");
+    whRender();
+  }
+  function whRender() {
+    $("wact").hidden = true; $("wres").textContent = ""; $("wres").className = "verdict";
+    $("wdots").innerHTML = wh.order.map(function (_, k) { return '<span class="' + (k < wh.i ? "done" : k === wh.i ? "now" : "") + '"></span>'; }).join("");
+    $("wscore").textContent = wh.played ? OS.t(L, "score", { r: wh.right, n: wh.played }) : "";
+    var v = wh.order[wh.i];
+    if (!v) {
+      $("wcard").innerHTML = '<p class="gq">' + esc(OS.t(L, "wh_done", { r: wh.right, n: wh.played })) + '</p><div class="gameover">' +
+        '<button class="btn big gold" id="wagain" type="button">' + esc(OS.t(L, "wh_again")) + "</button></div>";
+      $("wagain").onclick = whNew;
+      return;
+    }
+    var own = uniq(v.places.map(function (p) { return p.country; }));
+    if (!wh.opts) {
+      var others = shuffle(Object.keys(countriesIn(cat.videos)).filter(function (c) { return own.indexOf(c) < 0; })).slice(0, 2);
+      wh.opts = shuffle([own[0]].concat(others));
+    }
+    $("wcard").innerHTML = '<div class="wpic">' + (v.thumb ? '<img alt="" src="' + esc(v.thumb) + '">' : "") + "</div>" +
+      '<p class="wtitle">' + esc(title(v)) + '</p><p class="gq">' + esc(OS.t(L, "wh_q")) + "</p>" +
+      '<div class="qopts">' + wh.opts.map(function (c) { return '<button type="button" class="qopt" data-c="' + c + '">' + esc(OS.country(L, c)) + "</button>"; }).join("") + "</div>";
+    $("wcard").querySelectorAll(".qopt").forEach(function (b) { b.onclick = function () { whAnswer(b.getAttribute("data-c")); }; });
+    if (wh.answered) whShow(wh.answered);
+  }
+  function whShow(pick) {
+    var v = wh.order[wh.i], own = uniq(v.places.map(function (p) { return p.country; }));
+    $("wcard").querySelectorAll(".qopt").forEach(function (b) {
+      var c = b.getAttribute("data-c"); b.disabled = true;
+      if (own.indexOf(c) >= 0) b.classList.add("right"); else if (c === pick) b.classList.add("wrong");
+    });
+    var ok = own.indexOf(pick) >= 0;
+    var where = uniq(v.places.map(function (p) { return p.name; })).join(" · ") + " (" + own.map(function (c) { return OS.country(L, c); }).join(", ") + ")";
+    $("wres").textContent = OS.t(L, ok ? "right" : "wrong") + " " + OS.t(L, "wh_place", { p: where });
+    $("wres").className = "verdict " + (ok ? "ok" : "no");
+    $("wact").hidden = false;
+    $("wwatch").onclick = function () { if (v.page) openPlayer(v); else window.open(v.youtube, "_blank", "noopener"); };
+  }
+  function whAnswer(pick) {
+    if (wh.answered) return;
+    var v = wh.order[wh.i], ok = v.places.some(function (p) { return p.country === pick; });
+    wh.answered = pick; wh.played++; if (ok) wh.right++;
+    if (OS.count) OS.count(ok ? "where_right" : "where_wrong");
+    if (ok) setTimeout(function () { OS.progress.add("w:" + v.id, 5); }, 600);
+    $("wscore").textContent = OS.t(L, "score", { r: wh.right, n: wh.played });
+    whShow(pick);
+  }
+  $("wnext").onclick = function () { wh.i++; wh.answered = false; wh.opts = null; whRender(); };
+
   function newGame(fromLink) {
+    played("older");
     if (OS.count) OS.count("game_start");
     var pool = game.rounds.slice();
     for (var i = pool.length - 1; i > 0; i--) { var j = Math.floor(Math.random() * (i + 1)), x = pool[i]; pool[i] = pool[j]; pool[j] = x; }
@@ -406,7 +543,12 @@
   function rerender() {
     renderMap(); renderGrid();
     if (state.view === "passport") renderPassport();
-    if (state.view === "play" && game && !g.picked) playRound();
+    if (state.view === "play" && game) {
+      if (state.game === "older" && !g.picked) playRound();
+      else if (state.game === "timeline") tlRender();
+      else if (state.game === "where") whRender();
+      else renderPlay();
+    }
     if (game) $("promopics").innerHTML = game.rounds.slice(0, 1).map(function (r) {
       return '<img alt="" src="' + esc(game.items[r.a].img) + '"><img alt="" src="' + esc(game.items[r.b].img) + '">';
     }).join("");

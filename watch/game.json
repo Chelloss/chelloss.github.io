@@ -298,6 +298,167 @@
    "licence_url": null,
    "url": "https://commons.wikimedia.org/wiki/File:Tunguska_Ereignis-1.jpg",
    "changes": "cropped to a square"
+  },
+  "heels": {
+   "production": "0003-high-heels",
+   "sort": 1701,
+   "label": {
+    "en": "King Louis XIV's red heels",
+    "es": "Los tacones rojos del rey Luis XIV",
+    "el": "Τα κόκκινα τακούνια του βασιλιά Λουδοβίκου ΙΔ΄",
+    "de": "Die roten Absätze von König Ludwig XIV."
+   },
+   "when": {
+    "en": "1701",
+    "es": "1701",
+    "el": "1701",
+    "de": "1701"
+   },
+   "img": "game/heels.jpg",
+   "credit": "Hyacinthe Rigaud, Rigaud Louis XIV 1701.jpg, Public domain",
+   "author": "Hyacinthe Rigaud",
+   "licence": "Public domain",
+   "licence_url": null,
+   "url": "https://commons.wikimedia.org/wiki/File:Rigaud_Louis_XIV_1701.jpg",
+   "changes": "cropped to a square"
+  },
+  "ring": {
+   "production": "0008-ring-finger",
+   "sort": 226,
+   "label": {
+    "en": "A Roman gold ring",
+    "es": "Un anillo de oro romano",
+    "el": "Ένα ρωμαϊκό χρυσό δαχτυλίδι",
+    "de": "Ein römischer Goldring"
+   },
+   "when": {
+    "en": "about 1,800 years ago",
+    "es": "hace unos 1.800 años",
+    "el": "πριν από περίπου 1.800 χρόνια",
+    "de": "vor etwa 1.800 Jahren"
+   },
+   "img": "game/ring.jpg",
+   "credit": "Gold finger ring, 3rd century CE. The Metropolitan Museum of Art, Purchase, Patricia and Marietta Fried Gift, 2016, 2016.239 (CC0)",
+   "author": "The Metropolitan Museum of Art",
+   "licence": "CC0 (isPublicDomain: true)",
+   "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "url": "https://www.metmuseum.org/art/collection/search/712072",
+   "changes": "cropped to a square"
+  },
+  "sandwich": {
+   "production": "0009-sandwich",
+   "sort": 1762,
+   "label": {
+    "en": "\"Sandwich\" written down in London",
+    "es": "«Sandwich», escrito en Londres",
+    "el": "Η λέξη «Sandwich» γραμμένη στο Λονδίνο",
+    "de": "„Sandwich“, in London notiert"
+   },
+   "when": {
+    "en": "1762",
+    "es": "1762",
+    "el": "1762",
+    "de": "1762"
+   },
+   "img": "game/sandwich.jpg",
+   "credit": "Thomas Gainsborough, John Montagu, 4th Earl of Sandwich.jpg, Public domain",
+   "author": "Thomas Gainsborough",
+   "licence": "Public domain",
+   "licence_url": null,
+   "url": "https://commons.wikimedia.org/wiki/File:John_Montagu,_4th_Earl_of_Sandwich.jpg",
+   "changes": "cropped to a square"
+  },
+  "linenbras": {
+   "production": "0010-first-bra",
+   "sort": 1450,
+   "label": {
+    "en": "Four linen bras in an Austrian castle",
+    "es": "Cuatro sujetadores de lino en un castillo austriaco",
+    "el": "Τέσσερα λινά σουτιέν σε αυστριακό κάστρο",
+    "de": "Vier Leinen-BHs in einer österreichischen Burg"
+   },
+   "when": {
+    "en": "from the 1400s",
+    "es": "de los años 1400",
+    "el": "από τα χρόνια του 1400",
+    "de": "aus den 1400er-Jahren"
+   },
+   "img": "game/linenbras.jpg",
+   "credit": "Michael Kranewitter, Schloss Lengberg b.JPG, CC BY-SA 4.0",
+   "author": "Michael Kranewitter",
+   "licence": "CC BY-SA 4.0",
+   "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Schloss_Lengberg_b.JPG",
+   "changes": "cropped to a square"
+  },
+  "brapatent": {
+   "production": "0010-first-bra",
+   "sort": 1914,
+   "label": {
+    "en": "Mary Phelps Jacob's bra patent",
+    "es": "La patente de sujetador de Mary Phelps Jacob",
+    "el": "Το δίπλωμα σουτιέν της Mary Phelps Jacob",
+    "de": "Mary Phelps Jacobs BH-Patent"
+   },
+   "when": {
+    "en": "1914",
+    "es": "1914",
+    "el": "1914",
+    "de": "1914"
+   },
+   "img": "game/brapatent.jpg",
+   "credit": "US patent US1115674, drawing (public domain)",
+   "author": "US Patent and Trademark Office drawing, via Google Patents",
+   "licence": "Public domain (US patent published before 1931: US copyright term expired)",
+   "licence_url": null,
+   "url": "https://patents.google.com/patent/US1115674A/en",
+   "changes": "cropped to a square"
+  },
+  "web": {
+   "production": "0016-first-website",
+   "sort": 1989,
+   "label": {
+    "en": "Tim Berners-Lee comes up with the web",
+    "es": "Tim Berners-Lee idea la web",
+    "el": "Ο Tim Berners-Lee επινοεί τον ιστό",
+    "de": "Tim Berners-Lee erdenkt das Web"
+   },
+   "when": {
+    "en": "1989",
+    "es": "1989",
+    "el": "1989",
+    "de": "1989"
+   },
+   "img": "game/web.jpg",
+   "credit": "User:Coolcaesar at en.wikipedia, First Web Server.jpg, CC BY-SA 3.0",
+   "author": "User:Coolcaesar at en.wikipedia",
+   "licence": "CC BY-SA 3.0",
+   "licence_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+   "url": "https://commons.wikimedia.org/wiki/File:First_Web_Server.jpg",
+   "changes": "cropped to a square"
+  },
+  "tennis": {
+   "production": "0017-tennis-for-two",
+   "sort": 1958,
+   "label": {
+    "en": "Tennis for Two, an early video game",
+    "es": "Tennis for Two, uno de los primeros videojuegos",
+    "el": "Το Tennis for Two, ένα από τα πρώτα βιντεοπαιχνίδια",
+    "de": "Tennis for Two, eines der ersten Videospiele"
+   },
+   "when": {
+    "en": "1958",
+    "es": "1958",
+    "el": "1958",
+    "de": "1958"
+   },
+   "img": "game/tennis.jpg",
+   "credit": "Brookhaven National Laboratory, Tennis For Two in 1958.jpg, Public domain",
+   "author": "Brookhaven National Laboratory",
+   "licence": "Public domain",
+   "licence_url": null,
+   "url": "https://commons.wikimedia.org/wiki/File:Tennis_For_Two_in_1958.jpg",
+   "changes": "cropped to a square"
   }
  },
  "rounds": [
@@ -356,6 +517,41 @@
   {
    "a": "asteroid",
    "b": "senet",
+   "question": "first"
+  },
+  {
+   "a": "heels",
+   "b": "sandwich",
+   "question": "first"
+  },
+  {
+   "a": "ring",
+   "b": "wine",
+   "question": "first"
+  },
+  {
+   "a": "linenbras",
+   "b": "heels",
+   "question": "first"
+  },
+  {
+   "a": "brapatent",
+   "b": "gaudi",
+   "question": "first"
+  },
+  {
+   "a": "web",
+   "b": "spacephoto",
+   "question": "first"
+  },
+  {
+   "a": "tennis",
+   "b": "tunguska",
+   "question": "first"
+  },
+  {
+   "a": "selfie",
+   "b": "sandwich",
    "question": "first"
   }
  ]

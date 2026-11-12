@@ -405,5 +405,227 @@
    "el": "Το αντικείμενο, πιθανότατα ένας διαστημικός βράχος, εξερράγη στον αέρα αρκετά χιλιόμετρα ψηλά, γι' αυτό δεν άφησε κρατήρα.",
    "de": "Das Objekt, sehr wahrscheinlich ein Gesteinsbrocken aus dem All, explodierte mehrere Kilometer hoch in der Luft und hinterließ deshalb keinen Krater."
   }
+ },
+ "0003-high-heels": {
+  "answer": 0,
+  "q": {
+   "en": "Who were the first high heels made for?",
+   "es": "¿Para quién se hicieron los primeros tacones?",
+   "el": "Για ποιους φτιάχτηκαν τα πρώτα ψηλά τακούνια;",
+   "de": "Für wen wurden die ersten High Heels gemacht?"
+  },
+  "options": {
+   "en": [
+    "Riders on horseback",
+    "Ballet dancers",
+    "Soldiers marching on foot"
+   ],
+   "es": [
+    "Para jinetes a caballo",
+    "Para bailarinas de ballet",
+    "Para soldados que marchaban a pie"
+   ],
+   "el": [
+    "Για ιππείς πάνω σε άλογα",
+    "Για χορεύτριες μπαλέτου",
+    "Για στρατιώτες που βάδιζαν πεζοί"
+   ],
+   "de": [
+    "Für Reiter auf Pferden",
+    "Für Balletttänzerinnen",
+    "Für Soldaten zu Fuß"
+   ]
+  },
+  "fact": {
+   "en": "Persian riders wore heels so their feet sat firmly in the stirrups. Around 1600, European aristocrats copied them.",
+   "es": "Los jinetes persas llevaban tacón para que el pie quedara firme en el estribo. Hacia 1600, los aristócratas europeos los copiaron.",
+   "el": "Οι Πέρσες ιππείς φορούσαν τακούνια για να πατάνε σταθερά στους αναβολείς. Γύρω στο 1600, οι Ευρωπαίοι αριστοκράτες τα αντέγραψαν.",
+   "de": "Persische Reiter trugen Absätze, damit ihre Füße fest in den Steigbügeln saßen. Um 1600 kopierten europäische Adlige sie."
+  }
+ },
+ "0008-ring-finger": {
+  "answer": 1,
+  "q": {
+   "en": "Is there a vein from the ring finger straight to the heart?",
+   "es": "¿Hay una vena del dedo anular directa al corazón?",
+   "el": "Υπάρχει φλέβα από τον παράμεσο κατευθείαν στην καρδιά;",
+   "de": "Führt eine Vene vom Ringfinger direkt zum Herzen?"
+  },
+  "options": {
+   "en": [
+    "Yes, the \"vein of love\"",
+    "No, none goes straight to the heart",
+    "Only on the left hand"
+   ],
+   "es": [
+    "Sí, la «vena del amor»",
+    "No, ninguna va directa al corazón",
+    "Solo en la mano izquierda"
+   ],
+   "el": [
+    "Ναι, η «φλέβα της αγάπης»",
+    "Όχι, καμία δεν πάει κατευθείαν στην καρδιά",
+    "Μόνο στο αριστερό χέρι"
+   ],
+   "de": [
+    "Ja, die „Liebesvene“",
+    "Nein, keine führt direkt zum Herzen",
+    "Nur an der linken Hand"
+   ]
+  },
+  "fact": {
+   "en": "Finger veins drain into the veins of the hand, then up the arm. The Roman writer Aulus Gellius wrote of a nerve, not a vein.",
+   "es": "Las venas de los dedos desembocan en las venas de la mano y luego suben por el brazo. El escritor romano Aulo Gelio habló de un nervio, no de una vena.",
+   "el": "Οι φλέβες των δαχτύλων καταλήγουν στις φλέβες του χεριού και μετά ανεβαίνουν στο μπράτσο. Ο Ρωμαίος συγγραφέας Αύλος Γέλλιος μίλησε για νεύρο, όχι για φλέβα.",
+   "de": "Die Fingervenen münden in die Venen der Hand und dann den Arm hinauf. Der römische Schriftsteller Aulus Gellius schrieb von einem Nerv, nicht von einer Vene."
+  }
+ },
+ "0009-sandwich": {
+  "answer": 0,
+  "q": {
+   "en": "What does the famous story of the Earl of Sandwich rest on?",
+   "es": "¿En qué se basa la famosa historia del conde de Sandwich?",
+   "el": "Σε τι στηρίζεται η διάσημη ιστορία του κόμη του Σάντουιτς;",
+   "de": "Worauf stützt sich die berühmte Geschichte vom Earl of Sandwich?"
+  },
+  "options": {
+   "en": [
+    "One French traveller's account",
+    "The earl's own diary",
+    "A law passed in London"
+   ],
+   "es": [
+    "En el relato de un solo viajero francés",
+    "En el diario del propio conde",
+    "En una ley aprobada en Londres"
+   ],
+   "el": [
+    "Στη μαρτυρία ενός μόνο Γάλλου ταξιδιώτη",
+    "Στο ημερολόγιο του ίδιου του κόμη",
+    "Σε έναν νόμο που ψηφίστηκε στο Λονδίνο"
+   ],
+   "de": [
+    "Auf den Bericht eines einzigen französischen Reisenden",
+    "Auf das Tagebuch des Earls selbst",
+    "Auf ein Gesetz aus London"
+   ]
+  },
+  "fact": {
+   "en": "Pierre-Jean Grosley visited London in 1765 and never even names the earl. The word was already in use in 1762.",
+   "es": "Pierre-Jean Grosley visitó Londres en 1765 y ni siquiera nombra al conde. La palabra ya se usaba en 1762.",
+   "el": "Ο Pierre-Jean Grosley επισκέφτηκε το Λονδίνο το 1765 και δεν αναφέρει καν το όνομα του κόμη. Η λέξη χρησιμοποιούνταν ήδη το 1762.",
+   "de": "Pierre-Jean Grosley besuchte London 1765 und nennt den Earl nicht einmal beim Namen. Das Wort war schon 1762 in Gebrauch."
+  }
+ },
+ "0010-first-bra": {
+  "answer": 0,
+  "q": {
+   "en": "What did Mary Phelps Jacob make her 1914 bra from?",
+   "es": "¿Con qué hizo Mary Phelps Jacob su sujetador de 1914?",
+   "el": "Από τι έφτιαξε η Mary Phelps Jacob το σουτιέν της το 1914;",
+   "de": "Woraus machte Mary Phelps Jacob ihren BH von 1914?"
+  },
+  "options": {
+   "en": [
+    "Two handkerchiefs and a ribbon",
+    "An old corset cut in half",
+    "A silk scarf and buttons"
+   ],
+   "es": [
+    "Con dos pañuelos y una cinta",
+    "Con un corsé viejo cortado por la mitad",
+    "Con un pañuelo de seda y botones"
+   ],
+   "el": [
+    "Από δύο μαντίλια και μια κορδέλα",
+    "Από έναν παλιό κορσέ κομμένο στη μέση",
+    "Από ένα μεταξωτό φουλάρι και κουμπιά"
+   ],
+   "de": [
+    "Aus zwei Taschentüchern und einem Band",
+    "Aus einem alten, halbierten Korsett",
+    "Aus einem Seidenschal und Knöpfen"
+   ]
+  },
+  "fact": {
+   "en": "She patented it in 1914. But four linen bras from the 1400s were found in an Austrian castle in 2008.",
+   "es": "Lo patentó en 1914. Pero en 2008 aparecieron en un castillo austriaco cuatro sujetadores de lino de los años 1400.",
+   "el": "Το κατοχύρωσε το 1914. Όμως το 2008 βρέθηκαν σε ένα αυστριακό κάστρο τέσσερα λινά σουτιέν από τα χρόνια του 1400.",
+   "de": "Sie ließ ihn 1914 patentieren. Doch 2008 fanden sich in einer österreichischen Burg vier Leinen-BHs aus den 1400er-Jahren."
+  }
+ },
+ "0016-first-website": {
+  "answer": 0,
+  "q": {
+   "en": "What was the first website about?",
+   "es": "¿De qué trataba la primera web?",
+   "el": "Για τι μιλούσε ο πρώτος ιστότοπος;",
+   "de": "Worum ging es auf der ersten Website?"
+  },
+  "options": {
+   "en": [
+    "The World Wide Web itself",
+    "Physics experiments at CERN",
+    "A shop selling computers"
+   ],
+   "es": [
+    "De la propia World Wide Web",
+    "De experimentos de física en el CERN",
+    "De una tienda que vendía ordenadores"
+   ],
+   "el": [
+    "Για το ίδιο το World Wide Web",
+    "Για πειράματα φυσικής στο CERN",
+    "Για ένα κατάστημα που πουλούσε υπολογιστές"
+   ],
+   "de": [
+    "Um das World Wide Web selbst",
+    "Um Physikexperimente am CERN",
+    "Um einen Laden für Computer"
+   ]
+  },
+  "fact": {
+   "en": "Tim Berners-Lee ran it at CERN on a NeXT computer. It is still online at info.cern.ch.",
+   "es": "Tim Berners-Lee la tenía en el CERN, en un ordenador NeXT. Sigue en línea en info.cern.ch.",
+   "el": "Ο Tim Berners-Lee τον έτρεχε στο CERN, σε έναν υπολογιστή NeXT. Είναι ακόμα online στο info.cern.ch.",
+   "de": "Tim Berners-Lee betrieb sie am CERN auf einem NeXT-Computer. Sie ist noch online unter info.cern.ch."
+  }
+ },
+ "0017-tennis-for-two": {
+  "answer": 0,
+  "q": {
+   "en": "What was the screen of Tennis for Two in 1958?",
+   "es": "¿Qué pantalla tenía Tennis for Two en 1958?",
+   "el": "Τι οθόνη είχε το Tennis for Two το 1958;",
+   "de": "Was war 1958 der Bildschirm von Tennis for Two?"
+  },
+  "options": {
+   "en": [
+    "An oscilloscope, five inches across",
+    "A big television set",
+    "A cinema screen"
+   ],
+   "es": [
+    "Un osciloscopio de cinco pulgadas",
+    "Un gran televisor",
+    "Una pantalla de cine"
+   ],
+   "el": [
+    "Έναν παλμογράφο πέντε ιντσών",
+    "Μια μεγάλη τηλεόραση",
+    "Μια οθόνη σινεμά"
+   ],
+   "de": [
+    "Ein Oszilloskop, fünf Zoll groß",
+    "Ein großer Fernseher",
+    "Eine Kinoleinwand"
+   ]
+  },
+  "fact": {
+   "en": "The ball was a dot of light. Hundreds of visitors lined up to play it at Brookhaven National Laboratory.",
+   "es": "La pelota era un punto de luz. Cientos de visitantes hicieron cola para jugar en el Laboratorio Nacional de Brookhaven.",
+   "el": "Η μπάλα ήταν μια κουκκίδα φωτός. Εκατοντάδες επισκέπτες έκαναν ουρά για να παίξουν στο Brookhaven National Laboratory.",
+   "de": "Der Ball war ein Lichtpunkt. Hunderte Besucher standen im Brookhaven National Laboratory Schlange, um zu spielen."
+  }
  }
 }

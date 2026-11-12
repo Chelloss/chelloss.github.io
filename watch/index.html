@@ -48,7 +48,21 @@
     </div>
   </section>
 
-  <section id="view-play" class="view" hidden aria-labelledby="h-play">
+  <section id="view-play" class="view" hidden aria-labelledby="h-hub">
+   <div id="hub">
+    <h1 id="h-hub" data-i="hub_title">Games</h1>
+    <p class="lede" data-i="hub_lede"></p>
+    <div class="hubgrid">
+      <a class="gcard" href="#play/older"><span class="pics" id="hp-older" aria-hidden="true"></span>
+        <span class="pt"><b data-i="play_title">Which is older?</b><small data-i="g_older_d"></small></span><span class="go" data-i="play_start">Play</span></a>
+      <a class="gcard" href="#play/timeline"><span class="pics tlpics" id="hp-timeline" aria-hidden="true"></span>
+        <span class="pt"><b data-i="tl_title">Timeline</b><small data-i="tl_d"></small></span><span class="go" data-i="play_start">Play</span></a>
+      <a class="gcard" href="#play/where"><span class="pics" id="hp-where" aria-hidden="true"><svg class="ic huge" aria-hidden="true"><use href="#i-map"/></svg></span>
+        <span class="pt"><b data-i="headline">Where did it happen?</b><small data-i="wh_d"></small></span><span class="go" data-i="play_start">Play</span></a>
+    </div>
+   </div>
+   <div id="g-older" hidden>
+    <p class="back"><a href="#play" data-i="all_games">All games</a></p>
     <div class="gamehead">
       <h1 id="h-play" data-i="play_title">Which is older?</h1>
       <p class="gq" id="gq"></p>
@@ -62,6 +76,25 @@
       <button class="btn big" id="gnext" type="button" data-i="next_pair">Next pair</button>
     </div>
     <p class="small gcredits" id="gcredits"></p>
+   </div>
+   <div id="g-timeline" hidden>
+    <p class="back"><a href="#play" data-i="all_games">All games</a></p>
+    <div class="gamehead"><h1 data-i="tl_title">Timeline</h1><p class="gq" data-i="tl_hint"></p></div>
+    <div class="tl" id="tl"></div>
+    <p class="verdict" id="tlres" aria-live="polite"></p>
+    <div class="gactions"><button class="btn big gold" id="tlcheck" type="button" data-i="tl_check" disabled>Check</button>
+      <button class="btn big" id="tlnew" type="button" data-i="tl_again">New timeline</button></div>
+    <p class="small gcredits" id="tlcred"></p>
+   </div>
+   <div id="g-where" hidden>
+    <p class="back"><a href="#play" data-i="all_games">All games</a></p>
+    <div class="gamehead"><h1 data-i="headline">Where did it happen?</h1>
+      <div class="dots" id="wdots" aria-hidden="true"></div><p class="score" id="wscore"></p></div>
+    <div class="wcard" id="wcard"></div>
+    <p class="verdict" id="wres" aria-live="polite"></p>
+    <div class="gactions" id="wact" hidden><button class="btn big gold" id="wwatch" type="button" data-i="wh_watch">Watch the story</button>
+      <button class="btn big" id="wnext" type="button" data-i="wh_next">Next story</button></div>
+   </div>
   </section>
 
   <section id="view-passport" class="view" hidden aria-labelledby="h-pass">
