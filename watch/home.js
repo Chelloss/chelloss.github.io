@@ -1,0 +1,416 @@
+/* Home page: four views behind a bottom dock (map, game, passport, search), all from catalog.json and game.json.
+   Fair play (Mike, 2026-11-12): no streaks, no timers, no fake counters, no sounds; progress stays in this browser. */
+(function () {
+  var cat = null, game = null, L = "en";
+  var state = { view: "map", cat: "history", fmt: "all", country: null, q: "" };
+  var $ = function (id) { return document.getElementById(id); };
+  var reduce = window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  function esc(s) { var d = document.createElement("div"); d.textContent = s == null ? "" : s; return d.innerHTML; }
+  function fold(s) { return String(s || "").toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/ς/g, "σ"); }
+  function title(v) { return (v.titles && v.titles[L]) || v.title; }
+  function len(s) { if (!s) return ""; s = Math.round(s); return Math.floor(s / 60) + ":" + String(s % 60).padStart(2, "0"); }
+  function uniq(a) { return a.filter(function (x, i) { return a.indexOf(x) === i; }); }
+  function byId(id) { return cat.videos.filter(function (v) { return v.id === id; })[0]; }
+  function live() { return cat.videos.filter(function (v) { return v.category === state.cat; }); }
+
+  // ------------------------------------------------------------ views and dock
+  function show(view) {
+    state.view = ["map", "play", "passport", "search"].indexOf(view) >= 0 ? view : "map";
+    ["map", "play", "passport", "search"].forEach(function (v) { $("view-" + v).hidden = v !== state.view; });
+    document.querySelectorAll(".dock a").forEach(function (a) {
+      var on = a.getAttribute("data-v") === state.view;
+      a.classList.toggle("on", on);
+      if (on) a.setAttribute("aria-current", "page"); else a.removeAttribute("aria-current");
+    });
+    if (state.view === "play" && game) playRound();
+    if (state.view === "passport") renderPassport();
+    if (state.view === "search") renderGrid();
+    window.scrollTo(0, 0);
+  }
+  window.addEventListener("hashchange", function () { route(); });
+  function route() {
+    var h = location.hash.slice(1), view = h.split("/")[0];
+    if (!$("sheet").hidden) closeSheet();
+    if (view === "play" && h.indexOf("/c=") > 0 && game) { newGame(h); }
+    show(view);
+  }
+
+  // ------------------------------------------------------------ map board
+  function countriesIn(list) {
+    var c = {};
+    list.forEach(function (v) { uniq(v.places.map(function (p) { return p.country; })).forEach(function (k) { c[k] = (c[k] || 0) + 1; }); });
+    return c;
+  }
+
+  function renderMap() {
+    var list = live(), countries = countriesIn(list), pass = OS.passport.get();
+    document.querySelectorAll(".cat").forEach(function (b) {
+      var on = b.getAttribute("data-cat") === state.cat;
+      b.classList.toggle("on", on); b.setAttribute("aria-pressed", on);
+    });
+    document.querySelectorAll(".map [data-c]").forEach(function (el) {
+      var k = el.getAttribute("data-c");
+      el.classList.toggle("has", !!countries[k]);
+      el.classList.toggle("sel", k === state.country);
+      el.classList.toggle("visited", !!pass[k] && !!countries[k]);
+      if (el.tagName === "path") {
+        el.setAttribute("aria-label", OS.country(L, k) + ": " + (countries[k] || 0));
+        var tt = el.querySelector("title"); if (tt) tt.textContent = OS.country(L, k) + " · " + (countries[k] || 0);
+      }
+    });
+    var keys = Object.keys(countries);
+    $("boardcount").textContent = OS.t(L, "board_count", { c: keys.length, n: list.length });
+    $("boardcount").hidden = !list.length;
+    keys.sort(function (a, b) { return OS.country(L, a).localeCompare(OS.country(L, b), L); });
+    $("country").innerHTML = '<option value="">' + esc(OS.t(L, "choose_country")) + "</option>" + keys.map(function (k) {
+      return '<option value="' + k + '">' + esc(OS.country(L, k)) + " (" + countries[k] + ")</option>";
+    }).join("");
+    $("country").hidden = !keys.length;
+    var total = Object.keys(countriesIn(cat.videos)).length, have = Object.keys(pass).length;
+    $("passmini").textContent = OS.t(L, "passport_mini", { v: have, n: total });
+  }
+
+  function pick(k) {
+    if (!k) return;
+    state.country = k;
+    renderMap();
+    openCountry(k);
+  }
+
+  // ------------------------------------------------------------ the sheet (country stories, coming soon, player)
+  var lastFocus = null;
+  function openSheet(titleText, sub, bodyHtml, kind) {
+    if (!$("sheet").hidden) stopVideo();
+    lastFocus = lastFocus || document.activeElement;
+    $("sheet-title").textContent = titleText;
+    $("sheet-sub").textContent = sub || "";
+    $("sheet-body").innerHTML = bodyHtml;
+    $("sheet").className = "sheet " + (kind || "");
+    $("sheet").hidden = false;
+    requestAnimationFrame(function () { requestAnimationFrame(function () { $("sheet").classList.add("open"); }); });
+    document.body.classList.add("locked");
+    setTimeout(function () { var x = $("sheet").querySelector(".x"); if (x) x.focus({ preventScroll: true }); }, 30);
+  }
+  function stopVideo() {
+    if (current) { current.stop(); current = null; }
+  }
+  function closeSheet() {
+    stopVideo();
+    $("sheet").classList.remove("open");
+    document.body.classList.remove("locked");
+    setTimeout(function () { $("sheet").hidden = true; $("sheet-body").innerHTML = ""; }, reduce ? 0 : 260);
+    if (state.country) { state.country = null; renderMap(); }
+    if (lastFocus && lastFocus.focus) lastFocus.focus({ preventScroll: true });
+    lastFocus = null;
+  }
+  $("sheet").addEventListener("click", function (e) { if (e.target.closest("[data-close]")) closeSheet(); });
+  document.addEventListener("keydown", function (e) {
+    if ($("sheet").hidden) return;
+    if (e.key === "Escape") closeSheet();
+    if (e.key === "Tab") {      // keep the focus inside the open sheet
+      var f = $("sheet").querySelectorAll("button, a[href], select, video, [tabindex]:not([tabindex='-1'])");
+      if (!f.length) return;
+      var first = f[0], last = f[f.length - 1];
+      if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
+      else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
+    }
+  });
+
+  function card(v, big) {
+    var ext = !v.page, href = v.page || v.youtube;
+    var place = v.places.length ? uniq(v.places.map(function (p) { return p.name; })).slice(0, 2).join(" · ") : OS.t(L, "worldwide");
+    var badge = v.page ? '<span class="badge cc" title="' + esc(OS.t(L, "subtitled")) + '">CC · ' + v.subtitles.map(function (s) { return s.toUpperCase(); }).join(" ") + "</span>"
+                       : '<span class="badge yt">' + esc(OS.t(L, "on_youtube")) + "</span>";
+    var pass = OS.passport.get();
+    var stamped = v.places.some(function (p) { var s = pass[p.country]; return s && s.stories.indexOf(v.id) >= 0; });
+    return '<a class="card ' + v.format + (big ? " big" : "") + (ext ? " ext" : "") + '" href="' + esc(href) + '"' +
+      (ext ? ' rel="noopener" target="_blank"' : ' data-play="' + v.id + '"') + ">" +
+      '<span class="thumb">' + (v.thumb ? '<img loading="lazy" alt="" src="' + esc(v.thumb) + '">' : "") +
+      (v.page ? '<span class="playbtn" aria-hidden="true"></span>' : "") +
+      '<span class="len">' + len(v.seconds) + "</span>" + (stamped ? '<span class="mini-stamp" title="' + esc(OS.t(L, "stamped")) + '">✓</span>' : "") + "</span>" +
+      '<span class="meta"><span class="place">' + esc(place) + "</span>" +
+      '<span class="t">' + esc(title(v)) + "</span>" + badge + "</span></a>";
+  }
+
+  function openCountry(k) {
+    var list = live().filter(function (v) { return v.places.some(function (p) { return p.country === k; }); });
+    list.sort(function (a, b) { return (b.page ? 1 : 0) - (a.page ? 1 : 0); });
+    var s = OS.passport.get()[k];
+    var sub = (list.length === 1 ? OS.t(L, "story_here") : OS.t(L, "stories_here", { n: list.length })) + " · " +
+              (s ? OS.t(L, "stamped") + " ✓" : OS.t(L, "not_yet"));
+    openSheet(OS.country(L, k), sub, '<div class="rail">' + list.map(function (v) { return card(v, true); }).join("") + "</div>", "stories");
+  }
+
+  function openSoon(c) {
+    openSheet(OS.t(L, "cat_" + c.id), c.channel,
+      '<div class="soon"><p>' + esc(OS.t(L, "coming_soon", { channel: c.channel })) + "</p>" +
+      '<p><a class="btn red" href="' + esc(c.youtube) + '" rel="noopener">' + esc(OS.t(L, "open_channel")) + "</a> " +
+      '<a class="btn" href="' + esc(c.subscribe) + '" rel="noopener">' + esc(OS.t(L, "subscribe")) + "</a></p></div>", "soon");
+  }
+
+  // The answer (or any story) plays right here in YouTube's player, with our subtitle bar on top, then its quick question
+  var current = null;
+  function openPlayer(v) {
+    openSheet(title(v), uniq(v.places.map(function (p) { return p.name; })).join(" · "),
+      '<div id="pplayer"></div><div id="pquiz" class="pquiz"></div>' +
+      '<p class="sheet-links"><a class="btn" href="' + esc(v.page) + '">' + esc(OS.t(L, "read_story")) + "</a>" +
+      '<a class="btn red" href="' + esc(v.youtube) + '" rel="noopener">' + esc(OS.t(L, "watch_on_youtube")) + "</a></p>", "player");
+    current = OS.player($("pplayer"), { id: v.id, ytid: v.youtube_id, langs: v.subtitles, format: v.format, poster: v.thumb });
+    OS.quiz($("pquiz"), v.id, v.places, v.youtube_id);
+  }
+
+  document.addEventListener("click", function (e) {
+    var a = e.target.closest("a[data-play]");
+    if (!a || e.ctrlKey || e.metaKey || e.shiftKey) return;
+    var v = byId(a.getAttribute("data-play"));
+    if (v && v.page) { e.preventDefault(); openPlayer(v); }
+  });
+  document.addEventListener("os-stamp", function () { renderMap(); if (state.view === "passport") setTimeout(renderPassport, 1900); });
+
+  // ------------------------------------------------------------ "Which is older?"
+  var g = { order: [], i: 0, right: 0, played: 0, picked: false, timer: null, run: 0, friend: null };
+
+  function newGame(fromLink) {
+    var pool = game.rounds.slice();
+    for (var i = pool.length - 1; i > 0; i--) { var j = Math.floor(Math.random() * (i + 1)), x = pool[i]; pool[i] = pool[j]; pool[j] = x; }
+    g.order = pool.slice(0, 5).map(function (r) { return Math.random() < 0.5 ? { a: r.a, b: r.b, r: r } : { a: r.b, b: r.a, r: r }; });
+    g.friend = null;
+    if (fromLink) {   // "#play/c=senet.pyramid,benz.wall/s=3": a friend's pairs and score
+      var m = /c=([\w.,-]+)\/s=(\d+)/.exec(fromLink);
+      if (m) {
+        var want = m[1].split(",").map(function (x) { return x.split("."); });
+        var order = want.map(function (ab) {
+          var r = game.rounds.filter(function (r) { return (r.a === ab[0] && r.b === ab[1]) || (r.a === ab[1] && r.b === ab[0]); })[0];
+          return r ? { a: ab[0], b: ab[1], r: r } : null;
+        }).filter(Boolean);
+        if (order.length) { g.order = order; g.friend = +m[2]; }
+      }
+    }
+    g.i = 0; g.right = 0; g.played = 0; g.picked = false; g.run = 0;
+  }
+
+  function challengeUrl() {
+    var pairs = g.order.map(function (o) { return o.a + "." + o.b; }).join(",");
+    return location.href.split("#")[0] + "#play/c=" + pairs + "/s=" + g.right;
+  }
+  function share() {
+    var text = OS.gt(L, "challenge_text").replace("{r}", g.right).replace("{n}", g.order.length), url = challengeUrl();
+    if (navigator.share) { navigator.share({ title: "Oldest Surviving", text: text, url: url }).catch(function () {}); return; }
+    var done = function () { OS.toast(OS.gt(L, "copied")); };
+    if (navigator.clipboard) navigator.clipboard.writeText(text + " " + url).then(done, function () { prompt("", url); });
+    else prompt("", url);
+  }
+
+  function playRound() {
+    if (!g.order.length) newGame();
+    clearTimeout(g.timer);
+    $("gactions").hidden = true;
+    $("verdict").textContent = "";
+    $("verdict").className = "verdict";
+    $("gdots").innerHTML = g.order.map(function (_, k) { return '<span class="' + (k < g.i ? "done" : k === g.i ? "now" : "") + '"></span>'; }).join("");
+    $("gscore").textContent = g.played ? OS.t(L, "score", { r: g.right, n: g.played }) : "";
+    if (g.i >= g.order.length) {
+      $("h-play").textContent = OS.t(L, "play_title");
+      $("gq").textContent = g.friend != null ? OS.gt(L, "challenge_result").replace("{a}", g.right).replace("{b}", g.friend) : OS.t(L, "done");
+      $("duel").innerHTML = '<div class="gameover"><button class="btn big gold" id="share" type="button">' + esc(OS.gt(L, "challenge")) + "</button>" +
+        '<button class="btn big" id="again" type="button">' + esc(OS.t(L, "play_again")) + "</button></div>";
+      $("share").onclick = share;
+      $("again").onclick = function () { newGame(); playRound(); };
+      $("gcredits").innerHTML = "";
+      if (g.played && g.right === g.order.length) OS.progress.add(null, 0, function (p) { p.perfect = true; });
+      return;
+    }
+    if (g.i === 0 && g.friend != null && !g.picked) {
+      $("gscore").textContent = OS.gt(L, "challenge_intro").replace("{r}", g.friend).replace("{n}", g.order.length);
+    }
+    var round = g.order[g.i], first = round.r.question === "first";
+    $("h-play").textContent = OS.t(L, first ? "play_first" : "play_title");
+    $("gq").textContent = OS.t(L, "round", { i: g.i + 1, n: g.order.length }) + " · " + OS.t(L, first ? "play_hint_first" : "play_hint");
+    g.picked = false;
+    $("duel").innerHTML = [round.a, round.b].map(function (key, k) {
+      var it = game.items[key];
+      return '<button class="pick" type="button" data-k="' + key + '" style="--tilt:' + (k ? 1.2 : -1.2) + 'deg">' +
+        '<span class="pimg"><img alt="" src="' + esc(it.img) + '"><span class="when"></span><span class="pstamp" aria-hidden="true"></span></span>' +
+        '<span class="plabel">' + esc(it.label[L] || it.label.en) + "</span></button>";
+    }).join('<span class="vs" aria-hidden="true">VS</span>');
+    $("duel").querySelectorAll(".pick").forEach(function (b) { b.onclick = function () { answer(b.getAttribute("data-k")); }; });
+    credits(round, false);
+  }
+
+  // Picture credits: before the tap only author and licence (file names can give the answer away), the full credit after
+  function credits(round, full) {
+    $("gcredits").innerHTML = OS.t(L, "picture") + ": " + [round.a, round.b].map(function (key) {
+      var it = game.items[key], lic = it.licence_url ? '<a href="' + esc(it.licence_url) + '" rel="noopener license">' + esc(it.licence) + "</a>" : esc(it.licence || "");
+      var who = full ? it.credit : (it.author || it.credit);
+      return (full && it.url ? '<a href="' + esc(it.url) + '" rel="noopener">' + esc(who) + "</a>" : esc(who)) + " (" + lic + (full ? ", " + esc(it.changes || "") : "") + ")";
+    }).join(" · ");
+  }
+
+  function answer(key) {
+    if (g.picked) return;
+    g.picked = true;
+    var round = g.order[g.i], first = round.r.question === "first";
+    var older = game.items[round.a].sort <= game.items[round.b].sort ? round.a : round.b;
+    var ok = key === older;
+    g.played++; if (ok) g.right++;
+    g.run = ok ? g.run + 1 : 0;
+    var run = g.run, pairKey = [round.a, round.b].sort().join(".");
+    setTimeout(function () {   // after the reveal; points once per pair, the best run counts for "Sharp eye"
+      OS.progress.add(ok ? "p:" + pairKey : null, 5, function (p) { p.bestRun = Math.max(p.bestRun || 0, run); });
+    }, 700);
+    $("duel").querySelectorAll(".pick").forEach(function (b) {
+      var k = b.getAttribute("data-k"), it = game.items[k];
+      b.classList.add("revealed", k === older ? "older" : "newer");
+      if (k === key) b.classList.add("chosen");
+      b.querySelector(".when").textContent = it.when[L] || it.when.en;
+      b.querySelector(".pstamp").textContent = k === older ? OS.t(L, first ? "stamp_first" : "stamp_older") : "";
+      b.setAttribute("aria-disabled", "true");
+    });
+    credits(round, true);
+    var label = game.items[older].label[L] || game.items[older].label.en;
+    $("verdict").textContent = OS.t(L, ok ? "right" : "wrong") + " " + OS.t(L, first ? "first_is" : "older_is", { x: label });
+    $("verdict").className = "verdict " + (ok ? "ok" : "no");
+    $("gscore").textContent = OS.t(L, "score", { r: g.right, n: g.played });
+    var v = byId(round.r.answer || game.items[older].production);
+    $("gactions").hidden = false;
+    var w = $("gwatch");
+    w.textContent = OS.t(L, v && v.page ? "watch_answer" : "watch_answer_yt");
+    w.onclick = function () { if (v && v.page) openPlayer(v); else if (v) window.open(v.youtube, "_blank", "noopener"); };
+    $("gnext").onclick = function () { g.i++; playRound(); };
+    w.focus({ preventScroll: true });
+    // the answer Short plays only when the player taps "Watch the answer" (never by itself: YouTube's rules)
+  }
+
+  // ------------------------------------------------------------ passport
+  function renderProgress() {
+    var p = OS.progress.get(), n = OS.progress.level(p.points), names = OS.gt(L, "levels");
+    var lo = OS.LEVELS[n - 1], hi = OS.LEVELS[n];
+    $("levelcard").innerHTML = '<span class="big-ln">' + n + '</span><span class="lt"><b>' + esc(OS.gt(L, "level") + " " + n + ": " + names[n - 1]) + "</b>" +
+      '<span class="bar"><span style="width:' + (hi ? 100 * (p.points - lo) / (hi - lo) : 100) + '%"></span></span>' +
+      "<small>" + esc(OS.gt(L, "points").replace("{p}", p.points) + " \u00b7 " + (hi ? OS.gt(L, "to_next").replace("{n}", hi - p.points) : OS.gt(L, "max_level"))) + "</small></span>";
+    $("h-badges").textContent = OS.gt(L, "badges");
+    $("badges").innerHTML = OS.BADGES.map(function (b) {
+      var bt = OS.gt(L, "b_" + b), got = p.badges[b];
+      return '<div class="badge-tile' + (got ? "" : " locked") + '"><span class="bi" aria-hidden="true">' + (got ? "\u2605" : "?") + "</span>" +
+        "<span><b>" + esc(bt[0]) + "</b><small>" + esc(got ? bt[1] + " \u00b7 " + got : bt[1]) + "</small></span></div>";
+    }).join("");
+    $("h-unlocks").textContent = OS.gt(L, "unlocks");
+    $("unlocks").innerHTML = OS.UNLOCKS.map(function (u) {
+      var open = n >= u.level, on = open && !!p.prefs[u.id];
+      return '<div class="unlock"><span><b>' + esc(OS.gt(L, "u_" + u.id)) + "</b><small>" + esc(OS.gt(L, "u_" + u.id + "_d") + " \u00b7 " +
+        OS.gt(L, "at_level").replace("{l}", u.level)) + '</small></span><button class="switch" type="button" role="switch" data-u="' + u.id +
+        '" aria-checked="' + on + '" aria-label="' + esc(OS.gt(L, "u_" + u.id)) + '"' + (open ? "" : " disabled") + "></button></div>";
+    }).join("");
+    $("unlocks").querySelectorAll(".switch").forEach(function (b) {
+      b.onclick = function () {
+        var q = OS.progress.get(); q.prefs[b.getAttribute("data-u")] = b.getAttribute("aria-checked") !== "true";
+        OS.progress.save(q); OS.paintLevel(); renderProgress();
+      };
+    });
+    $("fair").textContent = OS.gt(L, "fair");
+  }
+
+  function renderAccount() {
+    var box = $("account");
+    if (!box || !OS.cloud) return;
+    var u = OS.cloud.user();
+    if (u) {
+      box.innerHTML = '<div class="acc on"><p><b>' + esc(OS.t(L, "acc_signed")) + "</b></p>" +
+        '<p class="accbtns"><button type="button" class="btn" id="accout">' + esc(OS.t(L, "acc_signout")) + "</button>" +
+        '<button type="button" class="linkbtn" id="accdel">' + esc(OS.t(L, "acc_delete")) + "</button></p></div>";
+      $("accout").onclick = function () { OS.cloud.signOut(); };
+      $("accdel").onclick = function () { if (confirm(OS.t(L, "acc_delete_confirm"))) OS.cloud.deleteAccount(); };
+    } else {
+      box.innerHTML = '<div class="acc"><p><b>' + esc(OS.t(L, "acc_title")) + "</b><br>" + esc(OS.t(L, "acc_text")) + "</p>" +
+        '<p><button type="button" class="btn big gbtn" id="accin"><span class="g" aria-hidden="true">G</span> ' +
+        esc(OS.t(L, "acc_signin")) + "</button></p>" +
+        '<p class="small"><a href="privacy.html">' + esc(OS.t(L, "acc_age")) + "</a></p></div>";
+      $("accin").onclick = function () { OS.cloud.signIn(); };
+    }
+  }
+  if (OS.cloud) OS.cloud.onChange(function () { renderAccount(); renderMap(); if (state.view === "passport") renderPassport(); });
+
+  function renderPassport() {
+    renderProgress();
+    renderAccount();
+    var all = countriesIn(cat.videos), pass = OS.passport.get();
+    var keys = Object.keys(all).sort(function (a, b) {
+      return (pass[b] ? 1 : 0) - (pass[a] ? 1 : 0) || OS.country(L, a).localeCompare(OS.country(L, b), L);
+    });
+    var have = keys.filter(function (k) { return pass[k]; }).length;
+    $("passcount").textContent = OS.t(L, "passport_count", { v: have, n: keys.length });
+    $("passbar").style.width = (keys.length ? 100 * have / keys.length : 0) + "%";
+    var hues = [8, 28, 200, 152, 280, 340, 45, 220];
+    $("stamps").innerHTML = keys.map(function (k, i) {
+      var s = pass[k], name = esc(OS.country(L, k));
+      if (!s) return '<button type="button" class="stamp empty" data-c="' + k + '"><span class="sname">' + name + '</span><span class="snum">' + all[k] + "</span></button>";
+      return '<button type="button" class="stamp" data-c="' + k + '" style="--h:' + hues[i % hues.length] + ";--r:" + ((i * 37) % 15 - 7) + 'deg">' +
+        '<span class="sname">' + name + '</span><span class="sdate">' + esc(s.first) + "</span></button>";
+    }).join("");
+    $("stamps").querySelectorAll(".stamp").forEach(function (b) {
+      b.onclick = function () { state.cat = "history"; openCountry(b.getAttribute("data-c")); };
+    });
+  }
+  $("passclear").onclick = function () {
+    if (confirm(OS.t(L, "passport_confirm"))) { OS.passport.clear(); OS.progress.clear(); OS.paintLevel(); renderPassport(); renderMap(); }
+  };
+
+  // ------------------------------------------------------------ search
+  function matches(v) {
+    if (v.category !== state.cat) return false;
+    if (state.fmt !== "all" && v.format !== state.fmt) return false;
+    if (state.q) {
+      var hay = fold([v.title, v.summary].concat(Object.values(v.titles || {}), Object.values(v.summaries || {}))
+        .concat(v.places.map(function (p) { return p.name + " " + OS.country(L, p.country) + " " + OS.country("en", p.country); })).join(" "));
+      return fold(state.q).split(/\s+/).every(function (w) { return hay.indexOf(w) >= 0; });
+    }
+    return true;
+  }
+  function renderGrid() {
+    var c = cat.categories.filter(function (x) { return x.id === state.cat; })[0];
+    document.querySelectorAll(".seg button").forEach(function (b) { b.classList.toggle("on", b.getAttribute("data-f") === state.fmt); });
+    if (!c.live) { $("count").textContent = ""; $("grid").innerHTML = ""; return; }
+    var list = cat.videos.filter(matches);
+    list.sort(function (a, b) { return (b.page ? 1 : 0) - (a.page ? 1 : 0); });
+    $("count").textContent = list.length === 1 ? OS.t(L, "n_story") : OS.t(L, "n_stories", { n: list.length });
+    $("grid").innerHTML = list.length ? list.map(function (v) { return card(v); }).join("") : '<p class="empty">' + esc(OS.t(L, "no_results")) + "</p>";
+  }
+
+  // ------------------------------------------------------------ wiring
+  document.querySelectorAll(".cat").forEach(function (b) {
+    b.onclick = function () {
+      state.cat = b.getAttribute("data-cat"); state.country = null; renderMap(); renderGrid();
+      var c = cat.categories.filter(function (x) { return x.id === state.cat; })[0];
+      if (!c.live) openSoon(c);
+    };
+  });
+  document.querySelectorAll(".seg button").forEach(function (b) { b.onclick = function () { state.fmt = b.getAttribute("data-f"); renderGrid(); }; });
+  document.querySelectorAll(".map path[data-c]").forEach(function (el) {
+    el.addEventListener("click", function () { if (el.classList.contains("has")) pick(el.getAttribute("data-c")); });
+    el.addEventListener("keydown", function (e) { if ((e.key === "Enter" || e.key === " ") && el.classList.contains("has")) { e.preventDefault(); pick(el.getAttribute("data-c")); } });
+  });
+  $("country").addEventListener("change", function (e) { var k = e.target.value; e.target.value = ""; pick(k); });
+  $("q").addEventListener("input", function () { state.q = $("q").value.trim(); renderGrid(); });
+
+  function rerender() {
+    renderMap(); renderGrid();
+    if (state.view === "passport") renderPassport();
+    if (state.view === "play" && game && !g.picked) playRound();
+    if (game) $("promopics").innerHTML = game.rounds.slice(0, 1).map(function (r) {
+      return '<img alt="" src="' + esc(game.items[r.a].img) + '"><img alt="" src="' + esc(game.items[r.b].img) + '">';
+    }).join("");
+  }
+  L = OS.boot(function (l) { L = l; rerender(); });
+  Promise.all([
+    fetch("catalog.json").then(function (r) { return r.json(); }),
+    fetch("game.json").then(function (r) { return r.ok ? r.json() : null; }).catch(function () { return null; })
+  ]).then(function (res) {
+    cat = res[0]; game = res[1];
+    if (game && !game.rounds.length) game = null;
+    if (!game) document.querySelectorAll('[href="#play"]').forEach(function (a) { a.hidden = true; });
+    rerender();
+    route();
+    if (!reduce) document.body.classList.add("lit");
+  }).catch(function () { $("boardcount").textContent = "Could not load the list of stories."; });
+})();

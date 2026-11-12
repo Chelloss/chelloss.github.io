@@ -1,0 +1,409 @@
+{
+ "0002-glasses": {
+  "answer": 0,
+  "q": {
+   "en": "Where were the first eyeglasses made, around 1286?",
+   "es": "¿Dónde se hicieron las primeras gafas, hacia 1286?",
+   "el": "Πού φτιάχτηκαν τα πρώτα γυαλιά, γύρω στο 1286;",
+   "de": "Wo wurde um 1286 die erste Brille gebaut?"
+  },
+  "options": {
+   "en": [
+    "In Italy",
+    "In China",
+    "In England"
+   ],
+   "es": [
+    "En Italia",
+    "En China",
+    "En Inglaterra"
+   ],
+   "el": [
+    "Στην Ιταλία",
+    "Στην Κίνα",
+    "Στην Αγγλία"
+   ],
+   "de": [
+    "In Italien",
+    "In China",
+    "In England"
+   ]
+  },
+  "fact": {
+   "en": "A friar's sermon in Florence in 1306 dates them to about 1286, in Italy. Nobody wrote down the inventor's name.",
+   "es": "Un sermón de un fraile en Florencia en 1306 las sitúa hacia 1286, en Italia. Nadie escribió el nombre del inventor.",
+   "el": "Ένα κήρυγμα μοναχού στη Φλωρεντία το 1306 τα χρονολογεί γύρω στο 1286, στην Ιταλία. Κανείς δεν έγραψε το όνομα του εφευρέτη.",
+   "de": "Eine Predigt in Florenz von 1306 datiert sie auf etwa 1286, in Italien. Den Namen des Erfinders schrieb niemand auf."
+  }
+ },
+ "0004-senet-quiz": {
+  "answer": 1,
+  "q": {
+   "en": "How far back does the board game senet go?",
+   "es": "¿Cuánto tiempo atrás se remonta el juego de mesa senet?",
+   "el": "Πόσο πίσω στον χρόνο πάει το επιτραπέζιο σενέτ;",
+   "de": "Wie weit reicht das Brettspiel Senet zurück?"
+  },
+  "options": {
+   "en": [
+    "About 2,000 years",
+    "About 5,000 years",
+    "About 500 years"
+   ],
+   "es": [
+    "Unos 2.000 años",
+    "Unos 5.000 años",
+    "Unos 500 años"
+   ],
+   "el": [
+    "Περίπου 2.000 χρόνια",
+    "Περίπου 5.000 χρόνια",
+    "Περίπου 500 χρόνια"
+   ],
+   "de": [
+    "Etwa 2.000 Jahre",
+    "Etwa 5.000 Jahre",
+    "Etwa 500 Jahre"
+   ]
+  },
+  "fact": {
+   "en": "Senet goes back about 5,000 years. The Great Pyramid is about 4,500.",
+   "es": "El senet se remonta a unos 5.000 años. La Gran Pirámide, a unos 4.500.",
+   "el": "Το σενέτ πάει πίσω περίπου 5.000 χρόνια. Η Μεγάλη Πυραμίδα περίπου 4.500.",
+   "de": "Senet reicht etwa 5.000 Jahre zurück, die Große Pyramide etwa 4.500."
+  }
+ },
+ "0005-toilet-paper-quiz": {
+  "answer": 0,
+  "q": {
+   "en": "Around which year did a Chinese scholar write about paper on the toilet?",
+   "es": "¿Hacia qué año escribió un erudito chino sobre el papel en el retrete?",
+   "el": "Γύρω σε ποια χρονιά έγραψε ένας Κινέζος λόγιος για χαρτί στην τουαλέτα;",
+   "de": "Um welches Jahr schrieb ein chinesischer Gelehrter über Papier auf der Toilette?"
+  },
+  "options": {
+   "en": [
+    "Around 589",
+    "Around 1455",
+    "Around 1890"
+   ],
+   "es": [
+    "Hacia 589",
+    "Hacia 1455",
+    "Hacia 1890"
+   ],
+   "el": [
+    "Γύρω στο 589",
+    "Γύρω στο 1455",
+    "Γύρω στο 1890"
+   ],
+   "de": [
+    "Um 589",
+    "Um 1455",
+    "Um 1890"
+   ]
+  },
+  "fact": {
+   "en": "Yan Zhitui wrote it around 589. Gutenberg's Bible was printed around 1455, about 850 years later.",
+   "es": "Yan Zhitui lo escribió hacia 589. La Biblia de Gutenberg se imprimió hacia 1455, unos 850 años después.",
+   "el": "Ο Γιαν Τζιτούι το έγραψε γύρω στο 589. Η Βίβλος του Γουτεμβέργιου τυπώθηκε γύρω στο 1455, περίπου 850 χρόνια αργότερα.",
+   "de": "Yan Zhitui schrieb es um 589. Gutenbergs Bibel wurde um 1455 gedruckt, etwa 850 Jahre später."
+  }
+ },
+ "0006-speyer-wine": {
+  "answer": 1,
+  "q": {
+   "en": "What keeps the air out of the Speyer wine bottle?",
+   "es": "¿Qué impide que entre aire en la botella de vino de Espira?",
+   "el": "Τι κρατά τον αέρα έξω από το μπουκάλι κρασιού του Σπάγερ;",
+   "de": "Was hält die Luft aus der Speyerer Weinflasche fern?"
+  },
+  "options": {
+   "en": [
+    "A cork",
+    "A thick layer of olive oil",
+    "Melted wax"
+   ],
+   "es": [
+    "Un corcho",
+    "Una gruesa capa de aceite de oliva",
+    "Cera derretida"
+   ],
+   "el": [
+    "Ένας φελλός",
+    "Ένα παχύ στρώμα ελαιόλαδο",
+    "Λιωμένο κερί"
+   ],
+   "de": [
+    "Ein Korken",
+    "Eine dicke Schicht Olivenöl",
+    "Geschmolzenes Wachs"
+   ]
+  },
+  "fact": {
+   "en": "Around AD 325, a thick layer of olive oil was poured on top. The bottle has never been opened.",
+   "es": "Hacia el año 325 d. C., se vertió encima una gruesa capa de aceite de oliva. La botella nunca se ha abierto.",
+   "el": "Γύρω στο 325 μ.Χ., ρίχτηκε από πάνω ένα παχύ στρώμα ελαιόλαδο. Το μπουκάλι δεν έχει ανοιχτεί ποτέ.",
+   "de": "Um 325 n. Chr. wurde eine dicke Schicht Olivenöl daraufgegossen. Die Flasche wurde nie geöffnet."
+  }
+ },
+ "0007-first-selfie": {
+  "answer": 0,
+  "q": {
+   "en": "Where did Robert Cornelius take his 1839 photo of himself?",
+   "es": "¿Dónde tomó Robert Cornelius su foto de sí mismo en 1839?",
+   "el": "Πού τράβηξε ο Ρόμπερτ Κορνήλιους τη φωτογραφία του εαυτού του το 1839;",
+   "de": "Wo machte Robert Cornelius 1839 sein Foto von sich selbst?"
+  },
+  "options": {
+   "en": [
+    "Outside, behind the family store",
+    "In a studio in Paris",
+    "On a ship"
+   ],
+   "es": [
+    "Fuera, detrás de la tienda familiar",
+    "En un estudio de París",
+    "En un barco"
+   ],
+   "el": [
+    "Έξω, πίσω από το οικογενειακό μαγαζί",
+    "Σε ένα στούντιο στο Παρίσι",
+    "Σε ένα πλοίο"
+   ],
+   "de": [
+    "Draußen, hinter dem Laden der Familie",
+    "In einem Studio in Paris",
+    "Auf einem Schiff"
+   ]
+  },
+  "fact": {
+   "en": "Indoors was too dark, so he set up outside, behind the family store in Philadelphia.",
+   "es": "Dentro había demasiada poca luz, así que se colocó fuera, detrás de la tienda familiar en Filadelfia.",
+   "el": "Μέσα ήταν πολύ σκοτεινά, οπότε στήθηκε έξω, πίσω από το οικογενειακό μαγαζί στη Φιλαδέλφεια.",
+   "de": "Drinnen war es zu dunkel, also baute er draußen auf, hinter dem Laden der Familie in Philadelphia."
+  }
+ },
+ "0014-first-car": {
+  "answer": 0,
+  "q": {
+   "en": "Where did Bertha Benz buy fuel on her 1888 trip?",
+   "es": "¿Dónde compró combustible Bertha Benz en su viaje de 1888?",
+   "el": "Πού αγόρασε καύσιμο η Μπέρτα Μπεντς στο ταξίδι της το 1888;",
+   "de": "Wo kaufte Bertha Benz 1888 auf ihrer Fahrt Treibstoff?"
+  },
+  "options": {
+   "en": [
+    "At a pharmacy",
+    "At a bakery",
+    "At a blacksmith's"
+   ],
+   "es": [
+    "En una farmacia",
+    "En una panadería",
+    "En una herrería"
+   ],
+   "el": [
+    "Σε ένα φαρμακείο",
+    "Σε έναν φούρνο",
+    "Σε ένα σιδεράδικο"
+   ],
+   "de": [
+    "In einer Apotheke",
+    "In einer Bäckerei",
+    "Bei einem Schmied"
+   ]
+  },
+  "fact": {
+   "en": "In Wiesloch she bought a solvent called ligroin at the town pharmacy, now called the world's first filling station.",
+   "es": "En Wiesloch compró un disolvente llamado ligroína en la farmacia del pueblo, hoy llamada la primera gasolinera del mundo.",
+   "el": "Στο Βίσλοχ αγόρασε ένα διαλυτικό που λέγεται λιγροΐνη από το φαρμακείο της πόλης, που σήμερα το λένε το πρώτο πρατήριο καυσίμων στον κόσμο.",
+   "de": "In Wiesloch kaufte sie in der Stadtapotheke ein Lösungsmittel namens Ligroin. Die Apotheke nennt man heute die erste Tankstelle der Welt."
+  }
+ },
+ "0019-earth-from-space": {
+  "answer": 0,
+  "q": {
+   "en": "What survived when the V-2 rocket crashed in 1946?",
+   "es": "¿Qué sobrevivió cuando el cohete V-2 se estrelló en 1946?",
+   "el": "Τι επέζησε όταν ο πύραυλος V-2 συνετρίβη το 1946;",
+   "de": "Was überstand 1946 den Absturz der V-2-Rakete?"
+  },
+  "options": {
+   "en": [
+    "The film cassette",
+    "The rocket's nose",
+    "Nothing at all"
+   ],
+   "es": [
+    "El cartucho de película",
+    "El morro del cohete",
+    "Nada en absoluto"
+   ],
+   "el": [
+    "Η κασέτα του φιλμ",
+    "Η μύτη του πυραύλου",
+    "Τίποτα απολύτως"
+   ],
+   "de": [
+    "Die Filmkassette",
+    "Die Spitze der Rakete",
+    "Gar nichts"
+   ]
+  },
+  "fact": {
+   "en": "The rocket climbed 65 miles and smashed into the desert, but the film cassette survived with our first look at Earth from space.",
+   "es": "El cohete subió 65 millas y se estrelló contra el desierto, pero el cartucho de película sobrevivió con nuestra primera mirada a la Tierra desde el espacio.",
+   "el": "Ο πύραυλος ανέβηκε 65 μίλια και συντρίφτηκε στην έρημο, όμως η κασέτα του φιλμ επέζησε με την πρώτη μας ματιά στη Γη από το διάστημα.",
+   "de": "Die Rakete stieg 65 Meilen hoch und zerschellte in der Wüste, aber die Filmkassette überstand es, mit unserem ersten Blick auf die Erde aus dem All."
+  }
+ },
+ "0037-gaudi-tram": {
+  "answer": 0,
+  "q": {
+   "en": "In 1926, after a tram hit him, what did people take Gaudí for?",
+   "es": "En 1926, después de que lo atropellara un tranvía, ¿por quién tomó la gente a Gaudí?",
+   "el": "Το 1926, όταν τον χτύπησε ένα τραμ, για ποιον πέρασε ο κόσμος τον Γκαουντί;",
+   "de": "Wofür hielten die Leute Gaudí 1926, nachdem ihn eine Straßenbahn erfasst hatte?"
+  },
+  "options": {
+   "en": [
+    "A beggar",
+    "A tourist",
+    "A soldier"
+   ],
+   "es": [
+    "Un mendigo",
+    "Un turista",
+    "Un soldado"
+   ],
+   "el": [
+    "Για ζητιάνο",
+    "Για τουρίστα",
+    "Για στρατιώτη"
+   ],
+   "de": [
+    "Für einen Bettler",
+    "Für einen Touristen",
+    "Für einen Soldaten"
+   ]
+  },
+  "fact": {
+   "en": "His clothes were shabby, so people took him for a beggar. Only the next day did a chaplain recognise him.",
+   "es": "Su ropa estaba gastada, así que la gente lo tomó por un mendigo. Solo al día siguiente lo reconoció un capellán.",
+   "el": "Τα ρούχα του ήταν φθαρμένα, οπότε ο κόσμος τον πέρασε για ζητιάνο. Μόνο την επόμενη μέρα τον αναγνώρισε ένας ιερέας.",
+   "de": "Seine Kleidung war schäbig, also hielten ihn die Leute für einen Bettler. Erst am nächsten Tag erkannte ihn ein Kaplan."
+  }
+ },
+ "0061-berlin-wall": {
+  "answer": 0,
+  "q": {
+   "en": "When asked when the new travel rules started, what did Günter Schabowski answer?",
+   "es": "Cuando le preguntaron cuándo empezaban las nuevas normas de viaje, ¿qué respondió Günter Schabowski?",
+   "el": "Όταν τον ρώτησαν πότε ισχύουν οι νέοι κανόνες ταξιδιών, τι απάντησε ο Γκύντερ Σαμπόφσκι;",
+   "de": "Was antwortete Günter Schabowski auf die Frage, ab wann die neuen Reiseregeln gelten?"
+  },
+  "options": {
+   "en": [
+    "Effective immediately",
+    "Next year",
+    "Only with a passport from Moscow"
+   ],
+   "es": [
+    "Con efecto inmediato",
+    "El año que viene",
+    "Solo con un pasaporte de Moscú"
+   ],
+   "el": [
+    "Ισχύει αμέσως",
+    "Τον επόμενο χρόνο",
+    "Μόνο με διαβατήριο από τη Μόσχα"
+   ],
+   "de": [
+    "Ab sofort",
+    "Nächstes Jahr",
+    "Nur mit einem Pass aus Moskau"
+   ]
+  },
+  "fact": {
+   "en": "The rules were meant to start the next day, with visas. His muddled answer sent crowds to the crossings, and that night a guard with no orders let them through.",
+   "es": "Las normas debían entrar en vigor al día siguiente, con visados. Su respuesta confusa llevó a las multitudes a los pasos fronterizos, y esa noche un guardia sin órdenes los dejó pasar.",
+   "el": "Οι κανόνες θα ίσχυαν από την επόμενη μέρα, με βίζα. Η μπερδεμένη απάντησή του έστειλε πλήθη στα σημεία διέλευσης, και εκείνο το βράδυ ένας φρουρός χωρίς διαταγές τους άφησε να περάσουν.",
+   "de": "Die Regeln sollten erst am nächsten Tag gelten, mit Visum. Seine wirre Antwort schickte Menschenmassen zu den Übergängen, und in der Nacht ließ ein Grenzer ohne Befehl sie durch."
+  }
+ },
+ "0062-dinosaur-asteroid": {
+  "answer": 0,
+  "q": {
+   "en": "What clue did the asteroid leave in rocks all over the world?",
+   "es": "¿Qué pista dejó el asteroide en rocas de todo el mundo?",
+   "el": "Ποιο στοιχείο άφησε ο αστεροειδής σε πετρώματα σε όλο τον κόσμο;",
+   "de": "Welche Spur hinterließ der Asteroid überall auf der Welt im Gestein?"
+  },
+  "options": {
+   "en": [
+    "A thin layer of clay rich in iridium",
+    "A layer of gold dust",
+    "Giant footprints"
+   ],
+   "es": [
+    "Una fina capa de arcilla rica en iridio",
+    "Una capa de polvo de oro",
+    "Huellas gigantes"
+   ],
+   "el": [
+    "Ένα λεπτό στρώμα αργίλου πλούσιο σε ιρίδιο",
+    "Ένα στρώμα σκόνης χρυσού",
+    "Γιγάντια ίχνη ποδιών"
+   ],
+   "de": [
+    "Eine dünne, iridiumreiche Tonschicht",
+    "Eine Schicht Goldstaub",
+    "Riesige Fußspuren"
+   ]
+  },
+  "fact": {
+   "en": "Iridium is rare on Earth but far more common in asteroids, so the clay layer points to the impact 66 million years ago.",
+   "es": "El iridio es raro en la Tierra pero mucho más común en los asteroides, así que la capa de arcilla apunta al impacto de hace 66 millones de años.",
+   "el": "Το ιρίδιο είναι σπάνιο στη Γη αλλά πολύ πιο συχνό στους αστεροειδείς, γι' αυτό το στρώμα αργίλου δείχνει την πρόσκρουση πριν από 66 εκατομμύρια χρόνια.",
+   "de": "Iridium ist auf der Erde selten, in Asteroiden aber viel häufiger. Die Tonschicht weist deshalb auf den Einschlag vor 66 Millionen Jahren hin."
+  }
+ },
+ "0064-tunguska": {
+  "answer": 1,
+  "q": {
+   "en": "What did the scientist find at the centre of the Tunguska blast in 1927?",
+   "es": "¿Qué encontró el científico en el centro de la explosión de Tunguska en 1927?",
+   "el": "Τι βρήκε ο επιστήμονας στο κέντρο της έκρηξης της Τουνγκούσκα το 1927;",
+   "de": "Was fand der Wissenschaftler 1927 im Zentrum der Tunguska-Explosion?"
+  },
+  "options": {
+   "en": [
+    "A huge crater",
+    "No crater, just a flattened forest",
+    "A big piece of the space rock"
+   ],
+   "es": [
+    "Un cráter enorme",
+    "Ningún cráter, solo un bosque derribado",
+    "Un gran trozo de la roca espacial"
+   ],
+   "el": [
+    "Έναν τεράστιο κρατήρα",
+    "Κανέναν κρατήρα, μόνο ένα ισοπεδωμένο δάσος",
+    "Ένα μεγάλο κομμάτι του διαστημικού βράχου"
+   ],
+   "de": [
+    "Einen riesigen Krater",
+    "Keinen Krater, nur einen umgeknickten Wald",
+    "Ein großes Stück des Gesteinsbrockens"
+   ]
+  },
+  "fact": {
+   "en": "The object, most likely a space rock, exploded in the air several kilometres up, so it left no crater.",
+   "es": "El objeto, muy probablemente una roca espacial, explotó en el aire a varios kilómetros de altura, así que no dejó cráter.",
+   "el": "Το αντικείμενο, πιθανότατα ένας διαστημικός βράχος, εξερράγη στον αέρα αρκετά χιλιόμετρα ψηλά, γι' αυτό δεν άφησε κρατήρα.",
+   "de": "Das Objekt, sehr wahrscheinlich ein Gesteinsbrocken aus dem All, explodierte mehrere Kilometer hoch in der Luft und hinterließ deshalb keinen Krater."
+  }
+ }
+}

@@ -1,0 +1,362 @@
+{
+ "items": {
+  "senet": {
+   "production": "0004-senet-quiz",
+   "sort": -3000,
+   "label": {
+    "en": "Senet, an Egyptian board game",
+    "es": "El senet, un juego de mesa egipcio",
+    "el": "Το σενέτ, ένα αιγυπτιακό επιτραπέζιο",
+    "de": "Senet, ein ägyptisches Brettspiel"
+   },
+   "when": {
+    "en": "about 5,000 years ago",
+    "es": "hace unos 5.000 años",
+    "el": "πριν από περίπου 5.000 χρόνια",
+    "de": "vor etwa 5.000 Jahren"
+   },
+   "img": "game/senet.jpg",
+   "credit": "Game Box for Playing Senet and Twenty Squares, ca. 1580–1458 BCE. The Metropolitan Museum of Art, Rogers Fund, 1916, 16.10.475a (CC0)",
+   "author": "The Metropolitan Museum of Art",
+   "licence": "CC0 (isPublicDomain: true)",
+   "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "url": "https://www.metmuseum.org/art/collection/search/553268",
+   "changes": "cropped to a square"
+  },
+  "pyramid": {
+   "production": "0004-senet-quiz",
+   "sort": -2500,
+   "label": {
+    "en": "The Great Pyramid of Giza",
+    "es": "La Gran Pirámide de Guiza",
+    "el": "Η Μεγάλη Πυραμίδα της Γκίζας",
+    "de": "Die Große Pyramide von Gizeh"
+   },
+   "when": {
+    "en": "about 4,500 years ago",
+    "es": "hace unos 4.500 años",
+    "el": "πριν από περίπου 4.500 χρόνια",
+    "de": "vor etwa 4.500 Jahren"
+   },
+   "img": "game/pyramid.jpg",
+   "credit": "Warren LeMay from Chicago, IL, United States, Great Pyramid (Pyramid of Cheops Khufu), Giza, GG, EGY (40936205113).jpg, CC0",
+   "author": "Warren LeMay from Chicago, IL, United States",
+   "licence": "CC0",
+   "licence_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+   "url": "https://commons.wikimedia.org/wiki/File:Great_Pyramid_(Pyramid_of_Cheops_Khufu),_Giza,_GG,_EGY_(40936205113).jpg",
+   "changes": "cropped to a square"
+  },
+  "toiletpaper": {
+   "production": "0005-toilet-paper-quiz",
+   "sort": 589,
+   "label": {
+    "en": "Toilet paper, in China",
+    "es": "El papel higiénico, en China",
+    "el": "Το χαρτί υγείας, στην Κίνα",
+    "de": "Toilettenpapier, in China"
+   },
+   "when": {
+    "en": "around 589",
+    "es": "hacia el año 589",
+    "el": "γύρω στο 589",
+    "de": "um 589"
+   },
+   "img": "game/toiletpaper.jpg",
+   "credit": "Unknown author from the time of Ming dynasty, Five Steps of Papermaking - Step 5 - Drying the Sheets of Paper on a Wall - As described by Cai Lun in 105 CE.jpg, Public domain",
+   "author": "Unknown author from the time of Ming dynasty",
+   "licence": "Public domain",
+   "licence_url": null,
+   "url": "https://commons.wikimedia.org/wiki/File:Five_Steps_of_Papermaking_-_Step_5_-_Drying_the_Sheets_of_Paper_on_a_Wall_-_As_described_by_Cai_Lun_in_105_CE.jpg",
+   "changes": "cropped to a square"
+  },
+  "press": {
+   "production": "0005-toilet-paper-quiz",
+   "sort": 1455,
+   "label": {
+    "en": "A Bible from Gutenberg's printing press",
+    "es": "Una Biblia de la imprenta de Gutenberg",
+    "el": "Μια Βίβλος από το πιεστήριο του Γουτεμβέργιου",
+    "de": "Eine Bibel aus Gutenbergs Druckerpresse"
+   },
+   "when": {
+    "en": "around 1455",
+    "es": "hacia 1455",
+    "el": "γύρω στο 1455",
+    "de": "um 1455"
+   },
+   "img": "game/press.jpg",
+   "credit": "MC BSU, Gutenberg Bible on display at the U.S. Library of Congress.jpg, CC0",
+   "author": "MC BSU",
+   "licence": "CC0",
+   "licence_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+   "url": "https://commons.wikimedia.org/wiki/File:Gutenberg_Bible_on_display_at_the_U.S._Library_of_Congress.jpg",
+   "changes": "cropped to a square"
+  },
+  "benz": {
+   "production": "0014-first-car",
+   "sort": 1888,
+   "label": {
+    "en": "Bertha Benz's first long car trip",
+    "es": "El primer viaje largo en coche de Bertha Benz",
+    "el": "Το πρώτο μεγάλο ταξίδι της Μπέρτα Μπεντς με αυτοκίνητο",
+    "de": "Bertha Benz' erste lange Autofahrt"
+   },
+   "when": {
+    "en": "1888",
+    "es": "1888",
+    "el": "1888",
+    "de": "1888"
+   },
+   "img": "game/benz.jpg",
+   "credit": "Aschroet, Benz Patent Motorwagen 1.jpg, CC0",
+   "author": "Aschroet",
+   "licence": "CC0",
+   "licence_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+   "url": "https://commons.wikimedia.org/wiki/File:Benz_Patent_Motorwagen_1.jpg",
+   "changes": "cropped to a square"
+  },
+  "gaudi": {
+   "production": "0037-gaudi-tram",
+   "sort": 1926,
+   "label": {
+    "en": "Gaudí hit by a Barcelona tram",
+    "es": "Gaudí, atropellado por un tranvía en Barcelona",
+    "el": "Ο Γκαουντί χτυπημένος από τραμ στη Βαρκελώνη",
+    "de": "Gaudí von einer Straßenbahn in Barcelona erfasst"
+   },
+   "when": {
+    "en": "1926",
+    "es": "1926",
+    "el": "1926",
+    "de": "1926"
+   },
+   "img": "game/gaudi.jpg",
+   "credit": "Baldomer Gili i Roig, Baldomer Gili Roig. La Sagrada Família, 1905 Copia moderna del negatiu original de vidre.jpg, Public domain",
+   "author": "Baldomer Gili i Roig",
+   "licence": "Public domain",
+   "licence_url": null,
+   "url": "https://commons.wikimedia.org/wiki/File:Baldomer_Gili_Roig._La_Sagrada_Fam%C3%ADlia,_1905_Copia_moderna_del_negatiu_original_de_vidre.jpg",
+   "changes": "cropped to a square"
+  },
+  "wall": {
+   "production": "0061-berlin-wall",
+   "sort": 1989,
+   "label": {
+    "en": "The night the Berlin Wall opened",
+    "es": "La noche en que se abrió el Muro de Berlín",
+    "el": "Η νύχτα που άνοιξε το Τείχος του Βερολίνου",
+    "de": "Die Nacht, in der die Berliner Mauer aufging"
+   },
+   "when": {
+    "en": "1989",
+    "es": "1989",
+    "el": "1989",
+    "de": "1989"
+   },
+   "img": "game/wall.jpg",
+   "credit": "Raphaël Thiémard from Belgium., Fall of the Berlin Wall 1989, people walking.jpg, CC BY-SA 2.0",
+   "author": "Raphaël Thiémard from Belgium.",
+   "licence": "CC BY-SA 2.0",
+   "licence_url": "https://creativecommons.org/licenses/by-sa/2.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Fall_of_the_Berlin_Wall_1989,_people_walking.jpg",
+   "changes": "cropped to a square"
+  },
+  "wine": {
+   "production": "0006-speyer-wine",
+   "sort": 325,
+   "label": {
+    "en": "The sealed Roman wine bottle of Speyer",
+    "es": "La botella de vino romana sellada de Espira",
+    "el": "Το σφραγισμένο ρωμαϊκό μπουκάλι κρασιού του Σπάγερ",
+    "de": "Die versiegelte römische Weinflasche von Speyer"
+   },
+   "when": {
+    "en": "around AD 325",
+    "es": "hacia el año 325 d. C.",
+    "el": "γύρω στο 325 μ.Χ.",
+    "de": "um 325 n. Chr."
+   },
+   "img": "game/wine.jpg",
+   "credit": "Carole Raddato from FRANKFURT, Germany, The Speyer wine bottle, a sealed vessel, presumed to contain liquid wine and considered the world's oldest known bottle of wine, 325 AD, Historical Museum of the Palatinate, Speyer, Germany (35404164365).jpg, CC BY-SA 2.0",
+   "author": "Carole Raddato from FRANKFURT, Germany",
+   "licence": "CC BY-SA 2.0",
+   "licence_url": "https://creativecommons.org/licenses/by-sa/2.0",
+   "url": "https://commons.wikimedia.org/wiki/File:The_Speyer_wine_bottle,_a_sealed_vessel,_presumed_to_contain_liquid_wine_and_considered_the_world%27s_oldest_known_bottle_of_wine,_325_AD,_Historical_Museum_of_the_Palatinate,_Speyer,_Germany_(35404164365).jpg",
+   "changes": "cropped to a square"
+  },
+  "glasses": {
+   "production": "0002-glasses",
+   "sort": 1286,
+   "label": {
+    "en": "The first eyeglasses, in Italy",
+    "es": "Las primeras gafas, en Italia",
+    "el": "Τα πρώτα γυαλιά, στην Ιταλία",
+    "de": "Die erste Brille, in Italien"
+   },
+   "when": {
+    "en": "around 1286",
+    "es": "hacia 1286",
+    "el": "γύρω στο 1286",
+    "de": "um 1286"
+   },
+   "img": "game/glasses.jpg",
+   "credit": "Tommaso da Modena, Tommaso da modena, ritratti di domenicani (Ugo di Provenza) 1352 150cm, treviso, ex convento di san niccolò, sala del capitolo.jpg, Public domain",
+   "author": "Tommaso da Modena",
+   "licence": "Public domain",
+   "licence_url": null,
+   "url": "https://commons.wikimedia.org/wiki/File:Tommaso_da_modena,_ritratti_di_domenicani_(Ugo_di_Provenza)_1352_150cm,_treviso,_ex_convento_di_san_niccol%C3%B2,_sala_del_capitolo.jpg",
+   "changes": "cropped to a square"
+  },
+  "selfie": {
+   "production": "0007-first-selfie",
+   "sort": 1839,
+   "label": {
+    "en": "Robert Cornelius's photo of himself",
+    "es": "La foto de Robert Cornelius de sí mismo",
+    "el": "Η φωτογραφία του Ρόμπερτ Κορνήλιους με τον εαυτό του",
+    "de": "Robert Cornelius' Foto von sich selbst"
+   },
+   "when": {
+    "en": "1839",
+    "es": "1839",
+    "el": "1839",
+    "de": "1839"
+   },
+   "img": "game/selfie.jpg",
+   "credit": "Robert Cornelius, RobertCornelius.jpg, Public domain",
+   "author": "Robert Cornelius",
+   "licence": "Public domain",
+   "licence_url": null,
+   "url": "https://commons.wikimedia.org/wiki/File:RobertCornelius.jpg",
+   "changes": "cropped to a square"
+  },
+  "spacephoto": {
+   "production": "0019-earth-from-space",
+   "sort": 1946,
+   "label": {
+    "en": "The first photo of Earth from space",
+    "es": "La primera foto de la Tierra desde el espacio",
+    "el": "Η πρώτη φωτογραφία της Γης από το διάστημα",
+    "de": "Das erste Foto der Erde aus dem All"
+   },
+   "when": {
+    "en": "1946",
+    "es": "1946",
+    "el": "1946",
+    "de": "1946"
+   },
+   "img": "game/spacephoto.jpg",
+   "credit": "U.S. Army, First photo from space.jpg, Public domain",
+   "author": "U.S. Army",
+   "licence": "Public domain",
+   "licence_url": null,
+   "url": "https://commons.wikimedia.org/wiki/File:First_photo_from_space.jpg",
+   "changes": "cropped to a square"
+  },
+  "asteroid": {
+   "production": "0062-dinosaur-asteroid",
+   "sort": -66000000,
+   "label": {
+    "en": "The asteroid that ended the dinosaurs",
+    "es": "El asteroide que acabó con los dinosaurios",
+    "el": "Ο αστεροειδής που αφάνισε τους δεινόσαυρους",
+    "de": "Der Asteroid, der die Dinosaurier auslöschte"
+   },
+   "when": {
+    "en": "66 million years ago",
+    "es": "hace 66 millones de años",
+    "el": "πριν από 66 εκατομμύρια χρόνια",
+    "de": "vor 66 Millionen Jahren"
+   },
+   "img": "game/asteroid.jpg",
+   "credit": "O.V.E.R.V.I.E.W., Chicxulub Impact Crater, Gulf of Mexico (33789560443).jpg, CC BY 2.0",
+   "author": "O.V.E.R.V.I.E.W.",
+   "licence": "CC BY 2.0",
+   "licence_url": "https://creativecommons.org/licenses/by/2.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Chicxulub_Impact_Crater,_Gulf_of_Mexico_(33789560443).jpg",
+   "changes": "cropped to a square"
+  },
+  "tunguska": {
+   "production": "0064-tunguska",
+   "sort": 1908,
+   "label": {
+    "en": "The Tunguska blast over Siberia",
+    "es": "La explosión de Tunguska sobre Siberia",
+    "el": "Η έκρηξη της Τουνγκούσκα πάνω από τη Σιβηρία",
+    "de": "Die Tunguska-Explosion über Sibirien"
+   },
+   "when": {
+    "en": "1908",
+    "es": "1908",
+    "el": "1908",
+    "de": "1908"
+   },
+   "img": "game/tunguska.jpg",
+   "credit": "Leonid Kulik, the expedition to the Tunguska event, Tunguska Ereignis-1.jpg, Public domain",
+   "author": "Leonid Kulik, the expedition to the Tunguska event",
+   "licence": "Public domain",
+   "licence_url": null,
+   "url": "https://commons.wikimedia.org/wiki/File:Tunguska_Ereignis-1.jpg",
+   "changes": "cropped to a square"
+  }
+ },
+ "rounds": [
+  {
+   "a": "senet",
+   "b": "pyramid",
+   "question": "older",
+   "answer": "0004-senet-quiz"
+  },
+  {
+   "a": "toiletpaper",
+   "b": "press",
+   "question": "first",
+   "answer": "0005-toilet-paper-quiz"
+  },
+  {
+   "a": "benz",
+   "b": "wall",
+   "question": "first"
+  },
+  {
+   "a": "gaudi",
+   "b": "benz",
+   "question": "first"
+  },
+  {
+   "a": "wall",
+   "b": "gaudi",
+   "question": "first"
+  },
+  {
+   "a": "wine",
+   "b": "toiletpaper",
+   "question": "first"
+  },
+  {
+   "a": "glasses",
+   "b": "press",
+   "question": "first"
+  },
+  {
+   "a": "selfie",
+   "b": "benz",
+   "question": "first"
+  },
+  {
+   "a": "tunguska",
+   "b": "gaudi",
+   "question": "first"
+  },
+  {
+   "a": "spacephoto",
+   "b": "wall",
+   "question": "first"
+  },
+  {
+   "a": "asteroid",
+   "b": "senet",
+   "question": "first"
+  }
+ ]
+}
