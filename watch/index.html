@@ -39,6 +39,8 @@
       <div class="boardfoot"><p class="hint" data-i="map_hint">Tap a country to see the stories that happened there.</p>
         <select id="country" aria-label="Country"></select></div>
     </div>
+    <section class="channels" aria-labelledby="h-ch"><h2 id="h-ch" data-i="our_channels">Our channels</h2>
+      <div class="chlist" id="chlist"></div></section>
     <div class="promos">
       <a class="promo playpromo" href="#play"><span class="pics" id="promopics" aria-hidden="true"></span>
         <span class="pt"><b data-i="play_title">Which is older?</b><small data-i="play_promo"></small></span>
@@ -60,6 +62,10 @@
       <a class="gcard" href="#play/where"><span class="pics" id="hp-where" aria-hidden="true"><svg class="ic huge" aria-hidden="true"><use href="#i-map"/></svg></span>
         <span class="pt"><b data-i="headline">Where did it happen?</b><small data-i="wh_d"></small></span><span class="go" data-i="play_start">Play</span></a>
     </div>
+   </div>
+   <div id="g-gate" hidden>
+    <p class="back"><a href="#play" data-i="all_games">All games</a></p>
+    <div id="g-gate-box"></div>
    </div>
    <div id="g-older" hidden>
     <p class="back"><a href="#play" data-i="all_games">All games</a></p>
@@ -141,7 +147,7 @@
 <footer class="foot">
   <p><a href="privacy.html" data-i="privacy">Privacy</a> · <a href="https://www.youtube.com/@oldestsurviving">YouTube</a> ·
   <a href="mailto:oldestsurviving@gmail.com">oldestsurviving@gmail.com</a></p>
-  <p class="small" data-i="no_cookies">No cookies, no sign-in, no ads.</p>
+  <p class="small" data-i="no_cookies">No ads. This site sets no cookies.</p>
 </footer>
 <nav class="dock" aria-label="Main"><a href="#map" data-v="map"><svg class="ic" aria-hidden="true"><use href="#i-map"/></svg><span data-i="nav_map"></span></a><a href="#play" data-v="play"><svg class="ic" aria-hidden="true"><use href="#i-play"/></svg><span data-i="nav_play"></span></a><a href="#passport" data-v="passport"><svg class="ic" aria-hidden="true"><use href="#i-pass"/></svg><span data-i="nav_passport"></span></a><a href="#search" data-v="search"><svg class="ic" aria-hidden="true"><use href="#i-search"/></svg><span data-i="nav_search"></span></a></nav>
 <script src="i18n.js"></script>

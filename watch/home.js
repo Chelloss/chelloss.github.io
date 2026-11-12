@@ -158,7 +158,9 @@
     openSheet(title(v), uniq(v.places.map(function (p) { return p.name; })).join(" · "),
       '<div id="pplayer"></div><div id="pquiz" class="pquiz"></div>' +
       '<p class="sheet-links"><a class="btn" href="' + esc(v.page) + '">' + esc(OS.t(L, "read_story")) + "</a>" +
-      '<a class="btn red" href="' + esc(v.youtube) + '" rel="noopener">' + esc(OS.t(L, "watch_on_youtube")) + "</a></p>", "player");
+      '<a class="btn red" href="' + esc(v.youtube) + '" rel="noopener">' + esc(OS.t(L, "watch_on_youtube")) + "</a>" +
+      '<a class="btn" href="' + esc(v.subscribe) + '" rel="noopener" data-ch="' + esc(v.channel_id || "") + '">' + esc(OS.t(L, "subscribe")) + "</a></p>", "player");
+    if (OS.subscribeLinks) OS.subscribeLinks($("sheet-body"));
     current = OS.player($("pplayer"), { id: v.id, ytid: v.youtube_id, langs: v.subtitles, format: v.format, poster: v.thumb });
     OS.quiz($("pquiz"), v.id, v.places, v.youtube_id);
   }
@@ -185,7 +187,10 @@
 
   // ------------------------------------------------------------ the game hub
   function renderPlay() {
-    ["hub", "older", "timeline", "where"].forEach(function (k) { $(k === "hub" ? "hub" : "g-" + k).hidden = state.game !== k; });
+    var locked = state.game !== "hub" && OS.cloud && !OS.cloud.user();
+    ["hub", "older", "timeline", "where"].forEach(function (k) { $(k === "hub" ? "hub" : "g-" + k).hidden = locked || state.game !== k; });
+    $("g-gate").hidden = !locked;
+    if (locked) { OS.cloud.gate($("g-gate-box"), state.game); return; }
     if (state.game === "hub") {
       var keys = Object.keys(game.items);
       $("hp-older").innerHTML = game.rounds.slice(0, 1).map(function (r) {
@@ -471,7 +476,11 @@
       $("accin").onclick = function () { OS.cloud.signIn(); };
     }
   }
-  if (OS.cloud) OS.cloud.onChange(function () { renderAccount(); renderMap(); if (state.view === "passport") renderPassport(); });
+  if (OS.cloud) OS.cloud.onChange(function () {
+    renderAccount(); renderMap();
+    if (state.view === "passport") renderPassport();
+    if (state.view === "play" && game) renderPlay();
+  });
 
   function renderPassport() {
     renderProgress();
@@ -540,7 +549,16 @@
     if (!searched && state.q.length > 2) { searched = true; if (OS.count) OS.count("search"); }
   });
 
+  function renderChannels() {
+    $("chlist").innerHTML = cat.categories.map(function (c) {
+      return '<div class="chrow"><span class="chname"><b>' + esc(c.channel) + "</b><small>" + esc(OS.t(L, "cat_" + c.id)) + "</small></span>" +
+        '<a class="btn red" href="' + esc(c.subscribe) + '" rel="noopener" data-ch="' + esc(c.channel_id || "") + '">' + esc(OS.t(L, "subscribe")) + "</a></div>";
+    }).join("");
+    if (OS.subscribeLinks) OS.subscribeLinks($("chlist"));
+  }
+
   function rerender() {
+    if (cat && !$("chlist").querySelector(".ytsub")) renderChannels();
     renderMap(); renderGrid();
     if (state.view === "passport") renderPassport();
     if (state.view === "play" && game) {

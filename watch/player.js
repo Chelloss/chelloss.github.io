@@ -126,10 +126,21 @@
   }
 
   function quiz(box, id, places, ytid) {
+    if (OS.cloud && !box._gateWatch) {   // re-draw when the visitor signs in or out
+      box._gateWatch = true;
+      OS.cloud.onChange(function () { if (document.body.contains(box)) quiz(box, id, places, ytid); });
+    }
     questions().then(function (all) {
       var q = all[id];
       if (!q) { box.hidden = true; return; }
       box.hidden = false;
+      if (OS.cloud && !OS.cloud.user()) {
+        var l0 = L();
+        box.innerHTML = '<div class="quiz"><p class="qhead">' + esc(OS.t(l0, "quick_q")) + '</p><p class="qq">' + esc(q.q[l0] || q.q.en) +
+          '</p><div class="qgate"></div></div>';
+        OS.cloud.gate(box.querySelector(".qgate"), "quiz");
+        return;
+      }
       var l = L(), p = OS.progress.get(), done = (p.answers || {})[id];
       var order = q.options.en.map(function (_, i) { return i; });
       for (var i = order.length - 1; i > 0; i--) { var j = Math.floor(Math.random() * (i + 1)), x = order[i]; order[i] = order[j]; order[j] = x; }
@@ -179,6 +190,41 @@
     });
   }
 
+  // ------------------------------------------------------------ Subscribe (Mike, 2026-11-12: "do your best legally")
+  // A visitor's own tap opens YouTube's official Subscribe button in place: it subscribes with one more tap and shows
+  // "Subscribed" by itself when they already are. Nothing from Google loads before the tap; never automatic, no
+  // points for it (YouTube's rules). If the button cannot load, the plain link to YouTube's subscribe page stays.
+  var platform = null;
+  function loadPlatform() {
+    if (!platform) platform = new Promise(function (resolve, reject) {
+      var s = document.createElement("script");
+      s.src = "https://apis.google.com/js/platform.js";
+      s.onload = function () { resolve(window.gapi); }; s.onerror = reject;
+      document.head.appendChild(s);
+    });
+    return platform;
+  }
+  function subscribeLinks(root) {
+    (root || document).querySelectorAll("a[data-ch]").forEach(function (a) {
+      if (a._sub) return;
+      a._sub = true;
+      a.addEventListener("click", function (e) {
+        e.preventDefault();
+        if (OS.count) OS.count("subscribe_tap");
+        var box = document.createElement("span");
+        box.className = "ytsub";
+        box.innerHTML = '<span class="g-ytsubscribe" data-channelid="' + esc(a.getAttribute("data-ch")) + '" data-layout="default" data-count="default"></span>' +
+          '<a class="small ytsubalt" href="' + esc(a.href) + '" target="_blank" rel="noopener">' + esc(OS.t(L(), "sub_alt")) + "</a>";
+        a.replaceWith(box);
+        loadPlatform().then(function (g) {
+          if (g && g.ytsubscribe) g.ytsubscribe.go(box);
+          setTimeout(function () { if (!box.querySelector("iframe")) box.classList.add("nolive"); }, 4000);
+        }).catch(function () { box.classList.add("nolive"); });
+      });
+    });
+  }
+
   OS.player = player;
   OS.quiz = quiz;
+  OS.subscribeLinks = subscribeLinks;
 })();

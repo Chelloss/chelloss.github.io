@@ -7,6 +7,8 @@
 (function () {
   var V = "10.12.2", SDK = "https://www.gstatic.com/firebasejs/" + V + "/";
   var fb = null, user = null, timer = null, listeners = [], ready = false;
+  // is the sign-in state known yet? (only after Firebase answers, for visitors who signed in before)
+  var known = OS.store("os-cloud") !== "1";
   var FIELDS = ["points", "done", "answers", "badges", "bestRun", "perfect", "poly", "prefs"];
 
   function base() { return document.body.classList.contains("video") ? "../" : ""; }
@@ -22,7 +24,7 @@
           var o = { A: A, F: F, auth: A.getAuth(app), db: F.getFirestore(app) };
           A.onAuthStateChanged(o.auth, function (u) {
             var was = user;
-            user = u;
+            user = u; known = true;
             if (u && (!was || was.uid !== u.uid)) pull().then(emit); else emit();
           });
           return o;
@@ -133,9 +135,22 @@
     }).catch(function () { OS.toast(OS.t(L(), "acc_error")); });
   }
 
+  // "Sign in to play" card (Mike, 2026-11-12: games and quick questions need sign-in; watching and reading stay free)
+  function gate(box, kind) {
+    var l = L();
+    if (!known) { box.innerHTML = '<p class="small">...</p>'; return; }
+    box.innerHTML = '<div class="acc gate"><p><b>' + esc(OS.t(l, kind === "quiz" ? "q_signin" : "gate_title")) + "</b><br>" +
+      esc(OS.t(l, "gate_text")) + '</p><p><button type="button" class="btn big gbtn"><span class="g" aria-hidden="true">G</span> ' +
+      esc(OS.t(l, "acc_signin")) + '</button></p><p class="small"><a href="' + base() + 'privacy.html">' + esc(OS.t(l, "acc_age")) + "</a></p></div>";
+    box.querySelector(".gbtn").onclick = signIn;
+    if (OS.count) OS.count("gate");   // a plain total: the rules allow no new groups
+  }
+  function esc(s) { var d = document.createElement("div"); d.textContent = s == null ? "" : s; return d.innerHTML; }
+
   OS.cloud = {
-    signIn: signIn, signOut: signOut, deleteAccount: deleteAccount, schedule: schedule,
+    signIn: signIn, signOut: signOut, deleteAccount: deleteAccount, schedule: schedule, gate: gate,
     user: function () { return user; },
+    known: function () { return known; },
     onChange: function (f) { listeners.push(f); }
   };
   // came back after signing in before: restore the session (otherwise nothing loads from Google)
