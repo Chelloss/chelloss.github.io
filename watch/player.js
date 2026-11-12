@@ -1,7 +1,7 @@
-/* YouTube player with our subtitle bar on top, and the quick question (Mike, 2026-11-12).
+/* YouTube player with our subtitle bar under the picture, and the quick question (Mike, 2026-11-12).
    - Plays the real YouTube video, so every play is a normal YouTube view. Nothing loads from YouTube until the
      visitor taps play (no cookie banner needed for the rest of the site); videos never start by themselves.
-   - Our subtitles (site/watch/subs/<id>/<lang>.vtt) show in a bar above the video, so they never sit on top of the
+   - Our subtitles (site/watch/subs/<id>/<lang>.vtt) show in a bar right under the video, so they never sit on top of the
      English captions that are burned into the picture. For English the bar starts off.
    - Points and stamps come only from answering the quick question, never from watching (YouTube forbids rewards
      for views). */
@@ -58,9 +58,11 @@
       '<option value="off" data-i="off">' + esc(OS.t(L(), "off")) + "</option>";
     box.innerHTML =
       '<div class="ytbox ' + (opts.format === "long" ? "wide" : "tall") + '">' +
-      '<div class="subbar" aria-live="off"><span class="subtext"></span></div>' +
       '<div class="ytstage"><div class="ytframe"><button type="button" class="ytcover"' + (opts.poster ? ' style="background-image:url(\'' + esc(opts.poster) + '\')"' : "") +
       ' aria-label="' + esc(OS.t(L(), "play_label")) + '"><span class="playbtn" aria-hidden="true"></span><span class="ytlogo">YouTube</span></button></div></div>' +
+      // our subtitles sit right under the picture, above the subtitle picker (Mike, 2026-11-12); never on the
+      // picture itself: YouTube's rules forbid covering an embedded player
+      '<div class="subbar" aria-live="off"><span class="subtext"></span></div>' +
       '<div class="cc"><label><span class="ccbadge" aria-hidden="true">CC</span> <span data-i="subtitles">' + esc(OS.t(L(), "subtitles")) + "</span></label>" +
       '<span class="ccright"><select class="ccsel" aria-label="' + esc(OS.t(L(), "subtitles")) + '">' + options + "</select>" +
       '<button type="button" class="ytfull" aria-pressed="false">' + FULL_ICON + '<span data-i="full_screen">' + esc(OS.t(L(), "full_screen")) +
