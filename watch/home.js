@@ -469,10 +469,13 @@
       '<span class="bar"><span style="width:' + (hi ? 100 * (p.points - lo) / (hi - lo) : 100) + '%"></span></span>' +
       "<small>" + esc(OS.gt(L, "points").replace("{p}", p.points) + " \u00b7 " + (hi ? OS.gt(L, "to_next").replace("{n}", hi - p.points) : OS.gt(L, "max_level"))) + "</small></span>";
     $("h-badges").textContent = OS.gt(L, "badges");
+    var counts = OS.badgeCounts(p);
     $("badges").innerHTML = OS.BADGES.map(function (b) {
-      var bt = OS.gt(L, "b_" + b), got = p.badges[b];
-      return '<div class="badge-tile' + (got ? "" : " locked") + '"><span class="bi" aria-hidden="true">' + (got ? "\u2605" : "?") + "</span>" +
-        "<span><b>" + esc(bt[0]) + "</b><small>" + esc(got ? bt[1] + " \u00b7 " + got : bt[1]) + "</small></span></div>";
+      var bt = OS.gt(L, "b_" + b), got = p.badges[b], c = counts[b];
+      // a locked badge keeps its picture (in grey) and says how to earn it; count badges also show how far you are
+      var hint = !got && c[1] > 1 ? '<span class="bprog">' + Math.min(c[0], c[1]) + " / " + c[1] + "</span>" : "";
+      return '<div class="badge-tile' + (got ? "" : " locked") + '">' + OS.badgeIcon(b) +
+        "<span><b>" + esc(bt[0]) + "</b><small>" + esc(got ? bt[1] + " · " + got : bt[1]) + "</small>" + hint + "</span></div>";
     }).join("");
     $("h-unlocks").textContent = OS.gt(L, "unlocks");
     $("unlocks").innerHTML = OS.UNLOCKS.map(function (u) {

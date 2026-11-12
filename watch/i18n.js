@@ -171,7 +171,9 @@ passport_clear: "Reisepass leeren",
       challenge_intro: "A friend got {r} of {n}. Can you beat that?", challenge_result: "You: {a} · Your friend: {b}", copied: "Link copied",
       b_first_q: ["First question", "Answer a story's quick question"], b_first_stamp: ["First stamp", "Get your first country stamp"],
       b_five: ["Globetrotter", "Stamps from 5 countries"], b_sharp: ["Sharp eye", "3 right answers in a row"],
-      b_perfect: ["Perfect game", "Every pair right in one game"], b_poly: ["Polyglot", "Answer a question in a language other than English"], b_time: ["Time keeper", "Put 4 moments in the right order"], b_nav: ["Navigator", "Find the country of 5 stories"], b_explorer: ["Game explorer", "Play all 3 games"] },
+      b_perfect: ["Perfect game", "Every pair right in one game"], b_poly: ["Polyglot", "Answer a question in a language other than English"], b_time: ["Time keeper", "Put 4 moments in the right order"], b_nav: ["Navigator", "Find the country of 5 stories"], b_explorer: ["Game explorer", "Play all 3 games"],
+      b_continents: ["Three continents", "Stamps from 3 continents"], b_ten_q: ["Curious mind", "Answer 10 quick questions"], b_right8: ["Bookworm", "Get 8 quick questions right"], b_pairs10: ["Date detective", "Get 10 different pairs right"],
+      b_europe: ["European tour", "Stamps from 5 European countries"], b_time3: ["Time master", "3 different timelines in perfect order"], b_nav12: ["Cartographer", "Find the country of 12 stories"], b_level4: ["Museum pass", "Reach level 4"] },
     es: { levels: ["Visitante", "Explorador", "Coleccionista", "Conservador", "Archivero", "Historiador", "Viajero del tiempo", "Leyenda"],
       level: "Nivel", points: "{p} puntos", to_next: "{n} puntos para el siguiente nivel", max_level: "Nivel máximo",
       plus: "+{p} puntos", level_up: "¡Nivel {l}: {name}!", unlocked: "Desbloqueado: {x}",
@@ -182,7 +184,9 @@ passport_clear: "Reisepass leeren",
       challenge_intro: "Un amigo acertó {r} de {n}. ¿Lo superas?", challenge_result: "Tú: {a} · Tu amigo: {b}", copied: "Enlace copiado",
       b_first_q: ["Primera pregunta", "Responde la pregunta rápida de una historia"], b_first_stamp: ["Primer sello", "Consigue tu primer sello"],
       b_five: ["Trotamundos", "Sellos de 5 países"], b_sharp: ["Buen ojo", "3 aciertos seguidos"],
-      b_perfect: ["Partida perfecta", "Todas las parejas bien en una partida"], b_poly: ["Políglota", "Responde una pregunta en un idioma que no sea el inglés"], b_time: ["Guardián del tiempo", "Ordena bien 4 momentos"], b_nav: ["Navegante", "Encuentra el país de 5 historias"], b_explorer: ["Explorador de juegos", "Juega a los 3 juegos"] },
+      b_perfect: ["Partida perfecta", "Todas las parejas bien en una partida"], b_poly: ["Políglota", "Responde una pregunta en un idioma que no sea el inglés"], b_time: ["Guardián del tiempo", "Ordena bien 4 momentos"], b_nav: ["Navegante", "Encuentra el país de 5 historias"], b_explorer: ["Explorador de juegos", "Juega a los 3 juegos"],
+      b_continents: ["Tres continentes", "Sellos de 3 continentes"], b_ten_q: ["Mente curiosa", "Responde 10 preguntas rápidas"], b_right8: ["Ratón de biblioteca", "Acierta 8 preguntas rápidas"], b_pairs10: ["Detective de fechas", "Acierta 10 parejas distintas"],
+      b_europe: ["Gira europea", "Sellos de 5 países europeos"], b_time3: ["Maestro del tiempo", "Ordena bien 3 líneas del tiempo distintas"], b_nav12: ["Cartógrafo", "Encuentra el país de 12 historias"], b_level4: ["Pase de museo", "Llega al nivel 4"] },
     el: { levels: ["Επισκέπτης", "Εξερευνητής", "Συλλέκτης", "Επιμελητής", "Αρχειοφύλακας", "Ιστορικός", "Ταξιδιώτης στον χρόνο", "Θρύλος"],
       level: "Επίπεδο", points: "{p} πόντοι", to_next: "{n} πόντοι για το επόμενο επίπεδο", max_level: "Ανώτατο επίπεδο",
       plus: "+{p} πόντοι", level_up: "Επίπεδο {l}: {name}!", unlocked: "Ξεκλείδωσε: {x}",
@@ -193,7 +197,9 @@ passport_clear: "Reisepass leeren",
       challenge_intro: "Ένας φίλος βρήκε {r} από {n}. Μπορείς καλύτερα;", challenge_result: "Εσύ: {a} · Ο φίλος σου: {b}", copied: "Ο σύνδεσμος αντιγράφηκε",
       b_first_q: ["Πρώτη ερώτηση", "Απάντησε στη γρήγορη ερώτηση μιας ιστορίας"], b_first_stamp: ["Πρώτη σφραγίδα", "Πάρε την πρώτη σου σφραγίδα"],
       b_five: ["Κοσμογυρισμένος", "Σφραγίδες από 5 χώρες"], b_sharp: ["Κοφτερό μάτι", "3 σωστές απαντήσεις στη σειρά"],
-      b_perfect: ["Τέλειο παιχνίδι", "Όλα τα ζευγάρια σωστά σε ένα παιχνίδι"], b_poly: ["Πολύγλωσσος", "Απάντησε σε μια ερώτηση σε γλώσσα άλλη από τα αγγλικά"], b_time: ["Φύλακας του χρόνου", "Βάλε 4 στιγμές στη σωστή σειρά"], b_nav: ["Πλοηγός", "Βρες τη χώρα 5 ιστοριών"], b_explorer: ["Εξερευνητής παιχνιδιών", "Παίξε και τα 3 παιχνίδια"] },
+      b_perfect: ["Τέλειο παιχνίδι", "Όλα τα ζευγάρια σωστά σε ένα παιχνίδι"], b_poly: ["Πολύγλωσσος", "Απάντησε σε μια ερώτηση σε γλώσσα άλλη από τα αγγλικά"], b_time: ["Φύλακας του χρόνου", "Βάλε 4 στιγμές στη σωστή σειρά"], b_nav: ["Πλοηγός", "Βρες τη χώρα 5 ιστοριών"], b_explorer: ["Εξερευνητής παιχνιδιών", "Παίξε και τα 3 παιχνίδια"],
+      b_continents: ["Τρεις ήπειροι", "Σφραγίδες από 3 ηπείρους"], b_ten_q: ["Περίεργο μυαλό", "Απάντησε σε 10 γρήγορες ερωτήσεις"], b_right8: ["Βιβλιοφάγος", "Απάντησε σωστά σε 8 γρήγορες ερωτήσεις"], b_pairs10: ["Ντετέκτιβ του χρόνου", "Βρες σωστά 10 διαφορετικά ζευγάρια"],
+      b_europe: ["Γύρος της Ευρώπης", "Σφραγίδες από 5 χώρες της Ευρώπης"], b_time3: ["Άρχοντας του χρόνου", "3 διαφορετικά χρονολόγια σε τέλεια σειρά"], b_nav12: ["Χαρτογράφος", "Βρες τη χώρα 12 ιστοριών"], b_level4: ["Πάσο μουσείου", "Φτάσε στο επίπεδο 4"] },
     de: { levels: ["Besucher", "Entdecker", "Sammler", "Kurator", "Archivar", "Historiker", "Zeitreisender", "Legende"],
       level: "Level", points: "{p} Punkte", to_next: "{n} Punkte bis zum nächsten Level", max_level: "Höchstes Level erreicht",
       plus: "+{p} Punkte", level_up: "Level {l}: {name}!", unlocked: "Freigeschaltet: {x}",
@@ -204,7 +210,9 @@ passport_clear: "Reisepass leeren",
       challenge_intro: "Ein Freund hatte {r} von {n}. Schaffst du mehr?", challenge_result: "Du: {a} · Dein Freund: {b}", copied: "Link kopiert",
       b_first_q: ["Erste Frage", "Beantworte die kurze Frage einer Geschichte"], b_first_stamp: ["Erster Stempel", "Hol dir deinen ersten Stempel"],
       b_five: ["Weltenbummler", "Stempel aus 5 Ländern"], b_sharp: ["Scharfes Auge", "3 richtige Antworten hintereinander"],
-      b_perfect: ["Perfektes Spiel", "Alle Paare richtig in einem Spiel"], b_poly: ["Polyglott", "Beantworte eine Frage in einer anderen Sprache als Englisch"], b_time: ["Zeithüter", "Bring 4 Momente in die richtige Reihenfolge"], b_nav: ["Navigator", "Finde das Land von 5 Geschichten"], b_explorer: ["Spiele-Entdecker", "Spiel alle 3 Spiele"] }
+      b_perfect: ["Perfektes Spiel", "Alle Paare richtig in einem Spiel"], b_poly: ["Polyglott", "Beantworte eine Frage in einer anderen Sprache als Englisch"], b_time: ["Zeithüter", "Bring 4 Momente in die richtige Reihenfolge"], b_nav: ["Navigator", "Finde das Land von 5 Geschichten"], b_explorer: ["Spiele-Entdecker", "Spiel alle 3 Spiele"],
+      b_continents: ["Drei Kontinente", "Stempel von 3 Kontinenten"], b_ten_q: ["Neugieriger Kopf", "Beantworte 10 kurze Fragen"], b_right8: ["Bücherwurm", "Beantworte 8 kurze Fragen richtig"], b_pairs10: ["Zeitdetektiv", "10 verschiedene Paare richtig"],
+      b_europe: ["Europareise", "Stempel aus 5 Ländern Europas"], b_time3: ["Meister der Zeit", "3 verschiedene Zeitstrahlen perfekt geordnet"], b_nav12: ["Kartograf", "Finde das Land von 12 Geschichten"], b_level4: ["Museumspass", "Erreiche Level 4"] }
   };
   // French, Portuguese (Brazilian) and Italian (Mike, 2026-11-12: "do the suggested languages"). Written by Claude.
   var EXTRA = {
@@ -281,7 +289,9 @@ passport_clear: "Vider le passeport",
         b_five: ["Globe-trotteur", "Des tampons de 5 pays"], b_sharp: ["Œil de lynx", "3 bonnes réponses d'affilée"],
         b_perfect: ["Partie parfaite", "Toutes les paires justes en une partie"], b_poly: ["Polyglotte", "Répondez à une question dans une autre langue que l'anglais"],
         b_time: ["Gardien du temps", "Remettez 4 moments dans le bon ordre"], b_nav: ["Navigateur", "Trouvez le pays de 5 histoires"],
-        b_explorer: ["Explorateur de jeux", "Jouez aux 3 jeux"]
+        b_explorer: ["Explorateur de jeux", "Jouez aux 3 jeux"],
+        b_continents: ["Trois continents", "Des tampons de 3 continents"], b_ten_q: ["Esprit curieux", "Répondez à 10 questions rapides"], b_right8: ["Rat de bibliothèque", "8 bonnes réponses aux questions rapides"], b_pairs10: ["Détective du temps", "10 paires différentes justes"],
+        b_europe: ["Tour d'Europe", "Des tampons de 5 pays d'Europe"], b_time3: ["Maître du temps", "3 frises différentes dans l'ordre parfait"], b_nav12: ["Cartographe", "Trouvez le pays de 12 histoires"], b_level4: ["Pass musée", "Atteignez le niveau 4"]
       }
     },
     pt: {
@@ -357,7 +367,9 @@ passport_clear: "Limpar passaporte",
         b_five: ["Viajante do mundo", "Carimbos de 5 países"], b_sharp: ["Olho afiado", "3 respostas certas seguidas"],
         b_perfect: ["Partida perfeita", "Todos os pares certos numa partida"], b_poly: ["Poliglota", "Responda a uma pergunta em um idioma que não seja o inglês"],
         b_time: ["Guardião do tempo", "Coloque 4 momentos na ordem certa"], b_nav: ["Navegador", "Encontre o país de 5 histórias"],
-        b_explorer: ["Explorador de jogos", "Jogue os 3 jogos"]
+        b_explorer: ["Explorador de jogos", "Jogue os 3 jogos"],
+        b_continents: ["Três continentes", "Carimbos de 3 continentes"], b_ten_q: ["Mente curiosa", "Responda a 10 perguntas rápidas"], b_right8: ["Rato de biblioteca", "Acerte 8 perguntas rápidas"], b_pairs10: ["Detetive das datas", "Acerte 10 pares diferentes"],
+        b_europe: ["Giro pela Europa", "Carimbos de 5 países europeus"], b_time3: ["Mestre do tempo", "3 linhas do tempo diferentes na ordem certa"], b_nav12: ["Cartógrafo", "Encontre o país de 12 histórias"], b_level4: ["Passe de museu", "Chegue ao nível 4"]
       }
     },
     it: {
@@ -433,7 +445,9 @@ passport_clear: "Svuota il passaporto",
         b_five: ["Giramondo", "Timbri da 5 paesi"], b_sharp: ["Occhio di lince", "3 risposte giuste di fila"],
         b_perfect: ["Partita perfetta", "Tutte le coppie giuste in una partita"], b_poly: ["Poliglotta", "Rispondi a una domanda in una lingua diversa dall'inglese"],
         b_time: ["Custode del tempo", "Metti 4 momenti nell'ordine giusto"], b_nav: ["Navigatore", "Trova il paese di 5 storie"],
-        b_explorer: ["Esploratore di giochi", "Gioca a tutti e 3 i giochi"]
+        b_explorer: ["Esploratore di giochi", "Gioca a tutti e 3 i giochi"],
+        b_continents: ["Tre continenti", "Timbri da 3 continenti"], b_ten_q: ["Mente curiosa", "Rispondi a 10 domande rapide"], b_right8: ["Topo di biblioteca", "8 risposte giuste alle domande rapide"], b_pairs10: ["Detective delle date", "Indovina 10 coppie diverse"],
+        b_europe: ["Giro d'Europa", "Timbri da 5 paesi europei"], b_time3: ["Maestro del tempo", "3 linee del tempo diverse in ordine perfetto"], b_nav12: ["Cartografo", "Trova il paese di 12 storie"], b_level4: ["Pass del museo", "Raggiungi il livello 4"]
       }
     }
   };
@@ -451,7 +465,21 @@ passport_clear: "Svuota il passaporto",
   };
   for (var rl in REVIEW) for (var rk in REVIEW[rl]) T[rl][rk] = REVIEW[rl][rk];
   var LEVELS = [0, 40, 100, 180, 300, 450, 650, 900];
-  var BADGES = ["first_q", "first_stamp", "five", "sharp", "perfect", "poly", "time", "nav", "explorer"];
+  // Badges, from easy to hard. Ids never change (players already have them). Every rule comes from what is already
+  // kept (answers, done, passport, bestRun, perfect, poly, points): no new saved fields.
+  var BADGES = ["first_q", "first_stamp", "poly", "time", "explorer", "sharp", "perfect", "five", "nav",
+                "continents", "ten_q", "right8", "pairs10", "europe", "time3", "nav12", "level4"];
+  // Country -> continent, for the "Three continents" and "European tour" badges. A country not listed here still
+  // counts as a stamp, only not for these two: add it when a story happens somewhere new.
+  var CONTINENT = {};
+  (function (m) { for (var k in m) m[k].split(" ").forEach(function (c) { CONTINENT[c] = k; }); })({
+    eu: "AL AT BA BE BG BY CH CY CZ DE DK EE ES FI FR GB GR HR HU IE IS IT LT LU LV MD ME MK MT NL NO PL PT RO RS RU SE SI SK UA VA",
+    as: "AE AF AM AZ BD CN GE ID IL IN IQ IR JO JP KH KR KZ LB LK MM MN MY NP PH PK PS SA SG SY TH TR TW UZ VN YE",
+    af: "AO CD CM DZ EG ET GH KE LY MA ML NG SD SN TN TZ UG ZA ZM ZW",
+    na: "CA CR CU DO GT HN HT JM MX NI PA US",
+    sa: "AR BO BR CL CO EC PE PY UY VE",
+    oc: "AU FJ NZ PG"
+  });
   var UNLOCKS = [{ id: "oldmap", level: 2 }];
 
   function gt(l, key) { return (GAME[l] || GAME.en)[key] || GAME.en[key]; }
@@ -479,23 +507,84 @@ passport_clear: "Svuota il passaporto",
         UNLOCKS.forEach(function (u) { if (u.level > before && u.level <= after) msgs.push(gt(cur(), "unlocked").replace("{x}", gt(cur(), "u_" + u.id))); });
       }
       progress.save(p);
-      if (msgs.length) toast(msgs.join(" · "));
+      if (msgs.length) toast(msgs.join(" · "), msgs.icon);
       paintLevel();
       return p;
     },
     clear: function () { try { localStorage.removeItem("os-progress"); } catch (e) { /* nothing saved */ } }
   };
+  // every badge as [how far, how much is needed]; earned when the first reaches the second
+  function badgeCounts(p) {
+    var codes = Object.keys(passport.get()), keys = Object.keys(p.done || {}), ans = p.answers || {};
+    function starts(pre) { return keys.filter(function (k) { return k.indexOf(pre) === 0; }).length; }
+    var answered = Object.keys(ans).length, right = Object.keys(ans).filter(function (k) { return ans[k] === "right"; }).length;
+    var conts = {}, europe = 0;
+    codes.forEach(function (c) { if (CONTINENT[c]) conts[CONTINENT[c]] = 1; if (CONTINENT[c] === "eu") europe++; });
+    // the game hub keeps its marks in "done" (0 points) so they merge across devices like everything else
+    var games = ["older", "timeline", "where"].filter(function (g) { return keys.indexOf("g:" + g) >= 0; }).length;
+    var t = starts("t:"), w = starts("w:");
+    return { first_q: [answered, 1], first_stamp: [codes.length, 1], poly: [p.poly ? 1 : 0, 1], time: [t, 1], explorer: [games, 3],
+             sharp: [p.bestRun || 0, 3], perfect: [p.perfect ? 1 : 0, 1], five: [codes.length, 5], nav: [w, 5],
+             continents: [Object.keys(conts).length, 3], ten_q: [answered, 10], right8: [right, 8], pairs10: [starts("p:"), 10],
+             europe: [europe, 5], time3: [t, 3], nav12: [w, 12], level4: [progress.level(p.points || 0), 4] };
+  }
   function checkBadges(p, msgs) {
-    var pass = passport.get(), have = Object.keys(pass).length, answered = Object.keys(p.answers || {}).length;
-    var rules = { first_q: answered >= 1, first_stamp: have >= 1, five: have >= 5, sharp: (p.bestRun || 0) >= 3,
-                  perfect: !!p.perfect, poly: !!p.poly,
-                  // the game hub keeps its marks in "done" (0 points) so they merge across devices like everything else
-                  time: Object.keys(p.done).some(function (k) { return k.indexOf("t:") === 0; }),
-                  nav: Object.keys(p.done).filter(function (k) { return k.indexOf("w:") === 0; }).length >= 5,
-                  explorer: !!(p.done["g:older"] !== undefined && p.done["g:timeline"] !== undefined && p.done["g:where"] !== undefined) };
+    var counts = badgeCounts(p);
     BADGES.forEach(function (b) {
-      if (rules[b] && !p.badges[b]) { p.badges[b] = new Date().toISOString().slice(0, 10); msgs.push("★ " + gt(cur(), "b_" + b)[0]); }
+      if (counts[b][0] >= counts[b][1] && !p.badges[b]) {
+        p.badges[b] = new Date().toISOString().slice(0, 10); msgs.push("\u2605 " + gt(cur(), "b_" + b)[0]);
+        if (!msgs.icon) msgs.icon = b;
+      }
     });
+  }
+  // Badge pictures: hand-drawn inline SVG (no image files, so no licences). One medal shape, one emblem each. The
+  // colours are CSS variables (app.css, .bsvg): full colour when earned, soft grey when locked. Classes: i = ink line,
+  // pi = paper shape with ink line, f = ink shape, r = red shape, ri = red shape with ink line, rs = red line,
+  // p = paper shape, ps = paper line.
+  var BADGE_ART = {
+    first_q: '<path class="pi" d="M15 14h18a4 4 0 0 1 4 4v9a4 4 0 0 1-4 4h-7l-6 5v-5h-5a4 4 0 0 1-4-4v-9a4 4 0 0 1 4-4z"/>' +
+      '<path class="rs" d="M21.2 19.6a2.9 2.9 0 1 1 4.4 2.5c-1 .6-1.6 1.1-1.6 2.2"/><circle class="r" cx="24" cy="27.4" r="1.3"/>',
+    first_stamp: '<circle class="f" cx="24" cy="15.5" r="4.2"/><path class="f" d="M21.6 17h4.8l1.8 10.5h-8.4z"/>' +
+      '<rect class="f" x="13.5" y="26.5" width="21" height="5.5" rx="1.8"/><path class="rs" d="M15 35.6h18"/>',
+    poly: '<path class="f" d="M14 12.5h13a3 3 0 0 1 3 3V24a3 3 0 0 1-3 3h-8l-4.5 3.8V27H14a3 3 0 0 1-3-3v-8.5a3 3 0 0 1 3-3z"/>' +
+      '<path class="ps" d="M16.8 23.2l3.7-7.4 3.7 7.4M18.2 20.6h4.6"/>' +
+      '<path class="pi" d="M23 21.5h11a3 3 0 0 1 3 3V31a3 3 0 0 1-3 3h-.5v3.3L29.5 34H23a3 3 0 0 1-3-3v-6.5a3 3 0 0 1 3-3z"/>' +
+      '<circle class="r" cx="24.6" cy="27.8" r="1.3"/><circle class="r" cx="28.5" cy="27.8" r="1.3"/><circle class="r" cx="32.4" cy="27.8" r="1.3"/>',
+    time: '<path class="pi" d="M18 13h12v3c0 4-6 5.5-6 8 0 2.5 6 4 6 8v3H18v-3c0-4 6-5.5 6-8 0-2.5-6-4-6-8z"/>' +
+      '<path class="r" d="M21 17.5h6c-.9 1.7-2.1 2.7-3 3.4-.9-.7-2.1-1.7-3-3.4zM19.8 33.6c.5-2.3 2.5-3.4 4.2-4.6 1.7 1.2 3.7 2.3 4.2 4.6z"/>' +
+      '<path class="i" d="M15.5 13h17M15.5 35h17"/>',
+    explorer: '<g transform="rotate(-12 24 24)"><rect class="pi" x="13.5" y="13.5" width="21" height="21" rx="5"/>' +
+      '<circle class="f" cx="18.8" cy="18.8" r="2"/><circle class="r" cx="24" cy="24" r="2.2"/><circle class="f" cx="29.2" cy="29.2" r="2"/></g>',
+    sharp: '<path class="pi" d="M10.5 24c3.6-6 8.2-9 13.5-9s9.9 3 13.5 9c-3.6 6-8.2 9-13.5 9s-9.9-3-13.5-9z"/>' +
+      '<circle class="f" cx="24" cy="24" r="5.6"/><circle class="r" cx="24" cy="24" r="2.6"/><circle class="p" cx="26.3" cy="21.7" r="1.5"/>',
+    perfect: '<path class="i" d="M17.5 15.5H13V17a5 5 0 0 0 5 5M30.5 15.5H35V17a5 5 0 0 1-5 5"/>' +
+      '<path class="pi" d="M17 12.5h14v8a7 7 0 0 1-14 0z"/><path class="r" d="M24 15.2l1.2 2.5 2.7.3-2 1.9.5 2.7-2.4-1.3-2.4 1.3.5-2.7-2-1.9 2.7-.3z"/>' +
+      '<path class="i" d="M24 27.5v4"/><path class="f" d="M18.5 32h11a1.5 1.5 0 0 1 1.5 1.5V36H17v-2.5a1.5 1.5 0 0 1 1.5-1.5z"/>',
+    five: '<circle class="pi" cx="24" cy="24" r="11.5"/><path class="i" d="M12.5 24h23M24 12.5c-6 6.5-6 16.5 0 23M24 12.5c6 6.5 6 16.5 0 23"/>' +
+      '<circle class="r" cx="29.5" cy="18.5" r="2.3"/>',
+    nav: '<circle class="pi" cx="24" cy="24" r="11.5"/><g transform="rotate(38 24 24)"><path class="r" d="M24 14.5l3.6 9.5h-7.2z"/>' +
+      '<path class="f" d="M24 33.5l-3.6-9.5h7.2z"/></g><circle class="p" cx="24" cy="24" r="1.4"/>',
+    continents: '<path class="pi" d="M11.5 16.5l8.3-3 8.4 3 8.3-3v18l-8.3 3-8.4-3-8.3 3z"/><path class="i" d="M19.8 13.5v18M28.2 16.5v18"/>' +
+      '<circle class="r" cx="15.6" cy="22" r="1.9"/><circle class="r" cx="24" cy="26.5" r="1.9"/><circle class="r" cx="32.4" cy="21" r="1.9"/>',
+    ten_q: '<path class="pi" d="M24 11.5a8.5 8.5 0 0 0-5.3 15.1c1 .8 1.6 1.8 1.6 3V31h7.4v-1.4c0-1.2.6-2.2 1.6-3A8.5 8.5 0 0 0 24 11.5z"/>' +
+      '<path class="rs" d="M21 20.5l3 3 3-3M24 23.5V31"/><path class="i" d="M20.8 34h6.4M22.3 37h3.4"/>',
+    right8: '<path class="pi" d="M24 17c-3.2-2.2-7.5-2.8-12-2.2v17c4.5-.6 8.8 0 12 2.2 3.2-2.2 7.5-2.8 12-2.2v-17c-4.5-.6-8.8 0-12 2.2z"/>' +
+      '<path class="i" d="M24 17v17"/><path class="i" style="stroke-width:1.6" d="M15 19.6c2.2 0 4.2.4 6 1.2M15 24c2.2 0 4.2.4 6 1.2"/>' +
+      '<path class="r" d="M28 15.2c1.5-.4 3-.6 4.6-.7v9.3l-2.3-2-2.3 2z"/>',
+    pairs10: '<circle class="pi" cx="21.5" cy="21.5" r="8.5"/><path class="rs" d="M17.6 21.7l2.8 2.8 5-5.5"/>' +
+      '<path class="i" style="stroke-width:4.2" d="M28.8 28.8l6 6"/>',
+    europe: '<path class="i" d="M19.5 18v-3a2.5 2.5 0 0 1 2.5-2.5h4a2.5 2.5 0 0 1 2.5 2.5v3"/><rect class="pi" x="11.5" y="18" width="25" height="17" rx="3.5"/>' +
+      '<path class="i" d="M16.5 18v17M31.5 18v17"/><path class="r" d="M24 21.3l1.5 3.1 3.4.4-2.5 2.4.6 3.4-3-1.7-3 1.7.6-3.4-2.5-2.4 3.4-.4z"/>',
+    time3: '<g transform="translate(0 2.5)"><path class="i" d="M10.5 24h27M34.3 20.3l3.7 3.7-3.7 3.7"/><path class="i" style="stroke-width:1.8" d="M14.5 20v-5M22 20v-7.5M29.5 20v-5"/>' +
+      '<circle class="ri" cx="14.5" cy="24" r="3.2"/><circle class="ri" cx="22" cy="24" r="3.2"/><circle class="ri" cx="29.5" cy="24" r="3.2"/></g>',
+    nav12: '<path class="i" d="M15 33.5c-2 .7-3.2 1.6-3.2 2.3M33 33.5c2 .7 3.2 1.6 3.2 2.3"/>' +
+      '<path class="ri" d="M24 11.5a8.7 8.7 0 0 0-8.7 8.7c0 6.3 8.7 15.3 8.7 15.3s8.7-9 8.7-15.3A8.7 8.7 0 0 0 24 11.5z"/><circle class="p" cx="24" cy="20.2" r="3.4"/>',
+    level4: '<path class="pi" d="M11.5 20.5L24 12.5l12.5 8z"/><circle class="r" cx="24" cy="17.3" r="1.6"/>' +
+      '<path class="i" style="stroke-width:2.6" d="M16 23.5v8M21.3 23.5v8M26.7 23.5v8M32 23.5v8"/><path class="i" d="M12 35h24"/>'
+  };
+  function badgeIcon(id) {
+    return '<svg class="bsvg" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><circle class="b-edge" cx="24" cy="24" r="20"/>' +
+      '<circle class="b-disc" cx="24" cy="24" r="19.5"/><circle class="b-ring" cx="24" cy="24" r="16.8"/>' + (BADGE_ART[id] || "") + "</svg>";
   }
   function paintLevel() {
     var el = document.getElementById("lvl");
@@ -529,10 +618,11 @@ passport_clear: "Svuota il passaporto",
   };
 
   var toastTimer;
-  function toast(msg) {
+  function toast(msg, badge) {   // badge: the id of a badge just earned, to show its picture
     var el = document.getElementById("toast");
     if (!el) return;
     el.textContent = msg;
+    if (badge) el.insertAdjacentHTML("afterbegin", badgeIcon(badge));
     el.classList.add("on");
     clearTimeout(toastTimer);
     toastTimer = setTimeout(function () { el.classList.remove("on"); }, 3200);
@@ -595,5 +685,5 @@ passport_clear: "Svuota il passaporto",
 
   return { LANGS: LANGS, t: t, lang: lang, apply: apply, country: country, boot: boot, store: store,
            passport: passport, toast: toast,
-           progress: progress, gt: gt, LEVELS: LEVELS, BADGES: BADGES, UNLOCKS: UNLOCKS, paintLevel: paintLevel };
+           progress: progress, gt: gt, LEVELS: LEVELS, BADGES: BADGES, badgeCounts: badgeCounts, badgeIcon: badgeIcon, UNLOCKS: UNLOCKS, paintLevel: paintLevel };
 })();

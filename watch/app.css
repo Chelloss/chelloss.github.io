@@ -341,14 +341,35 @@ button.btn.gold { background: var(--gold); color: #1d1b18; }
 .bar { height: 10px; border-radius: 5px; background: var(--rule); overflow: hidden; margin: 6px 0 10px; }
 .bar span { display: block; height: 100%; background: linear-gradient(90deg, var(--accent), var(--gold)); border-radius: 5px; transition: width .5s; }
 .view h2 { font: 700 1.2rem/1.3 var(--serif); margin: 24px 0 8px; }
-.badges { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 10px; }
-.badge-tile { display: flex; gap: 10px; align-items: center; background: var(--panel); border: 1px solid var(--rule); border-radius: 16px; padding: 10px 12px; }
-.badge-tile .bi { flex: none; width: 40px; height: 40px; border-radius: 12px; display: grid; place-items: center; font-size: 1.2rem;
-  background: var(--gold); color: #1d1b18; font-weight: 900; }
-.badge-tile.locked { opacity: .6; }
-.badge-tile.locked .bi { background: var(--rule); color: var(--muted); }
-.badge-tile b { display: block; font-size: .92rem; }
-.badge-tile small { color: var(--muted); font-size: .78rem; line-height: 1.3; display: block; }
+.badges { display: grid; grid-template-columns: repeat(auto-fill, minmax(156px, 1fr)); gap: 10px; }
+.badge-tile { display: flex; flex-direction: column; gap: 6px; align-items: center; text-align: center; background: var(--panel);
+  border: 1px solid var(--rule); border-radius: 16px; padding: 12px 8px; min-width: 0; }
+.badge-tile > span { min-width: 0; max-width: 100%; overflow-wrap: break-word; hyphens: auto; }
+.badge-tile b { display: block; font-size: .92rem; line-height: 1.25; }
+.badge-tile small { color: var(--muted); font-size: .78rem; line-height: 1.3; display: block; margin-top: 2px; }
+.badge-tile.locked b { color: var(--muted); }
+.bprog { display: inline-block; margin-top: 6px; padding: 1px 9px; border-radius: 999px; border: 1px solid var(--rule); background: var(--bg);
+  color: var(--muted); font-size: .74rem; font-weight: 700; font-variant-numeric: tabular-nums; }
+/* badge pictures (drawn in i18n.js): a gold medal with an ink emblem; locked = the same picture in soft grey */
+.bsvg { --b-gold: #ffd60a; --b-edge: #e8b931; --b-ink: #1d1b18; --b-paper: #fffdf7; --b-red: #c4302b;
+  flex: none; display: block; width: 56px; height: 56px; }
+.bsvg .b-edge { fill: none; stroke: var(--b-edge); stroke-width: 6; stroke-linecap: round; stroke-dasharray: 0 7.854; }
+.bsvg .b-disc { fill: var(--b-gold); stroke: var(--b-ink); stroke-width: 1.5; }
+.bsvg .b-ring { fill: none; stroke: var(--b-edge); stroke-width: 1; }
+.bsvg .i, .bsvg .pi, .bsvg .ri, .bsvg .rs, .bsvg .ps { stroke-width: 2.2; stroke-linecap: round; stroke-linejoin: round; }
+.bsvg .i { fill: none; stroke: var(--b-ink); }
+.bsvg .pi { fill: var(--b-paper); stroke: var(--b-ink); }
+.bsvg .ri { fill: var(--b-red); stroke: var(--b-ink); }
+.bsvg .rs { fill: none; stroke: var(--b-red); stroke-width: 2.6; }
+.bsvg .ps { fill: none; stroke: var(--b-paper); stroke-width: 1.9; }
+.bsvg .f { fill: var(--b-ink); }
+.bsvg .r { fill: var(--b-red); }
+.bsvg .p { fill: var(--b-paper); }
+.badge-tile.locked .bsvg { --b-gold: #ebe6dc; --b-edge: #d8d1c4; --b-ink: #a39b8e; --b-paper: #f7f3ec; --b-red: #c2baad; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .badge-tile.locked .bsvg { --b-gold: #2b2824; --b-edge: #3d3933; --b-ink: #7a7368; --b-paper: #38342e; --b-red: #5c564d; }
+}
+.toast .bsvg { display: inline-block; width: 30px; height: 30px; vertical-align: middle; margin: -4px 8px -4px 0; }
 .unlock { display: flex; align-items: center; justify-content: space-between; gap: 10px; background: var(--panel); border-radius: 16px;
   padding: 12px 14px; border: 1px solid var(--rule); }
 .unlock small { display: block; color: var(--muted); }
