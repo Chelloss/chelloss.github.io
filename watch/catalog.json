@@ -1,6 +1,6 @@
 {
- "made": "2026-11-12T16:48+02:00",
- "count": 71,
+ "made": "2026-11-12T17:26+02:00",
+ "count": 72,
  "categories": [
   {
    "id": "history",
@@ -37,6 +37,104 @@
  ],
  "videos": [
   {
+   "id": "0070-heron-holy-water",
+   "title": "The Earliest Known Vending Machine Sold Holy Water. Here's How It Worked",
+   "summary": "About 2,000 years ago, Hero of Alexandria described a coin-operated box that gave out a measured portion of holy water. A 3D reconstruction from his text shows how the coin, lever and lid worked, and why temples needed it.",
+   "format": "short",
+   "kind": "teardown-3d",
+   "category": "history",
+   "channel": "Oldest Surviving",
+   "published": "2026-11-12",
+   "published_at": "2026-11-12T17:00+02:00",
+   "seconds": 42.9,
+   "places": [
+    {
+     "name": "Alexandria",
+     "country": "EG",
+     "lat": 31.2,
+     "lon": 29.92
+    }
+   ],
+   "youtube": "https://www.youtube.com/watch?v=l19qEaxD-14",
+   "youtube_id": "l19qEaxD-14",
+   "yt_match": null,
+   "subscribe": "https://www.youtube.com/@oldestsurviving?sub_confirmation=1",
+   "channel_id": "UCgMdGmsTrtum1P1d18YbY2Q",
+   "thumb": "thumbs/0070-heron-holy-water.jpg",
+   "video": null,
+   "subtitles": [],
+   "sources": [
+    {
+     "id": "W1",
+     "title": "Vending machine",
+     "publisher": "Wikipedia",
+     "url": "https://en.wikipedia.org/wiki/Vending_machine"
+    },
+    {
+     "id": "W2",
+     "title": "Hero of Alexandria",
+     "publisher": "Wikipedia",
+     "url": "https://en.wikipedia.org/wiki/Hero_of_Alexandria"
+    },
+    {
+     "id": "W3",
+     "title": "The Pneumatics of Hero of Alexandria (ed. Bennet Woodcroft, 1851)",
+     "publisher": "Project Gutenberg",
+     "url": "https://gutenberg.org/cache/epub/77400/pg77400-images.html"
+    },
+    {
+     "id": "W4",
+     "title": "The World's First Vending Machine Dispensed Holy Water",
+     "publisher": "Mental Floss",
+     "url": "https://www.mentalfloss.com/history/worlds-first-vending-machine-dispensed-holy-water"
+    },
+    {
+     "id": "W5",
+     "title": "The vending machine was invented a lot earlier than you think",
+     "publisher": "Sky HISTORY",
+     "url": "https://www.history.co.uk/articles/ancient-rome-first-vending-machine"
+    }
+   ],
+   "pictures": [
+    {
+     "credit": "Fig. 21, The Pneumatics of Hero of Alexandria, ed. Bennet Woodcroft, London 1851 (public domain), via Project Gutenberg",
+     "author": "Hero of Alexandria; ed. Bennet Woodcroft (1851)",
+     "licence": "Public domain (published 1851)",
+     "licence_url": "https://www.gutenberg.org/policy/license.html",
+     "url": "https://www.gutenberg.org/ebooks/77400",
+     "source": "Project Gutenberg",
+     "changes": "fitted, zoomed, text overlays"
+    },
+    {
+     "credit": "3D reconstruction made in Blender by Oldest Surviving",
+     "author": "Oldest Surviving",
+     "licence": "GPL (the program); our renders are our own work",
+     "licence_url": "https://www.blender.org/about/license/",
+     "url": "https://www.blender.org/about/license/",
+     "source": "Blender",
+     "changes": "own work"
+    }
+   ],
+   "voice": "AI voice: hexgrad/Kokoro-82M (af_heart), Apache-2.0, made locally from our script",
+   "music": "Searching - Nat Keefe",
+   "ai_pictures": false,
+   "titles": {
+    "es": "La primera máquina expendedora conocida vendía agua bendita. Así funcionaba",
+    "de": "Der älteste bekannte Automat verkaufte Weihwasser. So funktionierte er",
+    "fr": "Le plus ancien distributeur connu vendait de l'eau bénite. Voici comment il marchait",
+    "pt": "A primeira máquina de venda conhecida vendia água benta. Veja como funcionava",
+    "it": "Il più antico distributore automatico conosciuto vendeva acqua santa. Ecco come funzionava"
+   },
+   "summaries": {
+    "es": "Hace unos 2.000 años, Herón de Alejandría describió una caja que, a cambio de una moneda, daba una porción medida de agua bendita.",
+    "de": "Vor etwa 2.000 Jahren beschrieb Heron von Alexandria einen Münzkasten, der eine abgemessene Portion Weihwasser ausgab.",
+    "fr": "Il y a environ 2 000 ans, Héron d'Alexandrie a décrit une boîte à pièces qui délivrait une portion mesurée d'eau bénite.",
+    "pt": "Há cerca de 2.000 anos, Herão de Alexandria descreveu uma caixa que, com uma moeda, liberava uma porção medida de água benta.",
+    "it": "Circa 2.000 anni fa Erone di Alessandria descrisse una cassetta a moneta che erogava una dose misurata di acqua santa. Una ricostruzione 3D basata sul suo testo mostra come funzionavano moneta, leva e coperchio, e perché servisse ai templi."
+   },
+   "page": null
+  },
+  {
    "id": "0027-radium-girls",
    "title": "These Women Were Told to Put Radium Paint Brushes in Their Mouths",
    "summary": "Radium dial painters shaped their brushes with their lips and were told the paint was safe. Their fight helped set a worker's right to sue. The full story is in our long video.",
@@ -45,6 +143,7 @@
    "category": "history",
    "channel": "Oldest Surviving",
    "published": "2026-11-12",
+   "published_at": "2026-11-12T08:00+02:00",
    "seconds": 38.0,
    "places": [
     {
@@ -157,6 +256,7 @@
    "category": "history",
    "channel": "Oldest Surviving",
    "published": "2026-11-11",
+   "published_at": "2026-11-11T17:00+02:00",
    "seconds": 34.6,
    "places": [
     {
@@ -316,6 +416,7 @@
    "category": "history",
    "channel": "Oldest Surviving",
    "published": "2026-11-11",
+   "published_at": "2026-11-11T17:00+02:00",
    "seconds": 134.4,
    "places": [
     {
@@ -498,6 +599,7 @@
    "category": "history",
    "channel": "Oldest Surviving",
    "published": "2026-11-11",
+   "published_at": "2026-11-11T08:00+02:00",
    "seconds": 44.1,
    "places": [
     {
@@ -638,6 +740,7 @@
    "category": "history",
    "channel": "Oldest Surviving",
    "published": "2026-11-11",
+   "published_at": "2026-11-11T08:00+02:00",
    "seconds": 138.4,
    "places": [
     {
@@ -814,6 +917,7 @@
    "category": "history",
    "channel": "Oldest Surviving",
    "published": "2026-11-11",
+   "published_at": "2026-11-11T23:00+02:00",
    "seconds": 37.8,
    "places": [
     {
@@ -933,6 +1037,7 @@
    "category": "history",
    "channel": "Oldest Surviving",
    "published": "2026-11-10",
+   "published_at": "2026-11-10T23:00+02:00",
    "seconds": 328.1,
    "places": [
     {
@@ -1385,6 +1490,7 @@
    "category": "history",
    "channel": "Oldest Surviving",
    "published": "2026-11-10",
+   "published_at": "2026-11-10T23:00+02:00",
    "seconds": 608.5,
    "places": [
     {
@@ -1689,6 +1795,7 @@
    "category": "history",
    "channel": "Oldest Surviving",
    "published": "2026-11-10",
+   "published_at": "2026-11-10T23:00+02:00",
    "seconds": 39.2,
    "places": [],
    "youtube": "https://www.youtube.com/watch?v=UpJ3Ytx040I",
@@ -1766,6 +1873,7 @@
    "category": "history",
    "channel": "Oldest Surviving",
    "published": "2026-11-10",
+   "published_at": "2026-11-10T17:00+02:00",
    "seconds": 37.3,
    "places": [
     {
@@ -1907,6 +2015,7 @@
    "category": "history",
    "channel": "Oldest Surviving",
    "published": "2026-11-10",
+   "published_at": "2026-11-10T17:00+02:00",
    "seconds": 138.3,
    "places": [
     {
@@ -2090,6 +2199,7 @@
    "category": "history",
    "channel": "Oldest Surviving",
    "published": "2026-11-10",
+   "published_at": "2026-11-10T08:00+02:00",
    "seconds": 40.7,
    "places": [
     {
@@ -2235,6 +2345,7 @@
    "category": "history",
    "channel": "Oldest Surviving",
    "published": "2026-11-10",
+   "published_at": "2026-11-10T08:00+02:00",
    "seconds": 135.9,
    "places": [
     {
@@ -2419,6 +2530,7 @@
    "category": "history",
    "channel": "Oldest Surviving",
    "published": "2026-11-09",
+   "published_at": "2026-11-09T08:00+02:00",
    "seconds": 253.9,
    "places": [
     {
@@ -2736,6 +2848,7 @@
    "category": "history",
    "channel": "Oldest Surviving",
    "published": "2026-11-09",
+   "published_at": "2026-11-09T08:00+02:00",
    "seconds": 40.1,
    "places": [],
    "youtube": "https://www.youtube.com/watch?v=by54pMdfK1s",
@@ -2816,6 +2929,7 @@
    "category": "history",
    "channel": "Oldest Surviving",
    "published": "2026-11-09",
+   "published_at": "2026-11-09T23:00+02:00",
    "seconds": 41.6,
    "places": [
     {
@@ -2950,6 +3064,7 @@
    "category": "history",
    "channel": "Oldest Surviving",
    "published": "2026-11-09",
+   "published_at": "2026-11-09T23:00+02:00",
    "seconds": 138.7,
    "places": [
     {
@@ -3096,6 +3211,7 @@
    "category": "history",
    "channel": "Oldest Surviving",
    "published": "2026-11-09",
+   "published_at": "2026-11-09T17:00+02:00",
    "seconds": 35.4,
    "places": [
     {
@@ -3206,6 +3322,7 @@
    "category": "history",
    "channel": "Oldest Surviving",
    "published": "2026-11-09",
+   "published_at": "2026-11-09T17:00+02:00",
    "seconds": 137.5,
    "places": [
     {
@@ -3370,6 +3487,7 @@
    "category": "history",
    "channel": "Oldest Surviving",
    "published": "2026-11-08",
+   "published_at": "2026-11-08T23:00+02:00",
    "seconds": 42.8,
    "places": [
     {
@@ -3518,6 +3636,7 @@
    "category": "history",
    "channel": "Oldest Surviving",
    "published": "2026-11-08",
+   "published_at": "2026-11-08T23:00+02:00",
    "seconds": 133.5,
    "places": [
     {
@@ -3702,6 +3821,7 @@
    "category": "history",
    "channel": "Oldest Surviving",
    "published": "2026-11-08",
+   "published_at": "2026-11-08T17:00+02:00",
    "seconds": 36.5,
    "places": [
     {
@@ -3843,6 +3963,7 @@
    "category": "history",
    "channel": "Oldest Surviving",
    "published": "2026-11-08",
+   "published_at": "2026-11-08T17:00+02:00",
    "seconds": 135.4,
    "places": [
     {
@@ -3998,6 +4119,7 @@
    "category": "history",
    "channel": "Oldest Surviving",
    "published": "2026-11-08",
+   "published_at": "2026-11-08T08:00+02:00",
    "seconds": 34.0,
    "places": [
     {
@@ -4131,6 +4253,7 @@
    "category": "history",
    "channel": "Oldest Surviving",
    "published": "2026-11-08",
+   "published_at": "2026-11-08T08:00+02:00",
    "seconds": 139.2,
    "places": [
     {
@@ -4309,6 +4432,7 @@
    "category": "history",
    "channel": "Oldest Surviving",
    "published": "2026-11-07",
+   "published_at": "2026-11-07T17:00+02:00",
    "seconds": 239.9,
    "places": [
     {
@@ -4702,6 +4826,7 @@
    "category": "history",
    "channel": "Oldest Surviving",
    "published": "2026-11-07",
+   "published_at": "2026-11-07T17:00+02:00",
    "seconds": 45.8,
    "places": [
     {
@@ -4804,6 +4929,7 @@
    "category": "history",
    "channel": "Oldest Surviving",
    "published": "2026-11-07",
+   "published_at": "2026-11-07T23:00+02:00",
    "seconds": 41.8,
    "places": [
     {
@@ -4944,6 +5070,7 @@
    "category": "history",
    "channel": "Oldest Surviving",
    "published": "2026-11-07",
+   "published_at": "2026-11-07T23:00+02:00",
    "seconds": 141.1,
    "places": [
     {
@@ -5114,6 +5241,7 @@
    "category": "history",
    "channel": "Oldest Surviving",
    "published": "2026-11-07",
+   "published_at": "2026-11-07T08:00+02:00",
    "seconds": 42.3,
    "places": [
     {
@@ -5263,6 +5391,7 @@
    "category": "history",
    "channel": "Oldest Surviving",
    "published": "2026-11-07",
+   "published_at": "2026-11-07T08:00+02:00",
    "seconds": 180.3,
    "places": [
     {
@@ -5510,6 +5639,7 @@
    "category": "history",
    "channel": "Oldest Surviving",
    "published": "2026-11-07",
+   "published_at": "2026-11-07T17:00+02:00",
    "seconds": 252.7,
    "places": [
     {
@@ -5871,6 +6001,7 @@
    "category": "history",
    "channel": "Oldest Surviving",
    "published": "2026-11-06",
+   "published_at": "2026-11-06T23:00+02:00",
    "seconds": 39.2,
    "places": [
     {
@@ -5995,6 +6126,7 @@
    "category": "history",
    "channel": "Oldest Surviving",
    "published": "2026-11-06",
+   "published_at": "2026-11-06T23:00+02:00",
    "seconds": 183.6,
    "places": [
     {
@@ -6180,6 +6312,7 @@
    "category": "history",
    "channel": "Oldest Surviving",
    "published": "2026-11-06",
+   "published_at": "2026-11-06T17:00+02:00",
    "seconds": 42.3,
    "places": [
     {
@@ -6364,6 +6497,7 @@
    "category": "history",
    "channel": "Oldest Surviving",
    "published": "2026-11-06",
+   "published_at": "2026-11-06T17:00+02:00",
    "seconds": 184.9,
    "places": [
     {
@@ -6587,6 +6721,7 @@
    "category": "history",
    "channel": "Oldest Surviving",
    "published": "2026-11-06",
+   "published_at": "2026-11-06T08:00+02:00",
    "seconds": 44.4,
    "places": [
     {
@@ -6743,6 +6878,7 @@
    "category": "history",
    "channel": "Oldest Surviving",
    "published": "2026-11-06",
+   "published_at": "2026-11-06T08:00+02:00",
    "seconds": 181.8,
    "places": [
     {
@@ -6988,6 +7124,7 @@
    "category": "history",
    "channel": "Oldest Surviving",
    "published": "2026-11-06",
+   "published_at": "2026-11-06T16:00+02:00",
    "seconds": 31.8,
    "places": [
     {
@@ -7094,6 +7231,7 @@
    "category": "history",
    "channel": "Oldest Surviving",
    "published": "2026-11-06",
+   "published_at": "2026-11-06T12:00+02:00",
    "seconds": 31.0,
    "places": [
     {
@@ -7196,6 +7334,7 @@
    "category": "history",
    "channel": "Oldest Surviving",
    "published": "2026-11-05",
+   "published_at": "2026-11-05T23:00+02:00",
    "seconds": 45.5,
    "places": [
     {
@@ -7289,6 +7428,7 @@
    "category": "history",
    "channel": "Oldest Surviving",
    "published": "2026-11-05",
+   "published_at": "2026-11-05T17:00+02:00",
    "seconds": 41.3,
    "places": [
     {
@@ -7424,6 +7564,7 @@
    "category": "history",
    "channel": "Oldest Surviving",
    "published": "2026-11-05",
+   "published_at": "2026-11-05T17:00+02:00",
    "seconds": 195.4,
    "places": [
     {
@@ -7679,6 +7820,7 @@
    "category": "history",
    "channel": "Oldest Surviving",
    "published": "2026-11-05",
+   "published_at": "2026-11-05T08:00+02:00",
    "seconds": 31.6,
    "places": [
     {
@@ -7835,6 +7977,7 @@
    "category": "history",
    "channel": "Oldest Surviving",
    "published": "2026-11-05",
+   "published_at": "2026-11-05T08:00+02:00",
    "seconds": 181.4,
    "places": [
     {
@@ -8037,6 +8180,7 @@
    "category": "history",
    "channel": "Oldest Surviving",
    "published": "2026-11-05",
+   "published_at": "2026-11-05T16:00+02:00",
    "seconds": 34.7,
    "places": [
     {
@@ -8121,6 +8265,7 @@
    "category": "history",
    "channel": "Oldest Surviving",
    "published": "2026-11-05",
+   "published_at": "2026-11-05T19:00+02:00",
    "seconds": 35.9,
    "places": [
     {
@@ -8232,6 +8377,7 @@
    "category": "history",
    "channel": "Oldest Surviving",
    "published": "2026-11-05",
+   "published_at": "2026-11-05T12:00+02:00",
    "seconds": 33.0,
    "places": [
     {
@@ -8340,6 +8486,7 @@
    "category": "history",
    "channel": "Oldest Surviving",
    "published": "2026-11-04",
+   "published_at": "2026-11-04T15:00+02:00",
    "seconds": 383.2,
    "places": [],
    "youtube": "https://www.youtube.com/watch?v=GzQaJZD4uE4",
@@ -8595,6 +8742,7 @@
    "category": "history",
    "channel": "Oldest Surviving",
    "published": "2026-11-04",
+   "published_at": "2026-11-04T08:00+02:00",
    "seconds": 42.3,
    "places": [],
    "youtube": "https://www.youtube.com/watch?v=a_PRph99dJY",
@@ -8699,6 +8847,7 @@
    "category": "history",
    "channel": "Oldest Surviving",
    "published": "2026-11-04",
+   "published_at": "2026-11-04T23:00+02:00",
    "seconds": 43.7,
    "places": [
     {
@@ -8874,6 +9023,7 @@
    "category": "history",
    "channel": "Oldest Surviving",
    "published": "2026-11-04",
+   "published_at": "2026-11-04T23:00+02:00",
    "seconds": 183.0,
    "places": [
     {
@@ -9069,6 +9219,7 @@
    "category": "history",
    "channel": "Oldest Surviving",
    "published": "2026-11-04",
+   "published_at": "2026-11-04T17:00+02:00",
    "seconds": 42.8,
    "places": [
     {
@@ -9220,6 +9371,7 @@
    "category": "history",
    "channel": "Oldest Surviving",
    "published": "2026-11-04",
+   "published_at": "2026-11-04T17:00+02:00",
    "seconds": 193.7,
    "places": [
     {
@@ -9440,6 +9592,7 @@
    "category": "history",
    "channel": "Oldest Surviving",
    "published": "2026-11-04",
+   "published_at": "2026-11-04T12:00+02:00",
    "seconds": 21.9,
    "places": [
     {
@@ -9556,6 +9709,7 @@
    "category": "history",
    "channel": "Oldest Surviving",
    "published": "2026-11-04",
+   "published_at": "2026-11-04T19:00+02:00",
    "seconds": 32.4,
    "places": [
     {
@@ -9651,6 +9805,7 @@
    "category": "history",
    "channel": "Oldest Surviving",
    "published": "2026-11-04",
+   "published_at": "2026-11-04T16:00+02:00",
    "seconds": 37.5,
    "places": [
     {
@@ -9739,6 +9894,7 @@
    "category": "history",
    "channel": "Oldest Surviving",
    "published": "2026-11-03",
+   "published_at": "2026-11-03T12:00+02:00",
    "seconds": 50.6,
    "places": [
     {
@@ -9865,6 +10021,7 @@
    "category": "history",
    "channel": "Oldest Surviving",
    "published": "2026-11-03",
+   "published_at": "2026-11-03T23:00+02:00",
    "seconds": 181.9,
    "places": [
     {
@@ -10024,6 +10181,7 @@
    "category": "history",
    "channel": "Oldest Surviving",
    "published": "2026-11-03",
+   "published_at": "2026-11-03T16:00+02:00",
    "seconds": 40.5,
    "places": [
     {
@@ -10142,6 +10300,7 @@
    "category": "history",
    "channel": "Oldest Surviving",
    "published": "2026-11-03",
+   "published_at": "2026-11-03T19:00+02:00",
    "seconds": 36.5,
    "places": [
     {
@@ -10232,6 +10391,7 @@
    "category": "history",
    "channel": "Oldest Surviving",
    "published": "2026-11-03",
+   "published_at": "2026-11-03T12:00+02:00",
    "seconds": 54.9,
    "places": [
     {
@@ -10301,6 +10461,7 @@
    "category": "history",
    "channel": "Oldest Surviving",
    "published": "2026-11-02",
+   "published_at": "2026-11-02T19:00+02:00",
    "seconds": 41.0,
    "places": [
     {
@@ -10400,6 +10561,7 @@
    "category": "history",
    "channel": "Oldest Surviving",
    "published": "2026-11-02",
+   "published_at": "2026-11-02T12:00+02:00",
    "seconds": 21.0,
    "places": [
     {
@@ -10521,6 +10683,7 @@
    "category": "history",
    "channel": "Oldest Surviving",
    "published": "2026-11-01",
+   "published_at": "2026-11-01T12:00+02:00",
    "seconds": 41.1,
    "places": [
     {
@@ -10654,6 +10817,7 @@
    "category": "history",
    "channel": "Oldest Surviving",
    "published": "2026-11-01",
+   "published_at": "2026-11-01T19:00+02:00",
    "seconds": 44.0,
    "places": [
     {
@@ -10765,6 +10929,7 @@
    "category": "history",
    "channel": "Oldest Surviving",
    "published": "2026-10-31",
+   "published_at": "2026-10-31T19:00+02:00",
    "seconds": 41.7,
    "places": [
     {
@@ -10890,6 +11055,7 @@
    "category": "history",
    "channel": "Oldest Surviving",
    "published": "2026-10-31",
+   "published_at": "2026-10-31T12:00+02:00",
    "seconds": 26.9,
    "places": [
     {
@@ -11012,6 +11178,7 @@
    "category": "history",
    "channel": "Oldest Surviving",
    "published": "2026-10-30",
+   "published_at": "2026-10-30T12:00+02:00",
    "seconds": 51.2,
    "places": [
     {
@@ -11130,6 +11297,7 @@
    "category": "history",
    "channel": "Oldest Surviving",
    "published": "2026-10-30",
+   "published_at": "2026-10-30T19:00+02:00",
    "seconds": 35.8,
    "places": [
     {
@@ -11259,6 +11427,7 @@
    "category": "history",
    "channel": "Oldest Surviving",
    "published": "2026-10-29",
+   "published_at": "2026-10-29T19:00+02:00",
    "seconds": 47.3,
    "places": [
     {

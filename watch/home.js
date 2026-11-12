@@ -1,7 +1,7 @@
 /* Home page: four views behind a bottom dock (map, game, passport, search), all from catalog.json and game.json.
    Fair play (Mike, 2026-11-12): no streaks, no timers, no fake counters, no sounds; progress stays in this browser. */
 (function () {
-  var cat = null, game = null, L = "en";
+  var cat = null, game = null, L = "en", chipsOpen = false;
   var state = { view: "map", cat: "history", fmt: "all", country: null, q: "", game: "hub" };
   var $ = function (id) { return document.getElementById(id); };
   var reduce = window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches;
@@ -31,7 +31,7 @@
   window.addEventListener("hashchange", function () { route(); });
   function route() {
     var h = location.hash.slice(1), view = h.split("/")[0];
-    if (!$("sheet").hidden) closeSheet();
+    if (!$("sheet").hidden) closeSheet(true);
     var sub = h.split("/")[1] || "";
     if (view === "play") state.game = /^c=/.test(sub) ? "older" : (["older", "timeline", "where"].indexOf(sub) >= 0 ? sub : "hub");
     if (view === "play" && h.indexOf("/c=") > 0 && game) { newGame(h); }
@@ -64,10 +64,13 @@
     var keys = Object.keys(countries);
     $("boardcount").textContent = OS.t(L, "board_count", { c: keys.length, n: list.length });
     $("boardcount").hidden = !list.length;
-    keys.sort(function (a, b) { return OS.country(L, a).localeCompare(OS.country(L, b), L); });
-    $("country").innerHTML = '<option value="">' + esc(OS.t(L, "choose_country")) + "</option>" + keys.map(function (k) {
-      return '<option value="' + k + '">' + esc(OS.country(L, k)) + " (" + countries[k] + ")</option>";
-    }).join("");
+    // big buttons under the map (small European countries are too small to tap on a phone map); most stories first
+    keys.sort(function (a, b) { return countries[b] - countries[a] || OS.country(L, a).localeCompare(OS.country(L, b), L); });
+    var shown = chipsOpen || keys.length <= 9 ? keys : keys.slice(0, 8);   // the top 8, then "+9" opens the rest
+    $("country").innerHTML = shown.map(function (k) {
+      return '<button type="button" class="chip' + (k === state.country ? " sel" : "") + '" data-c="' + k + '">' +
+        esc(OS.country(L, k)) + " <b>" + countries[k] + "</b></button>";
+    }).join("") + (shown.length < keys.length ? '<button type="button" class="chip more" aria-expanded="false">+' + (keys.length - shown.length) + "</button>" : "");
     $("country").hidden = !keys.length;
     var total = Object.keys(countriesIn(cat.videos)).length, have = Object.keys(pass).length;
     $("passmini").textContent = OS.t(L, "passport_mini", { v: have, n: total });
@@ -82,9 +85,13 @@
   }
 
   // ------------------------------------------------------------ the sheet (country stories, coming soon, player)
-  var lastFocus = null;
+  var lastFocus = null, sheetKind = null;
+  // "Next story" walks the list a story was opened from; a story opened from a country's list returns to that list
+  var ctx = { list: [], country: null }, back = null, newestList = [], gridList = [];
+  function pagesOf(list) { return list.filter(function (v) { return v.page; }).map(function (v) { return v.id; }); }
   function openSheet(titleText, sub, bodyHtml, kind) {
     if (!$("sheet").hidden) stopVideo();
+    sheetKind = kind || null;
     lastFocus = lastFocus || document.activeElement;
     $("sheet-title").textContent = titleText;
     $("sheet-sub").textContent = sub || "";
@@ -98,7 +105,9 @@
   function stopVideo() {
     if (current) { current.stop(); current = null; }
   }
-  function closeSheet() {
+  function closeSheet(all) {
+    if (!all && sheetKind === "player" && back) { var k = back; back = null; openCountry(k); return; }
+    back = null;
     stopVideo();
     $("sheet").classList.remove("open");
     document.body.classList.remove("locked");
@@ -123,7 +132,8 @@
   function card(v, big) {
     var ext = !v.page, href = v.page || v.youtube;
     var place = v.places.length ? uniq(v.places.map(function (p) { return p.name; })).slice(0, 2).join(" · ") : OS.t(L, "worldwide");
-    var badge = v.page ? '<span class="badge cc" title="' + esc(OS.t(L, "subtitled")) + '">CC · ' + v.subtitles.map(function (s) { return s.toUpperCase(); }).join(" ") + "</span>"
+    var badge = v.page ? '<span class="badge cc" title="' + esc(v.subtitles.map(function (s) { return s.toUpperCase(); }).join(" ")) + '">' +
+                           esc(OS.t(L, "subs_n", { n: v.subtitles.length })) + "</span>"
                        : '<span class="badge yt">' + esc(OS.t(L, "on_youtube")) + "</span>";
     var pass = OS.passport.get();
     var stamped = v.places.some(function (p) { var s = pass[p.country]; return s && s.stories.indexOf(v.id) >= 0; });
@@ -138,11 +148,17 @@
 
   function openCountry(k) {
     var list = live().filter(function (v) { return v.places.some(function (p) { return p.country === k; }); });
-    list.sort(function (a, b) { return (b.page ? 1 : 0) - (a.page ? 1 : 0); });
-    var s = OS.passport.get()[k];
-    var sub = (list.length === 1 ? OS.t(L, "story_here") : OS.t(L, "stories_here", { n: list.length })) + " · " +
-              (s ? OS.t(L, "stamped") + " ✓" : OS.t(L, "not_yet"));
-    openSheet(OS.country(L, k), sub, '<div class="rail">' + list.map(function (v) { return card(v, true); }).join("") + "</div>", "stories");
+    var here = list.filter(function (v) { return v.page; }), yt = list.filter(function (v) { return !v.page; });
+    ctx = { list: pagesOf(here), country: k };
+    var s = OS.passport.get()[k], signed = OS.cloud && OS.cloud.user();
+    // stamps mean something only to signed-in players
+    var sub = (list.length === 1 ? OS.t(L, "story_here") : OS.t(L, "stories_here", { n: list.length })) +
+              (signed ? " · " + (s ? OS.t(L, "stamped") + " ✓" : OS.t(L, "not_yet")) : "");
+    function rail(l) { return '<div class="rail">' + l.map(function (v) { return card(v, true); }).join("") + "</div>"; }
+    var both = here.length && yt.length;
+    openSheet(OS.country(L, k), sub,
+      (here.length ? (both ? '<h3 class="railh">' + esc(OS.t(L, "watch_here")) + "</h3>" : "") + rail(here) : "") +
+      (yt.length ? (both ? '<h3 class="railh">' + esc(OS.t(L, "on_youtube")) + "</h3>" : "") + rail(yt) : ""), "stories");
   }
 
   function openSoon(c) {
@@ -154,13 +170,22 @@
 
   // The answer (or any story) plays right here in YouTube's player, with our subtitle bar on top, then its quick question
   var current = null;
+  function playStory(v) {   // from a game: "Next story" walks all stories that play here
+    back = null; ctx = { list: pagesOf(live()), country: null };
+    openPlayer(v);
+  }
   function openPlayer(v) {
+    var ids = ctx.list.length ? ctx.list : pagesOf(live()), i = ids.indexOf(v.id);
+    var nextId = ids.length > 1 ? ids[(i + 1) % ids.length] : null;
+    if (nextId === v.id) nextId = null;
     openSheet(title(v), uniq(v.places.map(function (p) { return p.name; })).join(" · "),
       '<div id="pplayer"></div><div id="pquiz" class="pquiz"></div>' +
-      '<p class="sheet-links"><a class="btn" href="' + esc(v.page) + '">' + esc(OS.t(L, "read_story")) + "</a>" +
+      '<p class="sheet-links">' + (nextId ? '<button type="button" class="btn gold" id="pnext">' + esc(OS.t(L, "next_story")) + " →</button>" : "") +
+      '<a class="btn" href="' + esc(v.page) + '">' + esc(OS.t(L, "read_story")) + "</a>" +
       '<a class="btn red" href="' + esc(v.youtube) + '" target="_blank" rel="noopener">' + esc(OS.t(L, "watch_on_youtube")) + "</a>" +
       '<a class="btn" href="' + esc(v.subscribe) + '" target="_blank" rel="noopener" data-ch="' + esc(v.channel_id || "") + '">' + esc(OS.t(L, "subscribe")) + "</a></p>", "player");
     if (OS.subscribeLinks) OS.subscribeLinks($("sheet-body"));
+    if (nextId) $("pnext").onclick = function () { var n = byId(nextId); if (n) openPlayer(n); };
     current = OS.player($("pplayer"), { id: v.id, ytid: v.youtube_id, langs: v.subtitles, format: v.format, poster: v.thumb });
     OS.quiz($("pquiz"), v.id, v.places, v.youtube_id);
   }
@@ -169,7 +194,14 @@
     var a = e.target.closest("a[data-play]");
     if (!a || e.ctrlKey || e.metaKey || e.shiftKey) return;
     var v = byId(a.getAttribute("data-play"));
-    if (v && v.page) { e.preventDefault(); openPlayer(v); }
+    if (!v || !v.page) return;
+    e.preventDefault();
+    if (a.closest("#sheet-body")) { if (sheetKind === "stories") back = ctx.country; }
+    else {
+      back = null;
+      ctx = { list: pagesOf(a.closest("#newest") ? newestList : a.closest("#grid") ? gridList : live()), country: null };
+    }
+    openPlayer(v);
   });
   document.addEventListener("os-stamp", function () { renderMap(); if (state.view === "passport") setTimeout(renderPassport, 1900); });
 
@@ -231,7 +263,7 @@
     $("tl").querySelectorAll(".tlcard").forEach(function (b) {
       b.onclick = function () {
         var k = b.getAttribute("data-k"), pos = tl.picked.indexOf(k);
-        if (tl.checked) { var v = byId(game.items[k].production); if (v && v.page) openPlayer(v); return; }
+        if (tl.checked) { var v = byId(game.items[k].production); if (v && v.page) playStory(v); return; }
         if (pos >= 0) tl.picked = tl.picked.slice(0, pos); else tl.picked.push(k);
         tlRender();
       };
@@ -300,7 +332,7 @@
     $("wres").textContent = OS.t(L, ok ? "right" : "wrong") + " " + OS.t(L, "wh_place", { p: where });
     $("wres").className = "verdict " + (ok ? "ok" : "no");
     $("wact").hidden = false;
-    $("wwatch").onclick = function () { if (v.page) openPlayer(v); else window.open(v.youtube, "_blank", "noopener"); };
+    $("wwatch").onclick = function () { if (v.page) playStory(v); else window.open(v.youtube, "_blank", "noopener"); };
   }
   function whAnswer(pick) {
     if (wh.answered) return;
@@ -423,7 +455,7 @@
     $("gactions").hidden = false;
     var w = $("gwatch");
     w.textContent = OS.t(L, v && v.page ? "watch_answer" : "watch_answer_yt");
-    w.onclick = function () { if (v && v.page) openPlayer(v); else if (v) window.open(v.youtube, "_blank", "noopener"); };
+    w.onclick = function () { if (v && v.page) playStory(v); else if (v) window.open(v.youtube, "_blank", "noopener"); };
     $("gnext").onclick = function () { g.i++; playRound(); };
     w.focus({ preventScroll: true });
     // the answer Short plays only when the player taps "Watch the answer" (never by itself: YouTube's rules)
@@ -470,14 +502,12 @@
       $("accdel").onclick = function () { if (confirm(OS.t(L, "acc_delete_confirm"))) OS.cloud.deleteAccount(); };
     } else {
       box.innerHTML = '<div class="acc"><p><b>' + esc(OS.t(L, "acc_title")) + "</b><br>" + esc(OS.t(L, "acc_text")) + "</p>" +
-        '<p><button type="button" class="btn big gbtn" id="accin"><span class="g" aria-hidden="true">G</span> ' +
-        esc(OS.t(L, "acc_signin")) + "</button></p>" +
-        '<p class="small"><a href="privacy.html">' + esc(OS.t(L, "acc_age")) + "</a></p></div>";
-      $("accin").onclick = function () { OS.cloud.signIn(); };
+        OS.cloud.signInHtml(L) + '<p class="small"><a href="privacy.html">' + esc(OS.t(L, "acc_age")) + "</a></p></div>";
+      var b = box.querySelector(".gbtn"); if (b) b.onclick = function () { OS.cloud.signIn(); };
     }
   }
   if (OS.cloud) OS.cloud.onChange(function () {
-    renderAccount(); renderMap();
+    renderAccount(); renderMap(); renderNewest();
     if (state.view === "passport") renderPassport();
     if (state.view === "play" && game) renderPlay();
   });
@@ -524,17 +554,19 @@
     if (!c.live) { $("count").textContent = ""; $("grid").innerHTML = ""; return; }
     var list = cat.videos.filter(matches);
     list.sort(function (a, b) { return (b.page ? 1 : 0) - (a.page ? 1 : 0); });
+    gridList = list;
     $("count").textContent = list.length === 1 ? OS.t(L, "n_story") : OS.t(L, "n_stories", { n: list.length });
     $("grid").innerHTML = list.length ? list.map(function (v) { return card(v); }).join("") : '<p class="empty">' + esc(OS.t(L, "no_results")) + "</p>";
   }
 
   // ------------------------------------------------------------ wiring
+  // a channel that is not on the site yet only opens its panel: the map and the stories stay as they were
   document.querySelectorAll(".cat").forEach(function (b) {
     b.onclick = function () {
-      state.cat = b.getAttribute("data-cat"); state.country = null; renderMap(); renderGrid();
-      if (OS.count) OS.count("cat", state.cat);
-      var c = cat.categories.filter(function (x) { return x.id === state.cat; })[0];
-      if (!c.live) openSoon(c);
+      var id = b.getAttribute("data-cat"), c = cat.categories.filter(function (x) { return x.id === id; })[0];
+      if (OS.count) OS.count("cat", id);
+      if (!c.live) { openSoon(c); return; }
+      state.cat = id; state.country = null; renderMap(); renderGrid(); renderNewest();
     };
   });
   document.querySelectorAll(".seg button").forEach(function (b) { b.onclick = function () { state.fmt = b.getAttribute("data-f"); renderGrid(); }; });
@@ -542,7 +574,12 @@
     el.addEventListener("click", function () { if (el.classList.contains("has")) pick(el.getAttribute("data-c")); });
     el.addEventListener("keydown", function (e) { if ((e.key === "Enter" || e.key === " ") && el.classList.contains("has")) { e.preventDefault(); pick(el.getAttribute("data-c")); } });
   });
-  $("country").addEventListener("change", function (e) { var k = e.target.value; e.target.value = ""; pick(k); });
+  $("country").addEventListener("click", function (e) {
+    var b = e.target.closest(".chip");
+    if (!b) return;
+    if (b.classList.contains("more")) { chipsOpen = true; renderMap(); var c = $("country").querySelectorAll(".chip")[8]; if (c) c.focus(); return; }
+    pick(b.getAttribute("data-c"));
+  });
   var searched = false;
   $("q").addEventListener("input", function () {
     state.q = $("q").value.trim(); renderGrid();
@@ -557,9 +594,20 @@
     if (OS.subscribeLinks) OS.subscribeLinks($("chlist"));
   }
 
+  // "Newest stories" under the map: stories that play here first, newest first (the page also carries them as
+  // plain links for search engines, written by pipeline/web_site.py)
+  function renderNewest() {
+    if (!cat) return;
+    var list = live();
+    newestList = list.filter(function (v) { return v.page; }).concat(list.filter(function (v) { return !v.page; })).slice(0, 8);
+    $("newest").innerHTML = newestList.map(function (v) { return card(v); }).join("");
+  }
+
   function rerender() {
     if (cat && !$("chlist").querySelector(".ytsub")) renderChannels();
-    renderMap(); renderGrid();
+    document.title = OS.t(L, "site_title");
+    $("q").setAttribute("aria-label", OS.t(L, "search"));
+    renderMap(); renderGrid(); renderNewest();
     if (state.view === "passport") renderPassport();
     if (state.view === "play" && game) {
       if (state.game === "older" && !g.picked) playRound();

@@ -13,7 +13,22 @@
 
   function base() { return document.body.classList.contains("video") ? "../" : ""; }
   function L() { return document.documentElement.lang || "en"; }
-  function emit() { listeners.forEach(function (f) { try { f(user); } catch (e) { /* keep going */ } }); }
+  function emit() {
+    listeners.forEach(function (f) { try { f(user); } catch (e) { /* keep going */ } });
+    if (OS.paintLevel) OS.paintLevel();   // the level badge shows only to signed-in players
+  }
+
+  // Google refuses sign-in inside app browsers (Instagram, Facebook, TikTok... and Android app web views), where many
+  // Reels viewers open the site. There we show how to open the page in the phone's own browser instead of a button
+  // that would end on Google's error page.
+  var UA = navigator.userAgent || "";
+  var INAPP = /FBAN|FBAV|FB_IAB|FBIOS|Instagram|musical_ly|Bytedance|TikTok|Line\/|; wv\)/i.test(UA) ||
+              (/iPhone|iPad|iPod/.test(UA) && !/Safari\//.test(UA));
+  function signInHtml(l) {
+    if (INAPP) return '<p class="inapp">' + esc(OS.t(l, "inapp")) + "</p>";
+    return '<p><button type="button" class="btn big gbtn"><span class="g" aria-hidden="true">G</span> <span data-i="acc_signin">' +
+      esc(OS.t(l, "acc_signin")) + "</span></button></p>";
+  }
 
   function load() {
     if (fb) return fb;
@@ -95,6 +110,7 @@
   }
 
   function signIn() {
+    if (INAPP) { OS.toast(OS.t(L(), "inapp")); return Promise.resolve(); }
     return load().then(function (o) {
       return o.A.signInWithPopup(o.auth, new o.A.GoogleAuthProvider()).then(function () {
         OS.store("os-cloud", "1");
@@ -141,9 +157,9 @@
     var l = L();
     if (!known) { box.innerHTML = '<p class="small">...</p>'; return; }
     box.innerHTML = '<div class="acc gate"><p><b>' + esc(OS.t(l, kind === "quiz" ? "q_signin" : "gate_title")) + "</b><br>" +
-      esc(OS.t(l, "gate_text")) + '</p><p><button type="button" class="btn big gbtn"><span class="g" aria-hidden="true">G</span> ' +
-      esc(OS.t(l, "acc_signin")) + '</button></p><p class="small"><a href="' + base() + 'privacy.html">' + esc(OS.t(l, "acc_age")) + "</a></p></div>";
-    box.querySelector(".gbtn").onclick = signIn;
+      esc(OS.t(l, "gate_text")) + "</p>" + signInHtml(l) +
+      '<p class="small"><a href="' + base() + 'privacy.html">' + esc(OS.t(l, "acc_age")) + "</a></p></div>";
+    var b = box.querySelector(".gbtn"); if (b) b.onclick = signIn;
     if (OS.count) OS.count("gate");   // a plain total: the rules allow no new groups
   }
   function esc(s) { var d = document.createElement("div"); d.textContent = s == null ? "" : s; return d.innerHTML; }
@@ -166,9 +182,7 @@
       '<div class="popin-card" role="dialog" aria-modal="true" aria-labelledby="popin-t" aria-describedby="popin-d">' +
       '<button type="button" class="x popin-x" aria-label="' + esc(OS.t(l, "close")) + '">&times;</button>' +
       '<h2 id="popin-t" data-i="pop_title">' + esc(OS.t(l, "pop_title")) + "</h2>" +
-      '<p id="popin-d" data-i="pop_text">' + esc(OS.t(l, "pop_text")) + "</p>" +
-      '<p><button type="button" class="btn big gbtn"><span class="g" aria-hidden="true">G</span> <span data-i="acc_signin">' +
-      esc(OS.t(l, "acc_signin")) + "</span></button></p>" +
+      '<p id="popin-d" data-i="pop_text">' + esc(OS.t(l, "pop_text")) + "</p>" + signInHtml(l) +
       '<p><button type="button" class="popin-later" data-i="pop_later">' + esc(OS.t(l, "pop_later")) + "</button></p>" +
       '<p class="small"><a href="' + base() + 'privacy.html" data-i="acc_age">' + esc(OS.t(l, "acc_age")) + "</a></p></div>";
     document.body.appendChild(wrap);
@@ -188,12 +202,13 @@
       else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
     }
     window.addEventListener("keydown", key, true);
-    wrap.querySelector(".gbtn").onclick = function () { signIn(); };
+    var gb = wrap.querySelector(".gbtn");
+    if (gb) gb.onclick = function () { signIn(); };
     wrap.querySelector(".popin-later").onclick = close;
     wrap.querySelector(".popin-x").onclick = close;
     wrap.querySelector(".popin-back").onclick = close;
     listeners.push(function (u) { if (u) close(); });
-    wrap.querySelector(".gbtn").focus();
+    (gb || wrap.querySelector(".popin-later")).focus();
     if (OS.count) OS.count("popup");   // a plain total, like "gate"
   }
   // after the page has set its language; a visitor who signed in before waits for Firebase's answer
@@ -202,10 +217,12 @@
 
   OS.cloud = {
     signIn: signIn, signOut: signOut, deleteAccount: deleteAccount, schedule: schedule, gate: gate,
+    signInHtml: signInHtml, inApp: INAPP,
     user: function () { return user; },
     known: function () { return known; },
     onChange: function (f) { listeners.push(f); }
   };
+  if (OS.paintLevel) OS.paintLevel();   // hide the level badge until someone is signed in
   // came back after signing in before: restore the session (otherwise nothing loads from Google)
   if (OS.store("os-cloud") === "1") load();
 })();

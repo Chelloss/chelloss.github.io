@@ -105,16 +105,27 @@
 
     function show() {
       bar.classList.toggle("off", cur === "off");
-      if (cur === "off" || !yt || !yt.getCurrentTime) { text.textContent = ""; return; }
+      // before play the empty black bar looked broken: say what it is for
+      var waiting = cur !== "off" && !(yt && yt.getCurrentTime);
+      bar.classList.toggle("hint", waiting);
+      if (waiting) { text.textContent = OS.t(L(), "subs_hint"); return; }
+      if (cur === "off") { text.textContent = ""; return; }
       var t = yt.getCurrentTime(), c = null;
       for (var i = 0; i < cues.length; i++) if (cues[i].s <= t && t < cues[i].e) { c = cues[i]; break; }
       text.textContent = c ? c.t : "";
+    }
+    // While our subtitle bar is on, YouTube's own caption box is switched off, so the picture does not carry three
+    // texts at once (burned-in English + YouTube's captions + our bar). The viewer can still turn YouTube's back on
+    // with its CC button. unloadModule is the YouTube player's own function.
+    function quietCaptions() {
+      if (yt && cur !== "off" && yt.unloadModule) try { yt.unloadModule("captions"); } catch (e) { /* older player */ }
     }
     function setSubs(l) {
       cur = langs.indexOf(l) >= 0 ? l : "off";
       sel.value = cur;
       bar.classList.toggle("off", cur === "off");
       if (cur === "off") { cues = []; show(); return; }
+      quietCaptions();
       vtt(opts.id, cur).then(function (c) { if (cur === l) { cues = c; show(); } });
     }
     sel.addEventListener("change", function () { OS.store("os-cc", sel.value === "off" ? "off" : "on"); setSubs(sel.value); });
@@ -130,7 +141,7 @@
           // fs: 0 hides YouTube's own full-screen button; ours (under the video) keeps the subtitles in view
           playerVars: { autoplay: 1, playsinline: 1, rel: 0, modestbranding: 1, cc_load_policy: 0, iv_load_policy: 3,
                         fs: 0, enablejsapi: 1, origin: location.origin },
-          events: { onReady: function (e) { e.target.playVideo(); } }
+          events: { onReady: function (e) { e.target.playVideo(); quietCaptions(); }, onApiChange: quietCaptions }
         });
         // read the player's clock a few times a second while this player exists (state events can be late)
         clearInterval(timer);
@@ -165,6 +176,12 @@
   // "Comment on YouTube" (Mike, 2026-11-12): copies a short line with the answer and opens the video's YouTube page,
   // where the comments are; the visitor posts it themselves, from their own account, if they want. No points for it
   // (rewarded comments break YouTube's rules). YouTube has no link that opens the comment box itself.
+  // The copied line is picked from three wordings, so many visitors do not post the same sentence (identical comments
+  // can look like spam to YouTube); the visitor can change it before posting.
+  function commentLine(l, right, answer) {
+    var keys = right ? ["comment_right", "comment_right2", "comment_right3"] : ["comment_wrong", "comment_wrong2", "comment_wrong3"];
+    return OS.t(l, keys[Math.floor(Math.random() * keys.length)], { a: answer });
+  }
   function commentButton(box, ytid, text, id) {
     if (!ytid) return;
     var l = L(), a = document.createElement("a");
@@ -218,7 +235,7 @@
       if (done) {
         reveal(done === "right" ? q.answer : -1);
         res.innerHTML = "<b>" + esc(OS.t(l, done === "right" ? "q_answered_right" : "q_answered")) + "</b> " + esc(q.fact[l] || q.fact.en);
-        commentButton(box, ytid, OS.t(l, done === "right" ? "comment_right" : "comment_wrong", { a: (q.options[l] || q.options.en)[q.answer] }), id);
+        commentButton(box, ytid, commentLine(l, done === "right", (q.options[l] || q.options.en)[q.answer]), id);
         return;
       }
       box.querySelectorAll(".qopt").forEach(function (b) {
@@ -227,7 +244,7 @@
           reveal(pick);
           res.innerHTML = "<b>" + esc(OS.t(l, ok ? "right" : "q_wrong")) + "</b> " + esc(q.fact[l] || q.fact.en);
           res.className = "qres " + (ok ? "ok" : "no");
-          commentButton(box, ytid, OS.t(l, ok ? "comment_right" : "comment_wrong", { a: (q.options[l] || q.options.en)[q.answer] }), id);
+          commentButton(box, ytid, commentLine(l, ok, (q.options[l] || q.options.en)[q.answer]), id);
           if (OS.count) OS.count(ok ? "quiz_right" : "quiz_wrong", id);
           // answering stamps the story's countries; a right answer also gives points (10, +20 per new country)
           var countries = (places || []).map(function (x) { return x.country; }).filter(function (c, i, a) { return a.indexOf(c) === i; });
