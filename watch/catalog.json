@@ -1,5 +1,5 @@
 {
- "made": "2026-11-12T15:41+02:00",
+ "made": "2026-11-12T16:07+02:00",
  "count": 71,
  "categories": [
   {
@@ -134,11 +134,17 @@
    "ai_pictures": false,
    "titles": {
     "es": "A estas mujeres les dijeron que se metieran en la boca pinceles con pintura de radio",
-    "de": "Diesen Frauen sagte man, sie sollten Pinsel mit Radiumfarbe in den Mund nehmen"
+    "de": "Diesen Frauen sagte man, sie sollten Pinsel mit Radiumfarbe in den Mund nehmen",
+    "fr": "On a dit à ces femmes de mettre en bouche des pinceaux chargés de peinture au radium",
+    "pt": "Disseram a estas mulheres para pôr na boca pincéis com tinta de rádio",
+    "it": "A queste donne dissero di mettersi in bocca i pennelli con la vernice al radio"
    },
    "summaries": {
     "es": "Las pintoras de esferas de radio afilaban los pinceles con los labios, y les dijeron que la pintura era segura.",
-    "de": "Die Radium-Zifferblattmalerinnen spitzten ihre Pinsel mit den Lippen, und man sagte ihnen, die Farbe sei ungefährlich."
+    "de": "Die Radium-Zifferblattmalerinnen spitzten ihre Pinsel mit den Lippen, und man sagte ihnen, die Farbe sei ungefährlich.",
+    "fr": "Les peintres de cadrans au radium affinaient leurs pinceaux avec les lèvres, et on leur disait que la peinture était sans danger.",
+    "pt": "As pintoras de mostradores com rádio afinavam os pincéis com os lábios, e disseram a elas que a tinta era segura.",
+    "it": "Le pittrici di quadranti al radio affilavano i pennelli con le labbra e si sentivano dire che la vernice era sicura. La loro lotta contribuì a stabilire il diritto dei lavoratori di fare causa. La storia completa è nel nostro video lungo."
    },
    "page": null
   },
@@ -171,7 +177,10 @@
     "en",
     "es",
     "el",
-    "de"
+    "de",
+    "fr",
+    "pt",
+    "it"
    ],
    "sources": [
     {
@@ -283,12 +292,18 @@
    "titles": {
     "es": "Una respuesta confusa abrió el Muro de Berlín",
     "el": "Μια μπερδεμένη απάντηση άνοιξε το Τείχος του Βερολίνου",
-    "de": "Eine verwirrte Antwort öffnete die Berliner Mauer"
+    "de": "Eine verwirrte Antwort öffnete die Berliner Mauer",
+    "fr": "Une réponse confuse a ouvert le mur de Berlin",
+    "pt": "Uma resposta confusa abriu o Muro de Berlim",
+    "it": "Una risposta confusa aprì il Muro di Berlino"
    },
    "summaries": {
     "es": "El 9 de noviembre de 1989, una respuesta confusa en una rueda de prensa y un guardia sin órdenes abrieron las puertas del Muro de Berlín. La historia completa está en nuestro vídeo largo.",
     "el": "Στις 9 Νοεμβρίου 1989, μια μπερδεμένη απάντηση σε μια συνέντευξη Τύπου και ένας φρουρός χωρίς διαταγές άνοιξαν τις πύλες του Τείχους του Βερολίνου. Όλη την ιστορία θα τη βρείτε στο μεγάλο μας βίντεο.",
-    "de": "Am 9. November 1989 öffneten eine verwirrte Antwort auf einer Pressekonferenz und ein Grenzer ohne Befehl die Tore der Berliner Mauer. Die ganze Geschichte gibt es in unserem langen Video."
+    "de": "Am 9. November 1989 öffneten eine verwirrte Antwort auf einer Pressekonferenz und ein Grenzer ohne Befehl die Tore der Berliner Mauer. Die ganze Geschichte gibt es in unserem langen Video.",
+    "fr": "Le 9 novembre 1989, une réponse confuse lors d'une conférence de presse et un garde sans ordres ont ouvert les portes du mur de Berlin. L'histoire complète est dans notre vidéo longue.",
+    "pt": "Em 9 de novembro de 1989, uma resposta confusa numa entrevista coletiva e um guarda sem ordens abriram os portões do Muro de Berlim. A história completa está no nosso vídeo longo.",
+    "it": "Il 9 novembre 1989, una risposta confusa a una conferenza stampa e una guardia senza ordini aprirono i varchi del Muro di Berlino. La storia completa è nel nostro video lungo."
    },
    "page": "v/0061-berlin-wall.html"
   },
@@ -460,11 +475,17 @@
    "ai_pictures": false,
    "titles": {
     "es": "El error que derribó el Muro de Berlín",
-    "de": "Der Fehler, der die Berliner Mauer zu Fall brachte"
+    "de": "Der Fehler, der die Berliner Mauer zu Fall brachte",
+    "fr": "L'erreur qui a fait tomber le mur de Berlin",
+    "pt": "O erro que derrubou o Muro de Berlim",
+    "it": "L'errore che fece cadere il Muro di Berlino"
    },
    "summaries": {
     "es": "El 9 de noviembre de 1989, un funcionario de Alemania del Este leyó mal las nuevas normas de viaje en una rueda de prensa. Esa noche, un guardia fronterizo sin órdenes abrió un paso, y el Muro de Berlín cayó.",
-    "de": "Am 9. November 1989 las ein DDR-Funktionär auf einer Pressekonferenz die neuen Reiseregeln falsch vor. In dieser Nacht öffnete ein Grenzsoldat ohne Befehl ein Tor, und die Berliner Mauer fiel."
+    "de": "Am 9. November 1989 las ein DDR-Funktionär auf einer Pressekonferenz die neuen Reiseregeln falsch vor. In dieser Nacht öffnete ein Grenzsoldat ohne Befehl ein Tor, und die Berliner Mauer fiel.",
+    "fr": "Le 9 novembre 1989, un responsable est-allemand a mal lu les nouvelles règles de voyage lors d'une conférence de presse. Cette nuit-là, un garde-frontière sans ordres a ouvert une barrière, et le mur de Berlin est tombé.",
+    "pt": "Em 9 de novembro de 1989, um funcionário da Alemanha Oriental leu errado as novas regras de viagem numa entrevista coletiva. Naquela noite, um guarda de fronteira sem ordens abriu um portão, e o Muro de Berlim caiu.",
+    "it": "Il 9 novembre 1989 un funzionario della Germania Est lesse male le nuove regole sui viaggi durante una conferenza stampa. Quella notte una guardia di confine senza ordini aprì un varco, e il Muro di Berlino cadde."
    },
    "page": null
   },
@@ -594,11 +615,17 @@
    "ai_pictures": false,
    "titles": {
     "es": "El mensaje de la Tierra a los extraterrestres incluye a Chuck Berry",
-    "de": "Die Botschaft der Erde an Außerirdische enthält Chuck Berry"
+    "de": "Die Botschaft der Erde an Außerirdische enthält Chuck Berry",
+    "fr": "Le message de la Terre aux extraterrestres contient du Chuck Berry",
+    "pt": "A mensagem da Terra para os alienígenas tem Chuck Berry",
+    "it": "Il messaggio della Terra agli alieni contiene Chuck Berry"
    },
    "summaries": {
     "es": "El Disco de Oro de la NASA de 1977 lleva saludos en 55 idiomas, cantos de ballena y a Chuck Berry.",
-    "de": "Die Golden Record der NASA von 1977 enthält Grüße in 55 Sprachen, Walgesang und Chuck Berry."
+    "de": "Die Golden Record der NASA von 1977 enthält Grüße in 55 Sprachen, Walgesang und Chuck Berry.",
+    "fr": "Le disque d'or de la NASA de 1977 contient des salutations en 55 langues, des chants de baleines et du Chuck Berry.",
+    "pt": "O Disco de Ouro da NASA, de 1977, leva saudações em 55 línguas, canto de baleias e Chuck Berry.",
+    "it": "Il Disco d'oro della NASA del 1977 porta saluti in 55 lingue, il canto delle balene e Chuck Berry. La storia completa è nel nostro video lungo."
    },
    "page": null
   },
@@ -764,11 +791,17 @@
    "ai_pictures": false,
    "titles": {
     "es": "El mensaje de la NASA a los extraterrestres incluye a Chuck Berry",
-    "de": "Die Botschaft der NASA an Außerirdische enthält Chuck Berry"
+    "de": "Die Botschaft der NASA an Außerirdische enthält Chuck Berry",
+    "fr": "Le message de la NASA aux extraterrestres contient du Chuck Berry",
+    "pt": "A mensagem da NASA para alienígenas inclui Chuck Berry",
+    "it": "Il messaggio della NASA agli alieni include Chuck Berry"
    },
    "summaries": {
     "es": "En 1977, la NASA envió al espacio un disco de oro con saludos en 55 idiomas, cantos de ballenas, Bach y Chuck Berry. La historia de lo que contiene y de dónde está ahora.",
-    "de": "Im Jahr 1977 schickte die NASA eine goldene Schallplatte ins All, mit Grüßen in 55 Sprachen, Walgesang, Bach und Chuck Berry. Die Geschichte dessen, was darauf ist, und wo sie heute ist."
+    "de": "Im Jahr 1977 schickte die NASA eine goldene Schallplatte ins All, mit Grüßen in 55 Sprachen, Walgesang, Bach und Chuck Berry. Die Geschichte dessen, was darauf ist, und wo sie heute ist.",
+    "fr": "En 1977, la NASA a envoyé dans l'espace un disque d'or, avec des salutations en 55 langues, des chants de baleines, du Bach et du Chuck Berry. L'histoire de ce qu'il contient, et de l'endroit où il se trouve aujourd'hui.",
+    "pt": "Em 1977, a NASA mandou ao espaço um disco de ouro com saudações em 55 idiomas, canto de baleias, Bach e Chuck Berry. A história do que há nele e de onde ele está agora.",
+    "it": "Nel 1977 la NASA mandò nello spazio un disco d'oro, con saluti in 55 lingue, il canto delle balene, Bach e Chuck Berry. La storia di cosa contiene, e di dove si trova ora."
    },
    "page": null
   },
@@ -877,11 +910,17 @@
    "ai_pictures": false,
    "titles": {
     "es": "Parker Brothers lo demandó. Entonces salió a la luz el verdadero origen del Monopoly",
-    "de": "Parker Brothers verklagte ihn. Dann kam Monopolys wahre Herkunft ans Licht"
+    "de": "Parker Brothers verklagte ihn. Dann kam Monopolys wahre Herkunft ans Licht",
+    "fr": "Parker Brothers l'a poursuivi. Puis la vraie origine du Monopoly a éclaté",
+    "pt": "A Parker Brothers o processou. Então veio à tona a origem real do Monopoly",
+    "it": "La Parker Brothers gli fece causa. Poi venne fuori la vera origine del Monopoly"
    },
    "summaries": {
     "es": "Parker Brothers demandó al profesor Ralph Anspach por su juego Anti-Monopoly.",
-    "de": "Parker Brothers verklagte Professor Ralph Anspach wegen seines Spiels Anti-Monopoly."
+    "de": "Parker Brothers verklagte Professor Ralph Anspach wegen seines Spiels Anti-Monopoly.",
+    "fr": "Parker Brothers a poursuivi le professeur Ralph Anspach pour son jeu Anti-Monopoly.",
+    "pt": "A Parker Brothers processou o professor Ralph Anspach pelo jogo Anti-Monopoly.",
+    "it": "La Parker Brothers fece causa al professor Ralph Anspach per Anti-Monopoly. Per difendersi lui scavò nel passato del gioco, e la pista portò a Lizzie Magie. La storia completa è nel nostro video lungo."
    },
    "page": null
   },
@@ -1323,11 +1362,17 @@
    "ai_pictures": false,
    "titles": {
     "es": "Siete comienzos desde 1286: las gafas, el primer selfie, el QWERTY, el osito de peluche y más",
-    "de": "Sieben Anfänge seit 1286: Brille, das erste Selfie, QWERTY, der Teddybär und mehr"
+    "de": "Sieben Anfänge seit 1286: Brille, das erste Selfie, QWERTY, der Teddybär und mehr",
+    "fr": "Sept débuts depuis 1286 : les lunettes, le premier selfie, le QWERTY, le nounours et plus encore",
+    "pt": "Sete começos desde 1286: os óculos, a primeira selfie, o QWERTY, o ursinho de pelúcia e mais",
+    "it": "Sette inizi dal 1286: occhiali, il primo selfie, QWERTY, l'orsacchiotto e altro"
    },
    "summaries": {
     "es": "Las primeras gafas, hacia 1286; el autorretrato de Robert Cornelius de 1839; por qué el QWERTY es como es; la cacería de osos de 1902 que dio origen al osito de peluche; las primeras fotos de la Tierra desde el espacio en 1946; Tennis for Two en 1958; y el primer sitio web, todavía en línea en el CERN.",
-    "de": "Die ersten Brillen um 1286, Robert Cornelius' Selbstporträt von 1839, warum QWERTY so aussieht, wie es aussieht, die Bärenjagd von 1902 hinter dem Teddybären, die ersten Fotos der Erde aus dem All 1946, Tennis for Two 1958 und die erste Website, die beim CERN immer noch online ist."
+    "de": "Die ersten Brillen um 1286, Robert Cornelius' Selbstporträt von 1839, warum QWERTY so aussieht, wie es aussieht, die Bärenjagd von 1902 hinter dem Teddybären, die ersten Fotos der Erde aus dem All 1946, Tennis for Two 1958 und die erste Website, die beim CERN immer noch online ist.",
+    "fr": "Les premières lunettes vers 1286, l'autoportrait de Robert Cornelius en 1839, pourquoi le QWERTY a cette forme, la chasse à l'ours de 1902 à l'origine de l'ours en peluche, les premières photos de la Terre depuis l'espace en 1946, Tennis for Two en 1958, et le premier site web, toujours en ligne au CERN.",
+    "pt": "Os primeiros óculos, por volta de 1286; o autorretrato de Robert Cornelius de 1839; por que o QWERTY é do jeito que é; a caçada de ursos de 1902 por trás do ursinho de pelúcia; as primeiras fotos da Terra vista do espaço, em 1946; Tennis for Two, em 1958; e o primeiro site, ainda no ar no CERN.",
+    "it": "I primi occhiali intorno al 1286, l'autoritratto di Robert Cornelius del 1839, perché la tastiera QWERTY è fatta così, la caccia all'orso del 1902 dietro il teddy bear, le prime foto della Terra dallo spazio nel 1946, Tennis for Two nel 1958 e il primo sito web, ancora online al CERN."
    },
    "page": null
   },
@@ -1621,11 +1666,17 @@
    "ai_pictures": true,
    "titles": {
     "es": "Los 6 momentos más extraños de la historia de la Tierra (y cómo lo sabemos)",
-    "de": "Die 6 seltsamsten Momente der Erdgeschichte (und woher wir sie kennen)"
+    "de": "Die 6 seltsamsten Momente der Erdgeschichte (und woher wir sie kennen)",
+    "fr": "Les 6 moments les plus étranges de l'histoire de la Terre (et comment on le sait)",
+    "pt": "Os 6 momentos mais estranhos da história da Terra (e como sabemos)",
+    "it": "I 6 momenti più strani della storia della Terra (e come lo sappiamo)"
    },
    "summaries": {
     "es": "Mares morados, un anillo como el de Saturno, el día en que murieron los dinosaurios, el fin del megalodón, el Sáhara verde y la explosión de Tunguska: seis de los momentos más extraños del pasado de la Tierra y las pruebas detrás de cada uno. Las escenas que nadie pudo fotografiar son reconstrucciones con IA, indicadas en pantalla.",
-    "de": "Violette Meere, ein Ring wie der des Saturn, der Tag, an dem die Dinosaurier starben, das Ende des Megalodon, die grüne Sahara und die Tunguska-Explosion: sechs der seltsamsten Momente der Erdgeschichte und die Belege für jeden davon. Szenen, die niemand fotografieren konnte, sind KI-Rekonstruktionen und auf dem Bildschirm gekennzeichnet."
+    "de": "Violette Meere, ein Ring wie der des Saturn, der Tag, an dem die Dinosaurier starben, das Ende des Megalodon, die grüne Sahara und die Tunguska-Explosion: sechs der seltsamsten Momente der Erdgeschichte und die Belege für jeden davon. Szenen, die niemand fotografieren konnte, sind KI-Rekonstruktionen und auf dem Bildschirm gekennzeichnet.",
+    "fr": "Des mers violettes, un anneau comme celui de Saturne, le jour où les dinosaures ont disparu, la fin du mégalodon, le Sahara vert et l'explosion de la Toungouska : six des moments les plus étranges du passé de la Terre, et les preuves derrière chacun. Les scènes que personne n'a pu photographier sont des reconstitutions par IA, signalées à l'écran.",
+    "pt": "Mares roxos, um anel como o de Saturno, o dia em que os dinossauros morreram, o fim do megalodon, o Saara verde e a explosão de Tunguska: seis dos momentos mais estranhos do passado da Terra e as evidências por trás de cada um. Cenas que ninguém poderia fotografar são reconstruções feitas com IA, identificadas na tela.",
+    "it": "Mari viola, un anello come quello di Saturno, il giorno in cui morirono i dinosauri, la fine del megalodonte, il Sahara verde e l'esplosione di Tunguska: sei dei momenti più strani del passato della Terra, e le prove dietro ciascuno. Le scene che nessuno poteva fotografare sono ricostruzioni con IA, indicate sullo schermo."
    },
    "page": null
   },
@@ -1692,11 +1743,17 @@
    "ai_pictures": true,
    "titles": {
     "es": "La Tierra pudo tener un anillo como Saturno. 21 cráteres lo sugieren",
-    "de": "Die Erde hatte vielleicht einen Ring wie Saturn. 21 Krater deuten darauf hin"
+    "de": "Die Erde hatte vielleicht einen Ring wie Saturn. 21 Krater deuten darauf hin",
+    "fr": "La Terre a peut-être eu un anneau comme Saturne. 21 cratères le suggèrent",
+    "pt": "A Terra pode ter tido um anel como Saturno. 21 crateras dão a pista",
+    "it": "La Terra potrebbe aver avuto un anello come Saturno. 21 crateri lo suggeriscono"
    },
    "summaries": {
     "es": "Un estudio de 2024 sugiere que la Tierra pudo tener un anillo hace unos 466 millones de años, formado por un asteroide roto.",
-    "de": "Eine Studie von 2024 legt nahe, dass die Erde vor etwa 466 Millionen Jahren einen Ring aus einem zerbrochenen Asteroiden hatte."
+    "de": "Eine Studie von 2024 legt nahe, dass die Erde vor etwa 466 Millionen Jahren einen Ring aus einem zerbrochenen Asteroiden hatte.",
+    "fr": "Une étude de 2024 suggère que la Terre a peut-être eu un anneau il y a environ 466 millions d'années, formé d'un astéroïde brisé.",
+    "pt": "Um estudo de 2024 sugere que a Terra pode ter tido um anel há cerca de 466 milhões de anos, feito de um asteroide despedaçado.",
+    "it": "Uno studio del 2024 suggerisce che la Terra potrebbe aver avuto un anello circa 466 milioni di anni fa, formato da un asteroide frantumato. Tutti i 21 crateri studiati si trovano vicino all'equatore. Le scene che nessuno poteva fotografare sono ricostruzioni con IA, indicate sullo schermo."
    },
    "page": null
   },
@@ -1827,11 +1884,17 @@
    "ai_pictures": false,
    "titles": {
     "es": "Un niño de 8 años encontró el único rastro del dinero de D.B. Cooper",
-    "de": "Ein 8-Jähriger fand die einzige Spur von D.B. Coopers Geld"
+    "de": "Ein 8-Jähriger fand die einzige Spur von D.B. Coopers Geld",
+    "fr": "Un enfant de 8 ans a trouvé la seule trace de l'argent de D.B. Cooper",
+    "pt": "Um menino de 8 anos achou o único rastro do dinheiro de D.B. Cooper",
+    "it": "Un bambino di 8 anni trovò l'unica traccia dei soldi di D.B. Cooper"
    },
    "summaries": {
     "es": "En 1980 un niño de ocho años encontró unos 5.800 dólares del dinero del rescate de D.B. Cooper.",
-    "de": "1980 fand ein Achtjähriger rund 5.800 Dollar des Lösegelds von D.B. Cooper."
+    "de": "1980 fand ein Achtjähriger rund 5.800 Dollar des Lösegelds von D.B. Cooper.",
+    "fr": "En 1980, un garçon de huit ans a trouvé environ 5 800 dollars de la rançon de D.B. Cooper.",
+    "pt": "Em 1980 um menino de oito anos achou cerca de US$ 5.800 do dinheiro do resgate de D.B. Cooper.",
+    "it": "Nel 1980 un bambino di otto anni trovò circa 5.800 dollari del riscatto di D.B. Cooper sul fiume Columbia. La storia completa è nel nostro video lungo."
    },
    "page": null
   },
@@ -2004,11 +2067,17 @@
    "ai_pictures": false,
    "titles": {
     "es": "Secuestró un avión, saltó y nunca lo encontraron",
-    "de": "Er entführte ein Flugzeug, sprang ab und wurde nie gefunden"
+    "de": "Er entführte ein Flugzeug, sprang ab und wurde nie gefunden",
+    "fr": "Il a détourné un avion, a sauté et n'a jamais été retrouvé",
+    "pt": "Ele sequestrou um avião, saltou e nunca foi encontrado",
+    "it": "Dirottò un aereo, si lanciò e non fu mai trovato"
    },
    "summaries": {
     "es": "En 1971, un hombre que se hacía llamar Dan Cooper secuestró un avión, se llevó 200.000 dólares y saltó sobre Washington. El FBI cerró el caso 45 años después, sin resolver.",
-    "de": "Im Jahr 1971 entführte ein Mann, der sich Dan Cooper nannte, ein Flugzeug, nahm 200.000 Dollar und sprang über Washington ab. Das FBI schloss den Fall 45 Jahre später – ungelöst."
+    "de": "Im Jahr 1971 entführte ein Mann, der sich Dan Cooper nannte, ein Flugzeug, nahm 200.000 Dollar und sprang über Washington ab. Das FBI schloss den Fall 45 Jahre später – ungelöst.",
+    "fr": "En 1971, un homme se faisant appeler Dan Cooper a détourné un avion, pris 200 000 dollars et sauté au-dessus de Washington. Le FBI a clos l'affaire 45 ans plus tard, sans l'avoir résolue.",
+    "pt": "Em 1971, um homem que se apresentava como Dan Cooper sequestrou um avião, levou US$ 200.000 e saltou sobre Washington. O FBI encerrou o caso 45 anos depois, sem solução.",
+    "it": "Nel 1971 un uomo che si faceva chiamare Dan Cooper dirottò un aereo, prese 200.000 dollari e si lanciò sopra lo stato di Washington. L'FBI chiuse il caso 45 anni dopo, irrisolto."
    },
    "page": null
   },
@@ -2143,11 +2212,17 @@
    "ai_pictures": false,
    "titles": {
     "es": "El primer iPhone solo funcionaba en un orden exacto",
-    "de": "Das erste iPhone funktionierte nur in einer exakten Reihenfolge"
+    "de": "Das erste iPhone funktionierte nur in einer exakten Reihenfolge",
+    "fr": "Le premier iPhone ne fonctionnait que dans un ordre précis",
+    "pt": "O primeiro iPhone só funcionava numa ordem exata",
+    "it": "Il primo iPhone funzionava solo in un ordine esatto"
    },
    "summaries": {
     "es": "En enero de 2007 solo existían unos 100 iPhones, y la demostración solo funcionaba en un orden exacto.",
-    "de": "Im Januar 2007 gab es nur etwa 100 iPhones, und die Demo lief nur in einer exakten Reihenfolge."
+    "de": "Im Januar 2007 gab es nur etwa 100 iPhones, und die Demo lief nur in einer exakten Reihenfolge.",
+    "fr": "En janvier 2007, il n'existait qu'une centaine d'iPhone, et la démo ne marchait que dans un ordre précis.",
+    "pt": "Em janeiro de 2007 existiam só uns 100 iPhones, e a demonstração só funcionava numa ordem exata.",
+    "it": "Nel gennaio 2007 esistevano solo circa 100 iPhone, e la demo funzionava solo in un ordine esatto. La storia completa è nel nostro video lungo."
    },
    "page": null
   },
@@ -2321,11 +2396,17 @@
    "ai_pictures": false,
    "titles": {
     "es": "La primera demostración del iPhone fue una ilusión cuidadosamente preparada",
-    "de": "Die erste iPhone-Demo war eine sorgfältige Illusion"
+    "de": "Die erste iPhone-Demo war eine sorgfältige Illusion",
+    "fr": "La première démo de l'iPhone était une illusion soigneusement préparée",
+    "pt": "A primeira demonstração do iPhone foi uma ilusão cuidadosa",
+    "it": "La prima demo dell'iPhone era un'illusione studiata con cura"
    },
    "summaries": {
     "es": "Cuando Steve Jobs presentó el iPhone en 2007, apenas funcionaba. La historia del golden path, el orden exacto de toques que evitó que se bloqueara en el escenario.",
-    "de": "Als Steve Jobs 2007 das iPhone vorstellte, funktionierte es kaum. Die Geschichte des Golden Path, der genauen Reihenfolge von Berührungen, die verhinderte, dass es auf der Bühne abstürzte."
+    "de": "Als Steve Jobs 2007 das iPhone vorstellte, funktionierte es kaum. Die Geschichte des Golden Path, der genauen Reihenfolge von Berührungen, die verhinderte, dass es auf der Bühne abstürzte.",
+    "fr": "Quand Steve Jobs a présenté l'iPhone en 2007, il fonctionnait à peine. L'histoire du golden path, l'ordre exact des touchers qui l'a empêché de planter sur scène.",
+    "pt": "Quando Steve Jobs apresentou o iPhone em 2007, ele mal funcionava. A história do golden path, a ordem exata de toques que impediu que ele travasse no palco.",
+    "it": "Quando Steve Jobs presentò l'iPhone nel 2007, funzionava a malapena. La storia del \"golden path\", l'ordine esatto dei tocchi che gli impedì di bloccarsi sul palco."
    },
    "page": null
   },
@@ -2632,11 +2713,17 @@
    "ai_pictures": false,
    "titles": {
     "es": "Más antiguos de lo que crees: juegos de mesa, vino romano, papel higiénico, huchas y el sándwich",
-    "de": "Älter als du denkst: Brettspiele, römischer Wein, Klopapier, Sparschweine und das Sandwich"
+    "de": "Älter als du denkst: Brettspiele, römischer Wein, Klopapier, Sparschweine und das Sandwich",
+    "fr": "Plus vieux qu'on ne croit : jeux de société, vin romain, papier toilette, tirelire et sandwich",
+    "pt": "Mais antigos do que parece: jogos de tabuleiro, vinho romano, papel higiênico, cofrinho e sanduíche",
+    "it": "Più antichi di quanto pensi: giochi da tavolo, vino romano, carta igienica, salvadanai e sandwich"
    },
    "summaries": {
     "es": "El senet, un juego de mesa de unos 5000 años; la botella de vino sellada de Espira, de hacia el año 325 d. C.; el papel higiénico en la China del siglo VI; por qué una hucha tiene forma de cerdito; y el registro real detrás del sándwich.",
-    "de": "Senet, ein rund 5.000 Jahre altes Brettspiel; die versiegelte Weinflasche von Speyer aus der Zeit um 325 n. Chr.; Toilettenpapier im China des 6. Jahrhunderts; warum ein Sparschwein ein Schwein ist; und die echte Quelle hinter dem Sandwich."
+    "de": "Senet, ein rund 5.000 Jahre altes Brettspiel; die versiegelte Weinflasche von Speyer aus der Zeit um 325 n. Chr.; Toilettenpapier im China des 6. Jahrhunderts; warum ein Sparschwein ein Schwein ist; und die echte Quelle hinter dem Sandwich.",
+    "fr": "Le senet, un jeu de société vieux d'environ 5 000 ans ; la bouteille de vin scellée de Spire, datant d'environ 325 apr. J.-C. ; le papier toilette dans la Chine du VIe siècle ; pourquoi une tirelire est un cochon ; et la véritable trace écrite derrière le sandwich.",
+    "pt": "O senet, um jogo de tabuleiro de cerca de 5.000 anos; a garrafa de vinho lacrada de Speyer, de cerca de 325 d.C.; o papel higiênico na China do século VI; por que o cofrinho é um porquinho; e o registro real por trás do sanduíche.",
+    "it": "Il senet, un gioco da tavolo di circa 5.000 anni fa; la bottiglia di vino sigillata di Spira del 325 d.C. circa; la carta igienica nella Cina del VI secolo; perché il salvadanaio è un maialino; e la vera documentazione dietro il sandwich."
    },
    "page": null
   },
@@ -2706,11 +2793,17 @@
    "ai_pictures": true,
    "titles": {
     "es": "Puede que la Tierra fuera morada, no verde. Esta es la idea",
-    "de": "Die Erde war vielleicht einmal lila statt grün. Das ist die Idee"
+    "de": "Die Erde war vielleicht einmal lila statt grün. Das ist die Idee",
+    "fr": "La Terre a peut-être été violette, pas verte. Voici l'idée",
+    "pt": "A Terra pode já ter sido roxa, não verde. Esta é a ideia",
+    "it": "La Terra forse un tempo era viola, non verde. Ecco l'idea"
    },
    "summaries": {
     "es": "La hipótesis de la Tierra morada dice que los primeros microbios que usaron el sol usaban retinal, no clorofila, lo que habría dado a la vida temprana un color morado.",
-    "de": "Die Hypothese der lila Erde besagt, dass die ersten sonnengetriebenen Mikroben Retinal statt Chlorophyll nutzten, was frühes Leben lila gefärbt hätte."
+    "de": "Die Hypothese der lila Erde besagt, dass die ersten sonnengetriebenen Mikroben Retinal statt Chlorophyll nutzten, was frühes Leben lila gefärbt hätte.",
+    "fr": "L'hypothèse de la Terre violette dit que les premiers microbes à utiliser le soleil employaient le rétinal, pas la chlorophylle, ce qui aurait rendu la vie primitive violette.",
+    "pt": "A hipótese da Terra roxa diz que os primeiros micróbios movidos a luz solar usavam retinal, não clorofila, o que teria deixado a vida primitiva roxa.",
+    "it": "L'ipotesi della Terra viola sostiene che i primi microbi alimentati dal sole usassero il retinale, non la clorofilla, e che la vita primordiale apparisse quindi viola. È ancora un'ipotesi. Le scene che nessuno poteva fotografare sono ricostruzioni con IA, indicate sullo schermo."
    },
    "page": null
   },
@@ -2834,11 +2927,17 @@
    "ai_pictures": false,
    "titles": {
     "es": "Un solo barco bloqueó una décima parte del comercio mundial durante seis días",
-    "de": "Ein einziges Schiff blockierte sechs Tage lang ein Zehntel des Welthandels"
+    "de": "Ein einziges Schiff blockierte sechs Tage lang ein Zehntel des Welthandels",
+    "fr": "Un seul navire a bloqué un dixième du commerce mondial pendant six jours",
+    "pt": "Um único navio bloqueou um décimo do comércio mundial por seis dias",
+    "it": "Una nave bloccò un decimo del commercio mondiale per sei giorni"
    },
    "summaries": {
     "es": "En marzo de 2021 el Ever Given bloqueó el canal de Suez y retuvo unos 9.000 millones de dólares en comercio al día.",
-    "de": "Im März 2021 blockierte die Ever Given den Suezkanal und hielt täglich Waren im Wert von rund 9 Milliarden Dollar auf."
+    "de": "Im März 2021 blockierte die Ever Given den Suezkanal und hielt täglich Waren im Wert von rund 9 Milliarden Dollar auf.",
+    "fr": "En mars 2021, l'Ever Given a bloqué le canal de Suez et retenu environ 9 milliards de dollars de marchandises par jour.",
+    "pt": "Em março de 2021 o Ever Given bloqueou o Canal de Suez e segurou cerca de US$ 9 bilhões em comércio por dia.",
+    "it": "Nel marzo 2021 la Ever Given bloccò il Canale di Suez e trattenne circa 9 miliardi di dollari di commercio al giorno. La storia completa è nel nostro video lungo."
    },
    "page": null
   },
@@ -2974,11 +3073,17 @@
    "ai_pictures": false,
    "titles": {
     "es": "Cómo un solo barco paró 9.000 millones de dólares de comercio al día",
-    "de": "Wie ein einziges Schiff täglich 9 Milliarden Dollar Handel stoppte"
+    "de": "Wie ein einziges Schiff täglich 9 Milliarden Dollar Handel stoppte",
+    "fr": "Comment un seul navire a bloqué 9 milliards de dollars de commerce par jour",
+    "pt": "Como um único navio parou US$ 9 bilhões em comércio por dia",
+    "it": "Come una sola nave fermò 9 miliardi di dollari di commercio al giorno"
    },
    "summaries": {
     "es": "En marzo de 2021, el Ever Given quedó atravesado en el canal de Suez y se detuvo un comercio de unos 9.000 millones de dólares al día. Cómo lo liberaron y la pelea por quién pagaría.",
-    "de": "Im März 2021 blieb die Ever Given quer im Suezkanal stecken, und Handel im Wert von etwa 9 Milliarden Dollar pro Tag kam zum Erliegen. Wie sie befreit wurde – und der Streit darüber, wer zahlen sollte."
+    "de": "Im März 2021 blieb die Ever Given quer im Suezkanal stecken, und Handel im Wert von etwa 9 Milliarden Dollar pro Tag kam zum Erliegen. Wie sie befreit wurde – und der Streit darüber, wer zahlen sollte.",
+    "fr": "En mars 2021, l'Ever Given s'est retrouvé coincé en travers du canal de Suez, et environ 9 milliards de dollars de commerce par jour se sont arrêtés. Comment il a été libéré, et la bataille pour savoir qui paierait.",
+    "pt": "Em março de 2021, o Ever Given ficou atravessado no Canal de Suez, e cerca de US$ 9 bilhões em comércio por dia pararam. Como ele foi liberado e a briga sobre quem pagaria.",
+    "it": "Nel marzo 2021 la Ever Given si incastrò di traverso nel Canale di Suez, e circa 9 miliardi di dollari di commercio al giorno si fermarono. Come fu liberata, e la battaglia su chi avrebbe pagato."
    },
    "page": null
   },
@@ -3078,11 +3183,17 @@
    "ai_pictures": false,
    "titles": {
     "es": "Cinco misiles en su pantalla. Dijo que era una falsa alarma",
-    "de": "Fünf Raketen auf seinem Bildschirm. Er nannte es Fehlalarm"
+    "de": "Fünf Raketen auf seinem Bildschirm. Er nannte es Fehlalarm",
+    "fr": "Cinq missiles sur son écran. Il a parlé de fausse alerte",
+    "pt": "Cinco mísseis na tela. Ele disse que era alarme falso",
+    "it": "Cinque missili sul suo schermo. Lui lo definì un falso allarme"
    },
    "summaries": {
     "es": "En 1983, Stanislav Petrov vio cinco misiles estadounidenses en su pantalla y lo consideró un fallo.",
-    "de": "1983 sah Stanislaw Petrow fünf amerikanische Raketen auf seinem Bildschirm und meldete eine Fehlfunktion."
+    "de": "1983 sah Stanislaw Petrow fünf amerikanische Raketen auf seinem Bildschirm und meldete eine Fehlfunktion.",
+    "fr": "En 1983, Stanislav Petrov a vu cinq missiles américains sur son écran et a conclu à une panne.",
+    "pt": "Em 1983, Stanislav Petrov viu cinco mísseis americanos na tela e considerou que era uma falha.",
+    "it": "Nel 1983 Stanislav Petrov vide cinque missili americani sul suo schermo e lo considerò un malfunzionamento. Aveva ragione. La storia completa è nel nostro video lungo."
    },
    "page": null
   },
@@ -3236,11 +3347,17 @@
    "ai_pictures": false,
    "titles": {
     "es": "El oficial soviético que ignoró una alarma de lanzamiento nuclear",
-    "de": "Der sowjetische Offizier, der einen Atomraketen-Alarm ignorierte"
+    "de": "Der sowjetische Offizier, der einen Atomraketen-Alarm ignorierte",
+    "fr": "L'officier soviétique qui a ignoré une alerte de tir nucléaire",
+    "pt": "O oficial soviético que ignorou um alarme de lançamento nuclear",
+    "it": "L'ufficiale sovietico che ignorò un allarme di lancio nucleare"
    },
    "summaries": {
     "es": "En septiembre de 1983, un sistema de alerta soviético informó de cinco misiles estadounidenses. Stanislav Petrov decidió que era una falsa alarma. La historia de la noche en que quizá se evitó una guerra nuclear.",
-    "de": "Im September 1983 meldete ein sowjetisches Frühwarnsystem fünf amerikanische Raketen. Stanislaw Petrow entschied, dass es ein Fehlalarm war. Die Geschichte der Nacht, in der vielleicht ein Atomkrieg verhindert wurde."
+    "de": "Im September 1983 meldete ein sowjetisches Frühwarnsystem fünf amerikanische Raketen. Stanislaw Petrow entschied, dass es ein Fehlalarm war. Die Geschichte der Nacht, in der vielleicht ein Atomkrieg verhindert wurde.",
+    "fr": "En septembre 1983, un système d'alerte soviétique a signalé cinq missiles américains. Stanislav Petrov a décidé qu'il s'agissait d'une fausse alerte. L'histoire de la nuit où une guerre nucléaire a peut-être été évitée.",
+    "pt": "Em setembro de 1983, um sistema de alerta soviético indicou cinco mísseis americanos. Stanislav Petrov decidiu que era um alarme falso. A história da noite em que uma guerra nuclear talvez tenha sido evitada.",
+    "it": "Nel settembre 1983 un sistema di allerta sovietico segnalò cinque missili americani. Stanislav Petrov decise che era un falso allarme. La storia della notte in cui forse fu fermata una guerra nucleare."
    },
    "page": null
   },
@@ -3378,11 +3495,17 @@
    "ai_pictures": false,
    "titles": {
     "es": "El Apolo 13 tenía un filtro cuadrado y un agujero redondo. Así sobrevivió la tripulación",
-    "de": "Apollo 13 hatte einen eckigen Filter und ein rundes Loch. So überlebte die Crew"
+    "de": "Apollo 13 hatte einen eckigen Filter und ein rundes Loch. So überlebte die Crew",
+    "fr": "Apollo 13 avait un filtre carré et un trou rond. Voici comment l'équipage a survécu",
+    "pt": "A Apollo 13 tinha um filtro quadrado e um buraco redondo. Veja como a tripulação sobreviveu",
+    "it": "L'Apollo 13 aveva un filtro quadrato e un foro rotondo. Così l'equipaggio sopravvisse"
    },
    "summaries": {
     "es": "Tras explotar un tanque de oxígeno en el Apolo 13, los filtros de aire de repuesto de la tripulación no encajaban en el módulo lunar.",
-    "de": "Nach der Explosion eines Sauerstofftanks auf Apollo 13 passten die Ersatzluftfilter nicht in die Mondfähre."
+    "de": "Nach der Explosion eines Sauerstofftanks auf Apollo 13 passten die Ersatzluftfilter nicht in die Mondfähre.",
+    "fr": "Après l'explosion d'un réservoir d'oxygène sur Apollo 13, les filtres à air de rechange ne s'adaptaient pas au module lunaire.",
+    "pt": "Depois que um tanque de oxigênio explodiu na Apollo 13, os filtros de ar reservas não serviam no módulo lunar.",
+    "it": "Dopo l'esplosione di un serbatoio di ossigeno sull'Apollo 13, i filtri dell'aria di riserva dell'equipaggio non si adattavano al modulo lunare. Gli ingegneri improvvisarono un adattatore con copertine di manuali, sacchetti di plastica e nastro adesivo. La storia completa è nel nostro video lungo."
    },
    "page": null
   },
@@ -3556,11 +3679,17 @@
    "ai_pictures": false,
    "titles": {
     "es": "Cómo la cinta americana salvó el Apolo 13",
-    "de": "Wie Panzertape Apollo 13 rettete"
+    "de": "Wie Panzertape Apollo 13 rettete",
+    "fr": "Comment du ruban adhésif a sauvé Apollo 13",
+    "pt": "Como a fita adesiva salvou a Apollo 13",
+    "it": "Come il nastro adesivo salvò l'Apollo 13"
    },
    "summaries": {
     "es": "A los dos días de misión del Apolo 13, explotó un tanque de oxígeno. La historia del módulo lunar que se convirtió en bote salvavidas y del «buzón» improvisado que mantuvo con vida a tres astronautas.",
-    "de": "Zwei Tage nach dem Start von Apollo 13 explodierte ein Sauerstofftank. Die Geschichte der Mondfähre, die zum Rettungsboot wurde, und des improvisierten „Briefkastens“, der drei Astronauten am Leben hielt."
+    "de": "Zwei Tage nach dem Start von Apollo 13 explodierte ein Sauerstofftank. Die Geschichte der Mondfähre, die zum Rettungsboot wurde, und des improvisierten „Briefkastens“, der drei Astronauten am Leben hielt.",
+    "fr": "Deux jours après le départ d'Apollo 13, un réservoir d'oxygène a explosé. L'histoire du module lunaire devenu canot de sauvetage, et de la « boîte aux lettres » improvisée qui a maintenu trois astronautes en vie.",
+    "pt": "Dois dias após o início da Apollo 13, um tanque de oxigênio explodiu. A história do módulo lunar que virou bote salva-vidas e da «caixa de correio» improvisada que manteve três astronautas vivos.",
+    "it": "Due giorni dopo la partenza dell'Apollo 13, esplose un serbatoio di ossigeno. La storia del modulo lunare diventato scialuppa di salvataggio e della \"cassetta della posta\" improvvisata che tenne in vita tre astronauti."
    },
    "page": null
   },
@@ -3691,11 +3820,17 @@
    "ai_pictures": false,
    "titles": {
     "es": "El Hindenburg se diseñó para helio. Voló con hidrógeno",
-    "de": "Die Hindenburg war für Helium gebaut. Sie flog mit Wasserstoff"
+    "de": "Die Hindenburg war für Helium gebaut. Sie flog mit Wasserstoff",
+    "fr": "Le Hindenburg était conçu pour l'hélium. Il a volé à l'hydrogène",
+    "pt": "O Hindenburg foi projetado para hélio. Voou com hidrogênio",
+    "it": "L'Hindenburg era progettato per l'elio. Volava a idrogeno"
    },
    "summaries": {
     "es": "El Hindenburg se diseñó para helio pero voló con hidrógeno, porque EE. UU. prohibió exportar helio.",
-    "de": "Die Hindenburg war für Helium ausgelegt, flog aber mit Wasserstoff, weil die USA den Heliumexport verboten."
+    "de": "Die Hindenburg war für Helium ausgelegt, flog aber mit Wasserstoff, weil die USA den Heliumexport verboten.",
+    "fr": "Le Hindenburg était conçu pour l'hélium mais volait à l'hydrogène, car les États-Unis interdisaient l'export d'hélium.",
+    "pt": "O Hindenburg foi projetado para hélio, mas voou com hidrogênio porque os EUA proibiram exportar hélio.",
+    "it": "L'Hindenburg era progettato per l'elio ma volava a idrogeno, perché gli Stati Uniti vietavano l'esportazione di elio. La storia completa è nel nostro video lungo."
    },
    "page": null
   },
@@ -3840,11 +3975,17 @@
    "ai_pictures": false,
    "titles": {
     "es": "El Hindenburg nunca debió volar con hidrógeno",
-    "de": "Die Hindenburg sollte nie mit Wasserstoff fliegen"
+    "de": "Die Hindenburg sollte nie mit Wasserstoff fliegen",
+    "fr": "Le Hindenburg n'aurait jamais dû voler à l'hydrogène",
+    "pt": "O Hindenburg nunca deveria ter voado com hidrogênio",
+    "it": "L'Hindenburg non doveva volare a idrogeno"
    },
    "summaries": {
     "es": "El Hindenburg se diseñó para helio, pero voló con hidrógeno. El 6 de mayo de 1937 ardió en cerca de medio minuto en Lakehurst, y con él terminó la era de los grandes dirigibles.",
-    "de": "Die Hindenburg war für Helium konstruiert, flog aber mit Wasserstoff. Am 6. Mai 1937 brannte sie in Lakehurst in etwa einer halben Minute ab, und mit ihr endete das Zeitalter der Riesenluftschiffe."
+    "de": "Die Hindenburg war für Helium konstruiert, flog aber mit Wasserstoff. Am 6. Mai 1937 brannte sie in Lakehurst in etwa einer halben Minute ab, und mit ihr endete das Zeitalter der Riesenluftschiffe.",
+    "fr": "Le Hindenburg avait été conçu pour l'hélium, mais il volait à l'hydrogène. Le 6 mai 1937, il a brûlé en une trentaine de secondes à Lakehurst, et l'ère des dirigeables géants s'est achevée avec lui.",
+    "pt": "O Hindenburg foi projetado para hélio, mas voou com hidrogênio. Em 6 de maio de 1937, ele pegou fogo em cerca de meio minuto em Lakehurst, e a era dos dirigíveis gigantes acabou junto.",
+    "it": "L'Hindenburg era progettato per l'elio, ma volava a idrogeno. Il 6 maggio 1937 bruciò in circa mezzo minuto a Lakehurst, e con lui finì l'era dei dirigibili giganti."
    },
    "page": null
   },
@@ -3967,11 +4108,17 @@
    "ai_pictures": false,
    "titles": {
     "es": "El operador de Chernóbil pulsó el botón de emergencia. Momentos después, explotó",
-    "de": "Der Operator in Tschernobyl drückte den Notknopf. Momente später explodierte es"
+    "de": "Der Operator in Tschernobyl drückte den Notknopf. Momente später explodierte es",
+    "fr": "L'opérateur de Tchernobyl a appuyé sur le bouton d'urgence. Peu après, tout a explosé",
+    "pt": "O operador de Chernobyl apertou o botão de emergência. Momentos depois, explodiu",
+    "it": "L'operatore di Chernobyl premette il pulsante d'emergenza. Poco dopo, esplose"
    },
    "summaries": {
     "es": "El reactor 4 de Chernóbil explotó el 26 de abril de 1986, momentos después de que un operador pulsara el botón de emergencia.",
-    "de": "Reaktor 4 in Tschernobyl explodierte am 26. April 1986, Momente nachdem ein Operator den Notabschaltknopf gedrückt hatte."
+    "de": "Reaktor 4 in Tschernobyl explodierte am 26. April 1986, Momente nachdem ein Operator den Notabschaltknopf gedrückt hatte.",
+    "fr": "Le réacteur 4 de Tchernobyl a explosé le 26 avril 1986, quelques instants après qu'un opérateur a appuyé sur le bouton d'arrêt d'urgence.",
+    "pt": "O reator 4 de Chernobyl explodiu em 26 de abril de 1986, momentos depois de um operador apertar o botão de emergência.",
+    "it": "Il reattore 4 di Chernobyl esplose il 26 aprile 1986, pochi istanti dopo che un operatore aveva premuto il pulsante d'emergenza, perché le barre di controllo con punta in grafite aumentarono brevemente la potenza. Il mondo lo seppe dagli allarmi di radiazioni in Svezia. La storia completa è nel nostro video lungo."
    },
    "page": null
   },
@@ -4139,11 +4286,17 @@
    "ai_pictures": false,
    "titles": {
     "es": "La prueba de seguridad que destruyó Chernóbil",
-    "de": "Der Sicherheitstest, der Tschernobyl zerstörte"
+    "de": "Der Sicherheitstest, der Tschernobyl zerstörte",
+    "fr": "Le test de sécurité qui a détruit Tchernobyl",
+    "pt": "O teste de segurança que destruiu Chernobyl",
+    "it": "Il test di sicurezza che distrusse Chernobyl"
    },
    "summaries": {
     "es": "En abril de 1986, una prueba de seguridad destruyó el reactor 4 de Chernóbil. A Prípiat no se le avisó esa noche, y el mundo se enteró cuando saltaron las alarmas de radiación en Suecia.",
-    "de": "Im April 1986 zerstörte ein Sicherheitstest Reaktor 4 in Tschernobyl. Prypjat wurde in jener Nacht nicht informiert, und die Welt erfuhr davon, als in Schweden Strahlenalarme losgingen."
+    "de": "Im April 1986 zerstörte ein Sicherheitstest Reaktor 4 in Tschernobyl. Prypjat wurde in jener Nacht nicht informiert, und die Welt erfuhr davon, als in Schweden Strahlenalarme losgingen.",
+    "fr": "En avril 1986, un test de sécurité a détruit le réacteur 4 de Tchernobyl. Pripiat n'a pas été prévenue cette nuit-là, et le monde l'a appris quand des alarmes de radiation se sont déclenchées en Suède.",
+    "pt": "Em abril de 1986, um teste de segurança destruiu o reator 4 de Chernobyl. Pripyat não foi avisada naquela noite, e o mundo soube quando alarmes de radiação dispararam na Suécia.",
+    "it": "Nell'aprile 1986 un test di sicurezza distrusse il reattore 4 di Chernobyl. Quella notte Pripyat non fu avvisata, e il mondo lo scoprì quando scattarono gli allarmi di radiazioni in Svezia."
    },
    "page": null
   },
@@ -4526,11 +4679,17 @@
    "ai_pictures": false,
    "titles": {
     "es": "La historia oculta de lo que llevas puesto: anillos, tacones, vaqueros, cremalleras y el sujetador",
-    "de": "Die verborgene Geschichte deiner Kleidung: Ringe, High Heels, Jeans, Reißverschlüsse und der BH"
+    "de": "Die verborgene Geschichte deiner Kleidung: Ringe, High Heels, Jeans, Reißverschlüsse und der BH",
+    "fr": "L'histoire cachée de vos vêtements : bagues, talons, jean, fermetures éclair et soutien-gorge",
+    "pt": "A história escondida do que você veste: anéis, saltos, jeans, zíperes e o sutiã",
+    "it": "La storia nascosta di ciò che indossi: anelli, tacchi, jeans, cerniere e reggiseno"
    },
    "summaries": {
     "es": "De dónde viene de verdad la costumbre del dedo anular, por qué los tacones empezaron con los jinetes persas, para qué servía el bolsillito de los vaqueros, cómo unas botas de goma dieron su nombre inglés, zipper, a la cremallera y la patente del sujetador de 1914 que empezó con dos pañuelos.",
-    "de": "Woher der Brauch mit dem Ringfinger wirklich stammt, warum High Heels mit persischen Reitern begannen, wofür die winzige Jeanstasche gedacht war, wie ein Paar Gummistiefel dem Reißverschluss seinen englischen Namen Zipper gab, und das BH-Patent von 1914, das mit zwei Taschentüchern begann."
+    "de": "Woher der Brauch mit dem Ringfinger wirklich stammt, warum High Heels mit persischen Reitern begannen, wofür die winzige Jeanstasche gedacht war, wie ein Paar Gummistiefel dem Reißverschluss seinen englischen Namen Zipper gab, und das BH-Patent von 1914, das mit zwei Taschentüchern begann.",
+    "fr": "D'où vient vraiment la tradition de l'annulaire, pourquoi les talons hauts ont commencé avec des cavaliers perses, à quoi servait la minuscule poche du jean, comment une paire de bottes en caoutchouc a donné son nom anglais, zipper, à la fermeture éclair, et le brevet de soutien-gorge de 1914 né de deux mouchoirs.",
+    "pt": "De onde vem de verdade o costume do dedo anelar, por que o salto alto começou com cavaleiros persas, para que servia o bolsinho da calça jeans, como um par de botas de borracha deu nome ao zíper e a patente do sutiã de 1914 que começou com dois lenços.",
+    "it": "Da dove viene davvero l'usanza dell'anulare, perché i tacchi alti nacquero con i cavalieri persiani, a cosa serviva il taschino dei jeans, come un paio di stivali di gomma diede il nome alla cerniera, e il brevetto del reggiseno del 1914 nato da due fazzoletti."
    },
    "page": null
   },
@@ -4622,11 +4781,17 @@
    "ai_pictures": true,
    "titles": {
     "es": "El Sáhara era verde hace 10.000 años. Su arte rupestre lo demuestra",
-    "de": "Die Sahara war vor 10.000 Jahren grün. Ihre Felsbilder zeigen es"
+    "de": "Die Sahara war vor 10.000 Jahren grün. Ihre Felsbilder zeigen es",
+    "fr": "Le Sahara était vert il y a 10 000 ans. Son art rupestre le montre",
+    "pt": "O Saara era verde há 10.000 anos. Sua arte rupestre mostra isso",
+    "it": "10.000 anni fa il Sahara era verde. Le sue pitture rupestri lo mostrano"
    },
    "summaries": {
     "es": "Entre hace unos 11.000 y 6.000 años, el Sáhara era una sabana con ríos y lagos, y su arte rupestre aún lo muestra.",
-    "de": "Vor etwa 11.000 bis 6.000 Jahren war die Sahara eine Savanne mit Flüssen und Seen, und ihre Felsbilder zeigen das noch heute."
+    "de": "Vor etwa 11.000 bis 6.000 Jahren war die Sahara eine Savanne mit Flüssen und Seen, und ihre Felsbilder zeigen das noch heute.",
+    "fr": "Il y a environ 11 000 à 6 000 ans, le Sahara était une savane avec des rivières et des lacs, et son art rupestre le montre encore.",
+    "pt": "De cerca de 11.000 a 6.000 anos atrás, o Saara era uma savana com rios e lagos, e sua arte rupestre ainda mostra isso.",
+    "it": "Da circa 11.000 a 6.000 anni fa il Sahara era una savana con fiumi e laghi, e la sua arte rupestre lo mostra ancora. Le scene che nessuno poteva fotografare sono ricostruzioni con IA, indicate sullo schermo."
    },
    "page": null
   },
@@ -4756,11 +4921,17 @@
    "ai_pictures": false,
    "titles": {
     "es": "Un ingeniero advirtió a su empresa sobre el Challenger seis meses antes",
-    "de": "Ein Ingenieur warnte seine Firma sechs Monate vorher vor der Challenger"
+    "de": "Ein Ingenieur warnte seine Firma sechs Monate vorher vor der Challenger",
+    "fr": "Un ingénieur avait alerté son entreprise sur Challenger six mois avant",
+    "pt": "Um engenheiro alertou sua empresa sobre o Challenger seis meses antes",
+    "it": "Un ingegnere avvertì la sua azienda sul Challenger sei mesi prima"
    },
    "summaries": {
     "es": "Roger Boisjoly advirtió de una catástrofe seis meses antes del Challenger, y la noche anterior su empresa recomendó a la NASA esperar.",
-    "de": "Roger Boisjoly warnte sechs Monate vor der Challenger vor einer Katastrophe, und am Abend davor empfahl seine Firma der NASA zu warten."
+    "de": "Roger Boisjoly warnte sechs Monate vor der Challenger vor einer Katastrophe, und am Abend davor empfahl seine Firma der NASA zu warten.",
+    "fr": "Roger Boisjoly a mis en garde contre une catastrophe six mois avant Challenger, et la veille, son entreprise a recommandé à la NASA d'attendre.",
+    "pt": "Roger Boisjoly alertou para uma catástrofe seis meses antes do Challenger, e na noite anterior sua empresa recomendou à NASA esperar.",
+    "it": "Roger Boisjoly avvertì di una catastrofe sei mesi prima del Challenger, e la notte prima la sua azienda raccomandò alla NASA di aspettare. La storia completa è nel nostro video lungo."
    },
    "page": null
   },
@@ -4920,11 +5091,17 @@
    "ai_pictures": false,
    "titles": {
     "es": "Avisaron a la NASA la noche antes del Challenger",
-    "de": "Sie warnten die NASA in der Nacht vor Challenger"
+    "de": "Sie warnten die NASA in der Nacht vor Challenger",
+    "fr": "Ils avaient prévenu la NASA la veille de Challenger",
+    "pt": "Eles avisaram a NASA na noite antes do Challenger",
+    "it": "Avvertirono la NASA la notte prima del Challenger"
    },
    "summaries": {
     "es": "La noche antes del lanzamiento del Challenger, los ingenieros de Morton Thiokol advirtieron de que el frío podía hacer fallar las juntas de los cohetes propulsores. La historia de Roger Boisjoly, la advertencia y por qué se dejó de lado.",
-    "de": "In der Nacht vor dem Start der Challenger warnten Ingenieure von Morton Thiokol, dass Kälte die Dichtungen der Feststoffbooster versagen lassen könnte. Die Geschichte von Roger Boisjoly, der Warnung und warum sie beiseitegeschoben wurde."
+    "de": "In der Nacht vor dem Start der Challenger warnten Ingenieure von Morton Thiokol, dass Kälte die Dichtungen der Feststoffbooster versagen lassen könnte. Die Geschichte von Roger Boisjoly, der Warnung und warum sie beiseitegeschoben wurde.",
+    "fr": "La veille du lancement de Challenger, des ingénieurs de Morton Thiokol ont averti que le froid pouvait faire céder les joints des propulseurs. L'histoire de Roger Boisjoly, de cet avertissement, et des raisons pour lesquelles il a été écarté.",
+    "pt": "Na noite antes do lançamento do Challenger, engenheiros da Morton Thiokol alertaram que o frio poderia fazer falhar as vedações dos foguetes auxiliares. A história de Roger Boisjoly, do alerta e de por que ele foi deixado de lado.",
+    "it": "La notte prima del lancio del Challenger, gli ingegneri della Morton Thiokol avvertirono che il freddo poteva far cedere le guarnizioni dei razzi ausiliari. La storia di Roger Boisjoly, dell'avvertimento e del perché fu messo da parte."
    },
    "page": null
   },
@@ -5063,11 +5240,17 @@
    "ai_pictures": false,
    "titles": {
     "es": "Escondió una aguja de 185 pies dentro de su propio rascacielos",
-    "de": "Er versteckte eine 185 Fuß hohe Spitze in seinem eigenen Wolkenkratzer"
+    "de": "Er versteckte eine 185 Fuß hohe Spitze in seinem eigenen Wolkenkratzer",
+    "fr": "Il a caché une flèche de 185 pieds dans son propre gratte-ciel",
+    "pt": "Ele escondeu uma agulha de 185 pés dentro do próprio arranha-céu",
+    "it": "Nascose una guglia di 185 piedi dentro il suo stesso grattacielo"
    },
    "summaries": {
     "es": "En la carrera hacia el cielo, William Van Alen escondió una aguja de 185 pies dentro del edificio Chrysler y la subió en unos noventa minutos.",
-    "de": "Im Wettlauf in den Himmel versteckte William Van Alen eine 185 Fuß hohe Spitze im Chrysler Building und hob sie in etwa neunzig Minuten heraus."
+    "de": "Im Wettlauf in den Himmel versteckte William Van Alen eine 185 Fuß hohe Spitze im Chrysler Building und hob sie in etwa neunzig Minuten heraus.",
+    "fr": "Dans la course au ciel, William Van Alen a caché une flèche de 185 pieds dans le Chrysler Building, puis l'a hissée en environ quatre-vingt-dix minutes.",
+    "pt": "Na corrida pelo céu, William Van Alen escondeu uma agulha de 185 pés dentro do Chrysler Building e a ergueu em cerca de noventa minutos.",
+    "it": "Nella corsa verso il cielo, William Van Alen nascose una guglia di 185 piedi dentro il Chrysler Building, poi la sollevò in circa 90 minuti. La storia completa è nel nostro video lungo."
    },
    "page": null
   },
@@ -5304,11 +5487,17 @@
    "ai_pictures": false,
    "titles": {
     "es": "Escondió una aguja dentro de un rascacielos para ganar una carrera",
-    "de": "Er versteckte eine Turmspitze in einem Wolkenkratzer, um ein Rennen zu gewinnen"
+    "de": "Er versteckte eine Turmspitze in einem Wolkenkratzer, um ein Rennen zu gewinnen",
+    "fr": "Il a caché une flèche dans un gratte-ciel pour gagner une course",
+    "pt": "Ele escondeu uma agulha dentro de um arranha-céu para vencer uma corrida",
+    "it": "Nascose una guglia dentro un grattacielo per vincere una gara"
    },
    "summaries": {
     "es": "En la carrera por construir el edificio más alto del mundo, William Van Alen escondió una aguja de 185 pies dentro del Chrysler Building. Venció a su antiguo socio y perdió casi todo lo demás.",
-    "de": "Im Rennen um das höchste Gebäude der Welt versteckte William Van Alen eine 185 Fuß hohe Turmspitze im Chrysler Building. Er schlug seinen früheren Partner – und verlor fast alles andere."
+    "de": "Im Rennen um das höchste Gebäude der Welt versteckte William Van Alen eine 185 Fuß hohe Turmspitze im Chrysler Building. Er schlug seinen früheren Partner – und verlor fast alles andere.",
+    "fr": "Dans la course au plus haut bâtiment du monde, William Van Alen a caché une flèche de 185 pieds à l'intérieur du Chrysler Building. Il a battu son ancien associé, et presque tout perdu par ailleurs.",
+    "pt": "Na corrida para construir o prédio mais alto do mundo, William Van Alen escondeu uma agulha de 185 pés dentro do Chrysler Building. Ele venceu o ex-sócio e perdeu quase todo o resto.",
+    "it": "Nella gara per costruire l'edificio più alto del mondo, William Van Alen nascose una guglia di 185 piedi dentro il Chrysler Building. Batté il suo ex socio, e perse quasi tutto il resto."
    },
    "page": null
   },
@@ -5659,11 +5848,17 @@
    "ai_pictures": false,
    "titles": {
     "es": "La mujer que le robó el coche a su marido y salvó el automóvil",
-    "de": "Die Frau, die das Auto ihres Mannes stahl und das Automobil rettete"
+    "de": "Die Frau, die das Auto ihres Mannes stahl und das Automobil rettete",
+    "fr": "La femme qui a volé la voiture de son mari et sauvé l'automobile",
+    "pt": "A mulher que roubou o carro do marido e salvou o automóvel",
+    "it": "La donna che rubò l'auto del marito e salvò l'automobile"
    },
    "summaries": {
     "es": "El 5 de agosto de 1888, Bertha Benz se llevó el Patent-Motorwagen de su marido sin decírselo y condujo con sus dos hijos unos 106 km hasta Pforzheim, arreglando el coche por el camino. La historia completa del dinero, la carretera y lo que cambió el viaje.",
-    "de": "Am 5. August 1888 nahm Bertha Benz ohne Wissen ihres Mannes seinen Patent-Motorwagen und fuhr mit ihren beiden Söhnen rund 106 km nach Pforzheim, wobei sie das Auto unterwegs reparierte. Die ganze Geschichte über das Geld, die Strecke und das, was die Fahrt veränderte."
+    "de": "Am 5. August 1888 nahm Bertha Benz ohne Wissen ihres Mannes seinen Patent-Motorwagen und fuhr mit ihren beiden Söhnen rund 106 km nach Pforzheim, wobei sie das Auto unterwegs reparierte. Die ganze Geschichte über das Geld, die Strecke und das, was die Fahrt veränderte.",
+    "fr": "Le 5 août 1888, Bertha Benz a pris la Patent-Motorwagen de son mari sans le prévenir et a conduit ses deux fils sur environ 106 km jusqu'à Pforzheim, en réparant la voiture en chemin. L'histoire complète de l'argent, de la route et de ce que ce voyage a changé.",
+    "pt": "Em 5 de agosto de 1888, Bertha Benz pegou o Patent-Motorwagen do marido sem avisar e levou os dois filhos por cerca de 106 km até Pforzheim, consertando o carro pelo caminho. A história completa do dinheiro, da estrada e do que a viagem mudou.",
+    "it": "Il 5 agosto 1888 Bertha Benz prese la Patent-Motorwagen del marito senza dirglielo e guidò con i suoi due figli per circa 106 km fino a Pforzheim, riparando l'auto lungo la strada. La storia completa dei soldi, della strada e di cosa cambiò quel viaggio."
    },
    "page": null
   },
@@ -5777,11 +5972,17 @@
    "ai_pictures": false,
    "titles": {
     "es": "Un autobús de Londres sí saltó el Tower Bridge",
-    "de": "Ein Londoner Bus sprang wirklich über die Tower Bridge"
+    "de": "Ein Londoner Bus sprang wirklich über die Tower Bridge",
+    "fr": "Un bus londonien a vraiment sauté au-dessus du Tower Bridge",
+    "pt": "Um ônibus de Londres realmente saltou a Tower Bridge",
+    "it": "Un autobus di Londra saltò davvero il Tower Bridge"
    },
    "summaries": {
     "es": "En diciembre de 1952, el autobús número 78 de Albert Gunter saltó el Tower Bridge mientras empezaba a abrirse.",
-    "de": "Im Dezember 1952 sprang Albert Gunters Bus der Linie 78 über die Tower Bridge, als sie sich zu heben begann."
+    "de": "Im Dezember 1952 sprang Albert Gunters Bus der Linie 78 über die Tower Bridge, als sie sich zu heben begann.",
+    "fr": "En décembre 1952, le bus numéro 78 d'Albert Gunter a sauté le Tower Bridge alors qu'il commençait à se lever.",
+    "pt": "Em dezembro de 1952, o ônibus número 78 de Albert Gunter saltou a Tower Bridge quando ela começava a subir.",
+    "it": "Nel dicembre 1952 l'autobus numero 78 di Albert Gunter saltò il Tower Bridge mentre iniziava ad alzarsi. La storia completa del ponte è nel nostro video lungo."
    },
    "page": null
   },
@@ -5956,11 +6157,17 @@
    "ai_pictures": false,
    "titles": {
     "es": "El Tower Bridge es un disfraz. Y una vez, un autobús lo saltó",
-    "de": "Die Tower Bridge ist eine Tarnung. Und einmal sprang ein Bus darüber"
+    "de": "Die Tower Bridge ist eine Tarnung. Und einmal sprang ein Bus darüber",
+    "fr": "Le Tower Bridge est un déguisement. Et un jour, un bus l'a sauté",
+    "pt": "A Tower Bridge é um disfarce. E uma vez um ônibus pulou por cima dela",
+    "it": "Il Tower Bridge è un travestimento. E una volta un autobus lo saltò"
    },
    "summaries": {
     "es": "El Tower Bridge parece medieval, pero es una máquina victoriana: más de 11.000 toneladas de acero envueltas en piedra. La historia de cómo se construyó y del día de 1952 en que un autobús de Londres lo saltó.",
-    "de": "Die Tower Bridge sieht mittelalterlich aus, ist aber eine viktorianische Maschine: über 11.000 Tonnen Stahl, in Stein gehüllt. Die Geschichte ihres Baus – und des Tages im Jahr 1952, an dem ein Londoner Bus über sie sprang."
+    "de": "Die Tower Bridge sieht mittelalterlich aus, ist aber eine viktorianische Maschine: über 11.000 Tonnen Stahl, in Stein gehüllt. Die Geschichte ihres Baus – und des Tages im Jahr 1952, an dem ein Londoner Bus über sie sprang.",
+    "fr": "Le Tower Bridge a l'air médiéval, mais c'est une machine victorienne : plus de 11 000 tonnes d'acier enveloppées de pierre. L'histoire de sa construction, et du jour de 1952 où un bus londonien l'a sauté.",
+    "pt": "A Tower Bridge parece medieval, mas é uma máquina vitoriana: mais de 11.000 toneladas de aço envoltas em pedra. A história de como ela foi construída e do dia, em 1952, em que um ônibus de Londres pulou por cima dela.",
+    "it": "Il Tower Bridge sembra medievale, ma è una macchina vittoriana: oltre 11.000 tonnellate di acciaio rivestite di pietra. La storia di come fu costruito, e del giorno del 1952 in cui un autobus di Londra lo saltò."
    },
    "page": null
   },
@@ -5993,7 +6200,10 @@
     "en",
     "es",
     "el",
-    "de"
+    "de",
+    "fr",
+    "pt",
+    "it"
    ],
    "sources": [
     {
@@ -6130,12 +6340,18 @@
    "titles": {
     "es": "Creyeron que era un mendigo. Estaba construyendo esto",
     "el": "Νόμιζαν ότι ήταν ζητιάνος. Έχτιζε αυτό",
-    "de": "Man hielt ihn für einen Bettler. Er baute das hier"
+    "de": "Man hielt ihn für einen Bettler. Er baute das hier",
+    "fr": "On l'a pris pour un mendiant. Il construisait ceci",
+    "pt": "Acharam que ele era um mendigo. Ele estava construindo isto",
+    "it": "Lo presero per un mendicante. Stava costruendo questo"
    },
    "summaries": {
     "es": "En 1926 un tranvía atropelló a un anciano en Barcelona, y la gente lo tomó por un mendigo. Era Antoni Gaudí, el arquitecto de la Sagrada Família. La historia completa está en nuestro vídeo largo.",
     "el": "Το 1926 ένα τραμ χτύπησε έναν ηλικιωμένο άντρα στη Βαρκελώνη, και ο κόσμος τον πέρασε για ζητιάνο. Ήταν ο Αντόνι Γκαουντί, ο αρχιτέκτονας της Σαγράδα Φαμίλια. Όλη την ιστορία θα τη βρείτε στο μεγάλο μας βίντεο.",
-    "de": "1926 erfasste eine Straßenbahn in Barcelona einen alten Mann, und die Leute hielten ihn für einen Bettler. Es war Antoni Gaudí, der Architekt der Sagrada Família. Die ganze Geschichte gibt es in unserem langen Video."
+    "de": "1926 erfasste eine Straßenbahn in Barcelona einen alten Mann, und die Leute hielten ihn für einen Bettler. Es war Antoni Gaudí, der Architekt der Sagrada Família. Die ganze Geschichte gibt es in unserem langen Video.",
+    "fr": "En 1926, un tramway a renversé un vieil homme à Barcelone, et les gens l'ont pris pour un mendiant. C'était Antoni Gaudí, l'architecte de la Sagrada Família. L'histoire complète est dans notre vidéo longue.",
+    "pt": "Em 1926, um bonde atropelou um velho em Barcelona, e as pessoas o tomaram por mendigo. Era Antoni Gaudí, arquiteto da Sagrada Família. A história completa está no nosso vídeo longo.",
+    "it": "Nel 1926 un tram investì un vecchio a Barcellona, e la gente lo prese per un mendicante. Era Antoni Gaudí, l'architetto della Sagrada Família. La storia completa è nel nostro video lungo."
    },
    "page": "v/0037-gaudi-tram.html"
   },
@@ -6348,11 +6564,17 @@
    "ai_pictures": false,
    "titles": {
     "es": "144 años, un tranvía y un incendio: la iglesia que sigue sin terminar",
-    "de": "144 Jahre, eine Straßenbahn und ein Feuer: Die Kirche, die immer noch nicht fertig ist"
+    "de": "144 Jahre, eine Straßenbahn und ein Feuer: Die Kirche, die immer noch nicht fertig ist",
+    "fr": "144 ans, un tramway et un incendie : l'église toujours inachevée",
+    "pt": "144 anos, um bonde e um incêndio: a igreja que ainda não foi terminada",
+    "it": "144 anni, un tram e un incendio: la chiesa che non è ancora finita"
    },
    "summaries": {
     "es": "La Sagrada Família se empezó en 1882 y todavía no está terminada. La historia de Gaudí, el tranvía que lo mató, el incendio de 1936 que quemó sus planos y la torre terminada 100 años después de su muerte.",
-    "de": "Die Sagrada Família wurde 1882 begonnen und ist immer noch nicht fertig. Die Geschichte von Gaudí, der Straßenbahn, die ihn tötete, dem Feuer von 1936, das seine Pläne verbrannte, und dem Turm, der 100 Jahre nach seinem Tod fertig wurde."
+    "de": "Die Sagrada Família wurde 1882 begonnen und ist immer noch nicht fertig. Die Geschichte von Gaudí, der Straßenbahn, die ihn tötete, dem Feuer von 1936, das seine Pläne verbrannte, und dem Turm, der 100 Jahre nach seinem Tod fertig wurde.",
+    "fr": "La Sagrada Família a été commencée en 1882, et elle n'est toujours pas terminée. L'histoire de Gaudí, du tramway qui l'a tué, de l'incendie de 1936 qui a brûlé ses plans, et de la tour achevée 100 ans après sa mort.",
+    "pt": "A Sagrada Família começou a ser construída em 1882 e ainda não está pronta. A história de Gaudí, do bonde que o matou, do incêndio de 1936 que queimou seus projetos e da torre terminada 100 anos depois da sua morte.",
+    "it": "La Sagrada Família fu iniziata nel 1882 e non è ancora finita. La storia di Gaudí, del tram che lo uccise, dell'incendio del 1936 che bruciò i suoi progetti e della torre finita 100 anni dopo la sua morte."
    },
    "page": null
   },
@@ -6498,11 +6720,17 @@
    "ai_pictures": false,
    "titles": {
     "es": "¿De verdad Edison electrocutó a aquella elefanta?",
-    "de": "Hat Edison diese Elefantin wirklich mit Strom getötet?"
+    "de": "Hat Edison diese Elefantin wirklich mit Strom getötet?",
+    "fr": "Edison a-t-il vraiment électrocuté cette éléphante ?",
+    "pt": "Edison realmente eletrocutou aquela elefanta?",
+    "it": "Edison fulminò davvero quell'elefante?"
    },
    "summaries": {
     "es": "Edison no electrocutó a la elefanta Topsy: lo hicieron los dueños del parque, años después de la guerra de las corrientes.",
-    "de": "Nicht Edison tötete die Elefantin Topsy mit Strom, sondern die Parkbesitzer, Jahre nach dem Stromkrieg."
+    "de": "Nicht Edison tötete die Elefantin Topsy mit Strom, sondern die Parkbesitzer, Jahre nach dem Stromkrieg.",
+    "fr": "Ce n'est pas Edison qui a électrocuté l'éléphante Topsy, mais les propriétaires du parc, des années après la guerre des courants.",
+    "pt": "Edison não eletrocutou a elefanta Topsy: foram os donos do parque, anos depois da guerra das correntes.",
+    "it": "Edison non fulminò l'elefantessa Topsy: lo fecero i proprietari del parco, anni dopo la fine della guerra delle correnti. Cosa fece davvero lui è nel nostro video lungo."
    },
    "page": null
   },
@@ -6737,11 +6965,17 @@
    "ai_pictures": false,
    "titles": {
     "es": "La guerra sucia que decidió lo que sale de tu enchufe",
-    "de": "Der hässliche Krieg, der entschied, was aus deiner Steckdose kommt"
+    "de": "Der hässliche Krieg, der entschied, was aus deiner Steckdose kommt",
+    "fr": "La sale guerre qui a décidé de ce qui sort de votre prise",
+    "pt": "A guerra feia que decidiu o que sai da sua tomada",
+    "it": "La brutta guerra che decise cosa esce dalla tua presa di corrente"
    },
    "summaries": {
     "es": "Edison contra Westinghouse y las patentes de Tesla: perros callejeros, una silla eléctrica, una Exposición Universal y las cataratas del Niágara. Cómo ganó la corriente alterna y por qué la famosa historia del elefante es falsa.",
-    "de": "Edison gegen Westinghouse und Teslas Patente: streunende Hunde, ein elektrischer Stuhl, eine Weltausstellung und die Niagarafälle. Wie der Wechselstrom gewann – und warum die berühmte Elefantengeschichte falsch ist."
+    "de": "Edison gegen Westinghouse und Teslas Patente: streunende Hunde, ein elektrischer Stuhl, eine Weltausstellung und die Niagarafälle. Wie der Wechselstrom gewann – und warum die berühmte Elefantengeschichte falsch ist.",
+    "fr": "Edison contre Westinghouse et les brevets de Tesla : des chiens errants, une chaise électrique, une Exposition universelle et les chutes du Niagara. Comment le courant alternatif a gagné, et pourquoi la célèbre histoire de l'éléphant est fausse.",
+    "pt": "Edison contra Westinghouse e as patentes de Tesla: cães de rua, uma cadeira elétrica, uma Exposição Universal e as Cataratas do Niágara. Como a corrente alternada venceu e por que a famosa história do elefante é falsa.",
+    "it": "Edison contro Westinghouse e i brevetti di Tesla: cani randagi, una sedia elettrica, un'Esposizione universale e le cascate del Niagara. Come vinse la corrente alternata, e perché la famosa storia dell'elefante è falsa."
    },
    "page": null
   },
@@ -6880,7 +7114,10 @@
     "en",
     "es",
     "el",
-    "de"
+    "de",
+    "fr",
+    "pt",
+    "it"
    ],
    "sources": [
     {
@@ -6935,12 +7172,18 @@
    "titles": {
     "es": "La primera foto de la Tierra desde el espacio sobrevivió a un choque",
     "el": "Η πρώτη φωτογραφία της Γης από το διάστημα επέζησε από μια συντριβή",
-    "de": "Das erste Foto der Erde aus dem All überstand einen Absturz"
+    "de": "Das erste Foto der Erde aus dem All überstand einen Absturz",
+    "fr": "La première photo de la Terre vue de l'espace a survécu à un crash",
+    "pt": "A primeira foto da Terra vista do espaço sobreviveu a uma queda",
+    "it": "La prima foto della Terra dallo spazio è sopravvissuta a uno schianto"
    },
    "summaries": {
     "es": "El 24 de octubre de 1946, un cohete V-2 capturado despegó de White Sands, Nuevo México, subió 65 millas y se estrelló; su cartucho de película sobrevivió con las primeras fotos de la Tierra desde el espacio.",
     "el": "Στις 24 Οκτωβρίου 1946, ένας αιχμαλωτισμένος πύραυλος V-2 εκτοξεύτηκε από το Γουάιτ Σαντς του Νέου Μεξικού, ανέβηκε 65 μίλια και συνετρίβη. Η κασέτα του φιλμ επέζησε με τις πρώτες φωτογραφίες της Γης από το διάστημα.",
-    "de": "Am 24. Oktober 1946 startete eine erbeutete V-2-Rakete in White Sands, New Mexico, erreichte 65 Meilen Höhe und stürzte ab; ihre Filmkassette überstand den Aufprall mit den ersten Fotos der Erde aus dem All."
+    "de": "Am 24. Oktober 1946 startete eine erbeutete V-2-Rakete in White Sands, New Mexico, erreichte 65 Meilen Höhe und stürzte ab; ihre Filmkassette überstand den Aufprall mit den ersten Fotos der Erde aus dem All.",
+    "fr": "Le 24 octobre 1946, un V-2 capturé, lancé depuis White Sands, au Nouveau-Mexique, est monté à 65 miles puis s'est écrasé ; sa cassette de film a survécu, avec les premières photos de la Terre vue de l'espace.",
+    "pt": "Em 24 de outubro de 1946, um V-2 capturado, lançado de White Sands, no Novo México, chegou a 65 milhas e caiu; o cartucho de filme sobreviveu, com as primeiras fotos da Terra vista do espaço.",
+    "it": "Il 24 ottobre 1946 un V-2 catturato, lanciato da White Sands, nel Nuovo Messico, salì a 65 miglia e si schiantò; la cassetta della pellicola sopravvisse, con le prime foto della Terra dallo spazio."
    },
    "page": "v/0019-earth-from-space.html"
   },
@@ -6973,7 +7216,10 @@
     "en",
     "es",
     "el",
-    "de"
+    "de",
+    "fr",
+    "pt",
+    "it"
    ],
    "sources": [
     {
@@ -7019,12 +7265,18 @@
    "titles": {
     "es": "En 1908 explotó el cielo sobre Siberia. Nunca encontraron un cráter",
     "el": "Το 1908 ο ουρανός πάνω από τη Σιβηρία εξερράγη. Κρατήρας δεν βρέθηκε ποτέ",
-    "de": "1908 explodierte der Himmel über Sibirien. Einen Krater fand man nie"
+    "de": "1908 explodierte der Himmel über Sibirien. Einen Krater fand man nie",
+    "fr": "En 1908, le ciel de Sibérie a explosé. On n'a jamais trouvé de cratère",
+    "pt": "Em 1908 o céu da Sibéria explodiu. Nunca acharam uma cratera",
+    "it": "Nel 1908 il cielo della Siberia esplose. Non trovarono mai un cratere"
    },
    "summaries": {
     "es": "El 30 de junio de 1908, algo explotó en el cielo de Siberia y arrasó más de 2.000 kilómetros cuadrados de bosque, pero no dejó cráter. Las escenas que nadie pudo fotografiar son reconstrucciones con IA, señaladas en pantalla.",
     "el": "Στις 30 Ιουνίου 1908, κάτι εξερράγη στον ουρανό πάνω από τη Σιβηρία και ισοπέδωσε πάνω από 2.000 τετραγωνικά χιλιόμετρα δάσους, χωρίς να αφήσει κρατήρα. Οι σκηνές που κανείς δεν μπορούσε να φωτογραφίσει είναι αναπαραστάσεις με τεχνητή νοημοσύνη και σημειώνονται στην οθόνη.",
-    "de": "Am 30. Juni 1908 explodierte etwas am Himmel über Sibirien und knickte über 2.000 Quadratkilometer Wald um, hinterließ aber keinen Krater. Szenen, die niemand fotografieren konnte, sind KI-Rekonstruktionen und im Bild gekennzeichnet."
+    "de": "Am 30. Juni 1908 explodierte etwas am Himmel über Sibirien und knickte über 2.000 Quadratkilometer Wald um, hinterließ aber keinen Krater. Szenen, die niemand fotografieren konnte, sind KI-Rekonstruktionen und im Bild gekennzeichnet.",
+    "fr": "Le 30 juin 1908, quelque chose a explosé dans le ciel de Sibérie et a couché plus de 2 000 kilomètres carrés de forêt, sans laisser de cratère. Les scènes que personne n'a pu photographier sont des reconstitutions par IA, signalées à l'écran.",
+    "pt": "Em 30 de junho de 1908, algo explodiu no céu da Sibéria e derrubou mais de 2.000 quilômetros quadrados de floresta, mas não deixou cratera. Cenas que ninguém pôde fotografar são reconstruções feitas com IA, indicadas na tela.",
+    "it": "Il 30 giugno 1908, qualcosa esplose nel cielo della Siberia e abbatté oltre 2.000 chilometri quadrati di foresta, senza lasciare un cratere. Le scene che nessuno poteva fotografare sono ricostruzioni con l'IA, indicate sullo schermo."
    },
    "page": "v/0064-tunguska.html"
   },
@@ -7149,11 +7401,17 @@
    "ai_pictures": false,
    "titles": {
     "es": "El primer avión de EE. UU. pasó 20 años en Londres. Este es el motivo",
-    "de": "Amerikas erstes Flugzeug stand 20 Jahre in London. Darum"
+    "de": "Amerikas erstes Flugzeug stand 20 Jahre in London. Darum",
+    "fr": "Le premier avion américain a passé 20 ans à Londres. Voici pourquoi",
+    "pt": "O primeiro avião dos EUA passou 20 anos em Londres. Veja por quê",
+    "it": "Il primo aeroplano americano rimase 20 anni a Londra. Ecco perché"
    },
    "summaries": {
     "es": "En 1928 Orville Wright envió el Flyer de 1903 a Londres para avergonzar al Smithsonian por una etiqueta.",
-    "de": "1928 schickte Orville Wright den Flyer von 1903 nach London, um die Smithsonian wegen eines Schildes bloßzustellen."
+    "de": "1928 schickte Orville Wright den Flyer von 1903 nach London, um die Smithsonian wegen eines Schildes bloßzustellen.",
+    "fr": "En 1928, Orville Wright a envoyé le Flyer de 1903 à Londres pour faire honte au Smithsonian à cause d'une étiquette.",
+    "pt": "Em 1928 Orville Wright mandou o Flyer de 1903 para Londres para envergonhar o Smithsonian por causa de uma etiqueta.",
+    "it": "Orville Wright mandò il Flyer del 1903 a Londra nel 1928 per svergognare lo Smithsonian per un'etichetta. Ci vollero 20 anni perché tornasse a casa. La storia completa è nel nostro video lungo."
    },
    "page": null
   },
@@ -7398,11 +7656,17 @@
    "ai_pictures": false,
    "titles": {
     "es": "Por qué Orville Wright envió el primer avión a Inglaterra",
-    "de": "Warum Orville Wright das erste Flugzeug nach England schickte"
+    "de": "Warum Orville Wright das erste Flugzeug nach England schickte",
+    "fr": "Pourquoi Orville Wright a envoyé le premier avion en Angleterre",
+    "pt": "Por que Orville Wright mandou o primeiro avião para a Inglaterra",
+    "it": "Perché Orville Wright mandò il primo aeroplano in Inghilterra"
    },
    "summaries": {
     "es": "En 1928, Orville Wright envió el Flyer de 1903 a Londres para avergonzar al Smithsonian por una cartela. Hicieron falta veinte años, una guerra y un contrato para que el primer avión volviera a casa.",
-    "de": "Im Jahr 1928 schickte Orville Wright den Flyer von 1903 nach London, um die Smithsonian Institution wegen eines Schildes bloßzustellen. Es brauchte zwanzig Jahre, einen Krieg und einen Vertrag, um das erste Flugzeug heimzuholen."
+    "de": "Im Jahr 1928 schickte Orville Wright den Flyer von 1903 nach London, um die Smithsonian Institution wegen eines Schildes bloßzustellen. Es brauchte zwanzig Jahre, einen Krieg und einen Vertrag, um das erste Flugzeug heimzuholen.",
+    "fr": "En 1928, Orville Wright a envoyé le Flyer de 1903 à Londres pour faire honte au Smithsonian à cause d'une étiquette. Il a fallu vingt ans, une guerre et un contrat pour ramener le premier avion chez lui.",
+    "pt": "Em 1928, Orville Wright mandou o Flyer de 1903 para Londres para envergonhar o Smithsonian por causa de uma legenda. Foram precisos vinte anos, uma guerra e um contrato para trazer o primeiro avião de volta para casa.",
+    "it": "Nel 1928 Orville Wright mandò il Flyer del 1903 a Londra per svergognare lo Smithsonian per un'etichetta. Ci vollero 20 anni, una guerra e un contratto per riportare a casa il primo aeroplano."
    },
    "page": null
   },
@@ -7548,11 +7812,17 @@
    "ai_pictures": false,
    "titles": {
     "es": "El ordenador del Apolo 11 lanzó una alarma minutos antes del alunizaje",
-    "de": "Der Computer von Apollo 11 schlug Minuten vor der Landung Alarm"
+    "de": "Der Computer von Apollo 11 schlug Minuten vor der Landung Alarm",
+    "fr": "L'ordinateur d'Apollo 11 a déclenché une alarme quelques minutes avant l'alunissage",
+    "pt": "O computador da Apollo 11 disparou um alarme minutos antes do pouso",
+    "it": "Il computer dell'Apollo 11 lanciò un allarme pochi minuti prima dell'atterraggio"
    },
    "summaries": {
     "es": "Minutos antes de que el Apolo 11 alunizara, el ordenador empezó a mostrar alarmas.",
-    "de": "Minuten vor der Landung von Apollo 11 begann der Computer, Alarme anzuzeigen."
+    "de": "Minuten vor der Landung von Apollo 11 begann der Computer, Alarme anzuzeigen.",
+    "fr": "Quelques minutes avant l'alunissage d'Apollo 11, l'ordinateur a commencé à afficher des alarmes.",
+    "pt": "Minutos antes do pouso da Apollo 11, o computador começou a disparar alarmes.",
+    "it": "Pochi minuti prima che l'Apollo 11 atterrasse, il computer iniziò a lampeggiare allarmi. Il software di un team del MIT guidato da Margaret Hamilton mantenne attivi i compiti importanti. La storia completa è nel nostro video lungo."
    },
    "page": null
   },
@@ -7744,11 +8014,17 @@
    "ai_pictures": false,
    "titles": {
     "es": "Las alarmas que casi detuvieron el alunizaje",
-    "de": "Die Alarme, die beinahe die Mondlandung verhindert hätten"
+    "de": "Die Alarme, die beinahe die Mondlandung verhindert hätten",
+    "fr": "Les alarmes qui ont failli empêcher l'alunissage",
+    "pt": "Os alarmes que quase impediram o pouso na Lua",
+    "it": "Gli allarmi che quasi fermarono lo sbarco sulla Luna"
    },
    "summaries": {
     "es": "Minutos antes de que el Apolo 11 aterrizara, el ordenador empezó a mostrar alarmas. La historia del 1202, el equipo de software dirigido por Margaret Hamilton y el fallo que un niño provocó en un simulador y que ocurrió de verdad en el Apolo 8.",
-    "de": "Minuten vor der Landung von Apollo 11 begann der Computer Alarme anzuzeigen. Die Geschichte des 1202, des Softwareteams unter Margaret Hamilton und eines Absturzes, den ein Kind im Simulator auslöste und der bei Apollo 8 wirklich passierte."
+    "de": "Minuten vor der Landung von Apollo 11 begann der Computer Alarme anzuzeigen. Die Geschichte des 1202, des Softwareteams unter Margaret Hamilton und eines Absturzes, den ein Kind im Simulator auslöste und der bei Apollo 8 wirklich passierte.",
+    "fr": "Quelques minutes avant qu'Apollo 11 se pose, l'ordinateur s'est mis à afficher des alarmes. L'histoire de l'alarme 1202, de l'équipe logicielle dirigée par Margaret Hamilton, et d'un plantage provoqué par un enfant dans un simulateur qui s'est réellement produit sur Apollo 8.",
+    "pt": "Minutos antes de a Apollo 11 pousar, o computador começou a disparar alarmes. A história do 1202, da equipe de software liderada por Margaret Hamilton e da pane que uma criança causou num simulador e que aconteceu de verdade na Apollo 8.",
+    "it": "Pochi minuti prima che l'Apollo 11 atterrasse, il computer iniziò a lampeggiare allarmi. La storia del 1202, del team software guidato da Margaret Hamilton e di un errore di una bambina al simulatore che si avverò sull'Apollo 8."
    },
    "page": null
   },
@@ -7865,7 +8141,10 @@
     "en",
     "es",
     "el",
-    "de"
+    "de",
+    "fr",
+    "pt",
+    "it"
    ],
    "sources": [
     {
@@ -7929,12 +8208,18 @@
    "titles": {
     "es": "La gente hizo cola para este videojuego en 1958",
     "el": "Ο κόσμος έκανε ουρά για αυτό το βιντεοπαιχνίδι το 1958",
-    "de": "Für dieses Videospiel standen Menschen 1958 Schlange"
+    "de": "Für dieses Videospiel standen Menschen 1958 Schlange",
+    "fr": "Des gens faisaient la queue pour ce jeu vidéo en 1958",
+    "pt": "As pessoas faziam fila por este videogame em 1958",
+    "it": "Nel 1958 la gente faceva la fila per questo videogioco"
    },
    "summaries": {
     "es": "El 18 de octubre de 1958, los visitantes del Laboratorio Nacional de Brookhaven hicieron cola para jugar a Tennis for Two, el juego de tenis de William Higinbotham en la pantalla de un osciloscopio de cinco pulgadas, uno de los primeros videojuegos.",
     "el": "Στις 18 Οκτωβρίου 1958, επισκέπτες στο Brookhaven National Laboratory έκαναν ουρά για να παίξουν το Tennis for Two, το παιχνίδι τένις του William Higinbotham σε οθόνη παλμογράφου πέντε ιντσών, ένα από τα πρώτα βιντεοπαιχνίδια.",
-    "de": "Am 18. Oktober 1958 standen Besucher im Brookhaven National Laboratory Schlange, um Tennis for Two zu spielen, William Higinbothams Tennisspiel auf einem fünf Zoll großen Oszilloskop-Bildschirm, eines der frühesten Videospiele."
+    "de": "Am 18. Oktober 1958 standen Besucher im Brookhaven National Laboratory Schlange, um Tennis for Two zu spielen, William Higinbothams Tennisspiel auf einem fünf Zoll großen Oszilloskop-Bildschirm, eines der frühesten Videospiele.",
+    "fr": "Le 18 octobre 1958, au laboratoire national de Brookhaven, des visiteurs ont fait la queue pour jouer à Tennis for Two, le jeu de tennis de William Higinbotham sur un écran d'oscilloscope de cinq pouces, l'un des tout premiers jeux vidéo.",
+    "pt": "Em 18 de outubro de 1958, visitantes do Laboratório Nacional de Brookhaven fizeram fila para jogar Tennis for Two, o jogo de tênis de William Higinbotham numa tela de osciloscópio de cinco polegadas, um dos primeiros videogames.",
+    "it": "Il 18 ottobre 1958, i visitatori del Laboratorio nazionale di Brookhaven fecero la fila per giocare a Tennis for Two, il gioco di tennis di William Higinbotham su uno schermo d'oscilloscopio da cinque pollici, uno dei primissimi videogiochi."
    },
    "page": "v/0017-tennis-for-two.html"
   },
@@ -8287,11 +8572,17 @@
    "ai_pictures": true,
    "titles": {
     "es": "El megalodón dominó los océanos durante 20 millones de años. Luego desapareció",
-    "de": "Der Megalodon beherrschte 20 Millionen Jahre lang die Meere. Dann verschwand er"
+    "de": "Der Megalodon beherrschte 20 Millionen Jahre lang die Meere. Dann verschwand er",
+    "fr": "Le mégalodon a régné sur les océans pendant 20 millions d'années. Puis il a disparu",
+    "pt": "O megalodon dominou os oceanos por 20 milhões de anos. Depois sumiu",
+    "it": "Il megalodonte dominò gli oceani per 20 milioni di anni. Poi scomparve"
    },
    "summaries": {
     "es": "El megalodón, considerado el mayor tiburón depredador que ha existido, dominó los océanos durante unos veinte millones de años y luego desapareció. Sus dientes fósiles dan pistas de lo grande que pudo ser, sugieren que tenía sangre parcialmente caliente, señalan dónde pudieron crecer sus crías y ponen en fila a los sospechosos de su desaparición. Las escenas que nadie pudo fotografiar son reconstrucciones con IA, indicadas en pantalla.",
-    "de": "Der Megalodon, wohl der größte Raubhai, der je gelebt hat, beherrschte rund zwanzig Millionen Jahre lang die Meere und verschwand dann. Seine fossilen Zähne verraten, wie groß er gewesen sein könnte, deuten darauf hin, dass er teilweise warmblütig war, zeigen, wo seine Jungen aufgewachsen sein könnten, und reihen die Verdächtigen für sein Verschwinden auf. Szenen, die niemand fotografieren konnte, sind KI-Rekonstruktionen und auf dem Bildschirm gekennzeichnet."
+    "de": "Der Megalodon, wohl der größte Raubhai, der je gelebt hat, beherrschte rund zwanzig Millionen Jahre lang die Meere und verschwand dann. Seine fossilen Zähne verraten, wie groß er gewesen sein könnte, deuten darauf hin, dass er teilweise warmblütig war, zeigen, wo seine Jungen aufgewachsen sein könnten, und reihen die Verdächtigen für sein Verschwinden auf. Szenen, die niemand fotografieren konnte, sind KI-Rekonstruktionen und auf dem Bildschirm gekennzeichnet.",
+    "fr": "Le mégalodon, considéré comme le plus grand requin prédateur ayant jamais existé, a régné sur les océans pendant environ vingt millions d'années, puis a disparu. Ses dents fossiles donnent une idée de sa taille possible, suggèrent qu'il avait le sang en partie chaud, indiquent où ses petits ont pu grandir et passent en revue les suspects de sa disparition. Les scènes que personne n'a pu photographier sont des reconstitutions par IA, signalées à l'écran.",
+    "pt": "O megalodon, considerado o maior tubarão predador que já existiu, dominou os oceanos por cerca de vinte milhões de anos e depois sumiu. Seus dentes fósseis dão pistas de quão grande ele pode ter sido, sugerem que ele tinha sangue parcialmente quente, apontam onde seus filhotes podem ter crescido e alinham os suspeitos do seu desaparecimento. Cenas que ninguém poderia fotografar são reconstruções feitas com IA, identificadas na tela.",
+    "it": "Il megalodonte, ritenuto il più grande squalo predatore mai vissuto, dominò gli oceani per circa 20 milioni di anni e poi scomparve. I suoi denti fossili suggeriscono quanto potesse essere grande, indicano che era in parte a sangue caldo, dove potrebbero essere cresciuti i piccoli, e mettono in fila i sospettati della sua scomparsa. Le scene che nessuno poteva fotografare sono ricostruzioni con IA, indicate sullo schermo."
    },
    "page": null
   },
@@ -8385,11 +8676,17 @@
    "ai_pictures": true,
    "titles": {
     "es": "El megalodón pudo perder frente a un tiburón más pequeño. Sus dientes dan una pista",
-    "de": "Der Megalodon verlor vielleicht gegen einen kleineren Hai. Seine Zähne verraten, warum"
+    "de": "Der Megalodon verlor vielleicht gegen einen kleineren Hai. Seine Zähne verraten, warum",
+    "fr": "Le mégalodon a peut-être perdu face à un requin plus petit. Ses dents donnent un indice",
+    "pt": "O megalodon pode ter perdido para um tubarão menor. Seus dentes dão uma pista",
+    "it": "Il megalodonte potrebbe aver perso contro uno squalo più piccolo. I denti dicono perché"
    },
    "summaries": {
     "es": "El megalodón, el mayor tiburón cazador que ha existido, desapareció hace unos tres millones de años.",
-    "de": "Der Megalodon, der größte jagende Hai aller Zeiten, verschwand vor rund drei Millionen Jahren."
+    "de": "Der Megalodon, der größte jagende Hai aller Zeiten, verschwand vor rund drei Millionen Jahren.",
+    "fr": "Le mégalodon, le plus grand requin chasseur ayant existé, a disparu il y a environ trois millions d'années.",
+    "pt": "O megalodon, o maior tubarão caçador que já existiu, sumiu há cerca de três milhões de anos.",
+    "it": "Il megalodonte, il più grande squalo predatore mai esistito, scomparve circa 3 milioni di anni fa. Lo zinco nei denti fossili mostra che gli squali bianchi mangiavano le stesse prede. Le scene che nessuno poteva fotografare sono ricostruzioni con IA, indicate sullo schermo."
    },
    "page": null
   },
@@ -8554,11 +8851,17 @@
    "ai_pictures": false,
    "titles": {
     "es": "Multaban a las empresas si sus bombillas duraban demasiado",
-    "de": "Firmen mussten Strafe zahlen, wenn ihre Glühbirnen zu lange hielten"
+    "de": "Firmen mussten Strafe zahlen, wenn ihre Glühbirnen zu lange hielten",
+    "fr": "Les fabricants étaient mis à l'amende si leurs ampoules duraient trop longtemps",
+    "pt": "Empresas eram multadas se suas lâmpadas durassem demais",
+    "it": "Le aziende venivano multate se le loro lampadine duravano troppo"
    },
    "summaries": {
     "es": "Una bombilla de un cuartel de bomberos de California lleva encendida desde 1901.",
-    "de": "Eine Glühbirne in einer Feuerwache in Kalifornien brennt seit 1901."
+    "de": "Eine Glühbirne in einer Feuerwache in Kalifornien brennt seit 1901.",
+    "fr": "Une ampoule d'une caserne de pompiers en Californie brille depuis 1901.",
+    "pt": "Uma lâmpada num quartel de bombeiros da Califórnia está acesa desde 1901.",
+    "it": "Una lampadina in una caserma dei pompieri in California è accesa dal 1901. Negli anni '20 i produttori del cartello Phoebus multavano le fabbriche per le lampadine che duravano troppo. La storia completa è nel nostro video lungo."
    },
    "page": null
   },
@@ -8743,11 +9046,17 @@
    "ai_pictures": false,
    "titles": {
     "es": "Esta bombilla lleva encendida desde 1901. Un cártel se aseguró de que la tuya no durara",
-    "de": "Diese Glühbirne brennt seit 1901. Ein Kartell sorgte dafür, dass deine es nicht tut"
+    "de": "Diese Glühbirne brennt seit 1901. Ein Kartell sorgte dafür, dass deine es nicht tut",
+    "fr": "Cette ampoule brille depuis 1901. Un cartel a veillé à ce que la vôtre ne dure pas",
+    "pt": "Esta lâmpada está acesa desde 1901. Um cartel garantiu que a sua não durasse",
+    "it": "Questa lampadina è accesa dal 1901. Un cartello fece in modo che la tua no"
    },
    "summaries": {
     "es": "Una bombilla de un cuartel de bomberos de California lleva encendida desde 1901. En 1924, los principales fabricantes de bombillas del mundo formaron el cártel Phoebus y fijaron un estándar de 1000 horas. La historia de ambos, y la versión equilibrada.",
-    "de": "Eine Glühbirne in einer Feuerwache in Kalifornien brennt seit 1901. Im Jahr 1924 gründeten die größten Glühbirnenhersteller der Welt das Phoebuskartell und legten eine Norm von 1.000 Stunden fest. Die Geschichte von beidem – und die faire Version."
+    "de": "Eine Glühbirne in einer Feuerwache in Kalifornien brennt seit 1901. Im Jahr 1924 gründeten die größten Glühbirnenhersteller der Welt das Phoebuskartell und legten eine Norm von 1.000 Stunden fest. Die Geschichte von beidem – und die faire Version.",
+    "fr": "Une ampoule d'une caserne de pompiers californienne brille depuis 1901. En 1924, les plus grands fabricants d'ampoules du monde ont formé le cartel Phoebus et fixé une norme de 1 000 heures. L'histoire des deux, et la version nuancée.",
+    "pt": "Uma lâmpada num quartel de bombeiros da Califórnia está acesa desde 1901. Em 1924, os maiores fabricantes de lâmpadas do mundo formaram o cartel Phoebus e fixaram um padrão de 1.000 horas. A história dos dois, e a versão equilibrada.",
+    "it": "Una lampadina in una caserma dei pompieri in California è accesa dal 1901. Nel 1924 i maggiori produttori di lampadine del mondo formarono il cartello Phoebus e fissarono uno standard di 1.000 ore. La storia di entrambe, e la versione equa."
    },
    "page": null
   },
@@ -8888,11 +9197,17 @@
    "ai_pictures": false,
    "titles": {
     "es": "Le dijeron que estas mujeres eran modelos. En realidad programaron el ENIAC",
-    "de": "Man sagte ihr, diese Frauen seien Models. Sie programmierten den ENIAC"
+    "de": "Man sagte ihr, diese Frauen seien Models. Sie programmierten den ENIAC",
+    "fr": "On lui a dit que ces femmes étaient des mannequins. Elles programmaient l'ENIAC",
+    "pt": "Disseram a ela que essas mulheres eram modelos. Elas programaram o ENIAC",
+    "it": "Le dissero che queste donne erano modelle. Programmavano l'ENIAC"
    },
    "summaries": {
     "es": "A Kathy Kleiman le dijeron que las mujeres de las fotos del ENIAC eran modelos.",
-    "de": "Kathy Kleiman hörte, die Frauen auf den ENIAC-Fotos seien Models."
+    "de": "Kathy Kleiman hörte, die Frauen auf den ENIAC-Fotos seien Models.",
+    "fr": "On a dit à Kathy Kleiman que les femmes sur les photos de l'ENIAC étaient des mannequins.",
+    "pt": "Disseram a Kathy Kleiman que as mulheres nas fotos do ENIAC eram modelos.",
+    "it": "A Kathy Kleiman dissero che le donne nelle foto dell'ENIAC erano modelle. Erano le sue programmatrici: sei donne che fecero funzionare la macchina senza linguaggi di programmazione. La storia completa è nel nostro video lungo."
    },
    "page": null
   },
@@ -9102,11 +9417,17 @@
    "ai_pictures": false,
    "titles": {
     "es": "Dijeron que estas mujeres eran modelos. Ellas programaron el ENIAC",
-    "de": "Es hieß, diese Frauen seien Models. Sie programmierten den ENIAC"
+    "de": "Es hieß, diese Frauen seien Models. Sie programmierten den ENIAC",
+    "fr": "On disait que ces femmes étaient des mannequins. Elles ont programmé l'ENIAC",
+    "pt": "Disseram que essas mulheres eram modelos. Elas programaram o ENIAC",
+    "it": "Dicevano che queste donne fossero modelle. Programmavano l'ENIAC"
    },
    "summaries": {
     "es": "A Kathy Kleiman le dijeron que las mujeres de las famosas fotos del ENIAC eran modelos. Eran sus programadoras. La historia de seis mujeres que hicieron funcionar la máquina sin manual y que quedaron fuera de su historia durante décadas.",
-    "de": "Kathy Kleiman hörte, die Frauen auf den berühmten ENIAC-Fotos seien Models. Sie waren seine Programmiererinnen. Die Geschichte von sechs Frauen, die die Maschine ohne Handbuch zum Laufen brachten und jahrzehntelang aus ihrer Geschichte ausgeblendet wurden."
+    "de": "Kathy Kleiman hörte, die Frauen auf den berühmten ENIAC-Fotos seien Models. Sie waren seine Programmiererinnen. Die Geschichte von sechs Frauen, die die Maschine ohne Handbuch zum Laufen brachten und jahrzehntelang aus ihrer Geschichte ausgeblendet wurden.",
+    "fr": "On a dit à Kathy Kleiman que les femmes des célèbres photos de l'ENIAC étaient des mannequins. C'étaient ses programmeuses. L'histoire de six femmes qui ont fait fonctionner la machine sans mode d'emploi, et qui ont été effacées de son histoire pendant des décennies.",
+    "pt": "Kathy Kleiman ouviu que as mulheres das famosas fotos do ENIAC eram modelos. Elas eram as programadoras. A história de seis mulheres que fizeram a máquina funcionar sem manual e ficaram fora da sua história por décadas.",
+    "it": "A Kathy Kleiman dissero che le donne nelle famose foto dell'ENIAC erano modelle. Erano le sue programmatrici. La storia di sei donne che fecero funzionare la macchina senza manuale e furono escluse dalla sua storia per decenni."
    },
    "page": null
   },
@@ -9139,7 +9460,10 @@
     "en",
     "es",
     "el",
-    "de"
+    "de",
+    "fr",
+    "pt",
+    "it"
    ],
    "sources": [
     {
@@ -9208,12 +9532,18 @@
    "titles": {
     "es": "La primera web sigue en línea. ¿De qué trataba?",
     "el": "Ο πρώτος ιστότοπος είναι ακόμα online. Για τι μιλούσε;",
-    "de": "Die erste Website ist noch online. Worum ging es?"
+    "de": "Die erste Website ist noch online. Worum ging es?",
+    "fr": "Le premier site web est toujours en ligne. De quoi parlait-il ?",
+    "pt": "O primeiro site ainda está no ar. Sobre o que ele era?",
+    "it": "Il primo sito web è ancora online. Di cosa parlava?"
    },
    "summaries": {
     "es": "La primera web, creada por Tim Berners-Lee en el CERN en un ordenador NeXT, explicaba la propia World Wide Web. El CERN mantiene una copia restaurada en línea en info.cern.ch.",
     "el": "Ο πρώτος ιστότοπος, που έφτιαξε ο Tim Berners-Lee στο CERN σε έναν υπολογιστή NeXT, εξηγούσε τον ίδιο τον Παγκόσμιο Ιστό, το World Wide Web. Το CERN κρατά online ένα αποκατεστημένο αντίγραφο στο info.cern.ch.",
-    "de": "Die erste Website, erstellt von Tim Berners-Lee am CERN auf einem NeXT-Computer, erklärte das World Wide Web selbst. Das CERN hält eine restaurierte Kopie unter info.cern.ch online."
+    "de": "Die erste Website, erstellt von Tim Berners-Lee am CERN auf einem NeXT-Computer, erklärte das World Wide Web selbst. Das CERN hält eine restaurierte Kopie unter info.cern.ch online.",
+    "fr": "Le premier site web, créé par Tim Berners-Lee au CERN sur un ordinateur NeXT, expliquait le World Wide Web lui-même. Le CERN en garde une copie restaurée en ligne sur info.cern.ch.",
+    "pt": "O primeiro site, criado por Tim Berners-Lee no CERN num computador NeXT, explicava a própria World Wide Web. O CERN mantém uma cópia restaurada no ar em info.cern.ch.",
+    "it": "Il primo sito web, creato da Tim Berners-Lee al CERN su un computer NeXT, spiegava il World Wide Web stesso. Il CERN ne tiene online una copia restaurata su info.cern.ch."
    },
    "page": "v/0016-first-website.html"
   },
@@ -9435,7 +9765,10 @@
     "en",
     "es",
     "el",
-    "de"
+    "de",
+    "fr",
+    "pt",
+    "it"
    ],
    "sources": [
     {
@@ -9508,12 +9841,18 @@
    "titles": {
     "es": "El día que murieron los dinosaurios dejó una pista en todo el mundo",
     "el": "Η μέρα που πέθαναν οι δεινόσαυροι άφησε ένα στοιχείο σε όλο τον κόσμο",
-    "de": "Der Tag, an dem die Dinosaurier starben, hinterließ überall auf der Welt eine Spur"
+    "de": "Der Tag, an dem die Dinosaurier starben, hinterließ überall auf der Welt eine Spur",
+    "fr": "Le jour où les dinosaures sont morts a laissé un indice partout sur Terre",
+    "pt": "O dia em que os dinossauros morreram deixou uma pista no mundo todo",
+    "it": "Il giorno in cui morirono i dinosauri ha lasciato un indizio in tutto il mondo"
    },
    "summaries": {
     "es": "Hace 66 millones de años, un asteroide de 10 a 15 km de ancho chocó contra lo que hoy es México. La prueba es una fina capa de arcilla rica en iridio que aparece en todo el mundo. Las escenas que nadie pudo fotografiar son reconstrucciones con IA, señaladas en pantalla.",
     "el": "Πριν από 66 εκατομμύρια χρόνια, ένας αστεροειδής πλάτους 10 έως 15 χλμ. έπεσε σε ό,τι σήμερα είναι το Μεξικό. Η απόδειξη είναι ένα λεπτό στρώμα αργίλου πλούσιο σε ιρίδιο, που βρίσκεται σε όλο τον κόσμο. Οι σκηνές που κανείς δεν μπορούσε να φωτογραφίσει είναι αναπαραστάσεις με τεχνητή νοημοσύνη και σημειώνονται στην οθόνη.",
-    "de": "Vor 66 Millionen Jahren schlug ein 10 bis 15 km großer Asteroid im heutigen Mexiko ein. Der Beweis ist eine dünne, iridiumreiche Tonschicht, die man auf der ganzen Welt findet. Szenen, die niemand fotografieren konnte, sind KI-Rekonstruktionen und im Bild gekennzeichnet."
+    "de": "Vor 66 Millionen Jahren schlug ein 10 bis 15 km großer Asteroid im heutigen Mexiko ein. Der Beweis ist eine dünne, iridiumreiche Tonschicht, die man auf der ganzen Welt findet. Szenen, die niemand fotografieren konnte, sind KI-Rekonstruktionen und im Bild gekennzeichnet.",
+    "fr": "Il y a 66 millions d'années, un astéroïde de 10 à 15 km de large a frappé l'actuel Mexique. La preuve est une fine couche d'argile riche en iridium, trouvée partout dans le monde. Les scènes que personne n'a pu photographier sont des reconstitutions par IA, signalées à l'écran.",
+    "pt": "Há 66 milhões de anos, um asteroide de 10 a 15 km de largura atingiu o que hoje é o México. A prova é uma fina camada de argila rica em irídio, encontrada no mundo todo. Cenas que ninguém pôde fotografar são reconstruções feitas com IA, indicadas na tela.",
+    "it": "66 milioni di anni fa, un asteroide largo da 10 a 15 km colpì quello che oggi è il Messico. La prova è un sottile strato di argilla ricca di iridio, trovato in tutto il mondo. Le scene che nessuno poteva fotografare sono ricostruzioni con l'IA, indicate sullo schermo."
    },
    "page": "v/0062-dinosaur-asteroid.html"
   },
@@ -9662,11 +10001,17 @@
    "ai_pictures": false,
    "titles": {
     "es": "Les dijeron a estas mujeres que la pintura de radio era segura",
-    "de": "Man sagte diesen Frauen, die Radiumfarbe sei sicher"
+    "de": "Man sagte diesen Frauen, die Radiumfarbe sei sicher",
+    "fr": "On a dit à ces femmes que la peinture au radium était sans danger",
+    "pt": "Disseram a essas mulheres que a tinta de rádio era segura",
+    "it": "Dissero a queste donne che la vernice al radio era sicura"
    },
    "summaries": {
     "es": "Mujeres jóvenes pintaban esferas de reloj luminosas y les decían que la pintura de radio era segura. La historia de las Radium Girls, la empresa que lo negó y los juicios que cambiaron los derechos de los trabajadores.",
-    "de": "Junge Frauen bemalten leuchtende Zifferblätter, und man sagte ihnen, die Radiumfarbe sei sicher. Die Geschichte der Radium Girls, der Firma, die es abstritt, und der Prozesse, die die Rechte von Arbeitern veränderten."
+    "de": "Junge Frauen bemalten leuchtende Zifferblätter, und man sagte ihnen, die Radiumfarbe sei sicher. Die Geschichte der Radium Girls, der Firma, die es abstritt, und der Prozesse, die die Rechte von Arbeitern veränderten.",
+    "fr": "De jeunes femmes peignaient des cadrans de montre lumineux, et on leur disait que la peinture au radium était sans danger. L'histoire des Radium Girls, de l'entreprise qui a nié, et des procès qui ont changé les droits des travailleurs.",
+    "pt": "Moças pintavam mostradores de relógio que brilhavam no escuro e ouviam que a tinta de rádio era segura. A história das Radium Girls, da empresa que negou tudo e dos processos que mudaram os direitos dos trabalhadores.",
+    "it": "Giovani donne dipingevano quadranti luminosi per orologi e si sentivano dire che la vernice al radio era sicura. La storia delle Radium Girls, dell'azienda che lo negò e delle cause che cambiarono i diritti dei lavoratori."
    },
    "page": null
   },
@@ -9705,7 +10050,10 @@
     "en",
     "es",
     "el",
-    "de"
+    "de",
+    "fr",
+    "pt",
+    "it"
    ],
    "sources": [
     {
@@ -9770,12 +10118,18 @@
    "titles": {
     "es": "El primer viaje largo en coche lo hizo una mujer, en 1888",
     "el": "Το πρώτο μεγάλο ταξίδι με αυτοκίνητο το έκανε μια γυναίκα, το 1888",
-    "de": "Die erste lange Autofahrt machte eine Frau, im Jahr 1888"
+    "de": "Die erste lange Autofahrt machte eine Frau, im Jahr 1888",
+    "fr": "Le premier road trip en voiture a été fait par une femme, en 1888",
+    "pt": "A primeira viagem de carro foi feita por uma mulher, em 1888",
+    "it": "Il primo viaggio in auto lo fece una donna, nel 1888"
    },
    "summaries": {
     "es": "El 5 de agosto de 1888, Bertha Benz condujo el Patent-Motorwagen de Carl Benz unos 106 km de Mannheim a Pforzheim con sus dos hijos, compró combustible en una farmacia y reparó el coche por el camino.",
     "el": "Στις 5 Αυγούστου 1888, η Μπέρτα Μπεντς οδήγησε το Patent-Motorwagen του Καρλ Μπεντς περίπου 106 χλμ., από το Μάνχαϊμ ως το Πφόρτσχαϊμ, με τους δύο γιους της. Αγόρασε καύσιμο σε ένα φαρμακείο και επισκεύασε το αυτοκίνητο στον δρόμο.",
-    "de": "Am 5. August 1888 fuhr Bertha Benz mit ihren zwei Söhnen Carl Benz' Patent-Motorwagen rund 106 km von Mannheim nach Pforzheim, kaufte unterwegs Treibstoff in einer Apotheke und reparierte das Auto."
+    "de": "Am 5. August 1888 fuhr Bertha Benz mit ihren zwei Söhnen Carl Benz' Patent-Motorwagen rund 106 km von Mannheim nach Pforzheim, kaufte unterwegs Treibstoff in einer Apotheke und reparierte das Auto.",
+    "fr": "Le 5 août 1888, Bertha Benz a conduit la Patent-Motorwagen de Carl Benz sur environ 106 km, de Mannheim à Pforzheim, avec ses deux fils, en achetant du carburant dans une pharmacie et en réparant la voiture en route.",
+    "pt": "Em 5 de agosto de 1888, Bertha Benz dirigiu o Patent-Motorwagen de Carl Benz por cerca de 106 km, de Mannheim a Pforzheim, com os dois filhos, comprando combustível numa farmácia e consertando o carro no caminho.",
+    "it": "Il 5 agosto 1888, Bertha Benz guidò la Patent-Motorwagen di Carl Benz per circa 106 km, da Mannheim a Pforzheim, con i suoi due figli, comprando carburante in una farmacia e riparando l'auto lungo la strada."
    },
    "page": "v/0014-first-car.html"
   },
@@ -9967,7 +10321,10 @@
     "en",
     "es",
     "el",
-    "de"
+    "de",
+    "fr",
+    "pt",
+    "it"
    ],
    "sources": [
     {
@@ -10019,12 +10376,18 @@
    "titles": {
     "es": "El sándwich se llama así por un conde. La historia famosa se basa en un solo relato",
     "el": "Το σάντουιτς πήρε το όνομά του από έναν κόμη. Η διάσημη ιστορία στηρίζεται σε μία μόνο μαρτυρία",
-    "de": "Das Sandwich ist nach einem Earl benannt. Die berühmte Geschichte stützt sich auf einen einzigen Bericht"
+    "de": "Das Sandwich ist nach einem Earl benannt. Die berühmte Geschichte stützt sich auf einen einzigen Bericht",
+    "fr": "Le sandwich doit son nom à un comte. La célèbre histoire repose sur un seul récit",
+    "pt": "O sanduíche leva o nome de um conde. A história famosa depende de um único relato",
+    "it": "Il sandwich prende il nome da un conte. La famosa storia si basa su un solo racconto"
    },
    "summaries": {
     "es": "El sándwich debe su nombre a John Montagu, 4.º conde de Sandwich. La famosa historia del juego viene de un único viajero francés, y la palabra ya se usaba en 1762.",
     "el": "Το σάντουιτς πήρε το όνομά του από τον John Montagu, 4ο κόμη του Σάντουιτς. Η διάσημη ιστορία με τον τζόγο προέρχεται από έναν μόνο Γάλλο ταξιδιώτη, και η λέξη χρησιμοποιούνταν ήδη το 1762.",
-    "de": "Das Sandwich ist nach John Montagu benannt, dem 4. Earl of Sandwich. Die berühmte Spielergeschichte stammt von einem einzigen französischen Reisenden, und das Wort war schon 1762 in Gebrauch."
+    "de": "Das Sandwich ist nach John Montagu benannt, dem 4. Earl of Sandwich. Die berühmte Spielergeschichte stammt von einem einzigen französischen Reisenden, und das Wort war schon 1762 in Gebrauch.",
+    "fr": "Le sandwich doit son nom à John Montagu, 4e comte de Sandwich. La célèbre histoire de jeu vient d'un seul voyageur français, et le mot était déjà employé en 1762.",
+    "pt": "O sanduíche leva o nome de John Montagu, 4º conde de Sandwich. A famosa história do jogo vem de um único viajante francês, e a palavra já era usada em 1762.",
+    "it": "Il sandwich prende il nome da John Montagu, 4° conte di Sandwich. La famosa storia del gioco d'azzardo viene da un solo viaggiatore francese, e la parola era già in uso nel 1762."
    },
    "page": "v/0009-sandwich.html"
   },
@@ -10057,7 +10420,10 @@
     "en",
     "es",
     "el",
-    "de"
+    "de",
+    "fr",
+    "pt",
+    "it"
    ],
    "sources": [
     {
@@ -10131,12 +10497,18 @@
    "titles": {
     "es": "¿Qué es más antiguo: los juegos de mesa o la Gran Pirámide?",
     "el": "Τι είναι παλαιότερο: τα επιτραπέζια ή η Μεγάλη Πυραμίδα;",
-    "de": "Was ist älter: Brettspiele oder die Große Pyramide?"
+    "de": "Was ist älter: Brettspiele oder die Große Pyramide?",
+    "fr": "Qu'est-ce qui est plus ancien : les jeux de société ou la Grande Pyramide ?",
+    "pt": "O que é mais antigo: os jogos de tabuleiro ou a Grande Pirâmide?",
+    "it": "Cosa è più antico: i giochi da tavolo o la Grande Piramide?"
    },
    "summaries": {
     "es": "Quiz: el senet se remonta a unos 5.000 años, a la Primera Dinastía de Egipto. La Gran Pirámide de Keops tiene unos 4.600 años. Esta caja de senet del Met tiene unos 3.500.",
     "el": "Κουίζ: το σενέτ πάει πίσω περίπου 5.000 χρόνια, στην Πρώτη Δυναστεία της Αιγύπτου. Η Μεγάλη Πυραμίδα του Χέοπα είναι περίπου 4.600 ετών. Αυτό το κουτί σενέτ στο Met είναι περίπου 3.500 ετών.",
-    "de": "Quiz: Senet reicht etwa 5.000 Jahre zurück, bis in die Erste Dynastie Ägyptens. Die Große Pyramide des Cheops ist etwa 4.600 Jahre alt. Dieser Senet-Kasten im Met ist etwa 3.500 Jahre alt."
+    "de": "Quiz: Senet reicht etwa 5.000 Jahre zurück, bis in die Erste Dynastie Ägyptens. Die Große Pyramide des Cheops ist etwa 4.600 Jahre alt. Dieser Senet-Kasten im Met ist etwa 3.500 Jahre alt.",
+    "fr": "Quiz : le senet remonte à environ 5 000 ans, à la première dynastie d'Égypte. La Grande Pyramide de Khéops a environ 4 600 ans. Cette boîte de senet du Met a environ 3 500 ans.",
+    "pt": "Quiz: o senet tem cerca de 5.000 anos e vem da Primeira Dinastia do Egito. A Grande Pirâmide de Quéops tem cerca de 4.600 anos. Esta caixa de senet do Met tem cerca de 3.500.",
+    "it": "Quiz: il senet risale a circa 5.000 anni fa, alla Prima dinastia egizia. La Grande Piramide di Cheope ha circa 4.600 anni. Questa scatola da senet al Met ne ha circa 3.500."
    },
    "page": "v/0004-senet-quiz.html"
   },
@@ -10169,7 +10541,10 @@
     "en",
     "es",
     "el",
-    "de"
+    "de",
+    "fr",
+    "pt",
+    "it"
    ],
    "sources": [
     {
@@ -10255,12 +10630,18 @@
    "titles": {
     "es": "¿La «vena del corazón» del dedo anular? No exactamente",
     "el": "Η «φλέβα της καρδιάς» στον παράμεσο; Όχι ακριβώς",
-    "de": "Die „Herzvene“ im Ringfinger? Nicht ganz"
+    "de": "Die „Herzvene“ im Ringfinger? Nicht ganz",
+    "fr": "L'annulaire, « veine du cœur » ? Pas tout à fait",
+    "pt": "A “veia do coração” no dedo anelar? Não exatamente",
+    "it": "L'anulare e la «vena del cuore»? Non proprio"
    },
    "summaries": {
     "es": "No hay ninguna vena que vaya del dedo anular al corazón. Pero la costumbre sí es romana: Aulo Gelio escribió sobre ella en el siglo II, culpando a un «nervio». La «vena» llegó después.",
     "el": "Δεν υπάρχει φλέβα από τον παράμεσο ως την καρδιά. Το έθιμο όμως είναι ρωμαϊκό: ο Αύλος Γέλλιος έγραψε γι' αυτό τον 2ο αιώνα, κατηγορώντας ένα «νεύρο». Η «φλέβα» ήρθε αργότερα.",
-    "de": "Es gibt keine Vene vom Ringfinger zum Herzen. Der Brauch ist aber römisch: Aulus Gellius schrieb im 2. Jahrhundert darüber und machte einen „Nerv“ verantwortlich. Die „Vene“ kam später."
+    "de": "Es gibt keine Vene vom Ringfinger zum Herzen. Der Brauch ist aber römisch: Aulus Gellius schrieb im 2. Jahrhundert darüber und machte einen „Nerv“ verantwortlich. Die „Vene“ kam später.",
+    "fr": "Aucune veine ne relie l'annulaire au cœur. La coutume est pourtant romaine : Aulu-Gelle en parlait au IIe siècle, en accusant un « nerf ». La « veine » est venue plus tard.",
+    "pt": "Não existe veia do dedo anelar até o coração. Mas o costume é romano: Aulo Gélio escreveu sobre ele no século II, culpando um “nervo”. A “veia” veio depois.",
+    "it": "Non esiste una vena che va dall'anulare al cuore. L'usanza però è romana: Aulo Gellio ne scrisse nel II secolo, dando la colpa a un «nervo». La «vena» arrivò dopo."
    },
    "page": "v/0008-ring-finger.html"
   },
@@ -10293,7 +10674,10 @@
     "en",
     "es",
     "el",
-    "de"
+    "de",
+    "fr",
+    "pt",
+    "it"
    ],
    "sources": [
     {
@@ -10357,12 +10741,18 @@
    "titles": {
     "es": "Guinness llama a esta foto de 1839 el primer selfie. Así la hizo",
     "el": "Το Γκίνες λέει αυτή τη φωτογραφία του 1839 την πρώτη σέλφι. Δες πώς την τράβηξε",
-    "de": "Guinness nennt dieses Foto von 1839 das erste Selfie. So hat er es gemacht"
+    "de": "Guinness nennt dieses Foto von 1839 das erste Selfie. So hat er es gemacht",
+    "fr": "Guinness dit que cette photo de 1839 est le premier selfie. Voici comment il l'a prise",
+    "pt": "O Guinness diz que esta foto de 1839 é a primeira selfie. Veja como ele a tirou",
+    "it": "Per il Guinness questa foto del 1839 è il primo selfie. Ecco come l'ha scattata"
    },
    "summaries": {
     "es": "En otoño de 1839, Robert Cornelius apuntó una cámara casera hacia sí mismo en Filadelfia. El daguerrotipo, hoy en la Biblioteca del Congreso, suele llamarse el primer selfie.",
     "el": "Το φθινόπωρο του 1839, ο Ρόμπερτ Κορνήλιους έστρεψε μια σπιτική φωτογραφική μηχανή στον εαυτό του στη Φιλαδέλφεια. Η δαγεροτυπία, σήμερα στη Βιβλιοθήκη του Κογκρέσου, συχνά λέγεται η πρώτη σέλφι.",
-    "de": "Im Herbst 1839 richtete Robert Cornelius in Philadelphia eine selbst gebaute Kamera auf sich selbst. Die Daguerreotypie, heute in der Library of Congress, gilt oft als erstes Selfie."
+    "de": "Im Herbst 1839 richtete Robert Cornelius in Philadelphia eine selbst gebaute Kamera auf sich selbst. Die Daguerreotypie, heute in der Library of Congress, gilt oft als erstes Selfie.",
+    "fr": "À l'automne 1839, Robert Cornelius a pointé vers lui-même un appareil fait maison, à Philadelphie. Ce daguerréotype, aujourd'hui à la Bibliothèque du Congrès, est souvent appelé le premier selfie.",
+    "pt": "No outono de 1839, Robert Cornelius apontou uma câmera caseira para si mesmo na Filadélfia. O daguerreótipo, hoje na Biblioteca do Congresso, costuma ser chamado de primeira selfie.",
+    "it": "Nell'autunno del 1839, Robert Cornelius puntò su sé stesso una macchina fotografica fatta in casa, a Filadelfia. Il dagherrotipo, oggi alla Biblioteca del Congresso, è spesso chiamato il primo selfie."
    },
    "page": "v/0007-first-selfie.html"
   },
@@ -10401,7 +10791,10 @@
     "en",
     "es",
     "el",
-    "de"
+    "de",
+    "fr",
+    "pt",
+    "it"
    ],
    "sources": [
     {
@@ -10473,12 +10866,18 @@
    "titles": {
     "es": "Esta patente de sujetador de 1914 empezó con dos pañuelos",
     "el": "Αυτό το δίπλωμα ευρεσιτεχνίας για σουτιέν του 1914 ξεκίνησε με δύο μαντίλια",
-    "de": "Dieses BH-Patent von 1914 begann mit zwei Taschentüchern"
+    "de": "Dieses BH-Patent von 1914 begann mit zwei Taschentüchern",
+    "fr": "Ce brevet de soutien-gorge de 1914 a commencé avec deux mouchoirs",
+    "pt": "Esta patente de sutiã de 1914 começou com dois lenços",
+    "it": "Questo brevetto di reggiseno del 1914 nacque da due fazzoletti"
    },
    "summaries": {
     "es": "En 1913, Mary Phelps Jacob hizo un sujetador con dos pañuelos y una cinta, y lo patentó en 1914. Pero en 2008 aparecieron en un castillo austriaco cuatro sujetadores de lino de los años 1400.",
     "el": "Το 1913, η Mary Phelps Jacob έφτιαξε ένα σουτιέν από δύο μαντίλια κι μια κορδέλα, και το κατοχύρωσε το 1914. Όμως το 2008 βρέθηκαν σε ένα αυστριακό κάστρο τέσσερα λινά σουτιέν από τα χρόνια του 1400.",
-    "de": "1913 machte Mary Phelps Jacob einen BH aus zwei Taschentüchern und einem Band und ließ ihn 1914 patentieren. Doch 2008 tauchten in einer österreichischen Burg vier Leinen-BHs aus den 1400er-Jahren auf."
+    "de": "1913 machte Mary Phelps Jacob einen BH aus zwei Taschentüchern und einem Band und ließ ihn 1914 patentieren. Doch 2008 tauchten in einer österreichischen Burg vier Leinen-BHs aus den 1400er-Jahren auf.",
+    "fr": "En 1913, Mary Phelps Jacob a fait un soutien-gorge avec deux mouchoirs et un ruban, et l'a breveté en 1914. Mais quatre soutiens-gorge en lin du XVe siècle ont été retrouvés dans un château autrichien en 2008.",
+    "pt": "Em 1913, Mary Phelps Jacob fez um sutiã com dois lenços e uma fita, e o patenteou em 1914. Mas quatro sutiãs de linho do século XV apareceram num castelo austríaco em 2008.",
+    "it": "Nel 1913, Mary Phelps Jacob fece un reggiseno con due fazzoletti e un nastro, e lo brevettò nel 1914. Ma nel 2008, in un castello austriaco, sono spuntati quattro reggiseni di lino del Quattrocento."
    },
    "page": "v/0010-first-bra.html"
   },
@@ -10517,7 +10916,10 @@
     "en",
     "es",
     "el",
-    "de"
+    "de",
+    "fr",
+    "pt",
+    "it"
    ],
    "sources": [
     {
@@ -10586,12 +10988,18 @@
    "titles": {
     "es": "¿Qué llegó primero: el papel higiénico o la imprenta?",
     "el": "Τι ήρθε πρώτο: το χαρτί υγείας ή η τυπογραφία;",
-    "de": "Was kam zuerst: Toilettenpapier oder der Buchdruck?"
+    "de": "Was kam zuerst: Toilettenpapier oder der Buchdruck?",
+    "fr": "Qu'est-ce qui est venu en premier : le papier toilette ou l'imprimerie ?",
+    "pt": "O que veio primeiro: o papel higiênico ou a imprensa?",
+    "it": "Cosa è venuto prima: la carta igienica o la stampa?"
    },
    "summaries": {
     "es": "Quiz: hacia el año 589, el erudito chino Yan Zhitui escribió sobre usar papel en el retrete. Gutenberg imprimió su Biblia en Maguncia hacia 1455.",
     "el": "Κουίζ: γύρω στο 589, ο Κινέζος λόγιος Γιαν Τζιτούι έγραψε για τη χρήση χαρτιού στην τουαλέτα. Ο Γουτεμβέργιος τύπωσε τη Βίβλο του στο Μάιντς γύρω στο 1455.",
-    "de": "Quiz: Um 589 schrieb der chinesische Gelehrte Yan Zhitui über Papier auf der Toilette. Gutenberg druckte seine Bibel um 1455 in Mainz."
+    "de": "Quiz: Um 589 schrieb der chinesische Gelehrte Yan Zhitui über Papier auf der Toilette. Gutenberg druckte seine Bibel um 1455 in Mainz.",
+    "fr": "Quiz : vers 589, le lettré chinois Yan Zhitui a écrit sur l'usage du papier aux toilettes. Gutenberg a imprimé sa Bible à Mayence vers 1455.",
+    "pt": "Quiz: por volta de 589, o estudioso chinês Yan Zhitui escreveu sobre usar papel no banheiro. Gutenberg imprimiu sua Bíblia em Mainz por volta de 1455.",
+    "it": "Quiz: intorno al 589, lo studioso cinese Yan Zhitui scrisse dell'uso della carta al gabinetto. Gutenberg stampò la sua Bibbia a Magonza intorno al 1455."
    },
    "page": "v/0005-toilet-paper-quiz.html"
   },
@@ -10624,7 +11032,10 @@
     "en",
     "es",
     "el",
-    "de"
+    "de",
+    "fr",
+    "pt",
+    "it"
    ],
    "sources": [
     {
@@ -10695,12 +11106,18 @@
    "titles": {
     "es": "Este vino romano lleva 1.700 años sellado",
     "el": "Αυτό το ρωμαϊκό κρασί μένει σφραγισμένο 1.700 χρόνια",
-    "de": "Dieser römische Wein ist seit 1.700 Jahren versiegelt"
+    "de": "Dieser römische Wein ist seit 1.700 Jahren versiegelt",
+    "fr": "Ce vin romain est scellé depuis 1 700 ans",
+    "pt": "Este vinho romano está lacrado há 1.700 anos",
+    "it": "Questo vino romano è sigillato da 1.700 anni"
    },
    "summaries": {
     "es": "Hacia el año 325 d. C., una botella de vino se selló bajo aceite de oliva y se enterró en una tumba romana cerca de Espira. Se encontró en 1867 y nunca se ha abierto.",
     "el": "Γύρω στο 325 μ.Χ., ένα μπουκάλι κρασί σφραγίστηκε κάτω από ελαιόλαδο και θάφτηκε σε έναν ρωμαϊκό τάφο κοντά στο Σπάγερ. Βρέθηκε το 1867 και δεν έχει ανοιχτεί ποτέ.",
-    "de": "Um 325 n. Chr. wurde eine Flasche Wein unter Olivenöl versiegelt und in einem römischen Grab bei Speyer beigesetzt. Sie wurde 1867 gefunden und nie geöffnet."
+    "de": "Um 325 n. Chr. wurde eine Flasche Wein unter Olivenöl versiegelt und in einem römischen Grab bei Speyer beigesetzt. Sie wurde 1867 gefunden und nie geöffnet.",
+    "fr": "Vers l'an 325, une bouteille de vin a été scellée sous de l'huile d'olive et enterrée dans une tombe romaine près de Spire. Elle a été trouvée en 1867 et n'a jamais été ouverte.",
+    "pt": "Por volta do ano 325, uma garrafa de vinho foi lacrada sob azeite de oliva e enterrada num túmulo romano perto de Speyer. Foi encontrada em 1867 e nunca foi aberta.",
+    "it": "Intorno al 325 d.C., una bottiglia di vino fu sigillata sotto l'olio d'oliva e sepolta in una tomba romana vicino a Spira. Fu trovata nel 1867 e non è mai stata aperta."
    },
    "page": "v/0006-speyer-wine.html"
   },
@@ -10739,7 +11156,10 @@
     "en",
     "es",
     "el",
-    "de"
+    "de",
+    "fr",
+    "pt",
+    "it"
    ],
    "sources": [
     {
@@ -10815,12 +11235,18 @@
    "titles": {
     "es": "Los tacones se hicieron para hombres. La prueba es de 1701",
     "el": "Τα ψηλά τακούνια φτιάχτηκαν για άντρες. Η απόδειξη είναι από το 1701",
-    "de": "High Heels waren für Männer gemacht. Der Beweis stammt von 1701"
+    "de": "High Heels waren für Männer gemacht. Der Beweis stammt von 1701",
+    "fr": "Les talons hauts étaient faits pour les hommes. La preuve date de 1701",
+    "pt": "Os saltos altos foram feitos para homens. A prova é de 1701",
+    "it": "I tacchi alti erano fatti per gli uomini. La prova è del 1701"
    },
    "summaries": {
     "es": "Los tacones empezaron como calzado de montar de los jinetes persas, según la conservadora del Bata Shoe Museum Elizabeth Semmelhack, y luego fueron un signo de rango para los hombres europeos. Los tacones rojos de Luis XIV aparecen en su retrato de 1701.",
     "el": "Τα ψηλά τακούνια ξεκίνησαν ως παπούτσια ιππασίας για Πέρσες ιππείς, λέει η επιμελήτρια του Bata Shoe Museum, Elizabeth Semmelhack, και μετά έγιναν σύμβολο κύρους για τους Ευρωπαίους άντρες. Τα κόκκινα τακούνια του Λουδοβίκου ΙΔ΄ φαίνονται στο πορτρέτο του από το 1701.",
-    "de": "High Heels begannen als Reitschuhe persischer Reiter, sagt Elizabeth Semmelhack, Kuratorin des Bata Shoe Museum, und wurden dann zum Statuszeichen europäischer Männer. Ludwigs XIV. rote Absätze sind auf seinem Porträt von 1701 zu sehen."
+    "de": "High Heels begannen als Reitschuhe persischer Reiter, sagt Elizabeth Semmelhack, Kuratorin des Bata Shoe Museum, und wurden dann zum Statuszeichen europäischer Männer. Ludwigs XIV. rote Absätze sind auf seinem Porträt von 1701 zu sehen.",
+    "fr": "Les talons hauts sont nés comme chaussures de cavaliers persans, selon Elizabeth Semmelhack, conservatrice du Bata Shoe Museum, puis sont devenus un signe de rang pour les hommes européens. Les talons rouges de Louis XIV se voient sur son portrait de 1701.",
+    "pt": "Os saltos altos começaram como calçado de montaria dos cavaleiros persas, diz Elizabeth Semmelhack, curadora do Bata Shoe Museum, e depois viraram sinal de status para os homens europeus. Os saltos vermelhos de Luís XIV aparecem em seu retrato de 1701.",
+    "it": "I tacchi alti nacquero come scarpe da equitazione dei cavalieri persiani, dice Elizabeth Semmelhack, curatrice del Bata Shoe Museum, e poi divennero un segno di rango per gli uomini europei. I tacchi rossi di Luigi XIV sono nel suo ritratto del 1701."
    },
    "page": "v/0003-high-heels.html"
   },
@@ -10859,7 +11285,10 @@
     "en",
     "es",
     "el",
-    "de"
+    "de",
+    "fr",
+    "pt",
+    "it"
    ],
    "sources": [
     {
@@ -10936,12 +11365,18 @@
    "titles": {
     "es": "Las gafas se inventaron hacia 1286. ¿Quién las inventó?",
     "el": "Τα γυαλιά εφευρέθηκαν γύρω στο 1286. Ποιος τα εφηύρε;",
-    "de": "Die Brille wurde um 1286 erfunden. Aber von wem?"
+    "de": "Die Brille wurde um 1286 erfunden. Aber von wem?",
+    "fr": "Les lunettes ont été inventées vers 1286. Mais par qui ?",
+    "pt": "Os óculos foram inventados por volta de 1286. Quem os inventou?",
+    "it": "Gli occhiali furono inventati intorno al 1286. Ma chi li inventò?"
    },
    "summaries": {
     "es": "Nadie dejó por escrito quién hizo las primeras gafas. Un sermón de un fraile de 1306 las sitúa hacia 1286, y un fresco de Treviso de 1352 es la pintura más antigua de alguien que las lleva.",
     "el": "Κανείς δεν κατέγραψε ποιος έφτιαξε τα πρώτα γυαλιά. Το κήρυγμα ενός μοναχού το 1306 τα χρονολογεί γύρω στο 1286, και μια τοιχογραφία στο Τρεβίζο από το 1352 είναι ο παλαιότερος πίνακας με κάποιον που τα φοράει.",
-    "de": "Niemand hat aufgeschrieben, wer die erste Brille gebaut hat. Die Predigt eines Ordensbruders von 1306 datiert sie auf etwa 1286, und ein Fresko in Treviso von 1352 ist das älteste Gemälde, auf dem jemand eine trägt."
+    "de": "Niemand hat aufgeschrieben, wer die erste Brille gebaut hat. Die Predigt eines Ordensbruders von 1306 datiert sie auf etwa 1286, und ein Fresko in Treviso von 1352 ist das älteste Gemälde, auf dem jemand eine trägt.",
+    "fr": "Personne n'a noté qui a fabriqué les premières lunettes. Le sermon d'un frère en 1306 les date d'environ 1286, et une fresque de Trévise de 1352 est la plus ancienne peinture de quelqu'un qui en porte.",
+    "pt": "Ninguém anotou quem fez os primeiros óculos. O sermão de um frade em 1306 os data de cerca de 1286, e um afresco de Treviso de 1352 é a pintura mais antiga de alguém usando óculos.",
+    "it": "Nessuno annotò chi fece i primi occhiali. La predica di un frate del 1306 li data intorno al 1286, e un affresco di Treviso del 1352 è il dipinto più antico di qualcuno che li porta."
    },
    "page": "v/0002-glasses.html"
   }

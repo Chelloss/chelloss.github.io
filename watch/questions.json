@@ -5,7 +5,10 @@
    "en": "Where were the first eyeglasses made, around 1286?",
    "es": "¿Dónde se hicieron las primeras gafas, hacia 1286?",
    "el": "Πού φτιάχτηκαν τα πρώτα γυαλιά, γύρω στο 1286;",
-   "de": "Wo wurde um 1286 die erste Brille gebaut?"
+   "de": "Wo wurde um 1286 die erste Brille gebaut?",
+   "fr": "Où ont été fabriquées les premières lunettes, vers 1286 ?",
+   "pt": "Onde foram feitos os primeiros óculos, por volta de 1286?",
+   "it": "Dove furono fatti i primi occhiali, intorno al 1286?"
   },
   "options": {
    "en": [
@@ -27,13 +30,31 @@
     "In Italien",
     "In China",
     "In England"
+   ],
+   "fr": [
+    "En Italie",
+    "En Chine",
+    "En Angleterre"
+   ],
+   "pt": [
+    "Na Itália",
+    "Na China",
+    "Na Inglaterra"
+   ],
+   "it": [
+    "In Italia",
+    "In Cina",
+    "In Inghilterra"
    ]
   },
   "fact": {
    "en": "A friar's sermon in Florence in 1306 dates them to about 1286, in Italy. Nobody wrote down the inventor's name.",
    "es": "Un sermón de un fraile en Florencia en 1306 las sitúa hacia 1286, en Italia. Nadie escribió el nombre del inventor.",
    "el": "Ένα κήρυγμα μοναχού στη Φλωρεντία το 1306 τα χρονολογεί γύρω στο 1286, στην Ιταλία. Κανείς δεν έγραψε το όνομα του εφευρέτη.",
-   "de": "Eine Predigt in Florenz von 1306 datiert sie auf etwa 1286, in Italien. Den Namen des Erfinders schrieb niemand auf."
+   "de": "Eine Predigt in Florenz von 1306 datiert sie auf etwa 1286, in Italien. Den Namen des Erfinders schrieb niemand auf.",
+   "fr": "Le sermon d'un frère à Florence en 1306 les date d'environ 1286, en Italie. Personne n'a noté le nom de l'inventeur.",
+   "pt": "O sermão de um frade em Florença, em 1306, os data de cerca de 1286, na Itália. Ninguém anotou o nome do inventor.",
+   "it": "La predica di un frate a Firenze nel 1306 li data intorno al 1286, in Italia. Nessuno annotò il nome dell'inventore."
   }
  },
  "0004-senet-quiz": {
@@ -42,7 +63,10 @@
    "en": "How far back does the board game senet go?",
    "es": "¿Cuánto tiempo atrás se remonta el juego de mesa senet?",
    "el": "Πόσο πίσω στον χρόνο πάει το επιτραπέζιο σενέτ;",
-   "de": "Wie weit reicht das Brettspiel Senet zurück?"
+   "de": "Wie weit reicht das Brettspiel Senet zurück?",
+   "fr": "Jusqu'où remonte le jeu de société senet ?",
+   "pt": "Há quanto tempo existe o jogo de tabuleiro senet?",
+   "it": "Quanto è antico il gioco da tavolo senet?"
   },
   "options": {
    "en": [
@@ -64,13 +88,31 @@
     "Etwa 2.000 Jahre",
     "Etwa 5.000 Jahre",
     "Etwa 500 Jahre"
+   ],
+   "fr": [
+    "Environ 2 000 ans",
+    "Environ 5 000 ans",
+    "Environ 500 ans"
+   ],
+   "pt": [
+    "Cerca de 2.000 anos",
+    "Cerca de 5.000 anos",
+    "Cerca de 500 anos"
+   ],
+   "it": [
+    "Circa 2.000 anni",
+    "Circa 5.000 anni",
+    "Circa 500 anni"
    ]
   },
   "fact": {
    "en": "Senet goes back about 5,000 years. The Great Pyramid is about 4,500.",
    "es": "El senet se remonta a unos 5.000 años. La Gran Pirámide, a unos 4.500.",
    "el": "Το σενέτ πάει πίσω περίπου 5.000 χρόνια. Η Μεγάλη Πυραμίδα περίπου 4.500.",
-   "de": "Senet reicht etwa 5.000 Jahre zurück, die Große Pyramide etwa 4.500."
+   "de": "Senet reicht etwa 5.000 Jahre zurück, die Große Pyramide etwa 4.500.",
+   "fr": "Le senet remonte à environ 5 000 ans. La Grande Pyramide a environ 4 500 ans.",
+   "pt": "O senet tem cerca de 5.000 anos. A Grande Pirâmide, cerca de 4.500.",
+   "it": "Il senet risale a circa 5.000 anni fa. La Grande Piramide ne ha circa 4.500."
   }
  },
  "0005-toilet-paper-quiz": {
@@ -79,7 +121,10 @@
    "en": "Around which year did a Chinese scholar write about paper on the toilet?",
    "es": "¿Hacia qué año escribió un erudito chino sobre el papel en el retrete?",
    "el": "Γύρω σε ποια χρονιά έγραψε ένας Κινέζος λόγιος για χαρτί στην τουαλέτα;",
-   "de": "Um welches Jahr schrieb ein chinesischer Gelehrter über Papier auf der Toilette?"
+   "de": "Um welches Jahr schrieb ein chinesischer Gelehrter über Papier auf der Toilette?",
+   "fr": "Vers quelle année un lettré chinois a-t-il écrit sur le papier aux toilettes ?",
+   "pt": "Por volta de que ano um estudioso chinês escreveu sobre papel no banheiro?",
+   "it": "Intorno a che anno uno studioso cinese scrisse della carta al gabinetto?"
   },
   "options": {
    "en": [
@@ -101,13 +146,31 @@
     "Um 589",
     "Um 1455",
     "Um 1890"
+   ],
+   "fr": [
+    "Vers 589",
+    "Vers 1455",
+    "Vers 1890"
+   ],
+   "pt": [
+    "Por volta de 589",
+    "Por volta de 1455",
+    "Por volta de 1890"
+   ],
+   "it": [
+    "Intorno al 589",
+    "Intorno al 1455",
+    "Intorno al 1890"
    ]
   },
   "fact": {
    "en": "Yan Zhitui wrote it around 589. Gutenberg's Bible was printed around 1455, about 850 years later.",
    "es": "Yan Zhitui lo escribió hacia 589. La Biblia de Gutenberg se imprimió hacia 1455, unos 850 años después.",
    "el": "Ο Γιαν Τζιτούι το έγραψε γύρω στο 589. Η Βίβλος του Γουτεμβέργιου τυπώθηκε γύρω στο 1455, περίπου 850 χρόνια αργότερα.",
-   "de": "Yan Zhitui schrieb es um 589. Gutenbergs Bibel wurde um 1455 gedruckt, etwa 850 Jahre später."
+   "de": "Yan Zhitui schrieb es um 589. Gutenbergs Bibel wurde um 1455 gedruckt, etwa 850 Jahre später.",
+   "fr": "Yan Zhitui l'a écrit vers 589. La Bible de Gutenberg a été imprimée vers 1455, environ 850 ans plus tard.",
+   "pt": "Yan Zhitui escreveu isso por volta de 589. A Bíblia de Gutenberg foi impressa por volta de 1455, cerca de 850 anos depois.",
+   "it": "Yan Zhitui lo scrisse intorno al 589. La Bibbia di Gutenberg fu stampata intorno al 1455, circa 850 anni dopo."
   }
  },
  "0006-speyer-wine": {
@@ -116,7 +179,10 @@
    "en": "What keeps the air out of the Speyer wine bottle?",
    "es": "¿Qué impide que entre aire en la botella de vino de Espira?",
    "el": "Τι κρατά τον αέρα έξω από το μπουκάλι κρασιού του Σπάγερ;",
-   "de": "Was hält die Luft aus der Speyerer Weinflasche fern?"
+   "de": "Was hält die Luft aus der Speyerer Weinflasche fern?",
+   "fr": "Qu'est-ce qui empêche l'air d'entrer dans la bouteille de vin de Spire ?",
+   "pt": "O que impede a entrada de ar na garrafa de vinho de Speyer?",
+   "it": "Cosa tiene fuori l'aria dalla bottiglia di vino di Spira?"
   },
   "options": {
    "en": [
@@ -138,13 +204,31 @@
     "Ein Korken",
     "Eine dicke Schicht Olivenöl",
     "Geschmolzenes Wachs"
+   ],
+   "fr": [
+    "Un bouchon",
+    "Une épaisse couche d'huile d'olive",
+    "De la cire fondue"
+   ],
+   "pt": [
+    "Uma rolha",
+    "Uma camada grossa de azeite",
+    "Cera derretida"
+   ],
+   "it": [
+    "Un tappo di sughero",
+    "Uno spesso strato d'olio d'oliva",
+    "Cera fusa"
    ]
   },
   "fact": {
    "en": "Around AD 325, a thick layer of olive oil was poured on top. The bottle has never been opened.",
    "es": "Hacia el año 325 d. C., se vertió encima una gruesa capa de aceite de oliva. La botella nunca se ha abierto.",
    "el": "Γύρω στο 325 μ.Χ., ρίχτηκε από πάνω ένα παχύ στρώμα ελαιόλαδο. Το μπουκάλι δεν έχει ανοιχτεί ποτέ.",
-   "de": "Um 325 n. Chr. wurde eine dicke Schicht Olivenöl daraufgegossen. Die Flasche wurde nie geöffnet."
+   "de": "Um 325 n. Chr. wurde eine dicke Schicht Olivenöl daraufgegossen. Die Flasche wurde nie geöffnet.",
+   "fr": "Vers l'an 325, on a versé dessus une épaisse couche d'huile d'olive. La bouteille n'a jamais été ouverte.",
+   "pt": "Por volta do ano 325, uma camada grossa de azeite foi despejada por cima. A garrafa nunca foi aberta.",
+   "it": "Intorno al 325 d.C. fu versato sopra uno spesso strato d'olio d'oliva. La bottiglia non è mai stata aperta."
   }
  },
  "0007-first-selfie": {
@@ -153,7 +237,10 @@
    "en": "Where did Robert Cornelius take his 1839 photo of himself?",
    "es": "¿Dónde tomó Robert Cornelius su foto de sí mismo en 1839?",
    "el": "Πού τράβηξε ο Ρόμπερτ Κορνήλιους τη φωτογραφία του εαυτού του το 1839;",
-   "de": "Wo machte Robert Cornelius 1839 sein Foto von sich selbst?"
+   "de": "Wo machte Robert Cornelius 1839 sein Foto von sich selbst?",
+   "fr": "Où Robert Cornelius a-t-il pris sa photo de lui-même en 1839 ?",
+   "pt": "Onde Robert Cornelius tirou sua foto de si mesmo em 1839?",
+   "it": "Dove scattò Robert Cornelius la sua foto di sé stesso nel 1839?"
   },
   "options": {
    "en": [
@@ -175,13 +262,31 @@
     "Draußen, hinter dem Laden der Familie",
     "In einem Studio in Paris",
     "Auf einem Schiff"
+   ],
+   "fr": [
+    "Dehors, derrière le magasin familial",
+    "Dans un studio à Paris",
+    "Sur un bateau"
+   ],
+   "pt": [
+    "Do lado de fora, atrás da loja da família",
+    "Num estúdio em Paris",
+    "Num navio"
+   ],
+   "it": [
+    "Fuori, dietro il negozio di famiglia",
+    "In uno studio a Parigi",
+    "Su una nave"
    ]
   },
   "fact": {
    "en": "Indoors was too dark, so he set up outside, behind the family store in Philadelphia.",
    "es": "Dentro había demasiada poca luz, así que se colocó fuera, detrás de la tienda familiar en Filadelfia.",
    "el": "Μέσα ήταν πολύ σκοτεινά, οπότε στήθηκε έξω, πίσω από το οικογενειακό μαγαζί στη Φιλαδέλφεια.",
-   "de": "Drinnen war es zu dunkel, also baute er draußen auf, hinter dem Laden der Familie in Philadelphia."
+   "de": "Drinnen war es zu dunkel, also baute er draußen auf, hinter dem Laden der Familie in Philadelphia.",
+   "fr": "À l'intérieur, il faisait trop sombre : il s'est installé dehors, derrière le magasin familial, à Philadelphie.",
+   "pt": "Dentro de casa estava escuro demais, então ele se instalou do lado de fora, atrás da loja da família, na Filadélfia.",
+   "it": "Dentro era troppo buio, così si sistemò fuori, dietro il negozio di famiglia a Filadelfia."
   }
  },
  "0014-first-car": {
@@ -190,7 +295,10 @@
    "en": "Where did Bertha Benz buy fuel on her 1888 trip?",
    "es": "¿Dónde compró combustible Bertha Benz en su viaje de 1888?",
    "el": "Πού αγόρασε καύσιμο η Μπέρτα Μπεντς στο ταξίδι της το 1888;",
-   "de": "Wo kaufte Bertha Benz 1888 auf ihrer Fahrt Treibstoff?"
+   "de": "Wo kaufte Bertha Benz 1888 auf ihrer Fahrt Treibstoff?",
+   "fr": "Où Bertha Benz a-t-elle acheté du carburant pendant son voyage de 1888 ?",
+   "pt": "Onde Bertha Benz comprou combustível na viagem de 1888?",
+   "it": "Dove comprò il carburante Bertha Benz nel suo viaggio del 1888?"
   },
   "options": {
    "en": [
@@ -212,13 +320,31 @@
     "In einer Apotheke",
     "In einer Bäckerei",
     "Bei einem Schmied"
+   ],
+   "fr": [
+    "Dans une pharmacie",
+    "Dans une boulangerie",
+    "Chez un forgeron"
+   ],
+   "pt": [
+    "Numa farmácia",
+    "Numa padaria",
+    "Num ferreiro"
+   ],
+   "it": [
+    "In una farmacia",
+    "In una panetteria",
+    "Da un fabbro"
    ]
   },
   "fact": {
    "en": "In Wiesloch she bought a solvent called ligroin at the town pharmacy, now called the world's first filling station.",
    "es": "En Wiesloch compró un disolvente llamado ligroína en la farmacia del pueblo, hoy llamada la primera gasolinera del mundo.",
    "el": "Στο Βίσλοχ αγόρασε ένα διαλυτικό που λέγεται λιγροΐνη από το φαρμακείο της πόλης, που σήμερα το λένε το πρώτο πρατήριο καυσίμων στον κόσμο.",
-   "de": "In Wiesloch kaufte sie in der Stadtapotheke ein Lösungsmittel namens Ligroin. Die Apotheke nennt man heute die erste Tankstelle der Welt."
+   "de": "In Wiesloch kaufte sie in der Stadtapotheke ein Lösungsmittel namens Ligroin. Die Apotheke nennt man heute die erste Tankstelle der Welt.",
+   "fr": "À Wiesloch, elle a acheté un solvant appelé ligroïne à la pharmacie de la ville, aujourd'hui appelée la première station-service du monde.",
+   "pt": "Em Wiesloch, ela comprou um solvente chamado ligroína na farmácia da cidade, hoje chamada de primeiro posto de combustível do mundo.",
+   "it": "A Wiesloch comprò un solvente chiamato ligroina nella farmacia del paese, oggi chiamata il primo distributore di benzina del mondo."
   }
  },
  "0019-earth-from-space": {
@@ -227,7 +353,10 @@
    "en": "What survived when the V-2 rocket crashed in 1946?",
    "es": "¿Qué sobrevivió cuando el cohete V-2 se estrelló en 1946?",
    "el": "Τι επέζησε όταν ο πύραυλος V-2 συνετρίβη το 1946;",
-   "de": "Was überstand 1946 den Absturz der V-2-Rakete?"
+   "de": "Was überstand 1946 den Absturz der V-2-Rakete?",
+   "fr": "Qu'est-ce qui a survécu quand la fusée V-2 s'est écrasée en 1946 ?",
+   "pt": "O que sobreviveu quando o foguete V-2 caiu em 1946?",
+   "it": "Cosa sopravvisse quando il razzo V-2 si schiantò nel 1946?"
   },
   "options": {
    "en": [
@@ -249,13 +378,31 @@
     "Die Filmkassette",
     "Die Spitze der Rakete",
     "Gar nichts"
+   ],
+   "fr": [
+    "La cassette de film",
+    "Le nez de la fusée",
+    "Rien du tout"
+   ],
+   "pt": [
+    "O cartucho de filme",
+    "O nariz do foguete",
+    "Nada"
+   ],
+   "it": [
+    "La cassetta della pellicola",
+    "Il muso del razzo",
+    "Niente"
    ]
   },
   "fact": {
    "en": "The rocket climbed 65 miles and smashed into the desert, but the film cassette survived with our first look at Earth from space.",
    "es": "El cohete subió 65 millas y se estrelló contra el desierto, pero el cartucho de película sobrevivió con nuestra primera mirada a la Tierra desde el espacio.",
    "el": "Ο πύραυλος ανέβηκε 65 μίλια και συντρίφτηκε στην έρημο, όμως η κασέτα του φιλμ επέζησε με την πρώτη μας ματιά στη Γη από το διάστημα.",
-   "de": "Die Rakete stieg 65 Meilen hoch und zerschellte in der Wüste, aber die Filmkassette überstand es, mit unserem ersten Blick auf die Erde aus dem All."
+   "de": "Die Rakete stieg 65 Meilen hoch und zerschellte in der Wüste, aber die Filmkassette überstand es, mit unserem ersten Blick auf die Erde aus dem All.",
+   "fr": "La fusée est montée à 65 miles puis s'est écrasée dans le désert, mais la cassette de film a survécu, avec notre premier regard sur la Terre depuis l'espace.",
+   "pt": "O foguete subiu 65 milhas e se espatifou no deserto, mas o cartucho de filme sobreviveu, com nosso primeiro olhar sobre a Terra vista do espaço.",
+   "it": "Il razzo salì di 65 miglia e si schiantò nel deserto, ma la cassetta della pellicola sopravvisse, con il nostro primo sguardo sulla Terra dallo spazio."
   }
  },
  "0037-gaudi-tram": {
@@ -264,7 +411,10 @@
    "en": "In 1926, after a tram hit him, what did people take Gaudí for?",
    "es": "En 1926, después de que lo atropellara un tranvía, ¿por quién tomó la gente a Gaudí?",
    "el": "Το 1926, όταν τον χτύπησε ένα τραμ, για ποιον πέρασε ο κόσμος τον Γκαουντί;",
-   "de": "Wofür hielten die Leute Gaudí 1926, nachdem ihn eine Straßenbahn erfasst hatte?"
+   "de": "Wofür hielten die Leute Gaudí 1926, nachdem ihn eine Straßenbahn erfasst hatte?",
+   "fr": "En 1926, après qu'un tramway l'a renversé, pour qui les gens ont-ils pris Gaudí ?",
+   "pt": "Em 1926, depois que um bonde o atropelou, as pessoas acharam que Gaudí era o quê?",
+   "it": "Nel 1926, dopo che un tram lo investì, per chi presero Gaudí?"
   },
   "options": {
    "en": [
@@ -286,13 +436,31 @@
     "Für einen Bettler",
     "Für einen Touristen",
     "Für einen Soldaten"
+   ],
+   "fr": [
+    "Un mendiant",
+    "Un touriste",
+    "Un soldat"
+   ],
+   "pt": [
+    "Um mendigo",
+    "Um turista",
+    "Um soldado"
+   ],
+   "it": [
+    "Un mendicante",
+    "Un turista",
+    "Un soldato"
    ]
   },
   "fact": {
    "en": "His clothes were shabby, so people took him for a beggar. Only the next day did a chaplain recognise him.",
    "es": "Su ropa estaba gastada, así que la gente lo tomó por un mendigo. Solo al día siguiente lo reconoció un capellán.",
    "el": "Τα ρούχα του ήταν φθαρμένα, οπότε ο κόσμος τον πέρασε για ζητιάνο. Μόνο την επόμενη μέρα τον αναγνώρισε ένας ιερέας.",
-   "de": "Seine Kleidung war schäbig, also hielten ihn die Leute für einen Bettler. Erst am nächsten Tag erkannte ihn ein Kaplan."
+   "de": "Seine Kleidung war schäbig, also hielten ihn die Leute für einen Bettler. Erst am nächsten Tag erkannte ihn ein Kaplan.",
+   "fr": "Ses vêtements étaient usés, alors les gens l'ont pris pour un mendiant. Ce n'est que le lendemain qu'un aumônier l'a reconnu.",
+   "pt": "Suas roupas estavam surradas, então as pessoas o tomaram por mendigo. Só no dia seguinte um capelão o reconheceu.",
+   "it": "I suoi vestiti erano logori, così la gente lo prese per un mendicante. Solo il giorno dopo un cappellano lo riconobbe."
   }
  },
  "0061-berlin-wall": {
@@ -301,7 +469,10 @@
    "en": "When asked when the new travel rules started, what did Günter Schabowski answer?",
    "es": "Cuando le preguntaron cuándo empezaban las nuevas normas de viaje, ¿qué respondió Günter Schabowski?",
    "el": "Όταν τον ρώτησαν πότε ισχύουν οι νέοι κανόνες ταξιδιών, τι απάντησε ο Γκύντερ Σαμπόφσκι;",
-   "de": "Was antwortete Günter Schabowski auf die Frage, ab wann die neuen Reiseregeln gelten?"
+   "de": "Was antwortete Günter Schabowski auf die Frage, ab wann die neuen Reiseregeln gelten?",
+   "fr": "Quand on lui a demandé quand les nouvelles règles de voyage commençaient, qu'a répondu Günter Schabowski ?",
+   "pt": "Quando perguntaram quando as novas regras de viagem começavam, o que Günter Schabowski respondeu?",
+   "it": "Quando gli chiesero da quando valevano le nuove regole di viaggio, cosa rispose Günter Schabowski?"
   },
   "options": {
    "en": [
@@ -323,13 +494,31 @@
     "Ab sofort",
     "Nächstes Jahr",
     "Nur mit einem Pass aus Moskau"
+   ],
+   "fr": [
+    "Avec effet immédiat",
+    "L'année prochaine",
+    "Seulement avec un passeport de Moscou"
+   ],
+   "pt": [
+    "Com efeito imediato",
+    "No ano que vem",
+    "Só com passaporte de Moscou"
+   ],
+   "it": [
+    "Con effetto immediato",
+    "L'anno prossimo",
+    "Solo con un passaporto di Mosca"
    ]
   },
   "fact": {
    "en": "The rules were meant to start the next day, with visas. His muddled answer sent crowds to the crossings, and that night a guard with no orders let them through.",
    "es": "Las normas debían entrar en vigor al día siguiente, con visados. Su respuesta confusa llevó a las multitudes a los pasos fronterizos, y esa noche un guardia sin órdenes los dejó pasar.",
    "el": "Οι κανόνες θα ίσχυαν από την επόμενη μέρα, με βίζα. Η μπερδεμένη απάντησή του έστειλε πλήθη στα σημεία διέλευσης, και εκείνο το βράδυ ένας φρουρός χωρίς διαταγές τους άφησε να περάσουν.",
-   "de": "Die Regeln sollten erst am nächsten Tag gelten, mit Visum. Seine wirre Antwort schickte Menschenmassen zu den Übergängen, und in der Nacht ließ ein Grenzer ohne Befehl sie durch."
+   "de": "Die Regeln sollten erst am nächsten Tag gelten, mit Visum. Seine wirre Antwort schickte Menschenmassen zu den Übergängen, und in der Nacht ließ ein Grenzer ohne Befehl sie durch.",
+   "fr": "Les règles devaient commencer le lendemain, avec des visas. Sa réponse embrouillée a envoyé les foules vers les points de passage, et ce soir-là un garde sans ordres les a laissées passer.",
+   "pt": "As regras deveriam começar no dia seguinte, com vistos. A resposta atrapalhada dele mandou multidões para as passagens, e naquela noite um guarda sem ordens as deixou passar.",
+   "it": "Le regole dovevano partire il giorno dopo, con i visti. La sua risposta confusa mandò la folla ai valichi, e quella notte una guardia senza ordini la lasciò passare."
   }
  },
  "0062-dinosaur-asteroid": {
@@ -338,7 +527,10 @@
    "en": "What clue did the asteroid leave in rocks all over the world?",
    "es": "¿Qué pista dejó el asteroide en rocas de todo el mundo?",
    "el": "Ποιο στοιχείο άφησε ο αστεροειδής σε πετρώματα σε όλο τον κόσμο;",
-   "de": "Welche Spur hinterließ der Asteroid überall auf der Welt im Gestein?"
+   "de": "Welche Spur hinterließ der Asteroid überall auf der Welt im Gestein?",
+   "fr": "Quel indice l'astéroïde a-t-il laissé dans les roches du monde entier ?",
+   "pt": "Que pista o asteroide deixou nas rochas do mundo todo?",
+   "it": "Quale indizio lasciò l'asteroide nelle rocce di tutto il mondo?"
   },
   "options": {
    "en": [
@@ -360,13 +552,31 @@
     "Eine dünne, iridiumreiche Tonschicht",
     "Eine Schicht Goldstaub",
     "Riesige Fußspuren"
+   ],
+   "fr": [
+    "Une fine couche d'argile riche en iridium",
+    "Une couche de poussière d'or",
+    "Des empreintes géantes"
+   ],
+   "pt": [
+    "Uma fina camada de argila rica em irídio",
+    "Uma camada de pó de ouro",
+    "Pegadas gigantes"
+   ],
+   "it": [
+    "Un sottile strato di argilla ricca di iridio",
+    "Uno strato di polvere d'oro",
+    "Impronte giganti"
    ]
   },
   "fact": {
    "en": "Iridium is rare on Earth but far more common in asteroids, so the clay layer points to the impact 66 million years ago.",
    "es": "El iridio es raro en la Tierra pero mucho más común en los asteroides, así que la capa de arcilla apunta al impacto de hace 66 millones de años.",
    "el": "Το ιρίδιο είναι σπάνιο στη Γη αλλά πολύ πιο συχνό στους αστεροειδείς, γι' αυτό το στρώμα αργίλου δείχνει την πρόσκρουση πριν από 66 εκατομμύρια χρόνια.",
-   "de": "Iridium ist auf der Erde selten, in Asteroiden aber viel häufiger. Die Tonschicht weist deshalb auf den Einschlag vor 66 Millionen Jahren hin."
+   "de": "Iridium ist auf der Erde selten, in Asteroiden aber viel häufiger. Die Tonschicht weist deshalb auf den Einschlag vor 66 Millionen Jahren hin.",
+   "fr": "L'iridium est rare sur Terre mais beaucoup plus courant dans les astéroïdes : la couche d'argile désigne donc l'impact d'il y a 66 millions d'années.",
+   "pt": "O irídio é raro na Terra, mas muito mais comum em asteroides, então a camada de argila aponta para o impacto de 66 milhões de anos atrás.",
+   "it": "L'iridio è raro sulla Terra ma molto più comune negli asteroidi, quindi lo strato di argilla indica l'impatto di 66 milioni di anni fa."
   }
  },
  "0064-tunguska": {
@@ -375,7 +585,10 @@
    "en": "What did the scientist find at the centre of the Tunguska blast in 1927?",
    "es": "¿Qué encontró el científico en el centro de la explosión de Tunguska en 1927?",
    "el": "Τι βρήκε ο επιστήμονας στο κέντρο της έκρηξης της Τουνγκούσκα το 1927;",
-   "de": "Was fand der Wissenschaftler 1927 im Zentrum der Tunguska-Explosion?"
+   "de": "Was fand der Wissenschaftler 1927 im Zentrum der Tunguska-Explosion?",
+   "fr": "Qu'a trouvé le scientifique au centre de l'explosion de la Toungouska en 1927 ?",
+   "pt": "O que o cientista encontrou no centro da explosão de Tunguska em 1927?",
+   "it": "Cosa trovò lo scienziato al centro dell'esplosione di Tunguska nel 1927?"
   },
   "options": {
    "en": [
@@ -397,13 +610,31 @@
     "Einen riesigen Krater",
     "Keinen Krater, nur einen umgeknickten Wald",
     "Ein großes Stück des Gesteinsbrockens"
+   ],
+   "fr": [
+    "Un énorme cratère",
+    "Pas de cratère, juste une forêt couchée",
+    "Un gros morceau du rocher spatial"
+   ],
+   "pt": [
+    "Uma cratera enorme",
+    "Nenhuma cratera, só uma floresta derrubada",
+    "Um grande pedaço da rocha espacial"
+   ],
+   "it": [
+    "Un enorme cratere",
+    "Nessun cratere, solo una foresta abbattuta",
+    "Un grosso pezzo della roccia spaziale"
    ]
   },
   "fact": {
    "en": "The object, most likely a space rock, exploded in the air several kilometres up, so it left no crater.",
    "es": "El objeto, muy probablemente una roca espacial, explotó en el aire a varios kilómetros de altura, así que no dejó cráter.",
    "el": "Το αντικείμενο, πιθανότατα ένας διαστημικός βράχος, εξερράγη στον αέρα αρκετά χιλιόμετρα ψηλά, γι' αυτό δεν άφησε κρατήρα.",
-   "de": "Das Objekt, sehr wahrscheinlich ein Gesteinsbrocken aus dem All, explodierte mehrere Kilometer hoch in der Luft und hinterließ deshalb keinen Krater."
+   "de": "Das Objekt, sehr wahrscheinlich ein Gesteinsbrocken aus dem All, explodierte mehrere Kilometer hoch in der Luft und hinterließ deshalb keinen Krater.",
+   "fr": "L'objet, très probablement un rocher spatial, a explosé en l'air à plusieurs kilomètres d'altitude : il n'a donc laissé aucun cratère.",
+   "pt": "O objeto, muito provavelmente uma rocha espacial, explodiu no ar, a vários quilômetros de altura, por isso não deixou cratera.",
+   "it": "L'oggetto, molto probabilmente una roccia spaziale, esplose in aria a diversi chilometri d'altezza, quindi non lasciò alcun cratere."
   }
  },
  "0003-high-heels": {
@@ -412,7 +643,10 @@
    "en": "Who were the first high heels made for?",
    "es": "¿Para quién se hicieron los primeros tacones?",
    "el": "Για ποιους φτιάχτηκαν τα πρώτα ψηλά τακούνια;",
-   "de": "Für wen wurden die ersten High Heels gemacht?"
+   "de": "Für wen wurden die ersten High Heels gemacht?",
+   "fr": "Pour qui les premiers talons hauts ont-ils été faits ?",
+   "pt": "Para quem foram feitos os primeiros saltos altos?",
+   "it": "Per chi furono fatti i primi tacchi alti?"
   },
   "options": {
    "en": [
@@ -434,13 +668,31 @@
     "Für Reiter auf Pferden",
     "Für Balletttänzerinnen",
     "Für Soldaten zu Fuß"
+   ],
+   "fr": [
+    "Des cavaliers à cheval",
+    "Des danseurs de ballet",
+    "Des soldats marchant à pied"
+   ],
+   "pt": [
+    "Cavaleiros a cavalo",
+    "Bailarinos",
+    "Soldados marchando a pé"
+   ],
+   "it": [
+    "Cavalieri a cavallo",
+    "Ballerini",
+    "Soldati in marcia a piedi"
    ]
   },
   "fact": {
    "en": "Persian riders wore heels so their feet sat firmly in the stirrups. Around 1600, European aristocrats copied them.",
    "es": "Los jinetes persas llevaban tacón para que el pie quedara firme en el estribo. Hacia 1600, los aristócratas europeos los copiaron.",
    "el": "Οι Πέρσες ιππείς φορούσαν τακούνια για να πατάνε σταθερά στους αναβολείς. Γύρω στο 1600, οι Ευρωπαίοι αριστοκράτες τα αντέγραψαν.",
-   "de": "Persische Reiter trugen Absätze, damit ihre Füße fest in den Steigbügeln saßen. Um 1600 kopierten europäische Adlige sie."
+   "de": "Persische Reiter trugen Absätze, damit ihre Füße fest in den Steigbügeln saßen. Um 1600 kopierten europäische Adlige sie.",
+   "fr": "Les cavaliers persans portaient des talons pour bien caler leurs pieds dans les étriers. Vers 1600, les aristocrates européens les ont copiés.",
+   "pt": "Os cavaleiros persas usavam salto para firmar os pés nos estribos. Por volta de 1600, os aristocratas europeus os copiaram.",
+   "it": "I cavalieri persiani portavano i tacchi perché i piedi restassero saldi nelle staffe. Intorno al 1600, gli aristocratici europei li copiarono."
   }
  },
  "0008-ring-finger": {
@@ -449,7 +701,10 @@
    "en": "Is there a vein from the ring finger straight to the heart?",
    "es": "¿Hay una vena del dedo anular directa al corazón?",
    "el": "Υπάρχει φλέβα από τον παράμεσο κατευθείαν στην καρδιά;",
-   "de": "Führt eine Vene vom Ringfinger direkt zum Herzen?"
+   "de": "Führt eine Vene vom Ringfinger direkt zum Herzen?",
+   "fr": "Y a-t-il une veine qui va de l'annulaire droit au cœur ?",
+   "pt": "Existe uma veia que vai do dedo anelar direto ao coração?",
+   "it": "C'è una vena che va dall'anulare dritta al cuore?"
   },
   "options": {
    "en": [
@@ -471,13 +726,31 @@
     "Ja, die „Liebesvene“",
     "Nein, keine führt direkt zum Herzen",
     "Nur an der linken Hand"
+   ],
+   "fr": [
+    "Oui, la « veine de l'amour »",
+    "Non, aucune ne va droit au cœur",
+    "Seulement sur la main gauche"
+   ],
+   "pt": [
+    "Sim, a “veia do amor”",
+    "Não, nenhuma vai direto ao coração",
+    "Só na mão esquerda"
+   ],
+   "it": [
+    "Sì, la «vena dell'amore»",
+    "No, nessuna va dritta al cuore",
+    "Solo sulla mano sinistra"
    ]
   },
   "fact": {
    "en": "Finger veins drain into the veins of the hand, then up the arm. The Roman writer Aulus Gellius wrote of a nerve, not a vein.",
    "es": "Las venas de los dedos desembocan en las venas de la mano y luego suben por el brazo. El escritor romano Aulo Gelio habló de un nervio, no de una vena.",
    "el": "Οι φλέβες των δαχτύλων καταλήγουν στις φλέβες του χεριού και μετά ανεβαίνουν στο μπράτσο. Ο Ρωμαίος συγγραφέας Αύλος Γέλλιος μίλησε για νεύρο, όχι για φλέβα.",
-   "de": "Die Fingervenen münden in die Venen der Hand und dann den Arm hinauf. Der römische Schriftsteller Aulus Gellius schrieb von einem Nerv, nicht von einer Vene."
+   "de": "Die Fingervenen münden in die Venen der Hand und dann den Arm hinauf. Der römische Schriftsteller Aulus Gellius schrieb von einem Nerv, nicht von einer Vene.",
+   "fr": "Les veines des doigts se jettent dans celles de la main, puis remontent le bras. L'écrivain romain Aulu-Gelle parlait d'un nerf, pas d'une veine.",
+   "pt": "As veias dos dedos desembocam nas veias da mão e depois sobem pelo braço. O escritor romano Aulo Gélio falou de um nervo, não de uma veia.",
+   "it": "Le vene delle dita sfociano in quelle della mano, poi risalgono il braccio. Lo scrittore romano Aulo Gellio parlava di un nervo, non di una vena."
   }
  },
  "0009-sandwich": {
@@ -486,7 +759,10 @@
    "en": "What does the famous story of the Earl of Sandwich rest on?",
    "es": "¿En qué se basa la famosa historia del conde de Sandwich?",
    "el": "Σε τι στηρίζεται η διάσημη ιστορία του κόμη του Σάντουιτς;",
-   "de": "Worauf stützt sich die berühmte Geschichte vom Earl of Sandwich?"
+   "de": "Worauf stützt sich die berühmte Geschichte vom Earl of Sandwich?",
+   "fr": "Sur quoi repose la célèbre histoire du comte de Sandwich ?",
+   "pt": "Em que se baseia a famosa história do conde de Sandwich?",
+   "it": "Su cosa si basa la famosa storia del conte di Sandwich?"
   },
   "options": {
    "en": [
@@ -508,13 +784,31 @@
     "Auf den Bericht eines einzigen französischen Reisenden",
     "Auf das Tagebuch des Earls selbst",
     "Auf ein Gesetz aus London"
+   ],
+   "fr": [
+    "Le récit d'un seul voyageur français",
+    "Le journal intime du comte",
+    "Une loi votée à Londres"
+   ],
+   "pt": [
+    "O relato de um único viajante francês",
+    "O diário do próprio conde",
+    "Uma lei aprovada em Londres"
+   ],
+   "it": [
+    "Il racconto di un solo viaggiatore francese",
+    "Il diario del conte",
+    "Una legge approvata a Londra"
    ]
   },
   "fact": {
    "en": "Pierre-Jean Grosley visited London in 1765 and never even names the earl. The word was already in use in 1762.",
    "es": "Pierre-Jean Grosley visitó Londres en 1765 y ni siquiera nombra al conde. La palabra ya se usaba en 1762.",
    "el": "Ο Pierre-Jean Grosley επισκέφτηκε το Λονδίνο το 1765 και δεν αναφέρει καν το όνομα του κόμη. Η λέξη χρησιμοποιούνταν ήδη το 1762.",
-   "de": "Pierre-Jean Grosley besuchte London 1765 und nennt den Earl nicht einmal beim Namen. Das Wort war schon 1762 in Gebrauch."
+   "de": "Pierre-Jean Grosley besuchte London 1765 und nennt den Earl nicht einmal beim Namen. Das Wort war schon 1762 in Gebrauch.",
+   "fr": "Pierre-Jean Grosley a visité Londres en 1765 et ne nomme même pas le comte. Le mot était déjà employé en 1762.",
+   "pt": "Pierre-Jean Grosley visitou Londres em 1765 e nem cita o nome do conde. A palavra já era usada em 1762.",
+   "it": "Pierre-Jean Grosley visitò Londra nel 1765 e non nomina nemmeno il conte. La parola era già in uso nel 1762."
   }
  },
  "0010-first-bra": {
@@ -523,7 +817,10 @@
    "en": "What did Mary Phelps Jacob make her 1914 bra from?",
    "es": "¿Con qué hizo Mary Phelps Jacob su sujetador de 1914?",
    "el": "Από τι έφτιαξε η Mary Phelps Jacob το σουτιέν της το 1914;",
-   "de": "Woraus machte Mary Phelps Jacob ihren BH von 1914?"
+   "de": "Woraus machte Mary Phelps Jacob ihren BH von 1914?",
+   "fr": "Avec quoi Mary Phelps Jacob a-t-elle fait son soutien-gorge de 1914 ?",
+   "pt": "Com o que Mary Phelps Jacob fez seu sutiã de 1914?",
+   "it": "Con cosa fece Mary Phelps Jacob il suo reggiseno del 1914?"
   },
   "options": {
    "en": [
@@ -545,13 +842,31 @@
     "Aus zwei Taschentüchern und einem Band",
     "Aus einem alten, halbierten Korsett",
     "Aus einem Seidenschal und Knöpfen"
+   ],
+   "fr": [
+    "Deux mouchoirs et un ruban",
+    "Un vieux corset coupé en deux",
+    "Un foulard en soie et des boutons"
+   ],
+   "pt": [
+    "Dois lenços e uma fita",
+    "Um espartilho velho cortado ao meio",
+    "Um lenço de seda e botões"
+   ],
+   "it": [
+    "Due fazzoletti e un nastro",
+    "Un vecchio corsetto tagliato a metà",
+    "Una sciarpa di seta e dei bottoni"
    ]
   },
   "fact": {
    "en": "She patented it in 1914. But four linen bras from the 1400s were found in an Austrian castle in 2008.",
    "es": "Lo patentó en 1914. Pero en 2008 aparecieron en un castillo austriaco cuatro sujetadores de lino de los años 1400.",
    "el": "Το κατοχύρωσε το 1914. Όμως το 2008 βρέθηκαν σε ένα αυστριακό κάστρο τέσσερα λινά σουτιέν από τα χρόνια του 1400.",
-   "de": "Sie ließ ihn 1914 patentieren. Doch 2008 fanden sich in einer österreichischen Burg vier Leinen-BHs aus den 1400er-Jahren."
+   "de": "Sie ließ ihn 1914 patentieren. Doch 2008 fanden sich in einer österreichischen Burg vier Leinen-BHs aus den 1400er-Jahren.",
+   "fr": "Elle l'a breveté en 1914. Mais quatre soutiens-gorge en lin du XVe siècle ont été trouvés dans un château autrichien en 2008.",
+   "pt": "Ela o patenteou em 1914. Mas quatro sutiãs de linho do século XV foram encontrados num castelo austríaco em 2008.",
+   "it": "Lo brevettò nel 1914. Ma nel 2008, in un castello austriaco, furono trovati quattro reggiseni di lino del Quattrocento."
   }
  },
  "0016-first-website": {
@@ -560,7 +875,10 @@
    "en": "What was the first website about?",
    "es": "¿De qué trataba la primera web?",
    "el": "Για τι μιλούσε ο πρώτος ιστότοπος;",
-   "de": "Worum ging es auf der ersten Website?"
+   "de": "Worum ging es auf der ersten Website?",
+   "fr": "De quoi parlait le premier site web ?",
+   "pt": "Sobre o que era o primeiro site?",
+   "it": "Di cosa parlava il primo sito web?"
   },
   "options": {
    "en": [
@@ -582,13 +900,31 @@
     "Um das World Wide Web selbst",
     "Um Physikexperimente am CERN",
     "Um einen Laden für Computer"
+   ],
+   "fr": [
+    "Du World Wide Web lui-même",
+    "D'expériences de physique au CERN",
+    "D'un magasin d'ordinateurs"
+   ],
+   "pt": [
+    "A própria World Wide Web",
+    "Experimentos de física no CERN",
+    "Uma loja de computadores"
+   ],
+   "it": [
+    "Il World Wide Web stesso",
+    "Esperimenti di fisica al CERN",
+    "Un negozio di computer"
    ]
   },
   "fact": {
    "en": "Tim Berners-Lee ran it at CERN on a NeXT computer. It is still online at info.cern.ch.",
    "es": "Tim Berners-Lee la tenía en el CERN, en un ordenador NeXT. Sigue en línea en info.cern.ch.",
    "el": "Ο Tim Berners-Lee τον έτρεχε στο CERN, σε έναν υπολογιστή NeXT. Είναι ακόμα online στο info.cern.ch.",
-   "de": "Tim Berners-Lee betrieb sie am CERN auf einem NeXT-Computer. Sie ist noch online unter info.cern.ch."
+   "de": "Tim Berners-Lee betrieb sie am CERN auf einem NeXT-Computer. Sie ist noch online unter info.cern.ch.",
+   "fr": "Tim Berners-Lee le faisait tourner au CERN sur un ordinateur NeXT. Il est toujours en ligne sur info.cern.ch.",
+   "pt": "Tim Berners-Lee o mantinha no CERN num computador NeXT. Ele ainda está no ar em info.cern.ch.",
+   "it": "Tim Berners-Lee lo faceva girare al CERN su un computer NeXT. È ancora online su info.cern.ch."
   }
  },
  "0017-tennis-for-two": {
@@ -597,7 +933,10 @@
    "en": "What was the screen of Tennis for Two in 1958?",
    "es": "¿Qué pantalla tenía Tennis for Two en 1958?",
    "el": "Τι οθόνη είχε το Tennis for Two το 1958;",
-   "de": "Was war 1958 der Bildschirm von Tennis for Two?"
+   "de": "Was war 1958 der Bildschirm von Tennis for Two?",
+   "fr": "Quel était l'écran de Tennis for Two en 1958 ?",
+   "pt": "Qual era a tela do Tennis for Two em 1958?",
+   "it": "Qual era lo schermo di Tennis for Two nel 1958?"
   },
   "options": {
    "en": [
@@ -619,13 +958,31 @@
     "Ein Oszilloskop, fünf Zoll groß",
     "Ein großer Fernseher",
     "Eine Kinoleinwand"
+   ],
+   "fr": [
+    "Un oscilloscope de cinq pouces",
+    "Un grand téléviseur",
+    "Un écran de cinéma"
+   ],
+   "pt": [
+    "Um osciloscópio de cinco polegadas",
+    "Um televisor grande",
+    "Uma tela de cinema"
+   ],
+   "it": [
+    "Un oscilloscopio da cinque pollici",
+    "Un grande televisore",
+    "Uno schermo da cinema"
    ]
   },
   "fact": {
    "en": "The ball was a dot of light. Hundreds of visitors lined up to play it at Brookhaven National Laboratory.",
    "es": "La pelota era un punto de luz. Cientos de visitantes hicieron cola para jugar en el Laboratorio Nacional de Brookhaven.",
    "el": "Η μπάλα ήταν μια κουκκίδα φωτός. Εκατοντάδες επισκέπτες έκαναν ουρά για να παίξουν στο Brookhaven National Laboratory.",
-   "de": "Der Ball war ein Lichtpunkt. Hunderte Besucher standen im Brookhaven National Laboratory Schlange, um zu spielen."
+   "de": "Der Ball war ein Lichtpunkt. Hunderte Besucher standen im Brookhaven National Laboratory Schlange, um zu spielen.",
+   "fr": "La balle était un point lumineux. Des centaines de visiteurs ont fait la queue pour y jouer au laboratoire national de Brookhaven.",
+   "pt": "A bola era um ponto de luz. Centenas de visitantes fizeram fila para jogar no Laboratório Nacional de Brookhaven.",
+   "it": "La palla era un punto di luce. Centinaia di visitatori fecero la fila per giocarci al Laboratorio nazionale di Brookhaven."
   }
  }
 }

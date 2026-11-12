@@ -96,7 +96,13 @@
       });
     });
     return {
-      setLang: function (l) { setSubs(wanted(l)); },
+      setLang: function (l) {
+        setSubs(wanted(l));
+        var cover = box.querySelector(".ytcover");   // the play button's spoken label follows the page language
+        if (cover) cover.setAttribute("aria-label", OS.t(l, "play_label"));
+        var cs = box.querySelector(".ccsel");
+        if (cs) cs.setAttribute("aria-label", OS.t(l, "subtitles"));
+      },
       stop: function () { clearInterval(timer); if (yt && yt.stopVideo) try { yt.stopVideo(); yt.destroy(); } catch (e) { /* gone */ } }
     };
   }

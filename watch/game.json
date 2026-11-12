@@ -7,13 +7,19 @@
     "en": "Senet, an Egyptian board game",
     "es": "El senet, un juego de mesa egipcio",
     "el": "Το σενέτ, ένα αιγυπτιακό επιτραπέζιο",
-    "de": "Senet, ein ägyptisches Brettspiel"
+    "de": "Senet, ein ägyptisches Brettspiel",
+    "fr": "Le senet, un jeu de société égyptien",
+    "pt": "O senet, um jogo de tabuleiro egípcio",
+    "it": "Il senet, un gioco da tavolo egizio"
    },
    "when": {
     "en": "about 5,000 years ago",
     "es": "hace unos 5.000 años",
     "el": "πριν από περίπου 5.000 χρόνια",
-    "de": "vor etwa 5.000 Jahren"
+    "de": "vor etwa 5.000 Jahren",
+    "fr": "il y a environ 5 000 ans",
+    "pt": "há cerca de 5.000 anos",
+    "it": "circa 5.000 anni fa"
    },
    "img": "game/senet.jpg",
    "credit": "Game Box for Playing Senet and Twenty Squares, ca. 1580–1458 BCE. The Metropolitan Museum of Art, Rogers Fund, 1916, 16.10.475a (CC0)",
@@ -30,13 +36,19 @@
     "en": "The Great Pyramid of Giza",
     "es": "La Gran Pirámide de Guiza",
     "el": "Η Μεγάλη Πυραμίδα της Γκίζας",
-    "de": "Die Große Pyramide von Gizeh"
+    "de": "Die Große Pyramide von Gizeh",
+    "fr": "La Grande Pyramide de Gizeh",
+    "pt": "A Grande Pirâmide de Gizé",
+    "it": "La Grande Piramide di Giza"
    },
    "when": {
     "en": "about 4,500 years ago",
     "es": "hace unos 4.500 años",
     "el": "πριν από περίπου 4.500 χρόνια",
-    "de": "vor etwa 4.500 Jahren"
+    "de": "vor etwa 4.500 Jahren",
+    "fr": "il y a environ 4 500 ans",
+    "pt": "há cerca de 4.500 anos",
+    "it": "circa 4.500 anni fa"
    },
    "img": "game/pyramid.jpg",
    "credit": "Warren LeMay from Chicago, IL, United States, Great Pyramid (Pyramid of Cheops Khufu), Giza, GG, EGY (40936205113).jpg, CC0",
@@ -53,13 +65,19 @@
     "en": "Toilet paper, in China",
     "es": "El papel higiénico, en China",
     "el": "Το χαρτί υγείας, στην Κίνα",
-    "de": "Toilettenpapier, in China"
+    "de": "Toilettenpapier, in China",
+    "fr": "Le papier toilette, en Chine",
+    "pt": "O papel higiênico, na China",
+    "it": "La carta igienica, in Cina"
    },
    "when": {
     "en": "around 589",
     "es": "hacia el año 589",
     "el": "γύρω στο 589",
-    "de": "um 589"
+    "de": "um 589",
+    "fr": "vers 589",
+    "pt": "por volta de 589",
+    "it": "intorno al 589"
    },
    "img": "game/toiletpaper.jpg",
    "credit": "Unknown author from the time of Ming dynasty, Five Steps of Papermaking - Step 5 - Drying the Sheets of Paper on a Wall - As described by Cai Lun in 105 CE.jpg, Public domain",
@@ -76,13 +94,19 @@
     "en": "A Bible from Gutenberg's printing press",
     "es": "Una Biblia de la imprenta de Gutenberg",
     "el": "Μια Βίβλος από το πιεστήριο του Γουτεμβέργιου",
-    "de": "Eine Bibel aus Gutenbergs Druckerpresse"
+    "de": "Eine Bibel aus Gutenbergs Druckerpresse",
+    "fr": "Une Bible de la presse de Gutenberg",
+    "pt": "Uma Bíblia da prensa de Gutenberg",
+    "it": "Una Bibbia dal torchio di Gutenberg"
    },
    "when": {
     "en": "around 1455",
     "es": "hacia 1455",
     "el": "γύρω στο 1455",
-    "de": "um 1455"
+    "de": "um 1455",
+    "fr": "vers 1455",
+    "pt": "por volta de 1455",
+    "it": "intorno al 1455"
    },
    "img": "game/press.jpg",
    "credit": "MC BSU, Gutenberg Bible on display at the U.S. Library of Congress.jpg, CC0",
@@ -99,13 +123,19 @@
     "en": "Bertha Benz's first long car trip",
     "es": "El primer viaje largo en coche de Bertha Benz",
     "el": "Το πρώτο μεγάλο ταξίδι της Μπέρτα Μπεντς με αυτοκίνητο",
-    "de": "Bertha Benz' erste lange Autofahrt"
+    "de": "Bertha Benz' erste lange Autofahrt",
+    "fr": "Le premier long trajet en voiture de Bertha Benz",
+    "pt": "A primeira longa viagem de carro de Bertha Benz",
+    "it": "Il primo lungo viaggio in auto di Bertha Benz"
    },
    "when": {
     "en": "1888",
     "es": "1888",
     "el": "1888",
-    "de": "1888"
+    "de": "1888",
+    "fr": "1888",
+    "pt": "1888",
+    "it": "1888"
    },
    "img": "game/benz.jpg",
    "credit": "Aschroet, Benz Patent Motorwagen 1.jpg, CC0",
@@ -122,13 +152,19 @@
     "en": "Gaudí hit by a Barcelona tram",
     "es": "Gaudí, atropellado por un tranvía en Barcelona",
     "el": "Ο Γκαουντί χτυπημένος από τραμ στη Βαρκελώνη",
-    "de": "Gaudí von einer Straßenbahn in Barcelona erfasst"
+    "de": "Gaudí von einer Straßenbahn in Barcelona erfasst",
+    "fr": "Gaudí renversé par un tramway à Barcelone",
+    "pt": "Gaudí atropelado por um bonde em Barcelona",
+    "it": "Gaudí investito da un tram a Barcellona"
    },
    "when": {
     "en": "1926",
     "es": "1926",
     "el": "1926",
-    "de": "1926"
+    "de": "1926",
+    "fr": "1926",
+    "pt": "1926",
+    "it": "1926"
    },
    "img": "game/gaudi.jpg",
    "credit": "Baldomer Gili i Roig, Baldomer Gili Roig. La Sagrada Família, 1905 Copia moderna del negatiu original de vidre.jpg, Public domain",
@@ -145,13 +181,19 @@
     "en": "The night the Berlin Wall opened",
     "es": "La noche en que se abrió el Muro de Berlín",
     "el": "Η νύχτα που άνοιξε το Τείχος του Βερολίνου",
-    "de": "Die Nacht, in der die Berliner Mauer aufging"
+    "de": "Die Nacht, in der die Berliner Mauer aufging",
+    "fr": "La nuit où le mur de Berlin s'est ouvert",
+    "pt": "A noite em que o Muro de Berlim se abriu",
+    "it": "La notte in cui si aprì il Muro di Berlino"
    },
    "when": {
     "en": "1989",
     "es": "1989",
     "el": "1989",
-    "de": "1989"
+    "de": "1989",
+    "fr": "1989",
+    "pt": "1989",
+    "it": "1989"
    },
    "img": "game/wall.jpg",
    "credit": "Raphaël Thiémard from Belgium., Fall of the Berlin Wall 1989, people walking.jpg, CC BY-SA 2.0",
@@ -168,13 +210,19 @@
     "en": "The sealed Roman wine bottle of Speyer",
     "es": "La botella de vino romana sellada de Espira",
     "el": "Το σφραγισμένο ρωμαϊκό μπουκάλι κρασιού του Σπάγερ",
-    "de": "Die versiegelte römische Weinflasche von Speyer"
+    "de": "Die versiegelte römische Weinflasche von Speyer",
+    "fr": "La bouteille de vin romain scellée de Spire",
+    "pt": "A garrafa de vinho romano lacrada de Speyer",
+    "it": "La bottiglia di vino romano sigillata di Spira"
    },
    "when": {
     "en": "around AD 325",
     "es": "hacia el año 325 d. C.",
     "el": "γύρω στο 325 μ.Χ.",
-    "de": "um 325 n. Chr."
+    "de": "um 325 n. Chr.",
+    "fr": "vers l'an 325",
+    "pt": "por volta do ano 325",
+    "it": "intorno al 325 d.C."
    },
    "img": "game/wine.jpg",
    "credit": "Carole Raddato from FRANKFURT, Germany, The Speyer wine bottle, a sealed vessel, presumed to contain liquid wine and considered the world's oldest known bottle of wine, 325 AD, Historical Museum of the Palatinate, Speyer, Germany (35404164365).jpg, CC BY-SA 2.0",
@@ -191,13 +239,19 @@
     "en": "The first eyeglasses, in Italy",
     "es": "Las primeras gafas, en Italia",
     "el": "Τα πρώτα γυαλιά, στην Ιταλία",
-    "de": "Die erste Brille, in Italien"
+    "de": "Die erste Brille, in Italien",
+    "fr": "Les premières lunettes, en Italie",
+    "pt": "Os primeiros óculos, na Itália",
+    "it": "I primi occhiali, in Italia"
    },
    "when": {
     "en": "around 1286",
     "es": "hacia 1286",
     "el": "γύρω στο 1286",
-    "de": "um 1286"
+    "de": "um 1286",
+    "fr": "vers 1286",
+    "pt": "por volta de 1286",
+    "it": "intorno al 1286"
    },
    "img": "game/glasses.jpg",
    "credit": "Tommaso da Modena, Tommaso da modena, ritratti di domenicani (Ugo di Provenza) 1352 150cm, treviso, ex convento di san niccolò, sala del capitolo.jpg, Public domain",
@@ -214,13 +268,19 @@
     "en": "Robert Cornelius's photo of himself",
     "es": "La foto de Robert Cornelius de sí mismo",
     "el": "Η φωτογραφία του Ρόμπερτ Κορνήλιους με τον εαυτό του",
-    "de": "Robert Cornelius' Foto von sich selbst"
+    "de": "Robert Cornelius' Foto von sich selbst",
+    "fr": "La photo de Robert Cornelius par lui-même",
+    "pt": "A foto que Robert Cornelius tirou de si mesmo",
+    "it": "L'autoritratto fotografico di Robert Cornelius"
    },
    "when": {
     "en": "1839",
     "es": "1839",
     "el": "1839",
-    "de": "1839"
+    "de": "1839",
+    "fr": "1839",
+    "pt": "1839",
+    "it": "1839"
    },
    "img": "game/selfie.jpg",
    "credit": "Robert Cornelius, RobertCornelius.jpg, Public domain",
@@ -237,13 +297,19 @@
     "en": "The first photo of Earth from space",
     "es": "La primera foto de la Tierra desde el espacio",
     "el": "Η πρώτη φωτογραφία της Γης από το διάστημα",
-    "de": "Das erste Foto der Erde aus dem All"
+    "de": "Das erste Foto der Erde aus dem All",
+    "fr": "La première photo de la Terre vue de l'espace",
+    "pt": "A primeira foto da Terra vista do espaço",
+    "it": "La prima foto della Terra dallo spazio"
    },
    "when": {
     "en": "1946",
     "es": "1946",
     "el": "1946",
-    "de": "1946"
+    "de": "1946",
+    "fr": "1946",
+    "pt": "1946",
+    "it": "1946"
    },
    "img": "game/spacephoto.jpg",
    "credit": "U.S. Army, First photo from space.jpg, Public domain",
@@ -260,13 +326,19 @@
     "en": "The asteroid that ended the dinosaurs",
     "es": "El asteroide que acabó con los dinosaurios",
     "el": "Ο αστεροειδής που αφάνισε τους δεινόσαυρους",
-    "de": "Der Asteroid, der die Dinosaurier auslöschte"
+    "de": "Der Asteroid, der die Dinosaurier auslöschte",
+    "fr": "L'astéroïde qui a mis fin aux dinosaures",
+    "pt": "O asteroide que acabou com os dinossauros",
+    "it": "L'asteroide che pose fine ai dinosauri"
    },
    "when": {
     "en": "66 million years ago",
     "es": "hace 66 millones de años",
     "el": "πριν από 66 εκατομμύρια χρόνια",
-    "de": "vor 66 Millionen Jahren"
+    "de": "vor 66 Millionen Jahren",
+    "fr": "il y a 66 millions d'années",
+    "pt": "há 66 milhões de anos",
+    "it": "66 milioni di anni fa"
    },
    "img": "game/asteroid.jpg",
    "credit": "O.V.E.R.V.I.E.W., Chicxulub Impact Crater, Gulf of Mexico (33789560443).jpg, CC BY 2.0",
@@ -283,13 +355,19 @@
     "en": "The Tunguska blast over Siberia",
     "es": "La explosión de Tunguska sobre Siberia",
     "el": "Η έκρηξη της Τουνγκούσκα πάνω από τη Σιβηρία",
-    "de": "Die Tunguska-Explosion über Sibirien"
+    "de": "Die Tunguska-Explosion über Sibirien",
+    "fr": "L'explosion de la Toungouska au-dessus de la Sibérie",
+    "pt": "A explosão de Tunguska sobre a Sibéria",
+    "it": "L'esplosione di Tunguska sopra la Siberia"
    },
    "when": {
     "en": "1908",
     "es": "1908",
     "el": "1908",
-    "de": "1908"
+    "de": "1908",
+    "fr": "1908",
+    "pt": "1908",
+    "it": "1908"
    },
    "img": "game/tunguska.jpg",
    "credit": "Leonid Kulik, the expedition to the Tunguska event, Tunguska Ereignis-1.jpg, Public domain",
@@ -306,13 +384,19 @@
     "en": "King Louis XIV's red heels",
     "es": "Los tacones rojos del rey Luis XIV",
     "el": "Τα κόκκινα τακούνια του βασιλιά Λουδοβίκου ΙΔ΄",
-    "de": "Die roten Absätze von König Ludwig XIV."
+    "de": "Die roten Absätze von König Ludwig XIV.",
+    "fr": "Les talons rouges du roi Louis XIV",
+    "pt": "Os saltos vermelhos do rei Luís XIV",
+    "it": "I tacchi rossi di re Luigi XIV"
    },
    "when": {
     "en": "1701",
     "es": "1701",
     "el": "1701",
-    "de": "1701"
+    "de": "1701",
+    "fr": "1701",
+    "pt": "1701",
+    "it": "1701"
    },
    "img": "game/heels.jpg",
    "credit": "Hyacinthe Rigaud, Rigaud Louis XIV 1701.jpg, Public domain",
@@ -329,13 +413,19 @@
     "en": "A Roman gold ring",
     "es": "Un anillo de oro romano",
     "el": "Ένα ρωμαϊκό χρυσό δαχτυλίδι",
-    "de": "Ein römischer Goldring"
+    "de": "Ein römischer Goldring",
+    "fr": "Une bague romaine en or",
+    "pt": "Um anel de ouro romano",
+    "it": "Un anello d'oro romano"
    },
    "when": {
     "en": "about 1,800 years ago",
     "es": "hace unos 1.800 años",
     "el": "πριν από περίπου 1.800 χρόνια",
-    "de": "vor etwa 1.800 Jahren"
+    "de": "vor etwa 1.800 Jahren",
+    "fr": "il y a environ 1 800 ans",
+    "pt": "há cerca de 1.800 anos",
+    "it": "circa 1.800 anni fa"
    },
    "img": "game/ring.jpg",
    "credit": "Gold finger ring, 3rd century CE. The Metropolitan Museum of Art, Purchase, Patricia and Marietta Fried Gift, 2016, 2016.239 (CC0)",
@@ -352,13 +442,19 @@
     "en": "\"Sandwich\" written down in London",
     "es": "«Sandwich», escrito en Londres",
     "el": "Η λέξη «Sandwich» γραμμένη στο Λονδίνο",
-    "de": "„Sandwich“, in London notiert"
+    "de": "„Sandwich“, in London notiert",
+    "fr": "« Sandwich » écrit à Londres",
+    "pt": "“Sandwich” escrito em Londres",
+    "it": "«Sandwich» scritto a Londra"
    },
    "when": {
     "en": "1762",
     "es": "1762",
     "el": "1762",
-    "de": "1762"
+    "de": "1762",
+    "fr": "1762",
+    "pt": "1762",
+    "it": "1762"
    },
    "img": "game/sandwich.jpg",
    "credit": "Thomas Gainsborough, John Montagu, 4th Earl of Sandwich.jpg, Public domain",
@@ -375,13 +471,19 @@
     "en": "Four linen bras in an Austrian castle",
     "es": "Cuatro sujetadores de lino en un castillo austriaco",
     "el": "Τέσσερα λινά σουτιέν σε αυστριακό κάστρο",
-    "de": "Vier Leinen-BHs in einer österreichischen Burg"
+    "de": "Vier Leinen-BHs in einer österreichischen Burg",
+    "fr": "Quatre soutiens-gorge en lin dans un château autrichien",
+    "pt": "Quatro sutiãs de linho num castelo austríaco",
+    "it": "Quattro reggiseni di lino in un castello austriaco"
    },
    "when": {
     "en": "from the 1400s",
     "es": "de los años 1400",
     "el": "από τα χρόνια του 1400",
-    "de": "aus den 1400er-Jahren"
+    "de": "aus den 1400er-Jahren",
+    "fr": "XVe siècle",
+    "pt": "século XV",
+    "it": "Quattrocento"
    },
    "img": "game/linenbras.jpg",
    "credit": "Michael Kranewitter, Schloss Lengberg b.JPG, CC BY-SA 4.0",
@@ -398,13 +500,19 @@
     "en": "Mary Phelps Jacob's bra patent",
     "es": "La patente de sujetador de Mary Phelps Jacob",
     "el": "Το δίπλωμα σουτιέν της Mary Phelps Jacob",
-    "de": "Mary Phelps Jacobs BH-Patent"
+    "de": "Mary Phelps Jacobs BH-Patent",
+    "fr": "Le brevet de soutien-gorge de Mary Phelps Jacob",
+    "pt": "A patente de sutiã de Mary Phelps Jacob",
+    "it": "Il brevetto del reggiseno di Mary Phelps Jacob"
    },
    "when": {
     "en": "1914",
     "es": "1914",
     "el": "1914",
-    "de": "1914"
+    "de": "1914",
+    "fr": "1914",
+    "pt": "1914",
+    "it": "1914"
    },
    "img": "game/brapatent.jpg",
    "credit": "US patent US1115674, drawing (public domain)",
@@ -421,13 +529,19 @@
     "en": "Tim Berners-Lee comes up with the web",
     "es": "Tim Berners-Lee idea la web",
     "el": "Ο Tim Berners-Lee επινοεί τον ιστό",
-    "de": "Tim Berners-Lee erdenkt das Web"
+    "de": "Tim Berners-Lee erdenkt das Web",
+    "fr": "Tim Berners-Lee imagine le web",
+    "pt": "Tim Berners-Lee cria a web",
+    "it": "Tim Berners-Lee inventa il web"
    },
    "when": {
     "en": "1989",
     "es": "1989",
     "el": "1989",
-    "de": "1989"
+    "de": "1989",
+    "fr": "1989",
+    "pt": "1989",
+    "it": "1989"
    },
    "img": "game/web.jpg",
    "credit": "User:Coolcaesar at en.wikipedia, First Web Server.jpg, CC BY-SA 3.0",
@@ -444,13 +558,19 @@
     "en": "Tennis for Two, an early video game",
     "es": "Tennis for Two, uno de los primeros videojuegos",
     "el": "Το Tennis for Two, ένα από τα πρώτα βιντεοπαιχνίδια",
-    "de": "Tennis for Two, eines der ersten Videospiele"
+    "de": "Tennis for Two, eines der ersten Videospiele",
+    "fr": "Tennis for Two, un des premiers jeux vidéo",
+    "pt": "Tennis for Two, um dos primeiros videogames",
+    "it": "Tennis for Two, uno dei primi videogiochi"
    },
    "when": {
     "en": "1958",
     "es": "1958",
     "el": "1958",
-    "de": "1958"
+    "de": "1958",
+    "fr": "1958",
+    "pt": "1958",
+    "it": "1958"
    },
    "img": "game/tennis.jpg",
    "credit": "Brookhaven National Laboratory, Tennis For Two in 1958.jpg, Public domain",
