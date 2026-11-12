@@ -45,4 +45,6 @@
   if (saved && data.langs.indexOf(saved) < 0) start = data.lang;  // a UI-only language this video lacks
   show(start, start !== data.lang);
   OS.paintLevel();
+  if (OS.count) OS.count("page", data.id);
+  if (OS.count) OS.count("lang", start);
 })();

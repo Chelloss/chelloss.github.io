@@ -80,6 +80,7 @@
     setSubs(cur);
 
     box.querySelector(".ytcover").addEventListener("click", function () {
+      if (OS.count) OS.count("play", opts.id);
       var frame = box.querySelector(".ytframe"), slot = document.createElement("div");
       frame.innerHTML = ""; frame.appendChild(slot);
       loadApi().then(function (YT) {
@@ -109,12 +110,13 @@
   // "Comment on YouTube" (Mike, 2026-11-12): copies a short line with the answer and opens the video's YouTube page,
   // where the comments are; the visitor posts it themselves, from their own account, if they want. No points for it
   // (rewarded comments break YouTube's rules). YouTube has no link that opens the comment box itself.
-  function commentButton(box, ytid, text) {
+  function commentButton(box, ytid, text, id) {
     if (!ytid) return;
     var l = L(), a = document.createElement("a");
     a.className = "btn ytcomment"; a.href = "https://www.youtube.com/watch?v=" + ytid + "#comments";
     a.target = "_blank"; a.rel = "noopener"; a.textContent = OS.t(l, "comment_btn");
     a.addEventListener("click", function () {
+      if (OS.count) OS.count("comment", id);
       if (navigator.clipboard) navigator.clipboard.writeText(text).then(function () { OS.toast(OS.t(l, "comment_copied")); }, function () {});
     });
     var wrap = document.createElement("p");
@@ -150,7 +152,7 @@
       if (done) {
         reveal(done === "right" ? q.answer : -1);
         res.innerHTML = "<b>" + esc(OS.t(l, done === "right" ? "q_answered_right" : "q_answered")) + "</b> " + esc(q.fact[l] || q.fact.en);
-        commentButton(box, ytid, OS.t(l, done === "right" ? "comment_right" : "comment_wrong", { a: (q.options[l] || q.options.en)[q.answer] }));
+        commentButton(box, ytid, OS.t(l, done === "right" ? "comment_right" : "comment_wrong", { a: (q.options[l] || q.options.en)[q.answer] }), id);
         return;
       }
       box.querySelectorAll(".qopt").forEach(function (b) {
@@ -159,7 +161,8 @@
           reveal(pick);
           res.innerHTML = "<b>" + esc(OS.t(l, ok ? "right" : "q_wrong")) + "</b> " + esc(q.fact[l] || q.fact.en);
           res.className = "qres " + (ok ? "ok" : "no");
-          commentButton(box, ytid, OS.t(l, ok ? "comment_right" : "comment_wrong", { a: (q.options[l] || q.options.en)[q.answer] }));
+          commentButton(box, ytid, OS.t(l, ok ? "comment_right" : "comment_wrong", { a: (q.options[l] || q.options.en)[q.answer] }), id);
+          if (OS.count) OS.count(ok ? "quiz_right" : "quiz_wrong", id);
           // answering stamps the story's countries; a right answer also gives points (10, +20 per new country)
           var countries = (places || []).map(function (x) { return x.country; }).filter(function (c, i, a) { return a.indexOf(c) === i; });
           var fresh = OS.passport.stamp(countries, id);

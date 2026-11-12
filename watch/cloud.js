@@ -64,6 +64,7 @@
     return load().then(function (o) {
       return o.F.getDoc(o.F.doc(o.db, "players", user.uid)).then(function (snap) {
         var remote = snap.exists() ? snap.data() : {};
+        if (!snap.exists() && OS.count) OS.count("signup");
         var m = merge(OS.progress.get(), remote, OS.passport.get(), remote.passport);
         ready = true;
         OS.progress.save(m.progress, true);
@@ -95,6 +96,7 @@
     return load().then(function (o) {
       return o.A.signInWithPopup(o.auth, new o.A.GoogleAuthProvider()).then(function () {
         OS.store("os-cloud", "1");
+        if (OS.count) OS.count("signin");
         OS.toast(OS.t(L(), "acc_synced"));
       });
     }).catch(function (e) {

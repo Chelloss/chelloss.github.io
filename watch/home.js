@@ -73,6 +73,7 @@
 
   function pick(k) {
     if (!k) return;
+    if (OS.count) OS.count("country", k);
     state.country = k;
     renderMap();
     openCountry(k);
@@ -172,6 +173,7 @@
   var g = { order: [], i: 0, right: 0, played: 0, picked: false, timer: null, run: 0, friend: null };
 
   function newGame(fromLink) {
+    if (OS.count) OS.count("game_start");
     var pool = game.rounds.slice();
     for (var i = pool.length - 1; i > 0; i--) { var j = Math.floor(Math.random() * (i + 1)), x = pool[i]; pool[i] = pool[j]; pool[j] = x; }
     g.order = pool.slice(0, 5).map(function (r) { return Math.random() < 0.5 ? { a: r.a, b: r.b, r: r } : { a: r.b, b: r.a, r: r }; });
@@ -184,7 +186,7 @@
           var r = game.rounds.filter(function (r) { return (r.a === ab[0] && r.b === ab[1]) || (r.a === ab[1] && r.b === ab[0]); })[0];
           return r ? { a: ab[0], b: ab[1], r: r } : null;
         }).filter(Boolean);
-        if (order.length) { g.order = order; g.friend = +m[2]; }
+        if (order.length) { g.order = order; g.friend = +m[2]; if (OS.count) OS.count("challenge_open"); }
       }
     }
     g.i = 0; g.right = 0; g.played = 0; g.picked = false; g.run = 0;
@@ -196,6 +198,7 @@
   }
   function share() {
     var text = OS.gt(L, "challenge_text").replace("{r}", g.right).replace("{n}", g.order.length), url = challengeUrl();
+    if (OS.count) OS.count("challenge_share");
     if (navigator.share) { navigator.share({ title: "Oldest Surviving", text: text, url: url }).catch(function () {}); return; }
     var done = function () { OS.toast(OS.gt(L, "copied")); };
     if (navigator.clipboard) navigator.clipboard.writeText(text + " " + url).then(done, function () { prompt("", url); });
@@ -218,6 +221,7 @@
       $("share").onclick = share;
       $("again").onclick = function () { newGame(); playRound(); };
       $("gcredits").innerHTML = "";
+      if (OS.count) OS.count("game_end");
       if (g.played && g.right === g.order.length) OS.progress.add(null, 0, function (p) { p.perfect = true; });
       return;
     }
@@ -256,6 +260,7 @@
     g.played++; if (ok) g.right++;
     g.run = ok ? g.run + 1 : 0;
     var run = g.run, pairKey = [round.a, round.b].sort().join(".");
+    if (OS.count) OS.count(ok ? "pair_right" : "pair_wrong", pairKey);
     setTimeout(function () {   // after the reveal; points once per pair, the best run counts for "Sharp eye"
       OS.progress.add(ok ? "p:" + pairKey : null, 5, function (p) { p.bestRun = Math.max(p.bestRun || 0, run); });
     }, 700);
@@ -381,6 +386,7 @@
   document.querySelectorAll(".cat").forEach(function (b) {
     b.onclick = function () {
       state.cat = b.getAttribute("data-cat"); state.country = null; renderMap(); renderGrid();
+      if (OS.count) OS.count("cat", state.cat);
       var c = cat.categories.filter(function (x) { return x.id === state.cat; })[0];
       if (!c.live) openSoon(c);
     };
@@ -391,7 +397,11 @@
     el.addEventListener("keydown", function (e) { if ((e.key === "Enter" || e.key === " ") && el.classList.contains("has")) { e.preventDefault(); pick(el.getAttribute("data-c")); } });
   });
   $("country").addEventListener("change", function (e) { var k = e.target.value; e.target.value = ""; pick(k); });
-  $("q").addEventListener("input", function () { state.q = $("q").value.trim(); renderGrid(); });
+  var searched = false;
+  $("q").addEventListener("input", function () {
+    state.q = $("q").value.trim(); renderGrid();
+    if (!searched && state.q.length > 2) { searched = true; if (OS.count) OS.count("search"); }
+  });
 
   function rerender() {
     renderMap(); renderGrid();
@@ -401,7 +411,9 @@
       return '<img alt="" src="' + esc(game.items[r.a].img) + '"><img alt="" src="' + esc(game.items[r.b].img) + '">';
     }).join("");
   }
-  L = OS.boot(function (l) { L = l; rerender(); });
+  L = OS.boot(function (l) { L = l; rerender(); if (OS.count) OS.count("lang_switch", l); });
+  if (OS.count) OS.count("page", "home");
+  if (OS.count) OS.count("lang", L);
   Promise.all([
     fetch("catalog.json").then(function (r) { return r.json(); }),
     fetch("game.json").then(function (r) { return r.ok ? r.json() : null; }).catch(function () { return null; })
