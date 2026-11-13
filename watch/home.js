@@ -2,7 +2,7 @@
    Fair play (Mike, 2026-11-12): no streaks, no timers, no fake counters, no sounds; progress stays in this browser. */
 (function () {
   var cat = null, game = null, L = "en", chipsOpen = false;
-  var GAMES = ["older", "timeline", "where", "snake", "sudoku", "memory"];
+  var GAMES = ["older", "timeline", "where", "snake", "sudoku", "memory", "traps"];
   var state = { view: "map", cat: "history", fmt: "all", country: null, q: "", game: "hub" };
   var $ = function (id) { return document.getElementById(id); };
   var reduce = window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches;
@@ -235,7 +235,7 @@
     if (state.game === "older") playRound();
     if (state.game === "timeline") { if (!tl.items.length) tlNew(); else tlRender(); }
     if (state.game === "where") { if (!wh.order.length) whNew(); else whRender(); }
-    if (OS.games && OS.games[state.game]) OS.games.open(state.game);   // Story Snake, Symbol Sudoku, Story Memory
+    if (OS.games && OS.games[state.game]) OS.games.open(state.game);   // Story Snake, Symbol Sudoku, Story Memory, Hidden Traps
   }
 
   // ------------------------------------------------------------ Timeline: four moments, oldest first

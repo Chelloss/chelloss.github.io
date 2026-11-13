@@ -6,7 +6,8 @@
    Every 10 correct steps open one of the channel's story videos in the site's player, ready to play: the visitor
    taps play themselves. Never autoplay or auto-click (YouTube counts only real plays; forcing them is fake
    engagement), and no points for watching. Points come only from the game moves, once per thing, so they cannot be
-   farmed. Needs the home page (home.js exposes OS.home). */
+   farmed. Needs the home page (home.js exposes OS.home).
+   - Hidden Traps (added later the same day): open the safe squares, mark the channel's traps. */
 (function () {
   if (!window.OS) return;
   var $ = function (id) { return document.getElementById(id); };
@@ -398,8 +399,155 @@
     return { show: show, stop: function () {} };
   })();
 
+  // ------------------------------------------------------------ Hidden Traps (Mike, 2026-11-13: "the minesweeper ...
+  // every 10 good options ... pause him, to see a video, for knowledge"). An 8x8 board with 10 traps of the chosen
+  // channel; the first tap is always safe. Every 10 safe moves the board pauses and one of the channel's stories opens
+  // in the player (tap to play, never automatic). Its quick question gives points for the right answer; watching gives
+  // none. Own name and look: only the idea of the old number-and-mines puzzle.
+  var TRAP = {   // the hidden trap of each channel (hand-drawn SVG)
+    history: "M12 3a7 7 0 0 0-7 7c0 2.5 1.2 4.3 3 5.3V19h8v-3.7c1.8-1 3-2.8 3-5.3a7 7 0 0 0-7-7zM9.5 10.5h.01M14.5 10.5h.01M11 19v2M13 19v2",
+    how: "M13 2 5 14h6l-1 8 8-12h-6z",
+    money: "M4 4v16h16M7 8l4 4 3-3 5 6M19 11v4h-4",
+    psychology: "M12 12a1 1 0 1 1 1 1 2.5 2.5 0 0 1-3.5-2 4 4 0 0 1 4-4.5 5.5 5.5 0 0 1 5.5 5.5 7 7 0 0 1-7 7 8.5 8.5 0 0 1-8.5-8.5"
+  };
+  var FLAG = "M6 21V4M6 4h11l-2.5 4 2.5 4H6";
+  function line(d, w) {
+    return '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="' + d + '" fill="none" stroke="currentColor" stroke-width="' + (w || 2.2) +
+      '" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+  }
+  var traps = (function () {
+    var W = 8, H = 8, TRAPS = 10, s = null, hold = null, held = false;
+    function around(i) {
+      var x = i % W, y = Math.floor(i / W), out = [];
+      for (var dy = -1; dy <= 1; dy++) for (var dx = -1; dx <= 1; dx++) {
+        var nx = x + dx, ny = y + dy;
+        if ((dx || dy) && nx >= 0 && ny >= 0 && nx < W && ny < H) out.push(ny * W + nx);
+      }
+      return out;
+    }
+    function fresh() {
+      var b = { trap: [], open: [], flag: [], n: [], laid: false, over: false, won: false, hit: -1 };
+      for (var i = 0; i < W * H; i++) { b.trap.push(false); b.open.push(false); b.flag.push(false); b.n.push(0); }
+      s.b = b; s.paused = false; s.msg = ""; s.cls = "verdict";
+    }
+    function lay(first) {   // traps go down after the first tap, never on it or next to it
+      var b = s.b, keep = around(first).concat([first]), spots = [];
+      for (var i = 0; i < W * H; i++) if (keep.indexOf(i) < 0) spots.push(i);
+      shuffle(spots).slice(0, TRAPS).forEach(function (k) { b.trap[k] = true; });
+      for (var j = 0; j < W * H; j++) b.n[j] = around(j).filter(function (k) { return b.trap[k]; }).length;
+      b.laid = true;
+    }
+    function openFrom(i) {   // opens the square, and the whole empty area around a 0
+      var b = s.b, stack = [i], opened = 0;
+      while (stack.length) {
+        var k = stack.pop();
+        if (b.open[k] || b.flag[k] || b.trap[k]) continue;
+        b.open[k] = true; opened++;
+        if (!b.n[k]) around(k).forEach(function (m) { if (!b.open[m]) stack.push(m); });
+      }
+      return opened;
+    }
+    function safeLeft() {
+      var b = s.b, n = 0;
+      for (var i = 0; i < W * H; i++) if (!b.trap[i] && !b.open[i]) n++;
+      return n;
+    }
+    function tap(i, mark) {
+      var b = s.b;
+      if (s.paused || b.over || b.won || b.open[i]) return;
+      if (mark || s.mode === "mark") { b.flag[i] = !b.flag[i]; render(); return; }
+      if (b.flag[i]) return;
+      if (!b.laid) lay(i);
+      if (b.trap[i]) {
+        b.over = true; b.hit = i;
+        s.cls = "verdict no"; s.msg = "trap_hit";
+        count("traps_lost");
+        render();
+        return;
+      }
+      if (!openFrom(i)) return;
+      s.right++;
+      if (OS.count) OS.count("traps_right");
+      s.cls = "verdict"; s.msg = "";
+      if (!safeLeft()) {
+        b.won = true;
+        for (var k = 0; k < W * H; k++) if (b.trap[k]) b.flag[k] = true;
+        var p = OS.progress.get(), won = Object.keys(p.done).filter(function (x) { return x.indexOf("h:") === 0; }).length;
+        if (won < 20) OS.progress.add("h:" + (won + 1), 5);
+        count("traps_won");
+        s.cls = "verdict ok"; s.msg = "board_clear";
+      }
+      var due = s.right % REWARD_EVERY === 0;
+      if (due && !b.won) s.paused = true;   // the board waits while the story is open
+      render();
+      if (due) reward(null);
+    }
+    function cell(i) {
+      var b = s.b, th = theme, cls = "tc", inner = "", label = "";
+      var showTrap = b.trap[i] && b.over;   // a cleared board shows its traps as flags
+      if (b.open[i]) {
+        cls += " open" + (b.n[i] ? " n" + Math.min(b.n[i], 3) : "");
+        inner = b.n[i] ? String(b.n[i]) : ""; label = String(b.n[i]);
+      } else if (showTrap) {
+        cls += " trap" + (i === b.hit ? " hit" : ""); inner = line(TRAP[th]); label = t("g_traps");
+      } else if (b.flag[i]) {
+        cls += " flag"; inner = line(FLAG); label = t("mode_mark");
+      }
+      if (b.over && b.flag[i] && !b.trap[i]) cls += " wrong";
+      return '<button type="button" class="' + cls + '" data-c="' + i + '" aria-label="' + esc(label || "?") + '"' +
+        (b.open[i] ? " disabled" : "") + ">" + inner + "</button>";
+    }
+    function render() {
+      var b = s.b, box = $("traps-box");
+      var flags = b.flag.filter(function (x) { return x; }).length;
+      var over = s.paused ? "<b>" + esc(t("paused")) + "</b>" :
+        b.over ? "<b>" + esc(t("game_over")) + "</b><span>" + esc(t("new_board")) + "</span>" : "";
+      var cells = "";
+      for (var i = 0; i < W * H; i++) cells += cell(i);
+      box.innerHTML = '<p class="gq">' + esc(t("traps_hint")) + "</p>" +
+        '<div class="tmode" role="group">' + ["open", "mark"].map(function (m) {
+          return '<button type="button" class="chip' + (s.mode === m ? " sel" : "") + '" data-m="' + m + '" aria-pressed="' + (s.mode === m) + '">' +
+            (m === "mark" ? line(FLAG) : "") + esc(t("mode_" + m)) + "</button>";
+        }).join("") + "</div>" +
+        '<p class="sstat"><span class="tleft">' + line(TRAP[theme]) + esc(t("traps_left", { n: Math.max(0, TRAPS - flags) })) + "</span>" +
+        "<span>" + esc(t("safe_moves", { n: s.right })) + "</span></p>" +
+        '<div class="twrap"><div class="tgrid">' + cells + "</div>" +
+        '<button type="button" class="snake-over" id="traps-over"' + (over ? "" : " hidden") + ">" + over + "</button></div>" +
+        '<p class="' + s.cls + '" id="traps-res" aria-live="polite">' + esc(s.msg ? t(s.msg) : "") + "</p>" +
+        '<p class="gactions"><button type="button" class="btn big" id="traps-new">' + esc(t("new_board")) + "</button></p>";
+      progressLine($("traps-prog"), s.right);
+    }
+    function wire(box) {   // one set of handlers on the box (the board is redrawn after every move)
+      function cellOf(e) { var c = e.target.closest && e.target.closest(".tc"); return c ? +c.getAttribute("data-c") : -1; }
+      box.onclick = function (e) {
+        var m = e.target.closest("[data-m]");
+        if (m) { s.mode = m.getAttribute("data-m"); render(); return; }
+        if (e.target.closest("#traps-new")) { fresh(); render(); return; }
+        if (e.target.closest("#traps-over")) { if (s.paused) s.paused = false; else fresh(); render(); return; }
+        var i = cellOf(e);
+        if (i < 0) return;
+        if (held) { held = false; return; }   // a long press already marked it
+        tap(i, false);
+      };
+      box.oncontextmenu = function (e) { var i = cellOf(e); if (i >= 0) { e.preventDefault(); tap(i, true); } };
+      box.ontouchstart = function (e) {   // press and hold = mark
+        var i = cellOf(e);
+        held = false; clearTimeout(hold);
+        if (i >= 0) hold = setTimeout(function () { held = true; tap(i, true); if (navigator.vibrate) navigator.vibrate(15); }, 450);
+      };
+      box.ontouchend = box.ontouchmove = box.ontouchcancel = function () { clearTimeout(hold); };
+    }
+    function show() {
+      themeChips($("traps-themes"), function () { show(); });
+      if (!s) { s = { right: 0, mode: "open" }; fresh(); count("traps_start"); }
+      wire($("traps-box"));
+      render();
+    }
+    return { show: show, stop: function () {} };
+  })();
+
   OS.games = {
-    snake: snake, sudoku: sudoku, memory: memory,
+    snake: snake, sudoku: sudoku, memory: memory, traps: traps,
     open: function (name) {
       if (!theme) theme = OS.home ? OS.home.category() : "history";
       if (OS.games[name]) OS.games[name].show();
