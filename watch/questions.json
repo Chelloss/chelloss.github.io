@@ -2028,5 +2028,527 @@
    "pt": "A equipe de Anne Cleary parava cada caminhada logo antes da última curva. No déjà vu, as pessoas se sentiam mais seguras, mas não acertavam mais do que chutando.",
    "it": "Il gruppo di Anne Cleary fermava ogni percorso subito prima dell'ultima svolta. Durante il déjà vu le persone si sentivano più sicure, ma non facevano meglio che tirando a indovinare."
   }
+ },
+ "lb024-titanic": {
+  "answer": 0,
+  "q": {
+   "en": "How many compartments did the iceberg open on Titanic?",
+   "es": "¿Cuántos compartimentos abrió el iceberg en el Titanic?",
+   "el": "Πόσα διαμερίσματα άνοιξε το παγόβουνο στον Τιτανικό;",
+   "de": "Wie viele Abteilungen öffnete der Eisberg bei der Titanic?",
+   "fr": "Combien de compartiments l'iceberg a-t-il ouverts sur le Titanic ?",
+   "pt": "Quantos compartimentos o iceberg abriu no Titanic?",
+   "it": "Quanti compartimenti aprì l'iceberg sul Titanic?"
+  },
+  "options": {
+   "en": [
+    "Six",
+    "Two",
+    "Sixteen"
+   ],
+   "es": [
+    "Seis",
+    "Dos",
+    "Dieciséis"
+   ],
+   "el": [
+    "Έξι",
+    "Δύο",
+    "Δεκαέξι"
+   ],
+   "de": [
+    "Sechs",
+    "Zwei",
+    "Sechzehn"
+   ],
+   "fr": [
+    "Six",
+    "Deux",
+    "Seize"
+   ],
+   "pt": [
+    "Seis",
+    "Dois",
+    "Dezesseis"
+   ],
+   "it": [
+    "Sei",
+    "Due",
+    "Sedici"
+   ]
+  },
+  "fact": {
+   "en": "Titanic could stay afloat with up to four forward compartments flooded. The iceberg opened six, and the water spilled over the bulkheads, which were not sealed at the top.",
+   "es": "El Titanic podía seguir a flote con hasta cuatro compartimentos de proa inundados. El iceberg abrió seis, y el agua rebosó por encima de los mamparos, que no estaban sellados por arriba.",
+   "el": "Ο Τιτανικός μπορούσε να επιπλέει με έως τέσσερα πλωραία διαμερίσματα πλημμυρισμένα. Το παγόβουνο άνοιξε έξι, και το νερό ξεχείλισε πάνω από τα διαφράγματα, που δεν έκλειναν από πάνω.",
+   "de": "Die Titanic konnte mit bis zu vier gefluteten vorderen Abteilungen schwimmen. Der Eisberg öffnete sechs, und das Wasser lief über die Schotten, die oben nicht dicht waren.",
+   "fr": "Le Titanic pouvait rester à flot avec jusqu'à quatre compartiments avant inondés. L'iceberg en a ouvert six, et l'eau a débordé par-dessus les cloisons, qui n'étaient pas fermées en haut.",
+   "pt": "O Titanic podia continuar flutuando com até quatro compartimentos dianteiros inundados. O iceberg abriu seis, e a água transbordou por cima das anteparas, que não eram vedadas no alto.",
+   "it": "Il Titanic poteva restare a galla con fino a quattro compartimenti di prua allagati. L'iceberg ne aprì sei, e l'acqua traboccò sopra le paratie, che non erano chiuse in alto."
+  }
+ },
+ "lb008-microwave": {
+  "answer": 0,
+  "q": {
+   "en": "Why can't microwaves get out through the holes in the door?",
+   "es": "¿Por qué las microondas no salen por los agujeros de la puerta?",
+   "el": "Γιατί τα μικροκύματα δεν βγαίνουν από τις τρύπες της πόρτας;",
+   "de": "Warum kommen Mikrowellen nicht durch die Löcher in der Tür?",
+   "fr": "Pourquoi les micro-ondes ne sortent-elles pas par les trous de la porte ?",
+   "pt": "Por que as micro-ondas não saem pelos furos da porta?",
+   "it": "Perché le microonde non escono dai fori dello sportello?"
+  },
+  "options": {
+   "en": [
+    "The holes are much smaller than the 12 cm waves",
+    "The glass melts the waves",
+    "The turntable blocks them"
+   ],
+   "es": [
+    "Los agujeros son mucho más pequeños que las ondas de 12 cm",
+    "El cristal derrite las ondas",
+    "El plato giratorio las bloquea"
+   ],
+   "el": [
+    "Οι τρύπες είναι πολύ μικρότερες από τα κύματα των 12 εκ.",
+    "Το τζάμι λιώνει τα κύματα",
+    "Το περιστρεφόμενο πιάτο τα εμποδίζει"
+   ],
+   "de": [
+    "Die Löcher sind viel kleiner als die 12-cm-Wellen",
+    "Das Glas schmilzt die Wellen",
+    "Der Drehteller blockiert sie"
+   ],
+   "fr": [
+    "Les trous sont bien plus petits que les ondes de 12 cm",
+    "La vitre fait fondre les ondes",
+    "Le plateau tournant les bloque"
+   ],
+   "pt": [
+    "Os furos são muito menores que as ondas de 12 cm",
+    "O vidro derrete as ondas",
+    "O prato giratório as bloqueia"
+   ],
+   "it": [
+    "I fori sono molto più piccoli delle onde da 12 cm",
+    "Il vetro scioglie le onde",
+    "Il piatto girevole le blocca"
+   ]
+  },
+  "fact": {
+   "en": "Each microwave is about 12 centimetres long. The holes in the door's metal mesh are much smaller, so the waves stay inside, but light gets out.",
+   "es": "Cada microonda mide unos 12 centímetros. Los agujeros de la malla metálica de la puerta son mucho más pequeños, así que las ondas se quedan dentro, pero la luz sale.",
+   "el": "Κάθε μικροκύμα έχει μήκος περίπου 12 εκατοστά. Οι τρύπες στο μεταλλικό πλέγμα της πόρτας είναι πολύ μικρότερες, έτσι τα κύματα μένουν μέσα, ενώ το φως βγαίνει.",
+   "de": "Jede Mikrowelle ist etwa 12 Zentimeter lang. Die Löcher im Metallgitter der Tür sind viel kleiner, also bleiben die Wellen drin, das Licht aber kommt heraus.",
+   "fr": "Chaque micro-onde mesure environ 12 centimètres. Les trous de la grille métallique de la porte sont bien plus petits : les ondes restent dedans, mais la lumière sort.",
+   "pt": "Cada micro-onda tem cerca de 12 centímetros. Os furos da tela metálica da porta são muito menores, então as ondas ficam dentro, mas a luz sai.",
+   "it": "Ogni microonda è lunga circa 12 centimetri. I fori nella rete metallica dello sportello sono molto più piccoli, quindi le onde restano dentro, ma la luce esce."
+  }
+ },
+ "lb016-submarine": {
+  "answer": 0,
+  "q": {
+   "en": "How does a submarine come back up?",
+   "es": "¿Cómo vuelve a subir un submarino?",
+   "el": "Πώς ξαναβγαίνει στην επιφάνεια ένα υποβρύχιο;",
+   "de": "Wie kommt ein U-Boot wieder nach oben?",
+   "fr": "Comment un sous-marin remonte-t-il ?",
+   "pt": "Como um submarino volta a subir?",
+   "it": "Come fa un sottomarino a risalire?"
+  },
+  "options": {
+   "en": [
+    "It blows compressed air into its tanks",
+    "It drops its outer hull",
+    "It opens more vents"
+   ],
+   "es": [
+    "Inyecta aire comprimido en sus tanques",
+    "Suelta su casco exterior",
+    "Abre más válvulas"
+   ],
+   "el": [
+    "Φυσάει πεπιεσμένο αέρα στις δεξαμενές του",
+    "Πετάει το εξωτερικό του κύτος",
+    "Ανοίγει περισσότερους εξαεριστήρες"
+   ],
+   "de": [
+    "Es bläst Druckluft in seine Tanks",
+    "Es wirft seine äußere Hülle ab",
+    "Es öffnet mehr Ventile"
+   ],
+   "fr": [
+    "Il souffle de l'air comprimé dans ses réservoirs",
+    "Il largue sa coque extérieure",
+    "Il ouvre plus de purges"
+   ],
+   "pt": [
+    "Ele injeta ar comprimido nos tanques",
+    "Ele solta o casco externo",
+    "Ele abre mais respiros"
+   ],
+   "it": [
+    "Soffia aria compressa nelle casse",
+    "Sgancia lo scafo esterno",
+    "Apre altri sfoghi"
+   ]
+  },
+  "fact": {
+   "en": "To dive, it floods its ballast tanks. To rise, it shuts the vents and blows in compressed air, which pushes the water back out.",
+   "es": "Para sumergirse, inunda sus tanques de lastre. Para subir, cierra las válvulas e inyecta aire comprimido, que vuelve a echar el agua fuera.",
+   "el": "Για να καταδυθεί, πλημμυρίζει τις δεξαμενές έρματος. Για να ανέβει, κλείνει τους εξαεριστήρες και φυσάει μέσα πεπιεσμένο αέρα, που διώχνει το νερό έξω.",
+   "de": "Zum Tauchen flutet es seine Ballasttanks. Zum Auftauchen schließt es die Ventile und bläst Druckluft hinein, die das Wasser wieder hinausdrückt.",
+   "fr": "Pour plonger, il remplit ses ballasts. Pour remonter, il ferme les purges et souffle de l'air comprimé, qui chasse l'eau dehors.",
+   "pt": "Para mergulhar, ele inunda os tanques de lastro. Para subir, fecha os respiros e injeta ar comprimido, que empurra a água para fora.",
+   "it": "Per immergersi allaga le casse di zavorra. Per risalire chiude gli sfoghi e soffia aria compressa, che spinge fuori l'acqua."
+  }
+ },
+ "ll001-costco-hot-dog": {
+  "answer": 0,
+  "q": {
+   "en": "Where does most of Costco's profit come from?",
+   "es": "¿De dónde sale la mayor parte del beneficio de Costco?",
+   "el": "Από πού έρχεται το μεγαλύτερο μέρος των κερδών του Costco;",
+   "de": "Woher kommt der größte Teil von Costcos Gewinn?",
+   "fr": "D'où vient l'essentiel du bénéfice de Costco ?",
+   "pt": "De onde vem a maior parte do lucro da Costco?",
+   "it": "Da dove viene gran parte dei profitti di Costco?"
+  },
+  "options": {
+   "en": [
+    "Membership fees",
+    "The $1.50 hot dog",
+    "Selling Pepsi"
+   ],
+   "es": [
+    "De las cuotas de socio",
+    "Del perrito caliente de 1,50 dólares",
+    "De vender Pepsi"
+   ],
+   "el": [
+    "Από τις συνδρομές μελών",
+    "Από το χοτ ντογκ του 1,50 δολαρίου",
+    "Από τις πωλήσεις Pepsi"
+   ],
+   "de": [
+    "Aus den Mitgliedsbeiträgen",
+    "Vom Hotdog für 1,50 Dollar",
+    "Vom Pepsi-Verkauf"
+   ],
+   "fr": [
+    "Des adhésions",
+    "Du hot-dog à 1,50 dollar",
+    "De la vente de Pepsi"
+   ],
+   "pt": [
+    "Das anuidades de sócio",
+    "Do cachorro-quente de US$ 1,50",
+    "Da venda de Pepsi"
+   ],
+   "it": [
+    "Dalle tessere dei soci",
+    "Dall'hot dog da 1,50 dollari",
+    "Dalla vendita di Pepsi"
+   ]
+  },
+  "fact": {
+   "en": "The hot dog and soda have cost $1.50 since 1985. Costco's $65 membership brings in most of its profit.",
+   "es": "El perrito caliente con refresco cuesta 1,50 dólares desde 1985. La cuota de socio de 65 dólares aporta la mayor parte del beneficio de Costco.",
+   "el": "Το χοτ ντογκ με αναψυκτικό κοστίζει 1,50 δολάριο από το 1985. Η συνδρομή των 65 δολαρίων φέρνει το μεγαλύτερο μέρος των κερδών του Costco.",
+   "de": "Hotdog und Getränk kosten seit 1985 nur 1,50 Dollar. Die Mitgliedschaft für 65 Dollar bringt den größten Teil von Costcos Gewinn.",
+   "fr": "Le hot-dog et le soda coûtent 1,50 dollar depuis 1985. L'adhésion à 65 dollars rapporte l'essentiel du bénéfice de Costco.",
+   "pt": "O cachorro-quente com refrigerante custa US$ 1,50 desde 1985. A anuidade de US$ 65 traz a maior parte do lucro da Costco.",
+   "it": "Hot dog e bibita costano 1,50 dollari dal 1985. La tessera da 65 dollari porta gran parte dei profitti di Costco."
+  }
+ },
+ "ll011-weimar": {
+  "answer": 0,
+  "q": {
+   "en": "What ended Germany's hyperinflation in November 1923?",
+   "es": "¿Qué acabó con la hiperinflación alemana en noviembre de 1923?",
+   "el": "Τι σταμάτησε τον υπερπληθωρισμό στη Γερμανία τον Νοέμβριο του 1923;",
+   "de": "Was beendete die deutsche Hyperinflation im November 1923?",
+   "fr": "Qu'est-ce qui a mis fin à l'hyperinflation allemande en novembre 1923 ?",
+   "pt": "O que acabou com a hiperinflação alemã em novembro de 1923?",
+   "it": "Che cosa mise fine all'iperinflazione tedesca nel novembre 1923?"
+  },
+  "options": {
+   "en": [
+    "A new currency, the Rentenmark",
+    "Printing even more marks",
+    "Paying the reparations in full"
+   ],
+   "es": [
+    "Una moneda nueva, el Rentenmark",
+    "Imprimir aún más marcos",
+    "Pagar todas las reparaciones"
+   ],
+   "el": [
+    "Ένα νέο νόμισμα, το Ρέντενμαρκ",
+    "Ακόμη περισσότερο τύπωμα μάρκων",
+    "Η πλήρης πληρωμή των αποζημιώσεων"
+   ],
+   "de": [
+    "Eine neue Währung, die Rentenmark",
+    "Noch mehr Mark drucken",
+    "Die Reparationen ganz bezahlen"
+   ],
+   "fr": [
+    "Une nouvelle monnaie, le Rentenmark",
+    "Imprimer encore plus de marks",
+    "Payer toutes les réparations"
+   ],
+   "pt": [
+    "Uma nova moeda, o Rentenmark",
+    "Imprimir ainda mais marcos",
+    "Pagar todas as reparações"
+   ],
+   "it": [
+    "Una nuova moneta, il Rentenmark",
+    "Stampare ancora più marchi",
+    "Pagare tutte le riparazioni"
+   ]
+  },
+  "fact": {
+   "en": "The Rentenmark replaced a trillion old marks with one, and its supply was strictly fixed.",
+   "es": "El Rentenmark sustituyó un billón de marcos viejos por uno, y su cantidad era estrictamente fija.",
+   "el": "Το Ρέντενμαρκ αντικατέστησε ένα τρισεκατομμύριο παλιά μάρκα με ένα, και η ποσότητά του ήταν αυστηρά σταθερή.",
+   "de": "Die Rentenmark ersetzte eine Billion alte Mark durch eine, und ihre Menge war streng begrenzt.",
+   "fr": "Le Rentenmark a remplacé mille milliards d'anciens marks par un seul, et sa quantité était strictement limitée.",
+   "pt": "O Rentenmark trocou um trilhão de marcos antigos por um, e sua quantidade era rigidamente fixa.",
+   "it": "Il Rentenmark sostituì mille miliardi di vecchi marchi con uno, e la sua quantità era rigidamente fissa."
+  }
+ },
+ "ll014-newton-bubble": {
+  "answer": 0,
+  "q": {
+   "en": "What was Isaac Newton's job at the time of the 1720 bubble?",
+   "es": "¿Qué cargo tenía Isaac Newton en la época de la burbuja de 1720?",
+   "el": "Ποια ήταν η θέση του Ισαάκ Νεύτωνα την εποχή της φούσκας του 1720;",
+   "de": "Welches Amt hatte Isaac Newton zur Zeit der Blase von 1720?",
+   "fr": "Quel poste occupait Isaac Newton à l'époque de la bulle de 1720 ?",
+   "pt": "Qual era o cargo de Isaac Newton na época da bolha de 1720?",
+   "it": "Che incarico aveva Isaac Newton ai tempi della bolla del 1720?"
+  },
+  "options": {
+   "en": [
+    "Master of the Mint",
+    "Head of the South Sea Company",
+    "The king's banker"
+   ],
+   "es": [
+    "Director de la Casa de la Moneda",
+    "Jefe de la Compañía de los Mares del Sur",
+    "Banquero del rey"
+   ],
+   "el": [
+    "Διευθυντής του Νομισματοκοπείου",
+    "Επικεφαλής της Εταιρείας της Νότιας Θάλασσας",
+    "Τραπεζίτης του βασιλιά"
+   ],
+   "de": [
+    "Leiter der Königlichen Münze",
+    "Chef der Südseekompanie",
+    "Bankier des Königs"
+   ],
+   "fr": [
+    "Directeur de la Monnaie royale",
+    "Chef de la Compagnie des mers du Sud",
+    "Banquier du roi"
+   ],
+   "pt": [
+    "Diretor da Casa da Moeda",
+    "Chefe da Companhia dos Mares do Sul",
+    "Banqueiro do rei"
+   ],
+   "it": [
+    "Direttore della Zecca",
+    "Capo della Compagnia dei Mari del Sud",
+    "Banchiere del re"
+   ]
+  },
+  "fact": {
+   "en": "Newton was Master of the Mint. The story says he lost £20,000, but historians say the evidence is inconclusive.",
+   "es": "Newton era director de la Casa de la Moneda. La historia dice que perdió 20.000 libras, pero los historiadores dicen que las pruebas no son concluyentes.",
+   "el": "Ο Νεύτων ήταν διευθυντής του Νομισματοκοπείου. Η ιστορία λέει ότι έχασε 20.000 λίρες, αλλά οι ιστορικοί λένε ότι τα στοιχεία δεν είναι οριστικά.",
+   "de": "Newton war Leiter der Königlichen Münze. Der Geschichte nach verlor er 20.000 Pfund, doch Historiker sagen, die Belege sind nicht eindeutig.",
+   "fr": "Newton était directeur de la Monnaie royale. L'histoire dit qu'il a perdu 20 000 livres, mais les historiens disent que les preuves ne sont pas concluantes.",
+   "pt": "Newton era diretor da Casa da Moeda. A história diz que ele perdeu £ 20.000, mas os historiadores dizem que as provas não são conclusivas.",
+   "it": "Newton era direttore della Zecca. La storia dice che perse 20.000 sterline, ma gli storici dicono che le prove non sono conclusive."
+  }
+ },
+ "ps020-phineas-gage": {
+  "answer": 0,
+  "q": {
+   "en": "What did Phineas Gage do in Chile after his accident?",
+   "es": "¿Qué hizo Phineas Gage en Chile después de su accidente?",
+   "el": "Τι έκανε ο Φινέας Γκέιτζ στη Χιλή μετά το ατύχημα;",
+   "de": "Was machte Phineas Gage nach seinem Unfall in Chile?",
+   "fr": "Qu'a fait Phineas Gage au Chili après son accident ?",
+   "pt": "O que Phineas Gage fez no Chile depois do acidente?",
+   "it": "Che cosa fece Phineas Gage in Cile dopo l'incidente?"
+  },
+  "options": {
+   "en": [
+    "He drove a six-horse stagecoach",
+    "He worked as a doctor",
+    "He ran a railway"
+   ],
+   "es": [
+    "Condujo una diligencia de seis caballos",
+    "Trabajó de médico",
+    "Dirigió un ferrocarril"
+   ],
+   "el": [
+    "Οδηγούσε άμαξα με έξι άλογα",
+    "Δούλευε ως γιατρός",
+    "Διηύθυνε έναν σιδηρόδρομο"
+   ],
+   "de": [
+    "Er fuhr eine Postkutsche mit sechs Pferden",
+    "Er arbeitete als Arzt",
+    "Er leitete eine Eisenbahn"
+   ],
+   "fr": [
+    "Il a conduit une diligence à six chevaux",
+    "Il a travaillé comme médecin",
+    "Il a dirigé un chemin de fer"
+   ],
+   "pt": [
+    "Conduziu uma diligência de seis cavalos",
+    "Trabalhou como médico",
+    "Dirigiu uma ferrovia"
+   ],
+   "it": [
+    "Guidò una diligenza a sei cavalli",
+    "Lavorò come medico",
+    "Diresse una ferrovia"
+   ]
+  },
+  "fact": {
+   "en": "From 1852 he drove a six-horse stagecoach in Chile. Researchers now think he recovered a great deal, but most textbooks leave this out.",
+   "es": "Desde 1852 condujo una diligencia de seis caballos en Chile. Los investigadores creen hoy que se recuperó mucho, pero la mayoría de los libros de texto lo omiten.",
+   "el": "Από το 1852 οδηγούσε άμαξα με έξι άλογα στη Χιλή. Οι ερευνητές πιστεύουν σήμερα ότι ανάρρωσε πολύ, αλλά τα περισσότερα βιβλία το παραλείπουν.",
+   "de": "Ab 1852 fuhr er in Chile eine Postkutsche mit sechs Pferden. Forscher glauben heute, dass er sich stark erholte, doch die meisten Lehrbücher lassen das weg.",
+   "fr": "À partir de 1852, il a conduit une diligence à six chevaux au Chili. Les chercheurs pensent aujourd'hui qu'il s'est beaucoup rétabli, mais la plupart des manuels l'oublient.",
+   "pt": "A partir de 1852 ele conduziu uma diligência de seis cavalos no Chile. Pesquisadores hoje acham que ele se recuperou muito, mas a maioria dos livros deixa isso de fora.",
+   "it": "Dal 1852 guidò una diligenza a sei cavalli in Cile. Oggi i ricercatori pensano che si sia ripreso molto, ma quasi tutti i libri lo tralasciano."
+  }
+ },
+ "ps015-little-albert": {
+  "answer": 0,
+  "q": {
+   "en": "What was Little Albert taught to fear in 1920?",
+   "es": "¿A qué enseñaron a temer al pequeño Albert en 1920?",
+   "el": "Τι έμαθαν στον μικρό Άλμπερτ να φοβάται το 1920;",
+   "de": "Wovor brachte man dem kleinen Albert 1920 bei, sich zu fürchten?",
+   "fr": "De quoi a-t-on appris au petit Albert à avoir peur en 1920 ?",
+   "pt": "Do que ensinaram o Pequeno Albert a ter medo em 1920?",
+   "it": "Di che cosa insegnarono ad avere paura al piccolo Albert nel 1920?"
+  },
+  "options": {
+   "en": [
+    "A white rat",
+    "A black cat",
+    "The dark"
+   ],
+   "es": [
+    "A una rata blanca",
+    "A un gato negro",
+    "A la oscuridad"
+   ],
+   "el": [
+    "Έναν λευκό αρουραίο",
+    "Μια μαύρη γάτα",
+    "Το σκοτάδι"
+   ],
+   "de": [
+    "Vor einer weißen Ratte",
+    "Vor einer schwarzen Katze",
+    "Vor der Dunkelheit"
+   ],
+   "fr": [
+    "D'un rat blanc",
+    "D'un chat noir",
+    "Du noir"
+   ],
+   "pt": [
+    "De um rato branco",
+    "De um gato preto",
+    "Do escuro"
+   ],
+   "it": [
+    "Di un ratto bianco",
+    "Di un gatto nero",
+    "Del buio"
+   ]
+  },
+  "fact": {
+   "en": "Each time he touched a white rat, Watson and Rayner struck a steel bar behind him. Soon the rat alone seemed to frighten him.",
+   "es": "Cada vez que tocaba una rata blanca, Watson y Rayner golpeaban una barra de acero detrás de él. Pronto, la rata sola parecía asustarlo.",
+   "el": "Κάθε φορά που άγγιζε έναν λευκό αρουραίο, ο Γουάτσον και η Ρέινερ χτυπούσαν μια ατσάλινη ράβδο πίσω του. Σύντομα, μόνο ο αρουραίος φαινόταν να τον τρομάζει.",
+   "de": "Jedes Mal, wenn er eine weiße Ratte berührte, schlugen Watson und Rayner hinter ihm auf eine Stahlstange. Bald schien schon die Ratte allein ihn zu ängstigen.",
+   "fr": "Chaque fois qu'il touchait un rat blanc, Watson et Rayner frappaient une barre d'acier derrière lui. Bientôt, le rat seul semblait l'effrayer.",
+   "pt": "Cada vez que ele tocava um rato branco, Watson e Rayner batiam numa barra de aço atrás dele. Logo, só o rato já parecia assustá-lo.",
+   "it": "Ogni volta che toccava un ratto bianco, Watson e Rayner colpivano una barra d'acciaio dietro di lui. Presto il ratto da solo sembrava spaventarlo."
+  }
+ },
+ "ps009-marshmallow": {
+  "answer": 0,
+  "q": {
+   "en": "What did the 2018 study of 900+ children find?",
+   "es": "¿Qué encontró el estudio de 2018 con más de 900 niños?",
+   "el": "Τι βρήκε η μελέτη του 2018 σε πάνω από 900 παιδιά;",
+   "de": "Was fand die Studie von 2018 mit über 900 Kindern?",
+   "fr": "Qu'a trouvé l'étude de 2018 sur plus de 900 enfants ?",
+   "pt": "O que o estudo de 2018 com mais de 900 crianças encontrou?",
+   "it": "Che cosa trovò lo studio del 2018 su oltre 900 bambini?"
+  },
+  "options": {
+   "en": [
+    "The link was weaker, and shrank more with family background",
+    "Waiting predicted nothing at all",
+    "The link was twice as strong"
+   ],
+   "es": [
+    "La relación era más débil y se reducía más con el entorno familiar",
+    "Esperar no predecía nada",
+    "La relación era el doble de fuerte"
+   ],
+   "el": [
+    "Η σχέση ήταν πιο αδύναμη και μίκραινε κι άλλο με το οικογενειακό υπόβαθρο",
+    "Η αναμονή δεν πρόβλεπε τίποτα",
+    "Η σχέση ήταν διπλάσια"
+   ],
+   "de": [
+    "Der Zusammenhang war schwächer und schrumpfte mit dem Familienhintergrund weiter",
+    "Warten sagte gar nichts voraus",
+    "Der Zusammenhang war doppelt so stark"
+   ],
+   "fr": [
+    "Le lien était plus faible, et diminuait encore avec le milieu familial",
+    "Attendre ne prédisait rien du tout",
+    "Le lien était deux fois plus fort"
+   ],
+   "pt": [
+    "A ligação era mais fraca e encolhia mais com a origem familiar",
+    "Esperar não previa nada",
+    "A ligação era duas vezes mais forte"
+   ],
+   "it": [
+    "Il legame era più debole e si riduceva ancora con la famiglia d'origine",
+    "Aspettare non prevedeva nulla",
+    "Il legame era forte il doppio"
+   ]
+  },
+  "fact": {
+   "en": "Children who waited still did a bit better at 15, but the link was half as strong, and it shrank by two thirds once family background and home life were counted.",
+   "es": "Los niños que esperaban aún iban algo mejor a los 15 años, pero la relación era la mitad de fuerte y se redujo en dos tercios al tener en cuenta el entorno familiar y la vida en casa.",
+   "el": "Τα παιδιά που περίμεναν τα πήγαιναν ακόμη λίγο καλύτερα στα 15, αλλά η σχέση ήταν η μισή, και μίκρυνε κατά δύο τρίτα όταν μετρήθηκαν το οικογενειακό υπόβαθρο και η ζωή στο σπίτι.",
+   "de": "Kinder, die warteten, waren mit 15 noch etwas besser, aber der Zusammenhang war nur halb so stark und schrumpfte um zwei Drittel, sobald Familienhintergrund und Leben zu Hause berücksichtigt wurden.",
+   "fr": "Les enfants qui attendaient réussissaient encore un peu mieux à 15 ans, mais le lien était deux fois plus faible, et il a diminué de deux tiers une fois pris en compte le milieu familial et la vie à la maison.",
+   "pt": "As crianças que esperavam ainda iam um pouco melhor aos 15 anos, mas a ligação era metade da original e encolheu dois terços quando a origem familiar e a vida em casa foram levadas em conta.",
+   "it": "I bambini che aspettavano andavano ancora un po' meglio a 15 anni, ma il legame era forte la metà, e si ridusse di due terzi una volta considerati la famiglia d'origine e la vita a casa."
+  }
  }
 }
