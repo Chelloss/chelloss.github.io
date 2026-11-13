@@ -3072,5 +3072,527 @@
    "pt": "A maioria das pessoas se avalia acima da média, e a regressão à média puxa as notas extremas para o meio. Números aleatórios deram um padrão muito parecido, então a questão não está resolvida.",
    "it": "La maggior parte delle persone si valuta sopra la media, e la regressione verso la media spinge i punteggi estremi verso il centro. I numeri casuali diedero uno schema molto simile, quindi la questione non è chiusa."
   }
+ },
+ "lb015-helicopter": {
+  "answer": 0,
+  "q": {
+   "en": "Why does a helicopter need its little tail rotor?",
+   "es": "¿Para qué necesita un helicóptero su pequeño rotor de cola?",
+   "el": "Γιατί ένα ελικόπτερο χρειάζεται τον μικρό ρότορα της ουράς;",
+   "de": "Wozu braucht ein Hubschrauber den kleinen Heckrotor?",
+   "fr": "Pourquoi un hélicoptère a-t-il besoin de son petit rotor de queue ?",
+   "pt": "Para que um helicóptero precisa do pequeno rotor de cauda?",
+   "it": "A che cosa serve il piccolo rotore di coda di un elicottero?"
+  },
+  "options": {
+   "en": [
+    "To stop the body spinning the other way",
+    "To lift the tail higher",
+    "To cool the engine"
+   ],
+   "es": [
+    "Para que el cuerpo no gire al revés",
+    "Para levantar más la cola",
+    "Para enfriar el motor"
+   ],
+   "el": [
+    "Για να μη γυρίζει η άτρακτος ανάποδα",
+    "Για να σηκώνει την ουρά ψηλότερα",
+    "Για να ψύχει τον κινητήρα"
+   ],
+   "de": [
+    "Damit sich der Rumpf nicht gegenläufig dreht",
+    "Um das Heck anzuheben",
+    "Um den Motor zu kühlen"
+   ],
+   "fr": [
+    "Pour empêcher la carlingue de tourner dans l'autre sens",
+    "Pour soulever la queue",
+    "Pour refroidir le moteur"
+   ],
+   "pt": [
+    "Para o corpo não girar para o outro lado",
+    "Para levantar a cauda",
+    "Para resfriar o motor"
+   ],
+   "it": [
+    "A non far girare la fusoliera al contrario",
+    "A sollevare la coda",
+    "A raffreddare il motore"
+   ]
+  },
+  "fact": {
+   "en": "Turning the main rotor tries to twist the body the other way. The little rotor on the tail pushes back.",
+   "es": "Al girar el rotor principal, el cuerpo tiende a girar en sentido contrario. El pequeño rotor de cola lo contrarresta.",
+   "el": "Όταν γυρίζει ο κύριος ρότορας, η άτρακτος τείνει να στρίψει ανάποδα. Ο μικρός ρότορας της ουράς την αντισταθμίζει.",
+   "de": "Dreht sich der Hauptrotor, will er den Rumpf in die andere Richtung drehen. Der kleine Heckrotor drückt dagegen.",
+   "fr": "Faire tourner le rotor principal pousse la carlingue à tourner dans l'autre sens. Le petit rotor de queue compense.",
+   "pt": "Girar o rotor principal tenta torcer o corpo para o outro lado. O pequeno rotor de cauda empurra de volta.",
+   "it": "Far girare il rotore principale tende a torcere la fusoliera nel verso opposto. Il piccolo rotore di coda spinge al contrario."
+  }
+ },
+ "lb021-autoland": {
+  "answer": 0,
+  "q": {
+   "en": "How does an airliner find the runway in thick fog?",
+   "es": "¿Cómo encuentra la pista un avión de pasajeros con niebla espesa?",
+   "el": "Πώς βρίσκει ένα επιβατικό αεροσκάφος τον διάδρομο σε πυκνή ομίχλη;",
+   "de": "Wie findet ein Verkehrsflugzeug bei dichtem Nebel die Landebahn?",
+   "fr": "Comment un avion de ligne trouve-t-il la piste dans un épais brouillard ?",
+   "pt": "Como um avião de passageiros acha a pista em neblina densa?",
+   "it": "Come trova la pista un aereo di linea nella nebbia fitta?"
+  },
+  "options": {
+   "en": [
+    "Radio beams from the ground guide it",
+    "The pilots look through the fog",
+    "It follows another plane"
+   ],
+   "es": [
+    "Lo guían haces de radio desde tierra",
+    "Los pilotos miran a través de la niebla",
+    "Sigue a otro avión"
+   ],
+   "el": [
+    "Το καθοδηγούν ραδιοδέσμες από το έδαφος",
+    "Οι πιλότοι βλέπουν μέσα από την ομίχλη",
+    "Ακολουθεί άλλο αεροπλάνο"
+   ],
+   "de": [
+    "Funkstrahlen vom Boden leiten es",
+    "Die Piloten sehen durch den Nebel",
+    "Es folgt einem anderen Flugzeug"
+   ],
+   "fr": [
+    "Des faisceaux radio au sol le guident",
+    "Les pilotes voient à travers le brouillard",
+    "Il suit un autre avion"
+   ],
+   "pt": [
+    "Feixes de rádio do solo o guiam",
+    "Os pilotos enxergam através da neblina",
+    "Ele segue outro avião"
+   ],
+   "it": [
+    "Lo guidano fasci radio da terra",
+    "I piloti vedono attraverso la nebbia",
+    "Segue un altro aereo"
+   ]
+  },
+  "fact": {
+   "en": "One radio beam lines the plane up with the runway, another sets its slope down. A radio altimeter measures its height very precisely.",
+   "es": "Un haz de radio alinea el avión con la pista y otro marca la pendiente de bajada. Un radioaltímetro mide su altura con mucha precisión.",
+   "el": "Μια ραδιοδέσμη ευθυγραμμίζει το αεροπλάνο με τον διάδρομο και μια άλλη ορίζει την κλίση καθόδου. Ένα ραδιοϋψόμετρο μετρά το ύψος με μεγάλη ακρίβεια.",
+   "de": "Ein Funkstrahl richtet das Flugzeug auf die Landebahn aus, ein anderer gibt den Sinkwinkel vor. Ein Radiohöhenmesser misst die Höhe sehr genau.",
+   "fr": "Un faisceau radio aligne l'avion sur la piste, un autre fixe sa pente de descente. Un radioaltimètre mesure sa hauteur très précisément.",
+   "pt": "Um feixe de rádio alinha o avião com a pista e outro define a rampa de descida. Um radioaltímetro mede a altura com muita precisão.",
+   "it": "Un fascio radio allinea l'aereo con la pista, un altro fissa la pendenza di discesa. Un radioaltimetro misura l'altezza con grande precisione."
+  }
+ },
+ "lb028-pressure-cooker": {
+  "answer": 0,
+  "q": {
+   "en": "Why didn't Darwin's potatoes cook high in the Andes?",
+   "es": "¿Por qué no se cocían las patatas de Darwin en lo alto de los Andes?",
+   "el": "Γιατί δεν βράστηκαν οι πατάτες του Δαρβίνου ψηλά στις Άνδεις;",
+   "de": "Warum wurden Darwins Kartoffeln hoch in den Anden nicht gar?",
+   "fr": "Pourquoi les pommes de terre de Darwin n'ont-elles pas cuit dans les Andes ?",
+   "pt": "Por que as batatas de Darwin não cozinharam no alto dos Andes?",
+   "it": "Perché le patate di Darwin non si cossero in alto sulle Ande?"
+  },
+  "options": {
+   "en": [
+    "Thin air made water boil below 100 °C",
+    "The new pot was broken",
+    "The fire went out"
+   ],
+   "es": [
+    "El aire enrarecido hacía hervir el agua por debajo de 100 °C",
+    "La olla nueva estaba rota",
+    "El fuego se apagó"
+   ],
+   "el": [
+    "Ο αραιός αέρας έκανε το νερό να βράζει κάτω από 100 °C",
+    "Η καινούργια κατσαρόλα ήταν χαλασμένη",
+    "Η φωτιά έσβησε"
+   ],
+   "de": [
+    "Dünne Luft ließ Wasser unter 100 °C kochen",
+    "Der neue Topf war kaputt",
+    "Das Feuer ging aus"
+   ],
+   "fr": [
+    "L'air raréfié faisait bouillir l'eau sous 100 °C",
+    "La marmite neuve était cassée",
+    "Le feu s'est éteint"
+   ],
+   "pt": [
+    "O ar rarefeito fazia a água ferver abaixo de 100 °C",
+    "A panela nova estava quebrada",
+    "O fogo apagou"
+   ],
+   "it": [
+    "L'aria rarefatta faceva bollire l'acqua sotto i 100 °C",
+    "La pentola nuova era rotta",
+    "Il fuoco si spense"
+   ]
+  },
+  "fact": {
+   "en": "Up there, water boils below 100 degrees Celsius, so it never got hot enough. A pressure cooker does the reverse, lifting boiling to about 121 °C.",
+   "es": "Allí arriba, el agua hierve por debajo de 100 grados Celsius, así que nunca se calentaba lo suficiente. Una olla a presión hace lo contrario y sube la ebullición a unos 121 °C.",
+   "el": "Εκεί πάνω, το νερό βράζει κάτω από τους 100 βαθμούς Κελσίου, οπότε δεν ζεσταινόταν αρκετά. Η χύτρα ταχύτητας κάνει το αντίθετο και ανεβάζει τον βρασμό στους 121 °C περίπου.",
+   "de": "Da oben kocht Wasser unter 100 Grad Celsius, es wurde also nie heiß genug. Ein Schnellkochtopf macht das Gegenteil und hebt den Siedepunkt auf etwa 121 °C.",
+   "fr": "Là-haut, l'eau bout en dessous de 100 degrés Celsius : elle ne chauffait jamais assez. Un autocuiseur fait l'inverse et monte l'ébullition à environ 121 °C.",
+   "pt": "Lá em cima, a água ferve abaixo de 100 graus Celsius, então nunca esquentava o bastante. A panela de pressão faz o contrário e leva a fervura a cerca de 121 °C.",
+   "it": "Lassù l'acqua bolle sotto i 100 gradi Celsius, quindi non diventava mai abbastanza calda. La pentola a pressione fa il contrario e porta l'ebollizione a circa 121 °C."
+  }
+ },
+ "ll018-black-monday": {
+  "answer": 0,
+  "q": {
+   "en": "How long did US stocks take to recover after Black Monday 1987?",
+   "es": "¿Cuánto tardó la bolsa estadounidense en recuperarse tras el Lunes Negro de 1987?",
+   "el": "Πόσο χρειάστηκαν οι αμερικανικές μετοχές για να ανακάμψουν μετά τη Μαύρη Δευτέρα του 1987;",
+   "de": "Wie lange brauchten US-Aktien, um sich vom Schwarzen Montag 1987 zu erholen?",
+   "fr": "Combien de temps les actions américaines ont-elles mis à se remettre du lundi noir de 1987 ?",
+   "pt": "Quanto tempo as ações americanas levaram para se recuperar da Segunda-Feira Negra de 1987?",
+   "it": "Quanto ci misero le azioni americane a riprendersi dal lunedì nero del 1987?"
+  },
+  "options": {
+   "en": [
+    "Less than two years",
+    "About ten years",
+    "They never recovered"
+   ],
+   "es": [
+    "Menos de dos años",
+    "Unos diez años",
+    "Nunca se recuperó"
+   ],
+   "el": [
+    "Λιγότερο από δύο χρόνια",
+    "Περίπου δέκα χρόνια",
+    "Δεν ανέκαμψαν ποτέ"
+   ],
+   "de": [
+    "Weniger als zwei Jahre",
+    "Etwa zehn Jahre",
+    "Sie erholten sich nie"
+   ],
+   "fr": [
+    "Moins de deux ans",
+    "Environ dix ans",
+    "Elles ne s'en sont jamais remises"
+   ],
+   "pt": [
+    "Menos de dois anos",
+    "Cerca de dez anos",
+    "Nunca se recuperaram"
+   ],
+   "it": [
+    "Meno di due anni",
+    "Circa dieci anni",
+    "Non si ripresero mai"
+   ]
+  },
+  "fact": {
+   "en": "On October 19, 1987 the Dow fell 22.6% in one day. By 1989, US stocks were back above their pre-crash highs.",
+   "es": "El 19 de octubre de 1987 el Dow cayó un 22,6 % en un día. En 1989, la bolsa de EE. UU. ya estaba por encima de sus máximos de antes del crac.",
+   "el": "Στις 19 Οκτωβρίου 1987 ο Dow έπεσε 22,6% σε μία μέρα. Ως το 1989, οι μετοχές στις ΗΠΑ είχαν ξεπεράσει τα υψηλά πριν από το κραχ.",
+   "de": "Am 19. Oktober 1987 fiel der Dow an einem Tag um 22,6 %. 1989 lagen US-Aktien wieder über ihren Höchstständen vor dem Crash.",
+   "fr": "Le 19 octobre 1987, le Dow a chuté de 22,6 % en un jour. En 1989, les actions américaines avaient dépassé leurs sommets d'avant le krach.",
+   "pt": "Em 19 de outubro de 1987, o Dow caiu 22,6% num dia. Em 1989, as ações dos EUA já estavam acima das máximas de antes do crash.",
+   "it": "Il 19 ottobre 1987 il Dow perse il 22,6% in un giorno. Nel 1989 le azioni americane erano tornate sopra i massimi di prima del crollo."
+  }
+ },
+ "ll007-mcdonalds-real-estate": {
+  "answer": 0,
+  "q": {
+   "en": "What is McDonald's biggest franchise income?",
+   "es": "¿Cuál es el mayor ingreso de McDonald's por franquicias?",
+   "el": "Ποιο είναι το μεγαλύτερο έσοδο της McDonald's από δικαιόχρηση;",
+   "de": "Was ist die größte Franchise-Einnahme von McDonald's?",
+   "fr": "Quel est le plus gros revenu de franchise de McDonald's ?",
+   "pt": "Qual é a maior receita de franquias do McDonald's?",
+   "it": "Qual è la più grande entrata da franchising di McDonald's?"
+  },
+  "options": {
+   "en": [
+    "Rent from franchisees",
+    "Royalties on burger sales",
+    "Selling toys"
+   ],
+   "es": [
+    "El alquiler que pagan los franquiciados",
+    "Los royalties sobre las hamburguesas",
+    "La venta de juguetes"
+   ],
+   "el": [
+    "Το ενοίκιο από τους δικαιοδόχους",
+    "Τα δικαιώματα από τα μπέργκερ",
+    "Η πώληση παιχνιδιών"
+   ],
+   "de": [
+    "Miete von den Franchisenehmern",
+    "Gebühren auf Burgerverkäufe",
+    "Der Verkauf von Spielzeug"
+   ],
+   "fr": [
+    "Les loyers des franchisés",
+    "Les redevances sur les burgers",
+    "La vente de jouets"
+   ],
+   "pt": [
+    "O aluguel pago pelos franqueados",
+    "Os royalties sobre hambúrgueres",
+    "A venda de brinquedos"
+   ],
+   "it": [
+    "L'affitto pagato dagli affiliati",
+    "Le royalty sugli hamburger",
+    "La vendita di giocattoli"
+   ]
+  },
+  "fact": {
+   "en": "About 95% of its restaurants are run by franchisees. Last year they paid $6 billion in royalties, but $10.4 billion in rent.",
+   "es": "Alrededor del 95 % de sus restaurantes los gestionan franquiciados. El año pasado pagaron 6000 millones de dólares en royalties, pero 10.400 millones en alquiler.",
+   "el": "Περίπου το 95% των εστιατορίων της τα λειτουργούν δικαιοδόχοι. Πέρσι πλήρωσαν 6 δισεκατομμύρια δολάρια σε δικαιώματα, αλλά 10,4 δισεκατομμύρια σε ενοίκια.",
+   "de": "Etwa 95 % der Restaurants führen Franchisenehmer. Im vergangenen Jahr zahlten sie 6 Milliarden Dollar Gebühren, aber 10,4 Milliarden Dollar Miete.",
+   "fr": "Environ 95 % de ses restaurants sont tenus par des franchisés. L'an dernier, ils ont versé 6 milliards de dollars de redevances, mais 10,4 milliards de loyers.",
+   "pt": "Cerca de 95% dos restaurantes são operados por franqueados. No ano passado, eles pagaram US$ 6 bilhões em royalties, mas US$ 10,4 bilhões em aluguel.",
+   "it": "Circa il 95% dei ristoranti è gestito da affiliati. L'anno scorso hanno pagato 6 miliardi di dollari di royalty, ma 10,4 miliardi di affitto."
+  }
+ },
+ "ll026-diners-club": {
+  "answer": 0,
+  "q": {
+   "en": "What did press agent Matty Simmons later say about the forgotten-wallet story?",
+   "es": "¿Qué dijo después el agente de prensa Matty Simmons sobre la historia de la cartera olvidada?",
+   "el": "Τι είπε αργότερα ο υπεύθυνος τύπου Μάτι Σίμονς για την ιστορία με το ξεχασμένο πορτοφόλι;",
+   "de": "Was sagte Pressesprecher Matty Simmons später über die Geschichte mit der vergessenen Brieftasche?",
+   "fr": "Qu'a dit plus tard l'attaché de presse Matty Simmons de l'histoire du portefeuille oublié ?",
+   "pt": "O que o assessor de imprensa Matty Simmons disse depois sobre a história da carteira esquecida?",
+   "it": "Che cosa disse poi l'addetto stampa Matty Simmons sulla storia del portafoglio dimenticato?"
+  },
+  "options": {
+   "en": [
+    "It never happened",
+    "It happened in Paris",
+    "It happened twice"
+   ],
+   "es": [
+    "Que nunca ocurrió",
+    "Que ocurrió en París",
+    "Que ocurrió dos veces"
+   ],
+   "el": [
+    "Ότι δεν συνέβη ποτέ",
+    "Ότι συνέβη στο Παρίσι",
+    "Ότι συνέβη δύο φορές"
+   ],
+   "de": [
+    "Sie sei nie passiert",
+    "Sie sei in Paris passiert",
+    "Sie sei zweimal passiert"
+   ],
+   "fr": [
+    "Qu'elle n'était jamais arrivée",
+    "Qu'elle s'était passée à Paris",
+    "Qu'elle s'était produite deux fois"
+   ],
+   "pt": [
+    "Que nunca aconteceu",
+    "Que aconteceu em Paris",
+    "Que aconteceu duas vezes"
+   ],
+   "it": [
+    "Che non era mai successa",
+    "Che era successa a Parigi",
+    "Che era successa due volte"
+   ]
+  },
+  "fact": {
+   "en": "The legend says Frank McNamara forgot his wallet in New York in 1949. Diners Club's first press agent later said the story was invented to glamorize the card.",
+   "es": "La leyenda dice que Frank McNamara olvidó su cartera en Nueva York en 1949. El primer agente de prensa de Diners Club dijo después que la historia se inventó para dar glamur a la tarjeta.",
+   "el": "Ο θρύλος λέει ότι ο Φρανκ ΜακΝαμάρα ξέχασε το πορτοφόλι του στη Νέα Υόρκη το 1949. Ο πρώτος υπεύθυνος τύπου της Diners Club είπε αργότερα ότι η ιστορία επινοήθηκε για να δώσει λάμψη στην κάρτα.",
+   "de": "Der Legende nach vergaß Frank McNamara 1949 in New York seine Brieftasche. Der erste Pressesprecher von Diners Club sagte später, die Geschichte sei erfunden worden, um der Karte Glanz zu geben.",
+   "fr": "Selon la légende, Frank McNamara a oublié son portefeuille à New York en 1949. Le premier attaché de presse du Diners Club a dit plus tard que l'histoire avait été inventée pour rendre la carte glamour.",
+   "pt": "A lenda diz que Frank McNamara esqueceu a carteira em Nova York em 1949. O primeiro assessor de imprensa do Diners Club disse depois que a história foi inventada para dar glamour ao cartão.",
+   "it": "La leggenda dice che Frank McNamara dimenticò il portafoglio a New York nel 1949. Il primo addetto stampa di Diners Club disse poi che la storia era stata inventata per dare fascino alla carta."
+  }
+ },
+ "ps021-split-brain": {
+  "answer": 0,
+  "q": {
+   "en": "What did the 2017 study of two split-brain patients find?",
+   "es": "¿Qué encontró el estudio de 2017 con dos pacientes con el cerebro dividido?",
+   "el": "Τι βρήκε η μελέτη του 2017 σε δύο ασθενείς με διχασμένο εγκέφαλο;",
+   "de": "Was fand die Studie von 2017 mit zwei Split-Brain-Patienten?",
+   "fr": "Qu'a trouvé l'étude de 2017 sur deux patients au cerveau divisé ?",
+   "pt": "O que o estudo de 2017 com dois pacientes de cérebro dividido encontrou?",
+   "it": "Che cosa trovò lo studio del 2017 su due pazienti con il cervello diviso?"
+  },
+  "options": {
+   "en": [
+    "They could respond to things anywhere in view",
+    "Each half had its own name",
+    "They could no longer speak"
+   ],
+   "es": [
+    "Que respondían a cosas en cualquier parte de su campo visual",
+    "Que cada mitad tenía su propio nombre",
+    "Que ya no podían hablar"
+   ],
+   "el": [
+    "Ότι αντιδρούσαν σε πράγματα οπουδήποτε στο οπτικό πεδίο",
+    "Ότι κάθε μισό είχε το δικό του όνομα",
+    "Ότι δεν μπορούσαν πια να μιλήσουν"
+   ],
+   "de": [
+    "Sie reagierten auf Dinge überall im Blickfeld",
+    "Jede Hälfte hatte einen eigenen Namen",
+    "Sie konnten nicht mehr sprechen"
+   ],
+   "fr": [
+    "Ils réagissaient à des choses partout dans leur champ de vision",
+    "Chaque moitié avait son propre nom",
+    "Ils ne pouvaient plus parler"
+   ],
+   "pt": [
+    "Que eles respondiam a coisas em qualquer parte do campo de visão",
+    "Que cada metade tinha o próprio nome",
+    "Que eles não conseguiam mais falar"
+   ],
+   "it": [
+    "Che rispondevano a cose in qualsiasi punto del campo visivo",
+    "Che ogni metà aveva un proprio nome",
+    "Che non riuscivano più a parlare"
+   ]
+  },
+  "fact": {
+   "en": "Both could point to things anywhere in view, with either hand or aloud. The team argued that sight was split, but they were still one person. It was only two patients.",
+   "es": "Ambos podían señalar cosas en cualquier parte de su campo visual, con cualquiera de las dos manos o en voz alta. El equipo sostuvo que la vista estaba dividida, pero seguían siendo una sola persona. Fueron solo dos pacientes.",
+   "el": "Και οι δύο μπορούσαν να δείξουν πράγματα οπουδήποτε στο οπτικό πεδίο, με όποιο χέρι ήθελαν ή φωναχτά. Η ομάδα υποστήριξε ότι η όραση ήταν διχασμένη, αλλά ήταν ακόμη ένας άνθρωπος. Ήταν μόνο δύο ασθενείς.",
+   "de": "Beide konnten auf Dinge überall im Blickfeld zeigen, mit jeder Hand oder laut. Das Team argumentierte, das Sehen sei geteilt, sie seien aber immer noch eine Person. Es waren nur zwei Patienten.",
+   "fr": "Tous deux pouvaient montrer des choses n'importe où dans leur champ de vision, de l'une ou l'autre main ou à voix haute. L'équipe a soutenu que la vue était divisée, mais qu'ils restaient une seule personne. Il ne s'agissait que de deux patients.",
+   "pt": "Os dois conseguiam apontar coisas em qualquer parte do campo de visão, com qualquer das mãos ou em voz alta. A equipe argumentou que a visão estava dividida, mas eles continuavam sendo uma pessoa só. Foram só dois pacientes.",
+   "it": "Entrambi potevano indicare cose in qualsiasi punto del campo visivo, con l'una o l'altra mano o a voce. Il gruppo sostenne che la vista era divisa, ma che erano ancora una sola persona. Erano solo due pazienti."
+  }
+ },
+ "ps008-rosenhan": {
+  "answer": 0,
+  "q": {
+   "en": "What did journalist Susannah Cahalan find when she checked Rosenhan's study?",
+   "es": "¿Qué encontró la periodista Susannah Cahalan al revisar el estudio de Rosenhan?",
+   "el": "Τι βρήκε η δημοσιογράφος Σουζάνα Καχάλαν όταν έλεγξε τη μελέτη του Ρόζενχαν;",
+   "de": "Was fand die Journalistin Susannah Cahalan, als sie Rosenhans Studie prüfte?",
+   "fr": "Qu'a découvert la journaliste Susannah Cahalan en vérifiant l'étude de Rosenhan ?",
+   "pt": "O que a jornalista Susannah Cahalan descobriu ao checar o estudo de Rosenhan?",
+   "it": "Che cosa scoprì la giornalista Susannah Cahalan controllando lo studio di Rosenhan?"
+  },
+  "options": {
+   "en": [
+    "She could identify only one of the other seven volunteers",
+    "All eight volunteers confirmed it",
+    "The hospitals never existed"
+   ],
+   "es": [
+    "Solo pudo identificar a uno de los otros siete voluntarios",
+    "Los ocho voluntarios lo confirmaron",
+    "Los hospitales nunca existieron"
+   ],
+   "el": [
+    "Μπόρεσε να εντοπίσει μόνο έναν από τους άλλους επτά εθελοντές",
+    "Και οι οκτώ εθελοντές την επιβεβαίωσαν",
+    "Τα νοσοκομεία δεν υπήρξαν ποτέ"
+   ],
+   "de": [
+    "Von den sieben anderen Freiwilligen fand sie nur einen",
+    "Alle acht Freiwilligen bestätigten sie",
+    "Die Kliniken gab es nie"
+   ],
+   "fr": [
+    "Elle n'a pu identifier qu'un seul des sept autres volontaires",
+    "Les huit volontaires l'ont confirmée",
+    "Les hôpitaux n'ont jamais existé"
+   ],
+   "pt": [
+    "Só conseguiu identificar um dos outros sete voluntários",
+    "Os oito voluntários confirmaram tudo",
+    "Os hospitais nunca existiram"
+   ],
+   "it": [
+    "Riuscì a identificare solo uno degli altri sette volontari",
+    "Tutti e otto i volontari lo confermarono",
+    "Gli ospedali non erano mai esistiti"
+   ]
+  },
+  "fact": {
+   "en": "She also found that his account of his own hospital stay differed from the records. She concluded he misrepresented, and probably made up, some of the data.",
+   "es": "También descubrió que su relato de su propia estancia en el hospital no coincidía con los registros. Concluyó que tergiversó, y probablemente inventó, parte de los datos.",
+   "el": "Βρήκε επίσης ότι η αφήγησή του για τη δική του νοσηλεία διέφερε από τα αρχεία. Κατέληξε ότι παρουσίασε παραπλανητικά, και μάλλον επινόησε, μέρος των δεδομένων.",
+   "de": "Sie fand auch, dass sein Bericht über seinen eigenen Klinikaufenthalt von den Akten abwich. Ihr Fazit: Er hat einen Teil der Daten falsch dargestellt und wahrscheinlich erfunden.",
+   "fr": "Elle a aussi découvert que son récit de son propre séjour à l'hôpital différait des dossiers. Sa conclusion : il a déformé, et probablement inventé, une partie des données.",
+   "pt": "Ela também descobriu que o relato dele sobre a própria internação divergia dos registros. Concluiu que ele distorceu, e provavelmente inventou, parte dos dados.",
+   "it": "Scoprì anche che il suo racconto del proprio ricovero era diverso dalle cartelle. Concluse che travisò, e probabilmente inventò, parte dei dati."
+  }
+ },
+ "ps014-contagious-yawn": {
+  "answer": 0,
+  "q": {
+   "en": "In the 2014 Duke study, what made no difference once age was allowed for?",
+   "es": "En el estudio de Duke de 2014, ¿qué no marcaba ninguna diferencia al tener en cuenta la edad?",
+   "el": "Στη μελέτη του Ντιουκ το 2014, τι δεν έκανε καμία διαφορά όταν λήφθηκε υπόψη η ηλικία;",
+   "de": "Was machte in der Duke-Studie von 2014 keinen Unterschied, sobald das Alter berücksichtigt war?",
+   "fr": "Dans l'étude de Duke de 2014, qu'est-ce qui ne faisait aucune différence une fois l'âge pris en compte ?",
+   "pt": "No estudo da Duke de 2014, o que não fez diferença quando a idade foi levada em conta?",
+   "it": "Nello studio della Duke del 2014, che cosa non faceva alcuna differenza una volta considerata l'età?"
+  },
+  "options": {
+   "en": [
+    "Empathy",
+    "Seeing a yawn",
+    "Being a dog"
+   ],
+   "es": [
+    "La empatía",
+    "Ver un bostezo",
+    "Ser un perro"
+   ],
+   "el": [
+    "Η ενσυναίσθηση",
+    "Το να δεις ένα χασμουρητό",
+    "Το να είσαι σκύλος"
+   ],
+   "de": [
+    "Empathie",
+    "Ein Gähnen zu sehen",
+    "Ein Hund zu sein"
+   ],
+   "fr": [
+    "L'empathie",
+    "Voir un bâillement",
+    "Être un chien"
+   ],
+   "pt": [
+    "A empatia",
+    "Ver um bocejo",
+    "Ser um cão"
+   ],
+   "it": [
+    "L'empatia",
+    "Vedere uno sbadiglio",
+    "Essere un cane"
+   ]
+  },
+  "fact": {
+   "en": "222 of 328 people yawned at least once at the video. Once age was allowed for, empathy made no difference, and age explained only 8%.",
+   "es": "222 de 328 personas bostezaron al menos una vez con el vídeo. Al tener en cuenta la edad, la empatía no marcaba ninguna diferencia, y la edad solo explicaba el 8 %.",
+   "el": "222 από τους 328 ανθρώπους χασμουρήθηκαν τουλάχιστον μία φορά με το βίντεο. Όταν λήφθηκε υπόψη η ηλικία, η ενσυναίσθηση δεν έκανε καμία διαφορά, και η ηλικία εξηγούσε μόνο το 8%.",
+   "de": "222 von 328 Menschen gähnten mindestens einmal beim Video. Sobald das Alter berücksichtigt war, machte Empathie keinen Unterschied, und das Alter erklärte nur 8 %.",
+   "fr": "222 personnes sur 328 ont bâillé au moins une fois devant la vidéo. Une fois l'âge pris en compte, l'empathie ne faisait aucune différence, et l'âge n'expliquait que 8 %.",
+   "pt": "222 de 328 pessoas bocejaram pelo menos uma vez com o vídeo. Quando a idade foi levada em conta, a empatia não fez diferença, e a idade explicou só 8%.",
+   "it": "222 persone su 328 sbadigliarono almeno una volta guardando il video. Una volta considerata l'età, l'empatia non faceva alcuna differenza, e l'età spiegava solo l'8%."
+  }
  }
 }
