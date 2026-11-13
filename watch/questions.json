@@ -984,5 +984,527 @@
    "pt": "A bola era um ponto de luz. Centenas de visitantes fizeram fila para jogar no Laboratório Nacional de Brookhaven.",
    "it": "La palla era un punto di luce. Centinaia di visitatori fecero la fila per giocarci al Laboratorio nazionale di Brookhaven."
   }
+ },
+ "lb003-venice": {
+  "answer": 0,
+  "q": {
+   "en": "What does Venice actually stand on?",
+   "es": "¿Sobre qué se sostiene realmente Venecia?",
+   "el": "Πάνω σε τι στέκεται στ' αλήθεια η Βενετία;",
+   "de": "Worauf steht Venedig wirklich?",
+   "fr": "Sur quoi Venise repose-t-elle vraiment ?",
+   "pt": "Sobre o que Veneza realmente se apoia?",
+   "it": "Su che cosa poggia davvero Venezia?"
+  },
+  "options": {
+   "en": [
+    "Wooden piles buried in the mud",
+    "Floating rafts",
+    "Solid bedrock"
+   ],
+   "es": [
+    "Pilotes de madera enterrados en el barro",
+    "Balsas flotantes",
+    "Roca firme"
+   ],
+   "el": [
+    "Σε ξύλινους πασσάλους θαμμένους στη λάσπη",
+    "Σε πλωτές σχεδίες",
+    "Σε συμπαγή βράχο"
+   ],
+   "de": [
+    "Auf Holzpfählen im Schlamm",
+    "Auf schwimmenden Flößen",
+    "Auf festem Fels"
+   ],
+   "fr": [
+    "Des pieux en bois enfoncés dans la vase",
+    "Des radeaux flottants",
+    "Une roche solide"
+   ],
+   "pt": [
+    "Estacas de madeira enterradas na lama",
+    "Jangadas flutuantes",
+    "Rocha firme"
+   ],
+   "it": [
+    "Pali di legno piantati nel fango",
+    "Zattere galleggianti",
+    "Roccia solida"
+   ]
+  },
+  "fact": {
+   "en": "Builders drove tree trunks into the clay under the lagoon: about 14,000 under the Rialto Bridge alone. The oxygen-poor mud keeps the wood from rotting.",
+   "es": "Los constructores clavaron troncos en la arcilla bajo la laguna: unos 14.000 solo bajo el puente de Rialto. El barro pobre en oxígeno impide que la madera se pudra.",
+   "el": "Οι χτίστες έμπηξαν κορμούς στον άργιλο κάτω από τη λιμνοθάλασσα: περίπου 14.000 μόνο κάτω από τη Γέφυρα του Ριάλτο. Η λάσπη με το λίγο οξυγόνο προστατεύει το ξύλο από το σάπισμα.",
+   "de": "Die Erbauer trieben Baumstämme in den Ton unter der Lagune: allein unter der Rialtobrücke etwa 14.000. Der sauerstoffarme Schlamm schützt das Holz vor dem Verrotten.",
+   "fr": "Les bâtisseurs ont enfoncé des troncs dans l'argile sous la lagune : environ 14 000 rien que sous le pont du Rialto. La vase pauvre en oxygène empêche le bois de pourrir.",
+   "pt": "Os construtores cravaram troncos na argila sob a laguna: cerca de 14.000 só sob a Ponte de Rialto. A lama pobre em oxigênio impede que a madeira apodreça.",
+   "it": "I costruttori conficcarono tronchi nell'argilla sotto la laguna: circa 14.000 solo sotto il ponte di Rialto. Il fango povero di ossigeno impedisce al legno di marcire."
+  }
+ },
+ "lb012-panama-canal": {
+  "answer": 1,
+  "q": {
+   "en": "What fills the Panama Canal's locks?",
+   "es": "¿Qué llena las esclusas del canal de Panamá?",
+   "el": "Τι γεμίζει τους υδατοφράκτες της Διώρυγας του Παναμά;",
+   "de": "Was füllt die Schleusen des Panamakanals?",
+   "fr": "Qu'est-ce qui remplit les écluses du canal de Panama ?",
+   "pt": "O que enche as eclusas do Canal do Panamá?",
+   "it": "Che cosa riempie le chiuse del Canale di Panama?"
+  },
+  "options": {
+   "en": [
+    "Giant pumps",
+    "Water running down from the lake",
+    "Sea water from the ocean"
+   ],
+   "es": [
+    "Bombas gigantes",
+    "Agua que baja del lago",
+    "Agua de mar del océano"
+   ],
+   "el": [
+    "Γιγάντιες αντλίες",
+    "Νερό που κατεβαίνει από τη λίμνη",
+    "Θαλασσινό νερό από τον ωκεανό"
+   ],
+   "de": [
+    "Riesige Pumpen",
+    "Wasser, das aus dem See herabfließt",
+    "Meerwasser aus dem Ozean"
+   ],
+   "fr": [
+    "Des pompes géantes",
+    "L'eau qui descend du lac",
+    "L'eau de mer de l'océan"
+   ],
+   "pt": [
+    "Bombas gigantes",
+    "Água que desce do lago",
+    "Água do mar"
+   ],
+   "it": [
+    "Pompe giganti",
+    "Acqua che scende dal lago",
+    "Acqua di mare dall'oceano"
+   ]
+  },
+  "fact": {
+   "en": "No pumps: water runs down from Gatun Lake through huge tunnels, about 101,000 cubic metres into each chamber. Gravity lifts the ship 26 metres.",
+   "es": "Ninguna bomba: el agua baja del lago Gatún por enormes túneles, unos 101.000 metros cúbicos en cada cámara. La gravedad eleva el barco 26 metros.",
+   "el": "Καμία αντλία: το νερό κατεβαίνει από τη Λίμνη Γκατούν μέσα από τεράστιες σήραγγες, περίπου 101.000 κυβικά μέτρα σε κάθε θάλαμο. Η βαρύτητα σηκώνει το πλοίο 26 μέτρα.",
+   "de": "Keine Pumpe: Das Wasser fließt durch riesige Tunnel aus dem Gatúnsee herab, etwa 101.000 Kubikmeter in jede Kammer. Die Schwerkraft hebt das Schiff 26 Meter.",
+   "fr": "Aucune pompe : l'eau descend du lac Gatún par d'énormes tunnels, environ 101 000 mètres cubes dans chaque chambre. La gravité soulève le navire de 26 mètres.",
+   "pt": "Nenhuma bomba: a água desce do Lago Gatún por túneis enormes, cerca de 101.000 metros cúbicos em cada câmara. A gravidade ergue o navio 26 metros.",
+   "it": "Nessuna pompa: l'acqua scende dal lago Gatún attraverso enormi tunnel, circa 101.000 metri cubi in ogni camera. La gravità solleva la nave di 26 metri."
+  }
+ },
+ "lb020-elevator": {
+  "answer": 0,
+  "q": {
+   "en": "What stops an elevator car that goes too fast?",
+   "es": "¿Qué detiene un ascensor que va demasiado rápido?",
+   "el": "Τι σταματά έναν θάλαμο ασανσέρ που πάει πολύ γρήγορα;",
+   "de": "Was stoppt eine Aufzugskabine, die zu schnell wird?",
+   "fr": "Qu'est-ce qui arrête une cabine d'ascenseur qui va trop vite ?",
+   "pt": "O que para uma cabine de elevador que vai rápido demais?",
+   "it": "Che cosa ferma una cabina d'ascensore che va troppo veloce?"
+  },
+  "options": {
+   "en": [
+    "Safety brakes that clamp the guide rails",
+    "A parachute on the roof",
+    "The passengers' weight"
+   ],
+   "es": [
+    "Frenos de seguridad que aprietan los rieles guía",
+    "Un paracaídas en el techo",
+    "El peso de los pasajeros"
+   ],
+   "el": [
+    "Φρένα ασφαλείας που σφίγγουν τις ράγες-οδηγούς",
+    "Ένα αλεξίπτωτο στην οροφή",
+    "Το βάρος των επιβατών"
+   ],
+   "de": [
+    "Fangbremsen, die die Führungsschienen klemmen",
+    "Ein Fallschirm auf dem Dach",
+    "Das Gewicht der Fahrgäste"
+   ],
+   "fr": [
+    "Des freins de sécurité qui serrent les rails de guidage",
+    "Un parachute sur le toit",
+    "Le poids des passagers"
+   ],
+   "pt": [
+    "Freios de segurança que apertam os trilhos-guia",
+    "Um paraquedas no teto",
+    "O peso dos passageiros"
+   ],
+   "it": [
+    "Freni di sicurezza che stringono le guide",
+    "Un paracadute sul tetto",
+    "Il peso dei passeggeri"
+   ]
+  },
+  "fact": {
+   "en": "A governor watches the speed and trips the safety brakes, which clamp the steel guide rails. The car also hangs on several ropes, and Elisha Otis showed his safety idea in New York in 1854.",
+   "es": "Un limitador vigila la velocidad y dispara los frenos de seguridad, que aprietan los rieles guía de acero. La cabina además cuelga de varios cables, y Elisha Otis mostró su idea de seguridad en Nueva York en 1854.",
+   "el": "Ένας ρυθμιστής παρακολουθεί την ταχύτητα και ενεργοποιεί τα φρένα ασφαλείας, που σφίγγουν τις ατσάλινες ράγες-οδηγούς. Ο θάλαμος κρέμεται επίσης από πολλά συρματόσχοινα, και ο Ελάιζα Ότις έδειξε την ιδέα του στη Νέα Υόρκη το 1854.",
+   "de": "Ein Begrenzer überwacht die Geschwindigkeit und löst die Fangbremsen aus, die die stählernen Führungsschienen klemmen. Die Kabine hängt außerdem an mehreren Seilen, und Elisha Otis zeigte seine Sicherheitsidee 1854 in New York.",
+   "fr": "Un limiteur surveille la vitesse et déclenche les freins de sécurité, qui serrent les rails de guidage en acier. La cabine est aussi suspendue à plusieurs câbles, et Elisha Otis a montré son idée de sécurité à New York en 1854.",
+   "pt": "Um limitador vigia a velocidade e aciona os freios de segurança, que apertam os trilhos-guia de aço. A cabine também fica pendurada em vários cabos, e Elisha Otis mostrou sua ideia de segurança em Nova York em 1854.",
+   "it": "Un limitatore controlla la velocità e fa scattare i freni di sicurezza, che stringono le guide d'acciaio. La cabina è anche appesa a diverse funi, ed Elisha Otis mostrò la sua idea di sicurezza a New York nel 1854."
+  }
+ },
+ "ll010-zimbabwe": {
+  "answer": 0,
+  "q": {
+   "en": "In 2015, what was Zimbabwe's Z$100 trillion note worth?",
+   "es": "En 2015, ¿cuánto valía el billete de 100 billones de Z$ de Zimbabue?",
+   "el": "Πόσο άξιζε το 2015 το χαρτονόμισμα των 100 τρισεκατομμυρίων Z$ της Ζιμπάμπουε;",
+   "de": "Was war Simbabwes Schein über 100 Billionen Z$ im Jahr 2015 wert?",
+   "fr": "En 2015, que valait le billet de 100 000 milliards de Z$ du Zimbabwe ?",
+   "pt": "Em 2015, quanto valia a nota de 100 trilhões de Z$ do Zimbábue?",
+   "it": "Nel 2015, quanto valeva la banconota da 100.000 miliardi di Z$ dello Zimbabwe?"
+  },
+  "options": {
+   "en": [
+    "40 US cents",
+    "100 US dollars",
+    "One loaf of bread"
+   ],
+   "es": [
+    "40 centavos de dólar estadounidense",
+    "100 dólares estadounidenses",
+    "Una barra de pan"
+   ],
+   "el": [
+    "40 σεντς ΗΠΑ",
+    "100 δολάρια ΗΠΑ",
+    "Ένα καρβέλι ψωμί"
+   ],
+   "de": [
+    "40 US-Cent",
+    "100 US-Dollar",
+    "Ein Brot"
+   ],
+   "fr": [
+    "40 cents américains",
+    "100 dollars américains",
+    "Une miche de pain"
+   ],
+   "pt": [
+    "40 centavos de dólar americano",
+    "100 dólares americanos",
+    "Um pão"
+   ],
+   "it": [
+    "40 centesimi di dollaro statunitense",
+    "100 dollari statunitensi",
+    "Una pagnotta"
+   ]
+  },
+  "fact": {
+   "en": "When the old notes could be traded in, in 2015, Z$100 trillion was worth 40 US cents. In 2009 prices could double every day.",
+   "es": "Cuando se pudieron cambiar los billetes viejos, en 2015, 100 billones de Z$ valían 40 centavos de dólar estadounidense. En 2009 los precios podían duplicarse cada día.",
+   "el": "Όταν έγινε δυνατή η ανταλλαγή των παλιών χαρτονομισμάτων, το 2015, τα 100 τρισεκατομμύρια Z$ άξιζαν 40 σεντς ΗΠΑ. Το 2009 οι τιμές μπορούσαν να διπλασιάζονται κάθε μέρα.",
+   "de": "Als man die alten Scheine 2015 eintauschen konnte, waren 100 Billionen Z$ 40 US-Cent wert. 2009 konnten sich die Preise jeden Tag verdoppeln.",
+   "fr": "Quand on a pu échanger les anciens billets, en 2015, 100 000 milliards de Z$ valaient 40 cents américains. En 2009, les prix pouvaient doubler chaque jour.",
+   "pt": "Quando as notas antigas puderam ser trocadas, em 2015, 100 trilhões de Z$ valiam 40 centavos de dólar americano. Em 2009, os preços podiam dobrar todo dia.",
+   "it": "Quando nel 2015 si poterono cambiare le vecchie banconote, 100.000 miliardi di Z$ valevano 40 centesimi di dollaro statunitense. Nel 2009 i prezzi potevano raddoppiare ogni giorno."
+  }
+ },
+ "ll013-tulip-mania": {
+  "answer": 0,
+  "q": {
+   "en": "What did historian Anne Goldgar find about the 1637 tulip crash?",
+   "es": "¿Qué descubrió la historiadora Anne Goldgar sobre el crac de los tulipanes de 1637?",
+   "el": "Τι βρήκε η ιστορικός Anne Goldgar για το κραχ των τουλιπών το 1637;",
+   "de": "Was fand die Historikerin Anne Goldgar über den Tulpen-Crash von 1637 heraus?",
+   "fr": "Qu'a découvert l'historienne Anne Goldgar sur le krach des tulipes de 1637 ?",
+   "pt": "O que a historiadora Anne Goldgar descobriu sobre o crash das tulipas de 1637?",
+   "it": "Che cosa ha scoperto la storica Anne Goldgar sul crollo dei tulipani del 1637?"
+  },
+  "options": {
+   "en": [
+    "She couldn't find anybody who went bankrupt",
+    "Half of Holland went bankrupt",
+    "The bulbs were worthless all along"
+   ],
+   "es": [
+    "No encontró a nadie que quebrara",
+    "La mitad de Holanda quebró",
+    "Los bulbos nunca valieron nada"
+   ],
+   "el": [
+    "Δεν βρήκε κανέναν που να χρεοκόπησε",
+    "Η μισή Ολλανδία χρεοκόπησε",
+    "Οι βολβοί δεν άξιζαν ποτέ τίποτα"
+   ],
+   "de": [
+    "Sie fand niemanden, der bankrottging",
+    "Halb Holland ging bankrott",
+    "Die Zwiebeln waren nie etwas wert"
+   ],
+   "fr": [
+    "Elle n'a trouvé personne qui ait fait faillite",
+    "La moitié de la Hollande a fait faillite",
+    "Les bulbes n'ont jamais rien valu"
+   ],
+   "pt": [
+    "Ela não encontrou ninguém que tenha falido",
+    "Metade da Holanda faliu",
+    "Os bulbos nunca valeram nada"
+   ],
+   "it": [
+    "Non ha trovato nessuno andato in bancarotta",
+    "Mezza Olanda andò in bancarotta",
+    "I bulbi non valevano niente fin dall'inizio"
+   ]
+  },
+  "fact": {
+   "en": "A single Semper Augustus bulb once sold for 10,000 guilders, and prices collapsed in February 1637. But in the archives, Anne Goldgar couldn't find anybody who went bankrupt.",
+   "es": "Un solo bulbo de Semper Augustus llegó a venderse por 10.000 florines, y los precios se desplomaron en febrero de 1637. Pero en los archivos Anne Goldgar no encontró a nadie que hubiera quebrado.",
+   "el": "Ένας μόνο βολβός Semper Augustus πουλήθηκε κάποτε 10.000 φιορίνια, και οι τιμές κατέρρευσαν τον Φεβρουάριο του 1637. Όμως στα αρχεία η Anne Goldgar δεν βρήκε κανέναν που να χρεοκόπησε.",
+   "de": "Eine einzige Semper-Augustus-Zwiebel wurde einmal für 10.000 Gulden verkauft, und im Februar 1637 brachen die Preise ein. Doch in den Archiven fand Anne Goldgar niemanden, der bankrottging.",
+   "fr": "Un seul bulbe de Semper Augustus s'est vendu 10 000 florins, et les prix se sont effondrés en février 1637. Mais dans les archives, Anne Goldgar n'a trouvé personne qui ait fait faillite.",
+   "pt": "Um único bulbo de Semper Augustus chegou a ser vendido por 10.000 florins, e os preços desabaram em fevereiro de 1637. Mas nos arquivos Anne Goldgar não encontrou ninguém que tenha falido.",
+   "it": "Un solo bulbo di Semper Augustus fu venduto per 10.000 fiorini, e i prezzi crollarono nel febbraio 1637. Ma negli archivi Anne Goldgar non ha trovato nessuno che fosse andato in bancarotta."
+  }
+ },
+ "ll017-crash-1929": {
+  "answer": 0,
+  "q": {
+   "en": "How long did the Dow take to climb back to its 1929 peak?",
+   "es": "¿Cuánto tardó el Dow en volver a su máximo de 1929?",
+   "el": "Πόσο χρειάστηκε ο Dow για να ξαναφτάσει την κορυφή του 1929;",
+   "de": "Wie lange brauchte der Dow, um sein Hoch von 1929 wieder zu erreichen?",
+   "fr": "Combien de temps le Dow a-t-il mis pour retrouver son sommet de 1929 ?",
+   "pt": "Quanto tempo o Dow levou para voltar ao pico de 1929?",
+   "it": "Quanto ci mise il Dow a tornare al massimo del 1929?"
+  },
+  "options": {
+   "en": [
+    "25 years",
+    "2 years",
+    "6 months"
+   ],
+   "es": [
+    "25 años",
+    "2 años",
+    "6 meses"
+   ],
+   "el": [
+    "25 χρόνια",
+    "2 χρόνια",
+    "6 μήνες"
+   ],
+   "de": [
+    "25 Jahre",
+    "2 Jahre",
+    "6 Monate"
+   ],
+   "fr": [
+    "25 ans",
+    "2 ans",
+    "6 mois"
+   ],
+   "pt": [
+    "25 anos",
+    "2 anos",
+    "6 meses"
+   ],
+   "it": [
+    "25 anni",
+    "2 anni",
+    "6 mesi"
+   ]
+  },
+  "fact": {
+   "en": "The Dow closed at a record 381 on September 3, 1929, fell to 41 by July 1932, and didn't close above that peak again until November 1954.",
+   "es": "El Dow cerró en un récord de 381 el 3 de septiembre de 1929, cayó a 41 en julio de 1932 y no volvió a cerrar por encima de aquel máximo hasta noviembre de 1954.",
+   "el": "Ο Dow έκλεισε σε ρεκόρ 381 στις 3 Σεπτεμβρίου 1929, έπεσε στο 41 ως τον Ιούλιο του 1932 και δεν ξανάκλεισε πάνω από εκείνη την κορυφή μέχρι τον Νοέμβριο του 1954.",
+   "de": "Der Dow schloss am 3. September 1929 auf einem Rekord von 381, fiel bis Juli 1932 auf 41 und schloss erst im November 1954 wieder über diesem Hoch.",
+   "fr": "Le Dow a clôturé à un record de 381 le 3 septembre 1929, est tombé à 41 en juillet 1932, et n'a refermé au-dessus de ce sommet qu'en novembre 1954.",
+   "pt": "O Dow fechou num recorde de 381 em 3 de setembro de 1929, caiu para 41 em julho de 1932 e só voltou a fechar acima daquele pico em novembro de 1954.",
+   "it": "Il Dow chiuse al record di 381 il 3 settembre 1929, scese a 41 entro luglio 1932 e non chiuse più sopra quel massimo fino al novembre 1954."
+  }
+ },
+ "ps010-stanford-prison": {
+  "answer": 0,
+  "q": {
+   "en": "What did Thibault Le Texier report after studying the archives in 2019?",
+   "es": "¿Qué informó Thibault Le Texier tras estudiar los archivos en 2019?",
+   "el": "Τι ανέφερε ο Thibault Le Texier αφού μελέτησε τα αρχεία το 2019;",
+   "de": "Was berichtete Thibault Le Texier 2019 nach seiner Archivarbeit?",
+   "fr": "Qu'a rapporté Thibault Le Texier après avoir étudié les archives en 2019 ?",
+   "pt": "O que Thibault Le Texier relatou depois de estudar os arquivos em 2019?",
+   "it": "Che cosa ha riferito Thibault Le Texier dopo aver studiato gli archivi nel 2019?"
+  },
+  "options": {
+   "en": [
+    "The guards had been given precise instructions",
+    "The mock prison was never built",
+    "The guards were real prison officers"
+   ],
+   "es": [
+    "Que los guardias habían recibido instrucciones precisas",
+    "Que la cárcel simulada nunca se construyó",
+    "Que los guardias eran funcionarios de prisiones reales"
+   ],
+   "el": [
+    "Ότι οι φύλακες είχαν λάβει ακριβείς οδηγίες",
+    "Ότι η ψεύτικη φυλακή δεν χτίστηκε ποτέ",
+    "Ότι οι φύλακες ήταν αληθινοί σωφρονιστικοί υπάλληλοι"
+   ],
+   "de": [
+    "Die Wärter hatten genaue Anweisungen bekommen",
+    "Das nachgebaute Gefängnis wurde nie gebaut",
+    "Die Wärter waren echte Gefängnisbeamte"
+   ],
+   "fr": [
+    "Les gardiens avaient reçu des consignes précises",
+    "La fausse prison n'a jamais été construite",
+    "Les gardiens étaient de vrais surveillants de prison"
+   ],
+   "pt": [
+    "Os guardas tinham recebido instruções precisas",
+    "A prisão de mentira nunca foi construída",
+    "Os guardas eram agentes penitenciários de verdade"
+   ],
+   "it": [
+    "Le guardie avevano ricevuto istruzioni precise",
+    "La finta prigione non fu mai costruita",
+    "Le guardie erano veri agenti penitenziari"
+   ]
+  },
+  "fact": {
+   "en": "He went through the archives and interviewed 15 participants. He reported the guards had been given precise instructions, and a recording has the warden urging one to be tougher. Zimbardo rejected the critique.",
+   "es": "Revisó los archivos y entrevistó a 15 participantes. Informó de que los guardias habían recibido instrucciones precisas, y en una grabación el alcaide pide a uno que sea más duro. Zimbardo rechazó la crítica.",
+   "el": "Έψαξε τα αρχεία και πήρε συνέντευξη από 15 συμμετέχοντες. Ανέφερε ότι οι φύλακες είχαν λάβει ακριβείς οδηγίες, και σε μια ηχογράφηση ο διευθυντής πιέζει έναν να γίνει πιο σκληρός. Ο Ζιμπάρντο απέρριψε την κριτική.",
+   "de": "Er ging die Archive durch und befragte 15 Beteiligte. Er berichtete, die Wärter hätten genaue Anweisungen bekommen, und auf einer Aufnahme drängt der Direktor einen von ihnen, härter zu sein. Zimbardo wies die Kritik zurück.",
+   "fr": "Il a fouillé les archives et interrogé 15 participants. Il a rapporté que les gardiens avaient reçu des consignes précises, et un enregistrement montre le directeur poussant l'un d'eux à être plus dur. Zimbardo a rejeté la critique.",
+   "pt": "Ele vasculhou os arquivos e entrevistou 15 participantes. Relatou que os guardas tinham recebido instruções precisas, e uma gravação mostra o diretor pedindo a um deles que fosse mais duro. Zimbardo rejeitou a crítica.",
+   "it": "Ha esaminato gli archivi e intervistato 15 partecipanti. Ha riferito che le guardie avevano ricevuto istruzioni precise, e una registrazione mostra il direttore che esorta una di loro a essere più dura. Zimbardo respinse la critica."
+  }
+ },
+ "ps018-mouse-utopia": {
+  "answer": 0,
+  "q": {
+   "en": "What happened to the mice in Universe 25?",
+   "es": "¿Qué les pasó a los ratones de Universe 25?",
+   "el": "Τι έπαθαν τα ποντίκια στο Universe 25;",
+   "de": "Was geschah mit den Mäusen in Universe 25?",
+   "fr": "Qu'est-il arrivé aux souris d'Universe 25 ?",
+   "pt": "O que aconteceu com os camundongos do Universe 25?",
+   "it": "Che cosa successe ai topi di Universe 25?"
+  },
+  "options": {
+   "en": [
+    "Births almost stopped, and by 1973 none were left",
+    "They ran out of food",
+    "They escaped from the pen"
+   ],
+   "es": [
+    "Los nacimientos casi se detuvieron y en 1973 no quedaba ninguno",
+    "Se quedaron sin comida",
+    "Se escaparon del recinto"
+   ],
+   "el": [
+    "Οι γεννήσεις σχεδόν σταμάτησαν και ως το 1973 δεν είχε μείνει κανένα",
+    "Τους τελείωσε η τροφή",
+    "Δραπέτευσαν από το κλουβί"
+   ],
+   "de": [
+    "Die Geburten blieben fast aus, und 1973 war keine mehr übrig",
+    "Ihnen ging das Futter aus",
+    "Sie entkamen aus dem Gehege"
+   ],
+   "fr": [
+    "Les naissances se sont presque arrêtées, et en 1973 il n'en restait aucune",
+    "Elles ont manqué de nourriture",
+    "Elles se sont échappées de l'enclos"
+   ],
+   "pt": [
+    "Os nascimentos quase pararam, e em 1973 não restava nenhum",
+    "Ficaram sem comida",
+    "Fugiram do cercado"
+   ],
+   "it": [
+    "Le nascite quasi si fermarono, e nel 1973 non ne restava nessuno",
+    "Finirono il cibo",
+    "Scapparono dal recinto"
+   ]
+  },
+  "fact": {
+   "en": "Food and water were unlimited. The population peaked at 2,200 mice around day 560, then births almost stopped; the last pup was born about two years in, and by 1973 none were left.",
+   "es": "La comida y el agua eran ilimitadas. La población llegó a 2.200 ratones hacia el día 560 y luego los nacimientos casi se detuvieron; la última cría nació a los dos años, y en 1973 no quedaba ninguno.",
+   "el": "Η τροφή και το νερό ήταν απεριόριστα. Ο πληθυσμός έφτασε τα 2.200 ποντίκια γύρω στη μέρα 560 και μετά οι γεννήσεις σχεδόν σταμάτησαν· το τελευταίο μωρό γεννήθηκε γύρω στα δύο χρόνια, και ως το 1973 δεν είχε μείνει κανένα.",
+   "de": "Futter und Wasser waren unbegrenzt. Um Tag 560 lebten 2.200 Mäuse, dann blieben die Geburten fast aus; das letzte Junge kam nach etwa zwei Jahren zur Welt, und 1973 war keine mehr übrig.",
+   "fr": "La nourriture et l'eau étaient à volonté. La population a culminé à 2 200 souris vers le jour 560, puis les naissances se sont presque arrêtées ; le dernier petit est né au bout d'environ deux ans, et en 1973 il n'en restait aucune.",
+   "pt": "A comida e a água eram à vontade. A população chegou a 2.200 camundongos por volta do dia 560, e então os nascimentos quase pararam; o último filhote nasceu por volta dos dois anos, e em 1973 não restava nenhum.",
+   "it": "Cibo e acqua erano illimitati. La popolazione raggiunse i 2.200 topi intorno al giorno 560, poi le nascite quasi si fermarono; l'ultimo piccolo nacque dopo circa due anni, e nel 1973 non ne restava nessuno."
+  }
+ },
+ "ps019-38-witnesses": {
+  "answer": 0,
+  "q": {
+   "en": "In real street conflicts filmed by security cameras, how often did at least one bystander help?",
+   "es": "En conflictos callejeros reales grabados por cámaras de seguridad, ¿con qué frecuencia ayudó al menos un testigo?",
+   "el": "Σε πραγματικές συγκρούσεις στον δρόμο από κάμερες ασφαλείας, πόσο συχνά βοήθησε τουλάχιστον ένας περαστικός;",
+   "de": "Wie oft half bei echten Straßenkonflikten auf Überwachungskameras mindestens ein Umstehender?",
+   "fr": "Dans de vrais conflits de rue filmés par des caméras de surveillance, combien de fois au moins un témoin a-t-il aidé ?",
+   "pt": "Em conflitos de rua reais gravados por câmeras de segurança, com que frequência pelo menos uma pessoa ajudou?",
+   "it": "Nei veri conflitti di strada ripresi dalle telecamere di sicurezza, quanto spesso almeno un passante ha aiutato?"
+  },
+  "options": {
+   "en": [
+    "In nine out of ten",
+    "Almost never",
+    "In one out of ten"
+   ],
+   "es": [
+    "En 9 de cada 10",
+    "Casi nunca",
+    "En 1 de cada 10"
+   ],
+   "el": [
+    "Σε 9 στις 10",
+    "Σχεδόν ποτέ",
+    "Σε 1 στις 10"
+   ],
+   "de": [
+    "In 9 von 10 Fällen",
+    "Fast nie",
+    "In 1 von 10 Fällen"
+   ],
+   "fr": [
+    "Dans 9 cas sur 10",
+    "Presque jamais",
+    "Dans 1 cas sur 10"
+   ],
+   "pt": [
+    "Em 9 de cada 10",
+    "Quase nunca",
+    "Em 1 de cada 10"
+   ],
+   "it": [
+    "In 9 casi su 10",
+    "Quasi mai",
+    "In 1 caso su 10"
+   ]
+  },
+  "fact": {
+   "en": "Researchers studied 219 real conflicts: in nine out of ten, at least one bystander helped, usually several. In 2016 the Times called its '38 witnesses' story flawed.",
+   "es": "Los investigadores estudiaron 219 conflictos reales: en 9 de cada 10, al menos un testigo ayudó, normalmente varios. En 2016 el Times calificó de defectuosa su historia de los «38 testigos».",
+   "el": "Οι ερευνητές μελέτησαν 219 πραγματικές συγκρούσεις: σε 9 στις 10, τουλάχιστον ένας περαστικός βοήθησε, συνήθως αρκετοί. Το 2016 οι Times χαρακτήρισαν λανθασμένη την ιστορία τους για τους «38 μάρτυρες».",
+   "de": "Forscher untersuchten 219 echte Konflikte: In 9 von 10 Fällen half mindestens ein Umstehender, meist mehrere. 2016 nannte die Times ihre Geschichte von den „38 Zeugen“ fehlerhaft.",
+   "fr": "Des chercheurs ont étudié 219 vrais conflits : dans 9 cas sur 10, au moins un témoin a aidé, généralement plusieurs. En 2016, le Times a qualifié d'erronée son histoire des « 38 témoins ».",
+   "pt": "Pesquisadores estudaram 219 conflitos reais: em 9 de cada 10, pelo menos uma pessoa ajudou, geralmente várias. Em 2016, o Times chamou de falha sua história das “38 testemunhas”.",
+   "it": "I ricercatori hanno studiato 219 conflitti reali: in 9 casi su 10, almeno un passante ha aiutato, di solito diversi. Nel 2016 il Times ha definito difettosa la sua storia dei «38 testimoni»."
+  }
  }
 }
