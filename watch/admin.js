@@ -108,18 +108,29 @@
       tile(num(total("page")), "Page views", "home + story pages") +
       tile(num(total("play")), "Video plays", "taps on play") +
       tile(num(qr + qw), "Questions answered", pct(qr, qr + qw) + " right") +
-      tile(num(total("game_start")), "Games started", num(total("game_end")) + " finished, " + pct(pr, pr + pw) + " pairs right") +
+      tile(num(total("game_start")), "\"Which is older?\" games", num(total("game_end")) + " finished, " + pct(pr, pr + pw) + " pairs right") +
       tile(num(total("timeline_start")), "Timelines played", num(total("timeline_perfect")) + " in perfect order") +
       tile(num(total("where_right") + total("where_wrong")), "\"Where did it happen?\" answers", pct(total("where_right"), total("where_right") + total("where_wrong")) + " right") +
       tile(num(total("comment")), "\"Comment on YouTube\"", "clicks") +
       tile(num(total("signin")), "Sign-ins", num(total("signup")) + " new accounts") +
       tile(num(total("gate")), "\"Sign in to play\" shown", pct(total("signin"), total("gate")) + " then signed in") +
       tile(num(total("popup")), "Sign-in pop-up shown", pct(total("signin"), total("popup")) + " (all sign-ins per pop-up)") +
-      tile(num(total("challenge_share")), "Challenges shared", num(total("challenge_open")) + " opened by friends");
+      tile(num(total("challenge_share")), "Challenges shared", num(total("challenge_open")) + " opened by friends") +
+      tile(num(total("subscribe_tap")), "\"Subscribe\" taps", "loads YouTube's own button; real subscribers are in YouTube Studio") +
+      // the newer games (2026-11-13, games.js): "opened" counts once per visit (Snake: once per new game)
+      tile(num(total("snake_start")), "Story Snake games", num(total("snake_right")) + " right answers, " + num(total("snake_end")) + " games over") +
+      tile(num(total("sudoku_start")), "Symbol Sudoku opened", num(total("sudoku_right")) + " right symbols, " + num(total("sudoku_solved")) + " boards solved") +
+      tile(num(total("memory_start")), "Story Memory opened", num(total("memory_right")) + " pairs found, " + num(total("memory_solved")) + " boards finished") +
+      tile(num(total("traps_start")), "Hidden Traps opened", num(total("traps_right")) + " safe moves, " + num(total("traps_won")) + " boards won, " + num(total("traps_lost")) + " lost") +
+      tile(num(total("reward_video")), "Story videos from games", "opened after 10 right moves (the visitor still taps play)");
 
     $("charts").innerHTML = bars("Page views", daily("page")) + bars("Video plays", daily("play")) +
       bars("Questions answered", inRange().map(function (x) { var t = x.x.total || {}; return { d: x.d, v: (t.quiz_right || 0) + (t.quiz_wrong || 0) }; })) +
-      bars("Games started", daily("game_start"));
+      bars("Games opened (all 7 games)", inRange().map(function (x) {
+        var t = x.x.total || {};
+        return { d: x.d, v: ["game_start", "timeline_start", "where_start", "snake_start", "sudoku_start", "memory_start", "traps_start"]
+          .reduce(function (s, k) { return s + (t[k] || 0); }, 0) };
+      }));
 
     var titles = {}; catalog.videos.forEach(function (v) { titles[v.id] = v; });
     var pages = group("page"), plays = group("play"), right = group("quiz_right"), wrong = group("quiz_wrong"), com = group("comment");
