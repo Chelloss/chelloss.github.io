@@ -4,7 +4,7 @@
    - Story Snake: steer the snake to the right answer of a quick question from the chosen channel's stories. The
      question and its answers can be read aloud (the browser's own speech, free; the game waits while it reads).
      Every 5 right answers open a story video.
-   - Symbol Sudoku: 4 levels (4x4 and 6x6 with the channel's symbols, 9x9 with digits for hard and very hard). A
+   - Symbol Sudoku: 4 levels (4x4, 6x6 and two 9x9 levels, all with the channel's symbols). A
      solved board opens a story video.
    - Story Memory: each board is one story's picture cut into tiles. Find the pairs, the picture comes together and
      its story opens. Score with streaks; every finished board goes up a level.
@@ -330,38 +330,50 @@
   })();
 
   // ------------------------------------------------------------ Symbol Sudoku (4x4, 6x6, 9x9)
-  var SYM = {   // six simple symbols per channel (hand-drawn SVG paths, no image files)
+  var SYM = {   // nine simple symbols per channel (hand-drawn SVG paths, no image files); 4x4 uses the first 4, 6x6 the first 6
     history: ["M7 3h10M7 21h10M8 3c0 6 8 6 8 9s-8 3-8 9M16 3c0 6-8 6-8 9s8 3 8 9",
               "M6 4h10a2 2 0 0 1 2 2v12a2 2 0 0 0 2 2H8a2 2 0 0 1-2-2zM9 9h6M9 13h6",
               "M4 18h16l-1.5-9-4.5 4-2-6-2 6-4.5-4z",
               "M9 3h6M10 3v3c-3 1-5 4-5 8 0 4 3 7 7 7s7-3 7-7c0-4-2-7-5-8V3",
               "M4 21h16M5 18h14M6 18V9M10 18V9M14 18V9M18 18V9M4 9h16L12 3z",
-              "M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6z"],
+              "M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6z",
+              "M2.5 20h19L12 4.5zM12 4.5l3.5 15.5",
+              "M12 2.5l2 3V15h-4V5.5zM7 15h10M12 15v4.5M10 21h4",
+              "M12 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4zM12 7v14M8.5 10h7M4.5 13.5c0 4.2 3.4 7.5 7.5 7.5s7.5-3.3 7.5-7.5"],
     how: ["M12 8.5a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7zM12 2v3M12 19v3M2 12h3M19 12h3M5 5l2 2M17 17l2 2M5 19l2-2M17 7l2-2",
           "M13 2 5 14h6l-1 8 8-12h-6z",
           "M14.5 4.5a4 4 0 0 0-5 5L4 15l3 3 5.5-5.5a4 4 0 0 0 5-5l-2.5 2.5-2-.5-.5-2z",
           "M9 18h6M10 21h4M12 3a6 6 0 0 0-3.5 10.9V16h7v-2.1A6 6 0 0 0 12 3z",
           "M12 3l8 4.5v9L12 21l-8-4.5v-9zM12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6z",
-          "M6 3v9a6 6 0 0 0 12 0V3h-4v9a2 2 0 0 1-4 0V3zM6 7h4M14 7h4"],
+          "M6 3v9a6 6 0 0 0 12 0V3h-4v9a2 2 0 0 1-4 0V3zM6 7h4M14 7h4",
+          "M9 3h6M10 3v6l-5 10a1.5 1.5 0 0 0 1.3 2h11.4a1.5 1.5 0 0 0 1.3-2L14 9V3M7.5 15h9",
+          "M3 8h16v8H3zM19 10.5h2v3h-2M6.5 11v2M10 11v2M13.5 11v2",
+          "M12 2c3 2.5 4.5 6 4.5 10.5V17h-9v-4.5C7.5 8 9 4.5 12 2zM7.5 13l-3 3v3l3-2M16.5 13l3 3v3l-3-2M10.5 20.5h3M12 8.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z"],
     money: ["M12 4c4 0 7 1.3 7 3s-3 3-7 3-7-1.3-7-3 3-3 7-3zM5 7v5c0 1.7 3 3 7 3s7-1.3 7-3V7M5 12v5c0 1.7 3 3 7 3s7-1.3 7-3v-5",
             "M3 7h18v10H3zM12 9.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM6 10v4M18 10v4",
             "M4 20h16M6 16l4-5 3 3 5-7M15 7h3v3",
             "M8 7c-2 2-3 4-3 7a7 7 0 0 0 14 0c0-3-1-5-3-7M8 7h8l-1.5-3h-5z",
             "M3 6h18v12H3zM3 10h18M6 15h4",
-            "M5 19L19 5M7.5 5.5a2 2 0 1 0 0 4 2 2 0 0 0 0-4zM16.5 14.5a2 2 0 1 0 0 4 2 2 0 0 0 0-4z"],
+            "M5 19L19 5M7.5 5.5a2 2 0 1 0 0 4 2 2 0 0 0 0-4zM16.5 14.5a2 2 0 1 0 0 4 2 2 0 0 0 0-4z",
+            "M16 7.5C15.4 6 13.9 5 12 5c-2.2 0-3.8 1.2-3.8 2.9 0 3.9 7.8 2.3 7.8 6.3 0 1.8-1.7 3.3-4 3.3-2 0-3.5-1-4.2-2.6M12 3v2M12 17.5V21",
+            "M12 4v16M8 20h8M5 7h14M5 7l-3 6.5a3 3 0 0 0 6 0zM19 7l-3 6.5a3 3 0 0 0 6 0z",
+            "M2.5 4h2.5l2.5 11h10.5l2-7.5H6M9 18a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM17 18a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z"],
     psychology: ["M12 4c-3 0-5 2-5 4-2 .5-3 2-3 4s1 3.5 3 4c0 2 2 4 5 4M12 4c3 0 5 2 5 4 2 .5 3 2 3 4s-1 3.5-3 4c0 2-2 4-5 4M12 4v16",
                  "M2 12s4-7 10-7 10 7 10 7-4 7-10 7-10-7-10-7zM12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6z",
                  "M4 9h4a2 2 0 1 1 4 0h4v4a2 2 0 1 0 0 4v3H4v-4a2 2 0 1 1 0-4z",
                  "M12 20s-8-4.5-8-10a4.5 4.5 0 0 1 8-2.8A4.5 4.5 0 0 1 20 10c0 5.5-8 10-8 10z",
                  "M4 5h16v10H9l-5 4z",
-                 "M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"]
+                 "M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z",
+                 "M12 3a9 9 0 1 0 0 18 9 9 0 0 0 0-18zM8.5 14.5c1 1.3 2.2 2 3.5 2s2.5-.7 3.5-2M9 9.5v.5M15 9.5v.5",
+                 "M12 3l2.6 5.6 6 .7-4.5 4.1 1.2 6L12 16.4l-5.3 3 1.2-6-4.5-4.1 6-.7z",
+                 "M12 12a1.5 1.5 0 0 1 3 0 3 3 0 0 1-6 0 4.5 4.5 0 0 1 9 0 6 6 0 0 1-12 0 7.5 7.5 0 0 1 15 0"]
   };
   function symSvg(th, i) {
     return '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="' + SYM[th][i] + '" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></svg>';
   }
-  // levels: board size, box size (rows x cols), empty squares to aim for, symbols or digits, points for a solve
-  var SD = [{ n: 4, br: 2, bc: 2, holes: 8, sym: true, pts: 5 }, { n: 6, br: 2, bc: 3, holes: 18, sym: true, pts: 8 },
-            { n: 9, br: 3, bc: 3, holes: 45, sym: false, pts: 12 }, { n: 9, br: 3, bc: 3, holes: 54, sym: false, pts: 15 }];
+  // levels: board size, box size (rows x cols), empty squares to aim for, points for a solve
+  var SD = [{ n: 4, br: 2, bc: 2, holes: 8, pts: 5 }, { n: 6, br: 2, bc: 3, holes: 18, pts: 8 },
+            { n: 9, br: 3, bc: 3, holes: 45, pts: 12 }, { n: 9, br: 3, bc: 3, holes: 54, pts: 15 }];
   var sudoku = (function () {
     var s = null;
     function boxOf(cfg, r, c) { return Math.floor(r / cfg.br) * (cfg.n / cfg.bc) + Math.floor(c / cfg.bc); }
@@ -407,7 +419,7 @@
       });
       return { level: level, cfg: cfg, sol: sol, grid: grid, given: grid.map(function (x) { return x >= 0; }), sel: -1, miss: 0, msg: "", cls: "verdict", done: false };
     }
-    function face(v, cfg) { return v < 0 ? "" : cfg.sym ? symSvg(theme, v) : '<span class="dg">' + (v + 1) + "</span>"; }
+    function face(v) { return v < 0 ? "" : symSvg(theme, v); }
     function render() {
       var box = $("sudoku-box"), b = s.board, cfg = b.cfg, n = cfg.n;
       var filled = b.grid.filter(function (x) { return x >= 0; }).length, selV = b.sel >= 0 ? b.grid[b.sel] : -1;
@@ -418,9 +430,9 @@
           var r = (i / n) | 0, c = i % n;
           var cls = "scell" + (b.given[i] ? " given" : "") + (i === b.sel ? " sel" : "") + (selV >= 0 && v === selV && i !== b.sel ? " same" : "") +
             (c % cfg.bc === cfg.bc - 1 && c < n - 1 ? " br" : "") + (r % cfg.br === cfg.br - 1 && r < n - 1 ? " bb" : "");
-          return '<button type="button" class="' + cls + '" data-i="' + i + '"' + (b.given[i] || b.done ? " disabled" : "") + ">" + face(v, cfg) + "</button>";
+          return '<button type="button" class="' + cls + '" data-i="' + i + '"' + (b.given[i] || b.done ? " disabled" : "") + ">" + face(v) + "</button>";
         }).join("") + "</div>" +
-        '<div class="spal n' + n + '">' + range(n).map(function (v) { return '<button type="button" class="ssym" data-v="' + v + '"' + (b.done ? " disabled" : "") + ">" + face(v, cfg) + "</button>"; }).join("") + "</div>" +
+        '<div class="spal n' + n + '">' + range(n).map(function (v) { return '<button type="button" class="ssym" data-v="' + v + '"' + (b.done ? " disabled" : "") + ">" + face(v) + "</button>"; }).join("") + "</div>" +
         '<p class="sstat"><span>' + esc(t("mistakes", { n: b.miss })) + "</span></p>" +
         '<p class="' + b.cls + '" id="sudoku-res" aria-live="polite">' + esc(b.msg ? t(b.msg) : "") + "</p>" +
         '<p class="gactions"><button type="button" class="btn big" id="sudoku-new">' + esc(t("new_board")) + "</button></p>";
@@ -543,6 +555,9 @@
   })();
 
   // ------------------------------------------------------------ Hidden Traps (a story picture under the board)
+  // v3 (Mike, 2026-11-13: "more sophisticated"): tiles in the channel's colours on a dark frame, the picture shows
+  // only through opened squares, squares lift away in a wave, numbers on coloured chips, tap a finished number to
+  // open the squares around it, traps appear one by one after a hit. No timer (fair-play rule: no timers).
   var TRAP = {   // the hidden trap of each channel (hand-drawn SVG)
     history: "M12 3a7 7 0 0 0-7 7c0 2.5 1.2 4.3 3 5.3V19h8v-3.7c1.8-1 3-2.8 3-5.3a7 7 0 0 0-7-7zM9.5 10.5h.01M14.5 10.5h.01M11 19v2M13 19v2",
     how: "M13 2 5 14h6l-1 8 8-12h-6z",
@@ -550,9 +565,14 @@
     psychology: "M12 12a1 1 0 1 1 1 1 2.5 2.5 0 0 1-3.5-2 4 4 0 0 1 4-4.5 5.5 5.5 0 0 1 5.5 5.5 7 7 0 0 1-7 7 8.5 8.5 0 0 1-8.5-8.5"
   };
   var FLAG = "M6 21V4M6 4h11l-2.5 4 2.5 4H6";
+  var OPEN_ICON = "M4.5 8.5V6a1.5 1.5 0 0 1 1.5-1.5h2.5M15.5 4.5H18A1.5 1.5 0 0 1 19.5 6v2.5M19.5 15.5V18a1.5 1.5 0 0 1-1.5 1.5h-2.5M8.5 19.5H6A1.5 1.5 0 0 1 4.5 18v-2.5M12 9.5v5M9.5 12h5";
   function line(d, w) {
     return '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="' + d + '" fill="none" stroke="currentColor" stroke-width="' + (w || 2.2) +
       '" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+  }
+  function flagSvg() {   // a pennant on a pole (filled, so it reads well on small squares)
+    return '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 21.5V3.5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>' +
+      '<path class="pen" d="M7.5 4h10.5l-2.8 4.2L18 12.5H7.5z"/></svg>';
   }
   var TL = [{ w: 8, h: 8, n: 8, pts: 5 }, { w: 8, h: 10, n: 12, pts: 8 }, { w: 9, h: 12, n: 18, pts: 12 }, { w: 10, h: 13, n: 26, pts: 15 }];
   var traps = (function () {
@@ -566,12 +586,13 @@
       }
       return out;
     }
+    function dist(a, b) { var W = cfg().w; return Math.max(Math.abs(a % W - b % W), Math.abs(((a / W) | 0) - ((b / W) | 0))); }
     function fresh(keepStory) {
       var c = cfg(), size = c.w * c.h;
       s.b = { trap: [], open: [], flag: [], n: [], laid: false, over: false, won: false, hit: -1 };
       for (var i = 0; i < size; i++) { s.b.trap.push(false); s.b.open.push(false); s.b.flag.push(false); s.b.n.push(0); }
       if (!keepStory || !s.story) s.story = pictureStory();
-      s.msg = ""; s.cls = "verdict";
+      s.msg = ""; s.cls = "verdict"; s.anim = {}; s.plant = -1;
     }
     function lay(first) {   // traps go down after the first tap, never on it or next to it
       var b = s.b, c = cfg(), keep = around(first).concat([first]), spots = [];
@@ -580,13 +601,14 @@
       for (var j = 0; j < c.w * c.h; j++) b.n[j] = around(j).filter(function (k) { return b.trap[k]; }).length;
       b.laid = true;
     }
-    function openFrom(i) {   // opens the square, and the whole empty area around a 0
-      var b = s.b, stack = [i], opened = 0;
-      while (stack.length) {
-        var k = stack.pop();
+    // opens the squares (and the whole empty area around a 0), nearest first, so they lift away in a wave
+    function openFrom(starts) {
+      var b = s.b, q = starts.map(function (k) { return [k, 0]; }), head = 0, opened = 0;
+      while (head < q.length) {
+        var it = q[head++], k = it[0];
         if (b.open[k] || b.flag[k] || b.trap[k]) continue;
-        b.open[k] = true; opened++;
-        if (!b.n[k]) around(k).forEach(function (m) { if (!b.open[m]) stack.push(m); });
+        b.open[k] = true; opened++; s.anim[k] = Math.min(it[1] * 38, 520);
+        if (!b.n[k]) around(k).forEach(function (m) { if (!b.open[m]) q.push([m, it[1] + 1]); });
       }
       return opened;
     }
@@ -595,72 +617,97 @@
       for (var i = 0; i < b.open.length; i++) if (!b.trap[i] && !b.open[i]) n++;
       return n;
     }
-    function tap(i, mark) {
+    function lose(hit) {
       var b = s.b;
-      if (b.over || b.won || b.open[i]) return;
-      if (mark || s.mode === "mark") { b.flag[i] = !b.flag[i]; render(); return; }
-      if (b.flag[i]) return;
-      if (!b.laid) lay(i);
-      if (b.trap[i]) {
-        b.over = true; b.hit = i;
-        s.cls = "verdict no"; s.msg = "trap_hit";
-        count("traps_lost");
-        render();
-        return;
-      }
-      if (!openFrom(i)) return;
-      count("traps_right");
-      s.cls = "verdict"; s.msg = "";
-      if (!safeLeft()) {
-        b.won = true;
-        var p = OS.progress.get(), won = Object.keys(p.done).filter(function (x) { return x.indexOf("h:") === 0; }).length;
-        if (won < 20) OS.progress.add("h:" + (won + 1), cfg().pts);
-        count("traps_won");
-        s.cls = "verdict ok"; s.msg = "board_clear";
-        render();
-        if (s.story) reward(s.story.id, "rw_traps");   // the picture's own story opens (tap to play)
-        return;
-      }
+      b.over = true; b.hit = hit;
+      for (var k = 0; k < b.trap.length; k++) if (b.trap[k] && !b.flag[k]) s.anim[k] = k === hit ? 0 : 150 + Math.min(dist(hit, k) * 70, 900);
+      s.cls = "verdict no"; s.msg = "trap_hit";
+      count("traps_lost");
       render();
     }
+    function win() {
+      var b = s.b;
+      b.won = true;
+      var p = OS.progress.get(), won = Object.keys(p.done).filter(function (x) { return x.indexOf("h:") === 0; }).length;
+      if (won < 20) OS.progress.add("h:" + (won + 1), cfg().pts);
+      count("traps_won");
+      s.cls = "verdict ok"; s.msg = "board_clear";
+      render();
+      var id = s.story && s.story.id;
+      if (id) setTimeout(function () { if (s.b.won && s.story && s.story.id === id) reward(id, "rw_traps"); }, 1100);   // its own story (tap to play)
+    }
+    // opens a list of squares; a trap among them ends the board
+    function openList(list) {
+      var b = s.b;
+      for (var j = 0; j < list.length; j++) if (b.trap[list[j]] && !b.flag[list[j]]) { lose(list[j]); return; }
+      if (!openFrom(list)) { render(); return; }
+      count("traps_right");
+      s.cls = "verdict"; s.msg = "";
+      if (!safeLeft()) { win(); return; }
+      render();
+    }
+    function tap(i, mark) {
+      var b = s.b;
+      if (b.over || b.won) return;
+      if (b.open[i]) {   // a number with all its traps marked opens the squares around it
+        if (!b.n[i]) return;
+        var near = around(i), flags = near.filter(function (k) { return b.flag[k]; }).length;
+        var shut = near.filter(function (k) { return !b.open[k] && !b.flag[k]; });
+        if (flags === b.n[i] && shut.length) openList(shut);
+        else if (shut.length) { s.cls = "verdict"; s.msg = "tr_tip"; render(); }
+        return;
+      }
+      if (mark || s.mode === "mark") { b.flag[i] = !b.flag[i]; s.plant = b.flag[i] ? i : -1; render(); return; }
+      if (b.flag[i]) return;
+      if (!b.laid) lay(i);
+      openList([i]);
+    }
     function cell(i) {
-      var b = s.b, cls = "tc", inner = "", label = "";
+      var b = s.b, cls = "tc", inner = "", label = "?", a = s.anim[i];
       if (b.won) cls += " open";
       else if (b.open[i]) {
-        cls += " open" + (b.n[i] ? " n" + Math.min(b.n[i], 3) : "");
-        inner = b.n[i] ? "<span>" + b.n[i] + "</span>" : ""; label = String(b.n[i]);
-      } else if (b.trap[i] && b.over) {
-        cls += " trap" + (i === b.hit ? " hit" : ""); inner = line(TRAP[theme]); label = t("g_traps");
+        cls += " open";
+        if (b.n[i]) inner = '<span class="tn n' + b.n[i] + '">' + b.n[i] + "</span>";
+        label = String(b.n[i]);
+      } else if (b.trap[i] && b.over && !b.flag[i]) {
+        cls += " trap" + (i === b.hit ? " hit" : ""); inner = '<span class="ti">' + line(TRAP[theme], 2) + "</span>"; label = t("g_traps");
       } else if (b.flag[i]) {
-        cls += " flag"; inner = line(FLAG); label = t("mode_mark");
+        cls += " flag" + (i === s.plant ? " plant" : "") + (b.over && !b.trap[i] ? " wrong" : ""); inner = flagSvg(); label = t("mode_mark");
       }
-      if (b.over && b.flag[i] && !b.trap[i]) cls += " wrong";
-      return '<button type="button" class="' + cls + '" data-c="' + i + '" aria-label="' + esc(label || "?") + '"' +
-        (b.open[i] || b.won ? " disabled" : "") + ">" + inner + "</button>";
+      if (a !== undefined && !b.won) cls += b.open[i] ? " pop" : " boom";
+      return '<button type="button" class="' + cls + '" data-c="' + i + '" aria-label="' + esc(label) + '"' +
+        (a !== undefined ? ' style="--d:' + a + 'ms"' : "") + (b.won ? " disabled" : "") + ">" + inner + "</button>";
     }
     function render() {
       var b = s.b, c = cfg(), box = $("traps-box");
       var flags = b.flag.filter(function (x) { return x; }).length, safe = c.w * c.h - c.n, opened = b.open.filter(function (x) { return x; }).length;
-      bar($("traps-prog"), b.won ? 1 : opened / safe, t("tr_goal"));
+      var frac = b.won ? 1 : opened / safe;
+      bar($("traps-prog"), frac, t("tr_goal"));
       var cells = "";
       for (var i = 0; i < c.w * c.h; i++) cells += cell(i);
-      var pic = s.story ? "background-image:url('" + esc(s.story.thumb) + "');" : "";
+      var pic = s.story ? ' style="background-image:url(\'' + esc(s.story.thumb) + '\')"' : "";
+      function stat(val, label, cls) { return "<div" + (cls ? ' class="' + cls + '"' : "") + "><b>" + esc(val) + "</b><small>" + esc(label) + "</small></div>"; }
       box.innerHTML = '<div class="themes lvls" id="traps-lvls" role="group"></div>' +
-        '<p class="gq">' + esc(t("traps_hint")) + "</p>" +
-        '<div class="tmode" role="group">' + ["open", "mark"].map(function (md) {
-          return '<button type="button" class="chip' + (s.mode === md ? " sel" : "") + '" data-m="' + md + '" aria-pressed="' + (s.mode === md) + '">' +
-            (md === "mark" ? line(FLAG) : "") + esc(t("mode_" + md)) + "</button>";
+        '<div class="thud">' + stat(String(Math.max(0, c.n - flags)), t("tr_left_l")) + stat(Math.round(frac * 100) + "%", t("tr_cleared")) +
+          stat(t(LV_KEYS[s.level]), t("level"), "tw") + "</div>" +
+        '<div class="tseg" role="group">' + ["open", "mark"].map(function (md) {
+          return '<button type="button" class="' + (s.mode === md ? "on" : "") + '" data-m="' + md + '" aria-pressed="' + (s.mode === md) + '">' +
+            line(md === "mark" ? FLAG : OPEN_ICON, 2) + esc(t("mode_" + md)) + "</button>";
         }).join("") + "</div>" +
-        '<p class="sstat"><span class="tleft">' + line(TRAP[theme]) + esc(t("traps_left", { n: Math.max(0, c.n - flags) })) + "</span>" +
-        "<span>" + esc(t("lvl_n", { n: s.level + 1 })) + "</span></p>" +
-        '<div class="twrap"><div class="tgrid' + (b.won ? " won" : "") + '" style="grid-template-columns:repeat(' + c.w + ",1fr);" + pic + '">' + cells + "</div>" +
-        (b.over ? '<div class="tover"><b>' + esc(t("game_over")) + "</b>" +
+        '<div class="twrap"><div class="tboard th-' + theme + (b.won ? " won" : "") + (b.over ? " lost" : "") + '">' +
+          '<div class="tpic"' + pic + "></div>" +
+          '<div class="tgrid" style="grid-template-columns:repeat(' + c.w + ",1fr);--w:" + c.w + '">' + cells + "</div>" +
+          (b.won && s.story ? '<div class="tcap"><span><small>' + esc(t("tr_story")) + "</small><b>" + esc(storyTitle(s.story)) + "</b></span>" +
+            '<button type="button" class="btn gold" id="traps-watch">' + esc(t("tr_watch")) + "</button></div>" : "") +
+        "</div>" +
+        (b.over ? '<div class="tover"><div class="tcard"><span class="ti">' + line(TRAP[theme], 2) + "</span><b>" + esc(t("game_over")) + "</b>" +
           (s.story ? '<button type="button" class="btn gold" id="traps-watch">' + esc(t("watch_anyway")) + "</button>" : "") +
-          '<button type="button" class="btn" id="traps-again">' + esc(t("try_again")) + "</button></div>" : "") + "</div>" +
-        '<p class="' + s.cls + '" id="traps-res" aria-live="polite">' + esc(s.msg ? t(s.msg) : "") +
-        (b.won && s.story ? " " + esc(storyTitle(s.story)) : "") + "</p>" +
-        '<p class="gactions"><button type="button" class="btn big' + (b.won ? " gold" : "") + '" id="traps-new">' + esc(t(b.won ? "next_level" : "new_board")) + "</button></p>";
+          '<button type="button" class="btn" id="traps-again">' + esc(t("try_again")) + "</button></div></div>" : "") + "</div>" +
+        '<p class="' + s.cls + '" id="traps-res" aria-live="polite">' + esc(s.msg ? t(s.msg) : "") + "</p>" +
+        '<p class="gactions"><button type="button" class="btn big' + (b.won ? " gold" : "") + '" id="traps-new">' + esc(t(b.won ? "next_level" : "new_board")) + "</button></p>" +
+        '<p class="ttip">' + esc(t("traps_hint")) + " " + esc(t("tr_tip")) + "</p>";
       levelChips($("traps-lvls"), s.level, function (lv) { store("os-lvl-traps", lv); s.level = lv; fresh(false); render(); });
+      s.anim = {}; s.plant = -1;   // each wave plays once
     }
     function wire(box) {   // one set of handlers on the box (the board is redrawn after every move)
       function cellOf(e) { var c = e.target.closest && e.target.closest(".tc"); return c ? +c.getAttribute("data-c") : -1; }
@@ -672,7 +719,7 @@
           fresh(false); render(); return;
         }
         if (e.target.closest("#traps-again")) { fresh(true); render(); return; }
-        if (e.target.closest("#traps-watch")) { if (s.story) reward(s.story.id, "rw_toast"); return; }
+        if (e.target.closest("#traps-watch")) { if (s.story) reward(s.story.id, "tr_toast"); return; }
         var i = cellOf(e);
         if (i < 0) return;
         if (held) { held = false; return; }   // a long press already marked it
@@ -682,7 +729,7 @@
       box.ontouchstart = function (e) {   // press and hold = mark
         var i = cellOf(e);
         held = false; clearTimeout(hold);
-        if (i >= 0) hold = setTimeout(function () { held = true; tap(i, true); if (navigator.vibrate) navigator.vibrate(15); }, 450);
+        if (i >= 0 && !s.b.open[i]) hold = setTimeout(function () { held = true; tap(i, true); if (navigator.vibrate) navigator.vibrate(15); }, 450);
       };
       box.ontouchend = box.ontouchmove = box.ontouchcancel = function () { clearTimeout(hold); };
     }

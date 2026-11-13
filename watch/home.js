@@ -236,7 +236,10 @@
     if (state.game === "older") playRound();
     if (state.game === "timeline") { if (!tl.items.length) tlNew(); else tlRender(); }
     if (state.game === "where") { if (!wh.order.length) whNew(); else whRender(); }
-    if (OS.games && OS.games[state.game]) OS.games.open(state.game);   // Story Snake, Symbol Sudoku, Story Memory, Hidden Traps
+    if (OS.games && OS.games[state.game]) {   // Story Snake, Symbol Sudoku, Story Memory, Hidden Traps
+      if (OS.progress.get().done["g:" + state.game] === undefined) played(state.game);   // for the "Game champion" badge
+      OS.games.open(state.game);
+    }
   }
 
   // ------------------------------------------------------------ Timeline: four moments, oldest first
@@ -519,8 +522,44 @@
     if (state.view === "play" && game) renderPlay();
   });
 
+  // ------------------------------------------------------------ game stars: each game gives a star at 1, 5 and 15 wins
+  var STARS = [1, 5, 15];
+  var GNAME = { older: "play_title", timeline: "tl_title", where: "headline", snake: "g_snake", sudoku: "g_sudoku", memory: "g_memory", traps: "g_traps" };
+  var GICON = {
+    older: "M7 3h10M7 21h10M8 3c0 6 8 6 8 9s-8 3-8 9M16 3c0 6-8 6-8 9s8 3 8 9",
+    timeline: "M3 12h18M6 8.5v7M12 6.5v11M18 8.5v7",
+    where: "M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21zM12 7a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5z",
+    snake: "M4 18c0-3 3-3 5-3s4 0 4-3-3-3-3-6 3-3 6-3M19 15a2 2 0 1 0 0 4 2 2 0 0 0 0-4z",
+    sudoku: "M3.5 3.5h17v17h-17zM9.2 3.5v17M14.8 3.5v17M3.5 9.2h17M3.5 14.8h17",
+    memory: "M3.5 6.5l6.5-1 1.8 12-6.5 1zM13 5.5l6.5 1-1.8 12-6.5-1z",
+    traps: "M3.5 3.5h17v17h-17zM9.5 18V6.5h7l-1.8 2.8 1.8 2.8h-7"
+  };
+  function renderGames(p) {
+    var keys = Object.keys(p.done), total = 0, lvk = ["lvl_easy", "lvl_medium", "lvl_hard", "lvl_vhard"];
+    var memBest = +(OS.store("os-mem-best") || 0);
+    function starts(pre) { return keys.filter(function (k) { return k.indexOf(pre) === 0; }).length; }
+    function top(pre) { var m = -1; keys.forEach(function (k) { if (k.indexOf(pre) === 0) m = Math.max(m, OS.BOARD_PTS.indexOf(p.done[k])); }); return m; }
+    $("gstats").innerHTML = OS.GAME_IDS.map(function (g) {
+      var n = starts(OS.GAME_WINS[g]), st = STARS.filter(function (x) { return n >= x; }).length, next = STARS[st];
+      var playedIt = n > 0 || keys.indexOf("g:" + g) >= 0, lines = [OS.t(L, "gs_" + g, { n: n })];
+      total += st;
+      if (g === "older" && p.bestRun) lines.push(OS.t(L, "gs_run", { n: p.bestRun }));
+      if (g === "sudoku" || g === "traps") { var tp = top(OS.GAME_WINS[g]); if (tp >= 0) lines.push(OS.t(L, "gs_level", { l: OS.t(L, lvk[tp]) })); }
+      if (g === "memory" && memBest) lines.push(OS.t(L, "best", { n: memBest }));
+      return '<a class="gst' + (st ? "" : " none") + '" href="#play/' + g + '"><span class="gic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="' + GICON[g] +
+        '" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>' +
+        '<span class="gtx"><span class="gtop"><b>' + esc(OS.t(L, GNAME[g])) + '</b><span class="stars" role="img" aria-label="' + st + ' / 3">' +
+        [0, 1, 2].map(function (i) { return '<i class="' + (i < st ? "on" : "") + '"></i>'; }).join("") + "</span></span>" +
+        "<small>" + esc(playedIt ? lines.join(" · ") : OS.t(L, "not_played")) + "</small>" +
+        (playedIt ? '<small class="gnext">' + esc(next ? OS.t(L, "gs_next", { n: n, m: next }) : OS.t(L, "gs_max")) + "</small>" : "") + "</span></a>";
+    }).join("");
+    $("h-games").textContent = OS.t(L, "games_h");
+    $("gtotal").textContent = OS.t(L, "games_stars", { n: total, m: 3 * OS.GAME_IDS.length }) + " · " + OS.t(L, "games_how");
+  }
+
   function renderPassport() {
     renderProgress();
+    renderGames(OS.progress.get());
     renderAccount();
     var all = countriesIn(cat.videos), pass = OS.passport.get();
     var keys = Object.keys(all).sort(function (a, b) {
