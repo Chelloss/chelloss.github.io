@@ -47,7 +47,11 @@ main { max-width: 1120px; margin: 0 auto; padding: 0 16px 48px; }
 .cat:hover { border-color: var(--muted); }
 .cat.on { background: var(--fg); color: var(--bg); border-color: var(--fg); box-shadow: inset 0 -4px 0 var(--gold); }
 .cat.on small { color: inherit; opacity: .75; }
-.cat:focus-visible, .seg button:focus-visible, .map path:focus-visible { outline: 3px solid var(--gold); outline-offset: 2px; }
+.cat:focus-visible, .seg button:focus-visible { outline: 3px solid var(--gold); outline-offset: 2px; }
+/* map countries: a line around the country, never a box (Russia and the USA cross the 180 degree line, so their box
+   covered the whole map; Mike saw it after closing a country, 2026-11-13) */
+.map path:focus { outline: none; }
+.map path:focus-visible { stroke: var(--fg); stroke-width: 2; }
 
 .mapbox { background: var(--panel); border-radius: 16px; padding: 10px 10px 4px; }
 .map { display: block; width: 100%; height: auto; }
@@ -190,6 +194,7 @@ body.lit .board .map .land.has { animation: lightup .7s ease forwards; animation
 @keyframes lightup { to { fill: var(--board-has); } }
 body:not(.lit) .board .map .land.has { fill: var(--board-has); }
 .board .map .land.has:hover, .board .map .land.has:focus-visible { fill: #ffe066; filter: drop-shadow(0 0 6px var(--board-glow)); }
+.board .map .land.has:focus-visible { stroke: #fff; stroke-width: 1.5; }
 .board .map .land.sel { fill: #fff3b0 !important; filter: drop-shadow(0 0 8px var(--board-glow)); }
 .board .map .pin .dot { fill: #fff; stroke: var(--board); stroke-width: 1; }
 .board .map .pin .ring { fill: none; stroke: #fff6c8; stroke-width: 1; transform-box: fill-box; transform-origin: center;
