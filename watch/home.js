@@ -185,6 +185,7 @@
       '<p class="sheet-links">' + (nextId ? '<button type="button" class="btn gold" id="pnext">' + esc(OS.t(L, "next_story")) + " →</button>" : "") +
       '<a class="btn" href="' + esc(v.page) + '">' + esc(OS.t(L, "read_story")) + "</a>" +
       '<a class="btn red" href="' + esc(v.youtube) + '" target="_blank" rel="noopener">' + esc(OS.t(L, "watch_on_youtube")) + "</a>" +
+      '<a class="btn" href="' + esc(v.youtube) + '" target="_blank" rel="noopener">' + '<svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 10v11H3V10zM7 10l4-7c1.7 0 2.5 1 2.2 2.7L12.5 9H19a2 2 0 0 1 2 2.3l-1.3 7.5A2.5 2.5 0 0 1 17.2 21H7" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>' + esc(OS.t(L, "like_yt")) + "</a>" +
       '<a class="btn" href="' + esc(v.subscribe) + '" target="_blank" rel="noopener" data-ch="' + esc(v.channel_id || "") + '">' + esc(OS.t(L, "subscribe")) + "</a></p>", "player");
     if (OS.subscribeLinks) OS.subscribeLinks($("sheet-body"));
     if (nextId) $("pnext").onclick = function () { var n = byId(nextId); if (n) openPlayer(n); };

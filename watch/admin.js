@@ -118,7 +118,7 @@
       tile(num(total("challenge_share")), "Challenges shared", num(total("challenge_open")) + " opened by friends") +
       tile(num(total("subscribe_tap")), "\"Subscribe\" taps", "loads YouTube's own button; real subscribers are in YouTube Studio") +
       // the newer games (2026-11-13, games.js): "opened" counts once per visit (Snake: once per new game)
-      tile(num(total("snake_start")), "Story Snake games", num(total("snake_right")) + " right answers, " + num(total("snake_end")) + " games over") +
+      tile(num(total("snake_start")), "Story Snake games", num(total("snake_right")) + " right answers, " + num(total("snake_end")) + " games over, " + num(total("snake_listen")) + " read aloud") +
       tile(num(total("sudoku_start")), "Symbol Sudoku opened", num(total("sudoku_right")) + " right symbols, " + num(total("sudoku_solved")) + " boards solved") +
       tile(num(total("memory_start")), "Story Memory opened", num(total("memory_right")) + " pairs found, " + num(total("memory_solved")) + " boards finished") +
       tile(num(total("traps_start")), "Hidden Traps opened", num(total("traps_right")) + " safe moves, " + num(total("traps_won")) + " boards won, " + num(total("traps_lost")) + " lost") +
