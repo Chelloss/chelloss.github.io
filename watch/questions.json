@@ -2550,5 +2550,527 @@
    "pt": "As crianças que esperavam ainda iam um pouco melhor aos 15 anos, mas a ligação era metade da original e encolheu dois terços quando a origem familiar e a vida em casa foram levadas em conta.",
    "it": "I bambini che aspettavano andavano ancora un po' meglio a 15 anni, ma il legame era forte la metà, e si ridusse di due terzi una volta considerati la famiglia d'origine e la vita a casa."
   }
+ },
+ "lb025-space-shuttle": {
+  "answer": 0,
+  "q": {
+   "en": "Which part of the Space Shuttle was thrown away?",
+   "es": "¿Qué parte del transbordador espacial se tiraba?",
+   "el": "Ποιο κομμάτι του διαστημικού λεωφορείου πετιόταν;",
+   "de": "Welcher Teil des Space Shuttles wurde weggeworfen?",
+   "fr": "Quelle partie de la navette spatiale était jetée ?",
+   "pt": "Qual parte do ônibus espacial era jogada fora?",
+   "it": "Quale parte dello Space Shuttle veniva buttata via?"
+  },
+  "options": {
+   "en": [
+    "The giant fuel tank",
+    "The two boosters",
+    "The orbiter"
+   ],
+   "es": [
+    "El enorme tanque de combustible",
+    "Los dos cohetes aceleradores",
+    "El orbitador"
+   ],
+   "el": [
+    "Η γιγάντια δεξαμενή καυσίμων",
+    "Οι δύο προωθητές",
+    "Το τροχιακό όχημα"
+   ],
+   "de": [
+    "Der riesige Treibstofftank",
+    "Die zwei Booster",
+    "Der Orbiter"
+   ],
+   "fr": [
+    "L'énorme réservoir de carburant",
+    "Les deux propulseurs d'appoint",
+    "L'orbiteur"
+   ],
+   "pt": [
+    "O enorme tanque de combustível",
+    "Os dois foguetes auxiliares",
+    "O orbitador"
+   ],
+   "it": [
+    "Il gigantesco serbatoio",
+    "I due razzi ausiliari",
+    "L'orbiter"
+   ]
+  },
+  "fact": {
+   "en": "The boosters parachuted into the Atlantic to fly again, and the orbiter glided home. The fuel tank fed the engines for eight and a half minutes, then dropped away.",
+   "es": "Los cohetes aceleradores caían en paracaídas al Atlántico para volver a volar, y el orbitador regresaba planeando. El tanque alimentaba los motores ocho minutos y medio y luego se soltaba.",
+   "el": "Οι προωθητές έπεφταν με αλεξίπτωτα στον Ατλαντικό για να ξαναπετάξουν, και το τροχιακό όχημα γύριζε γλιστρώντας. Η δεξαμενή τροφοδοτούσε τους κινητήρες οκτώμισι λεπτά και μετά αποκολλιόταν.",
+   "de": "Die Booster landeten am Fallschirm im Atlantik und flogen wieder, der Orbiter glitt nach Hause. Der Tank versorgte die Triebwerke achteinhalb Minuten lang und fiel dann ab.",
+   "fr": "Les propulseurs tombaient en parachute dans l'Atlantique pour revoler, et l'orbiteur rentrait en vol plané. Le réservoir alimentait les moteurs huit minutes et demie, puis se détachait.",
+   "pt": "Os foguetes auxiliares desciam de paraquedas no Atlântico para voar de novo, e o orbitador voltava planando. O tanque alimentava os motores por oito minutos e meio e depois se soltava.",
+   "it": "I razzi ausiliari scendevano col paracadute nell'Atlantico per volare di nuovo, e l'orbiter tornava planando. Il serbatoio alimentava i motori per otto minuti e mezzo, poi si staccava."
+  }
+ },
+ "lb013-tank": {
+  "answer": 0,
+  "q": {
+   "en": "Why does a 64-tonne tank press on the ground less than a car?",
+   "es": "¿Por qué un tanque de 64 toneladas presiona el suelo menos que un coche?",
+   "el": "Γιατί ένα τανκ 64 τόνων πιέζει το έδαφος λιγότερο από ένα αυτοκίνητο;",
+   "de": "Warum drückt ein 64-Tonnen-Panzer weniger auf den Boden als ein Auto?",
+   "fr": "Pourquoi un char de 64 tonnes appuie-t-il moins sur le sol qu'une voiture ?",
+   "pt": "Por que um tanque de 64 toneladas pressiona o chão menos que um carro?",
+   "it": "Perché un carro armato da 64 tonnellate preme sul terreno meno di un'auto?"
+  },
+  "options": {
+   "en": [
+    "Its tracks spread the weight over a huge area",
+    "Its gas turbine lifts it up",
+    "It is mostly hollow"
+   ],
+   "es": [
+    "Sus orugas reparten el peso sobre una gran superficie",
+    "Su turbina de gas lo levanta",
+    "Está casi hueco"
+   ],
+   "el": [
+    "Οι ερπύστριες απλώνουν το βάρος σε τεράστια επιφάνεια",
+    "Ο αεριοστρόβιλος το σηκώνει",
+    "Είναι σχεδόν κούφιο"
+   ],
+   "de": [
+    "Die Ketten verteilen das Gewicht auf eine riesige Fläche",
+    "Die Gasturbine hebt ihn an",
+    "Er ist größtenteils hohl"
+   ],
+   "fr": [
+    "Ses chenilles répartissent le poids sur une très grande surface",
+    "Sa turbine à gaz le soulève",
+    "Il est presque creux"
+   ],
+   "pt": [
+    "As esteiras espalham o peso por uma área enorme",
+    "A turbina a gás o levanta",
+    "Ele é quase oco"
+   ],
+   "it": [
+    "I cingoli distribuiscono il peso su un'area enorme",
+    "La turbina a gas lo solleva",
+    "È quasi vuoto"
+   ]
+  },
+  "fact": {
+   "en": "An M1 Abrams weighs about 64 tonnes, but its tracks spread the weight so widely that a family car presses on the ground about twice as hard.",
+   "es": "Un M1 Abrams pesa unas 64 toneladas, pero sus orugas reparten tanto el peso que un coche familiar presiona el suelo con el doble de fuerza.",
+   "el": "Ένα M1 Abrams ζυγίζει περίπου 64 τόνους, αλλά οι ερπύστριες απλώνουν τόσο το βάρος που ένα οικογενειακό αυτοκίνητο πιέζει το έδαφος περίπου διπλάσια.",
+   "de": "Ein M1 Abrams wiegt etwa 64 Tonnen, aber die Ketten verteilen das Gewicht so breit, dass ein Familienauto etwa doppelt so stark auf den Boden drückt.",
+   "fr": "Un M1 Abrams pèse environ 64 tonnes, mais ses chenilles répartissent tellement le poids qu'une voiture familiale appuie environ deux fois plus fort sur le sol.",
+   "pt": "Um M1 Abrams pesa cerca de 64 toneladas, mas as esteiras espalham tanto o peso que um carro de passeio pressiona o chão com cerca do dobro da força.",
+   "it": "Un M1 Abrams pesa circa 64 tonnellate, ma i cingoli distribuiscono il peso così tanto che un'auto familiare preme sul terreno circa il doppio."
+  }
+ },
+ "lb029-airbag": {
+  "answer": 0,
+  "q": {
+   "en": "Why doesn't an airbag feel like hitting a wall?",
+   "es": "¿Por qué un airbag no es como chocar contra una pared?",
+   "el": "Γιατί ο αερόσακος δεν είναι σαν να χτυπάς σε τοίχο;",
+   "de": "Warum fühlt sich ein Airbag nicht wie eine Wand an?",
+   "fr": "Pourquoi un airbag n'est-il pas comme un mur ?",
+   "pt": "Por que o airbag não é como bater numa parede?",
+   "it": "Perché l'airbag non è come sbattere contro un muro?"
+  },
+  "options": {
+   "en": [
+    "It has holes that let the gas out",
+    "It is filled with water",
+    "It inflates slowly"
+   ],
+   "es": [
+    "Tiene agujeros que dejan salir el gas",
+    "Está lleno de agua",
+    "Se infla despacio"
+   ],
+   "el": [
+    "Έχει τρύπες που αφήνουν το αέριο να βγει",
+    "Είναι γεμάτος νερό",
+    "Φουσκώνει αργά"
+   ],
+   "de": [
+    "Er hat Löcher, die das Gas herauslassen",
+    "Er ist mit Wasser gefüllt",
+    "Er bläst sich langsam auf"
+   ],
+   "fr": [
+    "Il a des trous qui laissent sortir le gaz",
+    "Il est rempli d'eau",
+    "Il se gonfle lentement"
+   ],
+   "pt": [
+    "Ele tem furos que deixam o gás sair",
+    "Ele é cheio de água",
+    "Ele infla devagar"
+   ],
+   "it": [
+    "Ha dei fori che fanno uscire il gas",
+    "È pieno d'acqua",
+    "Si gonfia lentamente"
+   ]
+  },
+  "fact": {
+   "en": "The bag fills with mostly nitrogen in a few hundredths of a second. As your head presses in, gas escapes through holes, so the bag goes soft.",
+   "es": "La bolsa se llena, sobre todo de nitrógeno, en unas centésimas de segundo. Cuando tu cabeza presiona, el gas sale por unos agujeros y la bolsa se ablanda.",
+   "el": "Ο σάκος γεμίζει κυρίως με άζωτο σε λίγα εκατοστά του δευτερολέπτου. Καθώς το κεφάλι σου πιέζει, το αέριο φεύγει από τρύπες και ο σάκος μαλακώνει.",
+   "de": "Der Sack füllt sich in wenigen Hundertstelsekunden, vor allem mit Stickstoff. Wenn dein Kopf hineindrückt, entweicht das Gas durch Löcher, und der Sack wird weich.",
+   "fr": "Le coussin se remplit surtout d'azote en quelques centièmes de seconde. Quand votre tête s'enfonce, le gaz s'échappe par des trous et le coussin devient mou.",
+   "pt": "A bolsa enche, principalmente de nitrogênio, em poucos centésimos de segundo. Quando sua cabeça pressiona, o gás escapa pelos furos e a bolsa amolece.",
+   "it": "Il cuscino si riempie soprattutto di azoto in pochi centesimi di secondo. Quando la testa preme, il gas esce dai fori e il cuscino diventa morbido."
+  }
+ },
+ "ll012-hungary": {
+  "answer": 0,
+  "q": {
+   "en": "How did Hungary fix its money in 1946?",
+   "es": "¿Cómo arregló Hungría su dinero en 1946?",
+   "el": "Πώς διόρθωσε η Ουγγαρία το χρήμα της το 1946;",
+   "de": "Wie reparierte Ungarn 1946 sein Geld?",
+   "fr": "Comment la Hongrie a-t-elle réparé sa monnaie en 1946 ?",
+   "pt": "Como a Hungria consertou seu dinheiro em 1946?",
+   "it": "Come aggiustò l'Ungheria il suo denaro nel 1946?"
+  },
+  "options": {
+   "en": [
+    "A new currency, the forint",
+    "Printing bigger banknotes",
+    "Going back to gold coins"
+   ],
+   "es": [
+    "Con una moneda nueva, el forinto",
+    "Imprimiendo billetes más grandes",
+    "Volviendo a las monedas de oro"
+   ],
+   "el": [
+    "Με ένα νέο νόμισμα, το φιορίνι",
+    "Τυπώνοντας μεγαλύτερα χαρτονομίσματα",
+    "Γυρίζοντας στα χρυσά νομίσματα"
+   ],
+   "de": [
+    "Mit einer neuen Währung, dem Forint",
+    "Mit größeren Banknoten",
+    "Mit einer Rückkehr zu Goldmünzen"
+   ],
+   "fr": [
+    "Avec une nouvelle monnaie, le forint",
+    "En imprimant de plus gros billets",
+    "En revenant aux pièces d'or"
+   ],
+   "pt": [
+    "Com uma nova moeda, o florim",
+    "Imprimindo cédulas maiores",
+    "Voltando às moedas de ouro"
+   ],
+   "it": [
+    "Con una nuova moneta, il fiorino",
+    "Stampando banconote più grandi",
+    "Tornando alle monete d'oro"
+   ]
+  },
+  "fact": {
+   "en": "One forint was worth 400 octillion old pengő, wiping out 29 zeros at once. Before that, prices had doubled in under a day.",
+   "es": "Un forinto valía 400 mil cuatrillones de pengős viejos: se borraron 29 ceros de golpe. Antes, los precios se duplicaban en menos de un día.",
+   "el": "Ένα φιορίνι άξιζε 400 οκτάκις εκατομμύρια παλιά πένγκο: 29 μηδενικά έσβησαν μονομιάς. Πριν από αυτό, οι τιμές διπλασιάζονταν σε λιγότερο από μια μέρα.",
+   "de": "Ein Forint war 400 Quadrilliarden alte Pengő wert: 29 Nullen auf einmal weg. Vorher hatten sich die Preise in weniger als einem Tag verdoppelt.",
+   "fr": "Un forint valait 400 quadrilliards d'anciens pengős : 29 zéros effacés d'un coup. Avant cela, les prix doublaient en moins d'un jour.",
+   "pt": "Um florim valia 400 octilhões de pengős antigos: 29 zeros apagados de uma vez. Antes disso, os preços dobravam em menos de um dia.",
+   "it": "Un fiorino valeva 400 quadriliardi di vecchi pengő: 29 zeri cancellati in un colpo. Prima, i prezzi raddoppiavano in meno di un giorno."
+  }
+ },
+ "ll021-diamonds": {
+  "answer": 0,
+  "q": {
+   "en": "Who wrote 'A diamond is forever' in 1947?",
+   "es": "¿Quién escribió «un diamante es para siempre» en 1947?",
+   "el": "Ποιος έγραψε το «ένα διαμάντι είναι για πάντα» το 1947;",
+   "de": "Wer schrieb 1947 „Ein Diamant ist unvergänglich“?",
+   "fr": "Qui a écrit « un diamant est éternel » en 1947 ?",
+   "pt": "Quem escreveu “um diamante é para sempre” em 1947?",
+   "it": "Chi scrisse «un diamante è per sempre» nel 1947?"
+  },
+  "options": {
+   "en": [
+    "Ad writer Frances Gerety",
+    "The owner of a diamond mine",
+    "A Hollywood actress"
+   ],
+   "es": [
+    "La redactora publicitaria Frances Gerety",
+    "El dueño de una mina de diamantes",
+    "Una actriz de Hollywood"
+   ],
+   "el": [
+    "Η κειμενογράφος Φράνσις Γκέρετι",
+    "Ο ιδιοκτήτης ενός ορυχείου διαμαντιών",
+    "Μια ηθοποιός του Χόλιγουντ"
+   ],
+   "de": [
+    "Die Werbetexterin Frances Gerety",
+    "Der Besitzer einer Diamantmine",
+    "Eine Hollywood-Schauspielerin"
+   ],
+   "fr": [
+    "La rédactrice publicitaire Frances Gerety",
+    "Le propriétaire d'une mine de diamants",
+    "Une actrice d'Hollywood"
+   ],
+   "pt": [
+    "A redatora publicitária Frances Gerety",
+    "O dono de uma mina de diamantes",
+    "Uma atriz de Hollywood"
+   ],
+   "it": [
+    "La copywriter Frances Gerety",
+    "Il proprietario di una miniera di diamanti",
+    "Un'attrice di Hollywood"
+   ]
+  },
+  "fact": {
+   "en": "Frances Gerety wrote the four words for De Beers in 1947. Before World War Two, only one in ten American engagement rings had a diamond. Gerety herself never married.",
+   "es": "Frances Gerety escribió esas cuatro palabras para De Beers en 1947. Antes de la Segunda Guerra Mundial, solo uno de cada diez anillos de compromiso estadounidenses llevaba diamante. Ella nunca se casó.",
+   "el": "Η Φράνσις Γκέρετι έγραψε αυτές τις τέσσερις λέξεις για την De Beers το 1947. Πριν από τον Δεύτερο Παγκόσμιο Πόλεμο, μόνο ένα στα δέκα αμερικανικά δαχτυλίδια αρραβώνων είχε διαμάντι. Η ίδια δεν παντρεύτηκε ποτέ.",
+   "de": "Frances Gerety schrieb die vier Wörter 1947 für De Beers. Vor dem Zweiten Weltkrieg hatte nur einer von zehn amerikanischen Verlobungsringen einen Diamanten. Sie selbst hat nie geheiratet.",
+   "fr": "Frances Gerety a écrit ces quatre mots pour De Beers en 1947. Avant la Seconde Guerre mondiale, seule une bague de fiançailles américaine sur dix avait un diamant. Elle-même ne s'est jamais mariée.",
+   "pt": "Frances Gerety escreveu essas quatro palavras para a De Beers em 1947. Antes da Segunda Guerra Mundial, só um em cada dez anéis de noivado americanos tinha diamante. Ela mesma nunca se casou.",
+   "it": "Frances Gerety scrisse quelle quattro parole per De Beers nel 1947. Prima della seconda guerra mondiale, solo un anello di fidanzamento americano su dieci aveva un diamante. Lei non si sposò mai."
+  }
+ },
+ "ll019-printer-ink": {
+  "answer": 0,
+  "q": {
+   "en": "Why are printers often sold so cheaply?",
+   "es": "¿Por qué las impresoras se venden a menudo tan baratas?",
+   "el": "Γιατί οι εκτυπωτές πουλιούνται συχνά τόσο φθηνά;",
+   "de": "Warum werden Drucker oft so billig verkauft?",
+   "fr": "Pourquoi les imprimantes sont-elles souvent vendues si bon marché ?",
+   "pt": "Por que as impressoras costumam ser vendidas tão baratas?",
+   "it": "Perché le stampanti vengono spesso vendute a così poco?"
+  },
+  "options": {
+   "en": [
+    "Makers earn the money back on ink",
+    "Printers cost almost nothing to build",
+    "Governments pay part of the price"
+   ],
+   "es": [
+    "Los fabricantes recuperan el dinero con la tinta",
+    "Fabricarlas no cuesta casi nada",
+    "El Estado paga parte del precio"
+   ],
+   "el": [
+    "Οι κατασκευαστές τα παίρνουν πίσω από το μελάνι",
+    "Η κατασκευή τους δεν κοστίζει σχεδόν τίποτα",
+    "Το κράτος πληρώνει μέρος της τιμής"
+   ],
+   "de": [
+    "Die Hersteller verdienen das Geld über die Tinte zurück",
+    "Drucker kosten fast nichts in der Herstellung",
+    "Der Staat zahlt einen Teil des Preises"
+   ],
+   "fr": [
+    "Les fabricants se rattrapent sur l'encre",
+    "Elles ne coûtent presque rien à fabriquer",
+    "L'État paie une partie du prix"
+   ],
+   "pt": [
+    "Os fabricantes recuperam o dinheiro na tinta",
+    "Fabricá-las quase não custa nada",
+    "O governo paga parte do preço"
+   ],
+   "it": [
+    "I produttori si rifanno sull'inchiostro",
+    "Costruirle non costa quasi nulla",
+    "Lo Stato paga parte del prezzo"
+   ]
+  },
+  "fact": {
+   "en": "Printers are the bait: sold cheap, sometimes at a loss, and earned back on ink. In a 2022 Which? example, Epson ink cost over seven times more than Dom Perignon champagne.",
+   "es": "Las impresoras son el cebo: se venden baratas, a veces con pérdidas, y se recupera con la tinta. En un ejemplo de 2022 de Which?, una tinta de Epson costaba más de siete veces lo que el champán Dom Perignon.",
+   "el": "Οι εκτυπωτές είναι το δόλωμα: πουλιούνται φθηνά, μερικές φορές με ζημιά, και τα λεφτά βγαίνουν από το μελάνι. Σε ένα παράδειγμα του Which? το 2022, ένα μελάνι Epson κόστιζε πάνω από επτά φορές όσο η σαμπάνια Dom Perignon.",
+   "de": "Drucker sind der Köder: billig verkauft, manchmal mit Verlust, und über die Tinte zurückverdient. In einem Beispiel von Which? aus dem Jahr 2022 kostete Epson-Tinte mehr als siebenmal so viel wie Champagner von Dom Perignon.",
+   "fr": "Les imprimantes sont l'appât : vendues bon marché, parfois à perte, et rentabilisées avec l'encre. Dans un exemple de Which? en 2022, l'encre Epson coûtait plus de sept fois le prix du champagne Dom Pérignon.",
+   "pt": "As impressoras são a isca: vendidas baratas, às vezes com prejuízo, e o dinheiro volta com a tinta. Num exemplo de 2022 da Which?, a tinta Epson custava mais de sete vezes o champanhe Dom Perignon.",
+   "it": "Le stampanti sono l'esca: vendute a poco, a volte in perdita, e ripagate con l'inchiostro. In un esempio di Which? del 2022, l'inchiostro Epson costava oltre sette volte lo champagne Dom Perignon."
+  }
+ },
+ "ps017-harlow-monkeys": {
+  "answer": 0,
+  "q": {
+   "en": "Where did Harlow's baby monkeys spend most of the day?",
+   "es": "¿Dónde pasaban la mayor parte del día las crías de Harlow?",
+   "el": "Πού περνούσαν τα μικρά του Χάρλοου το μεγαλύτερο μέρος της μέρας;",
+   "de": "Wo verbrachten Harlows Affenbabys die meiste Zeit des Tages?",
+   "fr": "Où les bébés singes de Harlow passaient-ils la plus grande partie de la journée ?",
+   "pt": "Onde os filhotes de Harlow passavam a maior parte do dia?",
+   "it": "Dove passavano gran parte del giorno i piccoli di Harlow?"
+  },
+  "options": {
+   "en": [
+    "Clinging to the soft cloth mother",
+    "With the wire mother that had the milk",
+    "Alone in a corner"
+   ],
+   "es": [
+    "Abrazadas a la madre de tela suave",
+    "Con la madre de alambre que tenía la leche",
+    "Solas en un rincón"
+   ],
+   "el": [
+    "Κολλημένα στη μαλακή υφασμάτινη μητέρα",
+    "Με τη συρμάτινη μητέρα που είχε το γάλα",
+    "Μόνα σε μια γωνία"
+   ],
+   "de": [
+    "An die weiche Stoffmutter geklammert",
+    "Bei der Drahtmutter mit der Milch",
+    "Allein in einer Ecke"
+   ],
+   "fr": [
+    "Agrippés à la mère en tissu doux",
+    "Avec la mère en fil de fer qui avait le lait",
+    "Seuls dans un coin"
+   ],
+   "pt": [
+    "Agarrados à mãe de pano macio",
+    "Com a mãe de arame que tinha o leite",
+    "Sozinhos num canto"
+   ],
+   "it": [
+    "Aggrappati alla madre di stoffa morbida",
+    "Con la madre di filo che aveva il latte",
+    "Da soli in un angolo"
+   ]
+  },
+  "fact": {
+   "en": "They went to the wire mother only to drink. Harlow concluded that love runs on comfort, not food. His experiments are still debated on ethical grounds.",
+   "es": "A la madre de alambre solo iban a beber. Harlow concluyó que el amor se basa en el consuelo, no en la comida. Sus experimentos aún se debaten por motivos éticos.",
+   "el": "Στη συρμάτινη μητέρα πήγαιναν μόνο για να πιουν. Ο Χάρλοου συμπέρανε ότι η αγάπη στηρίζεται στην παρηγοριά, όχι στο φαγητό. Τα πειράματά του συζητιούνται ακόμη για ηθικούς λόγους.",
+   "de": "Zur Drahtmutter gingen sie nur zum Trinken. Harlow folgerte: Liebe beruht auf Geborgenheit, nicht auf Futter. Seine Experimente sind aus ethischen Gründen bis heute umstritten.",
+   "fr": "Ils n'allaient vers la mère en fil de fer que pour boire. Harlow en a conclu que l'amour repose sur le réconfort, pas sur la nourriture. Ses expériences font encore débat sur le plan éthique.",
+   "pt": "Na mãe de arame, só iam para beber. Harlow concluiu que o amor se baseia no conforto, não na comida. Os experimentos dele ainda são debatidos por razões éticas.",
+   "it": "Da quella di filo andavano solo per bere. Harlow concluse che l'amore si basa sul conforto, non sul cibo. I suoi esperimenti sono ancora discussi per motivi etici."
+  }
+ },
+ "ps012-ten-percent": {
+  "answer": 0,
+  "q": {
+   "en": "How much of your brain do you use over a day?",
+   "es": "¿Cuánto de tu cerebro usas a lo largo de un día?",
+   "el": "Πόσο από τον εγκέφαλό σου χρησιμοποιείς μέσα σε μια μέρα;",
+   "de": "Wie viel deines Gehirns nutzt du im Laufe eines Tages?",
+   "fr": "Quelle part de votre cerveau utilisez-vous sur une journée ?",
+   "pt": "Quanto do seu cérebro você usa ao longo de um dia?",
+   "it": "Quanta parte del cervello usi nell'arco di una giornata?"
+  },
+  "options": {
+   "en": [
+    "Virtually all of it",
+    "About 10%",
+    "About half"
+   ],
+   "es": [
+    "Prácticamente todo",
+    "Más o menos el 10 %",
+    "Más o menos la mitad"
+   ],
+   "el": [
+    "Σχεδόν όλο",
+    "Περίπου το 10%",
+    "Περίπου τον μισό"
+   ],
+   "de": [
+    "Praktisch alles",
+    "Etwa 10 %",
+    "Etwa die Hälfte"
+   ],
+   "fr": [
+    "Pratiquement tout",
+    "Environ 10 %",
+    "Environ la moitié"
+   ],
+   "pt": [
+    "Praticamente todo",
+    "Cerca de 10%",
+    "Cerca de metade"
+   ],
+   "it": [
+    "Praticamente tutto",
+    "Circa il 10%",
+    "Circa la metà"
+   ]
+  },
+  "fact": {
+   "en": "The brain is a few percent of your weight but burns about a fifth of your energy. Brain scans show activity right across it over a day, just not every part at once.",
+   "es": "El cerebro es un pequeño porcentaje de tu peso, pero quema alrededor de una quinta parte de tu energía. Los escáneres muestran actividad en todo él a lo largo del día, aunque no en todas las partes a la vez.",
+   "el": "Ο εγκέφαλος είναι λίγα τοις εκατό του βάρους σου, αλλά καίει περίπου το ένα πέμπτο της ενέργειάς σου. Οι τομογραφίες δείχνουν δραστηριότητα σε όλο του την έκταση μέσα στη μέρα, απλώς όχι παντού ταυτόχρονα.",
+   "de": "Das Gehirn macht nur wenige Prozent deines Gewichts aus, verbraucht aber etwa ein Fünftel deiner Energie. Hirnscans zeigen über den Tag Aktivität im ganzen Gehirn, nur nicht überall gleichzeitig.",
+   "fr": "Le cerveau ne pèse que quelques pour cent de votre poids, mais brûle environ un cinquième de votre énergie. Les scanners montrent de l'activité partout au fil de la journée, mais pas dans toutes les zones à la fois.",
+   "pt": "O cérebro é uma pequena porcentagem do seu peso, mas queima cerca de um quinto da sua energia. Exames mostram atividade nele todo ao longo do dia, só que não em todas as partes ao mesmo tempo.",
+   "it": "Il cervello è una piccola percentuale del tuo peso, ma brucia circa un quinto della tua energia. Le scansioni mostrano attività in tutto il cervello nel corso della giornata, solo non in ogni parte nello stesso momento."
+  }
+ },
+ "ps022-dunning-kruger": {
+  "answer": 0,
+  "q": {
+   "en": "What happened when researchers fed the famous graph random numbers?",
+   "es": "¿Qué pasó cuando unos investigadores alimentaron el famoso gráfico con números aleatorios?",
+   "el": "Τι έγινε όταν ερευνητές τροφοδότησαν το διάσημο γράφημα με τυχαίους αριθμούς;",
+   "de": "Was geschah, als Forscher die berühmte Grafik mit Zufallszahlen fütterten?",
+   "fr": "Que s'est-il passé quand des chercheurs ont nourri le célèbre graphique de nombres aléatoires ?",
+   "pt": "O que aconteceu quando pesquisadores alimentaram o famoso gráfico com números aleatórios?",
+   "it": "Che cosa successe quando dei ricercatori alimentarono il famoso grafico con numeri casuali?"
+  },
+  "options": {
+   "en": [
+    "A very similar pattern appeared",
+    "The pattern vanished completely",
+    "The graph turned upside down"
+   ],
+   "es": [
+    "Apareció un patrón muy parecido",
+    "El patrón desapareció por completo",
+    "El gráfico se dio la vuelta"
+   ],
+   "el": [
+    "Εμφανίστηκε ένα πολύ παρόμοιο μοτίβο",
+    "Το μοτίβο χάθηκε εντελώς",
+    "Το γράφημα αναποδογύρισε"
+   ],
+   "de": [
+    "Ein sehr ähnliches Muster erschien",
+    "Das Muster verschwand ganz",
+    "Die Grafik stand auf dem Kopf"
+   ],
+   "fr": [
+    "Un motif très semblable est apparu",
+    "Le motif a complètement disparu",
+    "Le graphique s'est inversé"
+   ],
+   "pt": [
+    "Apareceu um padrão muito parecido",
+    "O padrão sumiu completamente",
+    "O gráfico ficou de cabeça para baixo"
+   ],
+   "it": [
+    "Comparve uno schema molto simile",
+    "Lo schema sparì del tutto",
+    "Il grafico si capovolse"
+   ]
+  },
+  "fact": {
+   "en": "Most people rate themselves above average, and regression to the mean pulls extreme scores toward the middle. Random numbers gave a very similar pattern, so the question is not settled.",
+   "es": "La mayoría de la gente se valora por encima de la media, y la regresión a la media acerca las puntuaciones extremas al centro. Con números aleatorios salió un patrón muy parecido, así que la cuestión no está resuelta.",
+   "el": "Οι περισσότεροι κρίνουν τον εαυτό τους πάνω από τον μέσο όρο, και η παλινδρόμηση προς τη μέση τιμή τραβά τις ακραίες τιμές προς το κέντρο. Οι τυχαίοι αριθμοί έδωσαν πολύ παρόμοιο μοτίβο, οπότε το ερώτημα δεν έχει κριθεί.",
+   "de": "Die meisten Menschen schätzen sich überdurchschnittlich ein, und die Regression zur Mitte zieht extreme Werte zur Mitte. Zufallszahlen ergaben ein sehr ähnliches Muster, die Frage ist also nicht geklärt.",
+   "fr": "La plupart des gens se jugent au-dessus de la moyenne, et la régression vers la moyenne rapproche les scores extrêmes du centre. Des nombres aléatoires ont donné un motif très semblable : la question n'est pas tranchée.",
+   "pt": "A maioria das pessoas se avalia acima da média, e a regressão à média puxa as notas extremas para o meio. Números aleatórios deram um padrão muito parecido, então a questão não está resolvida.",
+   "it": "La maggior parte delle persone si valuta sopra la media, e la regressione verso la media spinge i punteggi estremi verso il centro. I numeri casuali diedero uno schema molto simile, quindi la questione non è chiusa."
+  }
  }
 }
