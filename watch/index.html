@@ -73,7 +73,14 @@
         <span class="pt"><b data-i="tl_title">Timeline</b><small data-i="tl_d"></small></span><span class="go" data-i="play_start">Play</span></a>
       <a class="gcard" href="#play/where"><span class="pics" id="hp-where" aria-hidden="true"><svg class="ic huge" aria-hidden="true"><use href="#i-map"/></svg></span>
         <span class="pt"><b data-i="headline">Where did it happen?</b><small data-i="wh_d"></small></span><span class="go" data-i="play_start">Play</span></a>
+      <a class="gcard" href="#play/snake"><span class="pics gpic" aria-hidden="true"><svg class="ic huge" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 18c0-3 3-3 5-3s4 0 4-3-3-3-3-6 3-3 6-3" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/><circle cx="17" cy="3" r="1.2" fill="currentColor"/><circle cx="19" cy="17" r="2.2" fill="currentColor"/></svg></span>
+        <span class="pt"><b data-i="g_snake">Story Snake</b><small data-i="g_snake_d"></small></span><span class="go" data-i="play_start">Play</span></a>
+      <a class="gcard" href="#play/sudoku"><span class="pics gpic" aria-hidden="true"><svg class="ic huge" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 3v18M3 12h18" stroke="currentColor" stroke-width="2"/><path d="M7.5 3v18M16.5 3v18M3 7.5h18M3 16.5h18" stroke="currentColor" stroke-width=".8"/></svg></span>
+        <span class="pt"><b data-i="g_sudoku">Symbol Sudoku</b><small data-i="g_sudoku_d"></small></span><span class="go" data-i="play_start">Play</span></a>
+      <a class="gcard" href="#play/memory"><span class="pics gpic" aria-hidden="true"><svg class="ic huge" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="8" height="12" rx="1.5" fill="none" stroke="currentColor" stroke-width="2" transform="rotate(-8 7 11)"/><rect x="13" y="5" width="8" height="12" rx="1.5" fill="none" stroke="currentColor" stroke-width="2" transform="rotate(8 17 11)"/><path d="M16 9.5l2 2-2 2" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></span>
+        <span class="pt"><b data-i="g_memory">Story Memory</b><small data-i="g_memory_d"></small></span><span class="go" data-i="play_start">Play</span></a>
     </div>
+    <p class="small fairgames" data-i="video_rule">Every 10 right moves open a story video. You start it yourself with play: videos never start on their own, and watching gives no points.</p>
    </div>
    <div id="g-gate" hidden>
     <p class="back"><a href="#play" data-i="all_games">All games</a></p>
@@ -112,6 +119,27 @@
     <p class="verdict" id="wres" aria-live="polite"></p>
     <div class="gactions" id="wact" hidden><button class="btn big gold" id="wwatch" type="button" data-i="wh_watch">Watch the story</button>
       <button class="btn big" id="wnext" type="button" data-i="wh_next">Next story</button></div>
+   </div>
+   <div id="g-snake" class="newgame" hidden>
+    <p class="back"><a href="#play" data-i="all_games">All games</a></p>
+    <div class="gamehead"><h1 data-i="g_snake">Story Snake</h1>
+      <div class="themes" id="snake-themes" role="group"></div>
+      <p class="gprog" id="snake-prog"></p></div>
+    <div id="snake-box"></div>
+   </div>
+   <div id="g-sudoku" class="newgame" hidden>
+    <p class="back"><a href="#play" data-i="all_games">All games</a></p>
+    <div class="gamehead"><h1 data-i="g_sudoku">Symbol Sudoku</h1>
+      <div class="themes" id="sudoku-themes" role="group"></div>
+      <p class="gprog" id="sudoku-prog"></p></div>
+    <div id="sudoku-box"></div>
+   </div>
+   <div id="g-memory" class="newgame" hidden>
+    <p class="back"><a href="#play" data-i="all_games">All games</a></p>
+    <div class="gamehead"><h1 data-i="g_memory">Story Memory</h1>
+      <div class="themes" id="memory-themes" role="group"></div>
+      <p class="gprog" id="memory-prog"></p></div>
+    <div id="memory-box"></div>
    </div>
   </section>
 
@@ -167,5 +195,6 @@
 <script src="player.js"></script>
 <script src="cloud.js"></script>
 <script src="home.js"></script>
+<script src="games.js"></script>
 </body>
 </html>

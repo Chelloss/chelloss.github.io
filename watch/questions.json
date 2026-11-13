@@ -1506,5 +1506,527 @@
    "pt": "Pesquisadores estudaram 219 conflitos reais: em 9 de cada 10, pelo menos uma pessoa ajudou, geralmente várias. Em 2016, o Times chamou de falha sua história das “38 testemunhas”.",
    "it": "I ricercatori hanno studiato 219 conflitti reali: in 9 casi su 10, almeno un passante ha aiutato, di solito diversi. Nel 2016 il Times ha definito difettosa la sua storia dei «38 testimoni»."
   }
+ },
+ "lb006-burj-khalifa": {
+  "answer": 0,
+  "q": {
+   "en": "What holds up the Burj Khalifa?",
+   "es": "¿Qué sostiene el Burj Khalifa?",
+   "el": "Τι κρατά όρθιο το Burj Khalifa;",
+   "de": "Was hält den Burj Khalifa?",
+   "fr": "Qu'est-ce qui tient la Burj Khalifa debout ?",
+   "pt": "O que sustenta o Burj Khalifa?",
+   "it": "Che cosa regge il Burj Khalifa?"
+  },
+  "options": {
+   "en": [
+    "A concrete raft on nearly 200 piles",
+    "Solid bedrock under the sand",
+    "Steel cables anchored in the sea"
+   ],
+   "es": [
+    "Una losa de hormigón sobre casi 200 pilotes",
+    "Roca firme bajo la arena",
+    "Cables de acero anclados en el mar"
+   ],
+   "el": [
+    "Μια τσιμεντένια πλάκα σε σχεδόν 200 πασσάλους",
+    "Συμπαγής βράχος κάτω από την άμμο",
+    "Ατσάλινα συρματόσχοινα αγκυρωμένα στη θάλασσα"
+   ],
+   "de": [
+    "Eine Betonplatte auf fast 200 Pfählen",
+    "Fester Fels unter dem Sand",
+    "Stahlseile, im Meer verankert"
+   ],
+   "fr": [
+    "Un radier en béton sur près de 200 pieux",
+    "Une roche dure sous le sable",
+    "Des câbles d'acier ancrés dans la mer"
+   ],
+   "pt": [
+    "Uma laje de concreto sobre quase 200 estacas",
+    "Rocha firme sob a areia",
+    "Cabos de aço ancorados no mar"
+   ],
+   "it": [
+    "Una platea di cemento su quasi 200 pali",
+    "Roccia viva sotto la sabbia",
+    "Cavi d'acciaio ancorati nel mare"
+   ]
+  },
+  "fact": {
+   "en": "The 828-metre tower stands on weak sand and soft sandstone. A concrete raft about 3.7 metres thick, on nearly 200 piles, spreads its weight into the ground.",
+   "es": "La torre de 828 metros se alza sobre arena débil y arenisca blanda. Una losa de hormigón de unos 3,7 metros sobre casi 200 pilotes reparte su peso en el terreno.",
+   "el": "Ο πύργος των 828 μέτρων πατά σε αδύναμη άμμο και μαλακό ψαμμίτη. Μια τσιμεντένια πλάκα περίπου 3,7 μέτρων, πάνω σε σχεδόν 200 πασσάλους, κατανέμει το βάρος του στο έδαφος.",
+   "de": "Der 828 Meter hohe Turm steht auf weichem Sand und mürbem Sandstein. Eine etwa 3,7 Meter dicke Betonplatte auf fast 200 Pfählen verteilt sein Gewicht im Boden.",
+   "fr": "La tour de 828 mètres repose sur du sable meuble et du grès tendre. Un radier en béton d'environ 3,7 mètres, posé sur près de 200 pieux, répartit son poids dans le sol.",
+   "pt": "A torre de 828 metros fica sobre areia fraca e arenito mole. Uma laje de concreto de cerca de 3,7 metros, sobre quase 200 estacas, distribui seu peso pelo solo.",
+   "it": "La torre di 828 metri poggia su sabbia debole e arenaria tenera. Una platea di cemento spessa circa 3,7 metri, su quasi 200 pali, distribuisce il suo peso nel terreno."
+  }
+ },
+ "lb009-underwater-tunnels": {
+  "answer": 0,
+  "q": {
+   "en": "What happened to the British tunnel machines at the end?",
+   "es": "¿Qué pasó al final con las tuneladoras británicas?",
+   "el": "Τι απέγιναν στο τέλος οι βρετανικές μηχανές;",
+   "de": "Was geschah am Ende mit den britischen Tunnelbohrmaschinen?",
+   "fr": "Qu'est-il arrivé aux tunneliers britanniques à la fin ?",
+   "pt": "O que aconteceu no fim com as tuneladoras britânicas?",
+   "it": "Che fine fecero le frese britanniche alla fine?"
+  },
+  "options": {
+   "en": [
+    "They were driven down and buried under the sea",
+    "They were sold to France",
+    "They went to a museum"
+   ],
+   "es": [
+    "Las desviaron hacia abajo y quedaron enterradas bajo el mar",
+    "Se vendieron a Francia",
+    "Acabaron en un museo"
+   ],
+   "el": [
+    "Οδηγήθηκαν προς τα κάτω και θάφτηκαν κάτω από τη θάλασσα",
+    "Πουλήθηκαν στη Γαλλία",
+    "Πήγαν σε μουσείο"
+   ],
+   "de": [
+    "Sie wurden nach unten gelenkt und unter dem Meer begraben",
+    "Sie wurden an Frankreich verkauft",
+    "Sie kamen ins Museum"
+   ],
+   "fr": [
+    "Ils ont été dirigés vers le bas et enterrés sous la mer",
+    "Ils ont été vendus à la France",
+    "Ils sont partis au musée"
+   ],
+   "pt": [
+    "Foram desviadas para baixo e enterradas sob o mar",
+    "Foram vendidas para a França",
+    "Foram para um museu"
+   ],
+   "it": [
+    "Furono spinte verso il basso e sepolte sotto il mare",
+    "Furono vendute alla Francia",
+    "Finirono in un museo"
+   ]
+  },
+  "fact": {
+   "en": "Eleven machines dug the Channel Tunnel, 38 kilometres of it under the sea. When the two sides met in 1990, the British machines were driven down and buried.",
+   "es": "11 máquinas excavaron el túnel del canal de la Mancha, 38 kilómetros de él bajo el mar. Cuando los dos lados se encontraron en 1990, las máquinas británicas se desviaron hacia abajo y quedaron enterradas.",
+   "el": "11 μηχανές έσκαψαν τη Σήραγγα της Μάγχης, που τα 38 χιλιόμετρά της είναι κάτω από τη θάλασσα. Όταν οι δύο πλευρές συναντήθηκαν το 1990, οι βρετανικές μηχανές οδηγήθηκαν προς τα κάτω και θάφτηκαν.",
+   "de": "11 Maschinen gruben den Kanaltunnel, 38 Kilometer davon unter dem Meer. Als sich beide Seiten 1990 trafen, wurden die britischen Maschinen nach unten gelenkt und begraben.",
+   "fr": "11 machines ont creusé le tunnel sous la Manche, dont 38 kilomètres sous la mer. Quand les deux côtés se sont rejoints en 1990, les machines britanniques ont été dirigées vers le bas et enterrées.",
+   "pt": "11 máquinas escavaram o Túnel do Canal da Mancha, 38 quilômetros dele sob o mar. Quando os dois lados se encontraram, em 1990, as máquinas britânicas foram desviadas para baixo e enterradas.",
+   "it": "11 macchine scavarono il tunnel della Manica, 38 chilometri dei quali sotto il mare. Quando i due lati si incontrarono nel 1990, le macchine britanniche furono spinte verso il basso e sepolte."
+  }
+ },
+ "lb033-black-box": {
+  "answer": 0,
+  "q": {
+   "en": "What colour is a plane's black box?",
+   "es": "¿De qué color es la caja negra de un avión?",
+   "el": "Τι χρώμα έχει το μαύρο κουτί ενός αεροπλάνου;",
+   "de": "Welche Farbe hat die Blackbox eines Flugzeugs?",
+   "fr": "De quelle couleur est la boîte noire d'un avion ?",
+   "pt": "De que cor é a caixa-preta de um avião?",
+   "it": "Di che colore è la scatola nera di un aereo?"
+  },
+  "options": {
+   "en": [
+    "Bright orange",
+    "Black",
+    "Silver"
+   ],
+   "es": [
+    "Naranja brillante",
+    "Negra",
+    "Plateada"
+   ],
+   "el": [
+    "Έντονο πορτοκαλί",
+    "Μαύρο",
+    "Ασημί"
+   ],
+   "de": [
+    "Leuchtend orange",
+    "Schwarz",
+    "Silbern"
+   ],
+   "fr": [
+    "Orange vif",
+    "Noire",
+    "Argentée"
+   ],
+   "pt": [
+    "Laranja vivo",
+    "Preta",
+    "Prateada"
+   ],
+   "it": [
+    "Arancione acceso",
+    "Nera",
+    "Argento"
+   ]
+  },
+  "fact": {
+   "en": "It is bright orange and usually sits in the tail. Australian scientist David Warren came up with it while the Comet, the first commercial jetliner, kept crashing.",
+   "es": "Es naranja brillante y suele ir en la cola. La ideó el científico australiano David Warren, mientras el Comet, el primer avión comercial a reacción, no dejaba de estrellarse.",
+   "el": "Είναι έντονο πορτοκαλί και συνήθως βρίσκεται στην ουρά. Το σκέφτηκε ο Αυστραλός επιστήμονας David Warren, όσο το Comet, το πρώτο εμπορικό τζετ, συνέχιζε να συντρίβεται.",
+   "de": "Sie ist leuchtend orange und sitzt meist im Heck. Der australische Wissenschaftler David Warren hatte die Idee, während die Comet, das erste Düsenverkehrsflugzeug, immer wieder abstürzte.",
+   "fr": "Elle est orange vif et se trouve en général dans la queue. Le scientifique australien David Warren l'a imaginée pendant que le Comet, premier avion de ligne à réaction, ne cessait de s'écraser.",
+   "pt": "Ela é laranja vivo e costuma ficar na cauda. Quem teve a ideia foi o cientista australiano David Warren, enquanto o Comet, o primeiro jato comercial, caía sem parar.",
+   "it": "È arancione acceso e di solito sta nella coda. L'ha ideata lo scienziato australiano David Warren, mentre il Comet, il primo aereo di linea a reazione, continuava a precipitare."
+  }
+ },
+ "ll002-vegas-buffet": {
+  "answer": 0,
+  "q": {
+   "en": "Why did Las Vegas casinos copy the $1 buffet?",
+   "es": "¿Por qué los casinos de Las Vegas copiaron el bufé de 1 $?",
+   "el": "Γιατί τα καζίνα του Λας Βέγκας αντέγραψαν τον μπουφέ του 1 δολαρίου;",
+   "de": "Warum machten die Casinos in Las Vegas das 1-Dollar-Buffet nach?",
+   "fr": "Pourquoi les casinos de Las Vegas ont-ils copié le buffet à 1 dollar ?",
+   "pt": "Por que os cassinos de Las Vegas copiaram o bufê de US$ 1?",
+   "it": "Perché i casinò di Las Vegas copiarono il buffet da 1 dollaro?"
+  },
+  "options": {
+   "en": [
+    "Fed gamblers went straight back to gambling",
+    "The buffet made big profits",
+    "A law required free food"
+   ],
+   "es": [
+    "Los jugadores comidos volvían directo a apostar",
+    "El bufé daba grandes beneficios",
+    "Una ley obligaba a dar comida gratis"
+   ],
+   "el": [
+    "Οι χορτάτοι παίκτες γύριζαν κατευθείαν στον τζόγο",
+    "Ο μπουφές έβγαζε μεγάλα κέρδη",
+    "Ένας νόμος απαιτούσε δωρεάν φαγητό"
+   ],
+   "de": [
+    "Satte Spieler gingen direkt zurück an die Tische",
+    "Das Buffet brachte große Gewinne",
+    "Ein Gesetz verlangte kostenloses Essen"
+   ],
+   "fr": [
+    "Les joueurs rassasiés retournaient droit au jeu",
+    "Le buffet rapportait gros",
+    "Une loi imposait des repas gratuits"
+   ],
+   "pt": [
+    "Os jogadores alimentados voltavam direto para o jogo",
+    "O bufê dava muito lucro",
+    "Uma lei exigia comida grátis"
+   ],
+   "it": [
+    "I giocatori sazi tornavano subito a giocare",
+    "Il buffet faceva grandi profitti",
+    "Una legge imponeva cibo gratis"
+   ]
+  },
+  "fact": {
+   "en": "El Rancho Vegas almost certainly lost money on its 1946 midnight buffet. But nobody had to leave: fed gamblers went straight back to gambling.",
+   "es": "Es casi seguro que El Rancho Vegas perdía dinero con su bufé de medianoche de 1946. Pero nadie tenía que irse: los jugadores, ya comidos, volvían directo a apostar.",
+   "el": "Το El Rancho Vegas σχεδόν σίγουρα έχανε χρήματα από τον μεσονύχτιο μπουφέ του 1946. Όμως κανείς δεν χρειαζόταν να φύγει: οι χορτάτοι παίκτες γύριζαν κατευθείαν στον τζόγο.",
+   "de": "Das El Rancho Vegas verlor mit seinem Mitternachtsbuffet von 1946 fast sicher Geld. Aber niemand musste gehen: Satte Spieler gingen direkt zurück an die Tische.",
+   "fr": "El Rancho Vegas perdait presque certainement de l'argent avec son buffet de minuit de 1946. Mais personne n'avait à partir : une fois rassasiés, les joueurs retournaient droit au jeu.",
+   "pt": "O El Rancho Vegas quase certamente perdia dinheiro com o bufê de meia-noite de 1946. Mas ninguém precisava sair: bem alimentados, os jogadores voltavam direto para o jogo.",
+   "it": "El Rancho Vegas quasi certamente ci perdeva soldi con il buffet di mezzanotte del 1946. Ma nessuno doveva andarsene: sazi, i giocatori tornavano subito a giocare."
+  }
+ },
+ "ll016-first-share": {
+  "answer": 0,
+  "q": {
+   "en": "How did the Dutch East India Company end?",
+   "es": "¿Cómo terminó la Compañía Neerlandesa de las Indias Orientales?",
+   "el": "Πώς τελείωσε η Ολλανδική Εταιρεία Ανατολικών Ινδιών;",
+   "de": "Wie endete die Niederländische Ostindien-Kompanie?",
+   "fr": "Comment a fini la Compagnie néerlandaise des Indes orientales ?",
+   "pt": "Como terminou a Companhia Holandesa das Índias Orientais?",
+   "it": "Come finì la Compagnia olandese delle Indie orientali?"
+  },
+  "options": {
+   "en": [
+    "The state dissolved it on the last day of 1799",
+    "It became a bank that still exists",
+    "It still trades on the stock market"
+   ],
+   "es": [
+    "El Estado la disolvió el último día de 1799",
+    "Se convirtió en un banco que aún existe",
+    "Aún cotiza en bolsa"
+   ],
+   "el": [
+    "Το κράτος τη διέλυσε την τελευταία μέρα του 1799",
+    "Έγινε τράπεζα που υπάρχει ακόμη",
+    "Είναι ακόμη στο χρηματιστήριο"
+   ],
+   "de": [
+    "Der Staat löste sie am letzten Tag des Jahres 1799 auf",
+    "Sie wurde zu einer Bank, die es noch gibt",
+    "Sie wird noch heute an der Börse gehandelt"
+   ],
+   "fr": [
+    "L'État l'a dissoute le dernier jour de 1799",
+    "Elle est devenue une banque qui existe encore",
+    "Elle est toujours cotée en Bourse"
+   ],
+   "pt": [
+    "O Estado a dissolveu no último dia de 1799",
+    "Virou um banco que ainda existe",
+    "Ainda é negociada na bolsa"
+   ],
+   "it": [
+    "Lo Stato la sciolse l'ultimo giorno del 1799",
+    "Divenne una banca che esiste ancora",
+    "È ancora quotata in borsa"
+   ]
+  },
+  "fact": {
+   "en": "Founded in 1602, it made nearly 5,000 voyages to Asia and could even wage war. Bankrupt by the late 1700s, it was dissolved on the last day of 1799.",
+   "es": "Fundada en 1602, hizo casi 5.000 viajes a Asia e incluso podía hacer la guerra. En bancarrota a finales del siglo XVIII, se disolvió el último día de 1799.",
+   "el": "Ιδρύθηκε το 1602, έκανε σχεδόν 5.000 ταξίδια στην Ασία και μπορούσε ακόμη και να κάνει πόλεμο. Χρεοκοπημένη στα τέλη του 18ου αιώνα, διαλύθηκε την τελευταία μέρα του 1799.",
+   "de": "1602 gegründet, unternahm sie fast 5.000 Fahrten nach Asien und durfte sogar Krieg führen. Ende des 18. Jahrhunderts bankrott, wurde sie am letzten Tag des Jahres 1799 aufgelöst.",
+   "fr": "Fondée en 1602, elle a fait près de 5 000 voyages vers l'Asie et pouvait même faire la guerre. En faillite à la fin du XVIIIe siècle, elle a été dissoute le dernier jour de 1799.",
+   "pt": "Fundada em 1602, fez quase 5.000 viagens à Ásia e podia até travar guerras. Falida no fim do século XVIII, foi dissolvida no último dia de 1799.",
+   "it": "Fondata nel 1602, fece quasi 5.000 viaggi verso l'Asia e poteva perfino fare la guerra. In bancarotta alla fine del Settecento, fu sciolta l'ultimo giorno del 1799."
+  }
+ },
+ "ll023-big-mac-index": {
+  "answer": 0,
+  "q": {
+   "en": "Why does The Economist track the price of a Big Mac?",
+   "es": "¿Por qué The Economist sigue el precio del Big Mac?",
+   "el": "Γιατί ο Economist παρακολουθεί την τιμή του Big Mac;",
+   "de": "Warum verfolgt The Economist den Preis des Big Mac?",
+   "fr": "Pourquoi The Economist suit-il le prix du Big Mac ?",
+   "pt": "Por que a The Economist acompanha o preço do Big Mac?",
+   "it": "Perché The Economist segue il prezzo del Big Mac?"
+  },
+  "options": {
+   "en": [
+    "To test whether currencies are undervalued",
+    "To find the best burger",
+    "To measure the price of beef"
+   ],
+   "es": [
+    "Para comprobar si las monedas están infravaloradas",
+    "Para encontrar la mejor hamburguesa",
+    "Para medir el precio de la carne"
+   ],
+   "el": [
+    "Για να ελέγξει αν τα νομίσματα είναι υποτιμημένα",
+    "Για να βρει το καλύτερο μπέργκερ",
+    "Για να μετρήσει την τιμή του κρέατος"
+   ],
+   "de": [
+    "Um zu prüfen, ob Währungen unterbewertet sind",
+    "Um den besten Burger zu finden",
+    "Um den Fleischpreis zu messen"
+   ],
+   "fr": [
+    "Pour voir si des monnaies sont sous-évaluées",
+    "Pour trouver le meilleur hamburger",
+    "Pour mesurer le prix du bœuf"
+   ],
+   "pt": [
+    "Para testar se as moedas estão desvalorizadas",
+    "Para achar o melhor hambúrguer",
+    "Para medir o preço da carne"
+   ],
+   "it": [
+    "Per verificare se le valute sono sottovalutate",
+    "Per trovare l'hamburger migliore",
+    "Per misurare il prezzo della carne"
+   ]
+  },
+  "fact": {
+   "en": "In July 2026 a Big Mac cost $9.04 in Switzerland and $2.38 in Indonesia. Where it costs less in dollars, that country's currency may be undervalued.",
+   "es": "En julio de 2026, un Big Mac costaba 9,04 $ en Suiza y 2,38 $ en Indonesia. Donde cuesta menos en dólares, la moneda de ese país puede estar infravalorada.",
+   "el": "Τον Ιούλιο του 2026 ένα Big Mac κόστιζε 9,04 $ στην Ελβετία και 2,38 $ στην Ινδονησία. Όπου κοστίζει λιγότερο σε δολάρια, το νόμισμα της χώρας ίσως είναι υποτιμημένο.",
+   "de": "Im Juli 2026 kostete ein Big Mac 9,04 $ in der Schweiz und 2,38 $ in Indonesien. Wo er in Dollar weniger kostet, ist die Währung des Landes vielleicht unterbewertet.",
+   "fr": "En juillet 2026, un Big Mac coûtait 9,04 $ en Suisse et 2,38 $ en Indonésie. Là où il coûte moins cher en dollars, la monnaie du pays est peut-être sous-évaluée.",
+   "pt": "Em julho de 2026, um Big Mac custava US$ 9,04 na Suíça e US$ 2,38 na Indonésia. Onde ele custa menos em dólares, a moeda do país pode estar desvalorizada.",
+   "it": "Nel luglio 2026 un Big Mac costava 9,04 $ in Svizzera e 2,38 $ in Indonesia. Dove costa meno in dollari, la valuta di quel paese potrebbe essere sottovalutata."
+  }
+ },
+ "ps003-invisible-gorilla": {
+  "answer": 0,
+  "q": {
+   "en": "How many radiologists missed the gorilla hidden in a lung scan?",
+   "es": "¿Cuántos radiólogos no vieron el gorila escondido en una tomografía de pulmón?",
+   "el": "Πόσοι ακτινολόγοι δεν είδαν τον γορίλα που ήταν κρυμμένος σε μια τομογραφία πνευμόνων;",
+   "de": "Wie viele Radiologen übersahen den Gorilla in einer Lungenaufnahme?",
+   "fr": "Combien de radiologues n'ont pas vu le gorille caché dans un scanner de poumons ?",
+   "pt": "Quantos radiologistas não viram o gorila escondido numa tomografia de pulmão?",
+   "it": "Quanti radiologi non videro il gorilla nascosto in una TAC polmonare?"
+  },
+  "options": {
+   "en": [
+    "83%",
+    "8%",
+    "Almost none"
+   ],
+   "es": [
+    "El 83 %",
+    "El 8 %",
+    "Casi ninguno"
+   ],
+   "el": [
+    "Το 83%",
+    "Το 8%",
+    "Σχεδόν κανείς"
+   ],
+   "de": [
+    "83 %",
+    "8 %",
+    "Fast keiner"
+   ],
+   "fr": [
+    "83 %",
+    "8 %",
+    "Presque aucun"
+   ],
+   "pt": [
+    "83%",
+    "8%",
+    "Quase nenhum"
+   ],
+   "it": [
+    "L'83%",
+    "L'8%",
+    "Quasi nessuno"
+   ]
+  },
+  "fact": {
+   "en": "The gorilla was far bigger than any nodule, yet 83% of the radiologists missed it, and eye-tracking showed most of them had looked right at it.",
+   "es": "El gorila era mucho más grande que cualquier nódulo, pero el 83 % de los radiólogos no lo vio, y el seguimiento ocular mostró que la mayoría lo había mirado directamente.",
+   "el": "Ο γορίλας ήταν πολύ μεγαλύτερος από κάθε όζο, κι όμως το 83% των ακτινολόγων δεν τον είδε, και η καταγραφή του βλέμματος έδειξε ότι οι περισσότεροι τον είχαν κοιτάξει κατευθείαν.",
+   "de": "Der Gorilla war viel größer als jeder Knoten, und doch übersahen ihn 83 % der Radiologen; Blickmessungen zeigten, dass die meisten direkt auf ihn geschaut hatten.",
+   "fr": "Le gorille était bien plus grand que n'importe quel nodule, pourtant 83 % des radiologues ne l'ont pas vu, et le suivi du regard a montré que la plupart l'avaient regardé en face.",
+   "pt": "O gorila era muito maior que qualquer nódulo, mesmo assim 83% dos radiologistas não o viram, e o rastreamento ocular mostrou que a maioria tinha olhado bem para ele.",
+   "it": "Il gorilla era molto più grande di qualsiasi nodulo, eppure l'83% dei radiologi non lo vide, e il tracciamento dello sguardo mostrò che la maggior parte lo aveva guardato dritto."
+  }
+ },
+ "ps001-milgram-phone": {
+  "answer": 0,
+  "q": {
+   "en": "What happened when Milgram's man in the coat gave his orders by phone?",
+   "es": "¿Qué pasó cuando el hombre de la bata de Milgram dio las órdenes por teléfono?",
+   "el": "Τι έγινε όταν ο άντρας με την ποδιά του Milgram έδινε τις εντολές από το τηλέφωνο;",
+   "de": "Was geschah, als Milgrams Mann im Kittel seine Anweisungen per Telefon gab?",
+   "fr": "Que s'est-il passé quand l'homme en blouse de Milgram a donné ses ordres par téléphone ?",
+   "pt": "O que aconteceu quando o homem de jaleco de Milgram deu as ordens por telefone?",
+   "it": "Che cosa successe quando l'uomo in camice di Milgram diede gli ordini per telefono?"
+  },
+  "options": {
+   "en": [
+    "Full obedience fell to about one in five",
+    "Everyone refused at once",
+    "Obedience went up"
+   ],
+   "es": [
+    "La obediencia total cayó a cerca de uno de cada cinco",
+    "Todos se negaron enseguida",
+    "La obediencia aumentó"
+   ],
+   "el": [
+    "Η πλήρης υπακοή έπεσε περίπου στον έναν στους πέντε",
+    "Όλοι αρνήθηκαν αμέσως",
+    "Η υπακοή αυξήθηκε"
+   ],
+   "de": [
+    "Der volle Gehorsam sank auf etwa einen von fünf",
+    "Alle weigerten sich sofort",
+    "Der Gehorsam stieg"
+   ],
+   "fr": [
+    "L'obéissance totale est tombée à environ un sur cinq",
+    "Tout le monde a refusé aussitôt",
+    "L'obéissance a augmenté"
+   ],
+   "pt": [
+    "A obediência total caiu para cerca de uma em cada cinco pessoas",
+    "Todos se recusaram na hora",
+    "A obediência aumentou"
+   ],
+   "it": [
+    "L'obbedienza totale scese a circa uno su cinque",
+    "Tutti si rifiutarono subito",
+    "L'obbedienza aumentò"
+   ]
+  },
+  "fact": {
+   "en": "With the man in the room, 65% went all the way to 450 volts. When he gave every order by phone, full obedience fell to about one in five, and many secretly gave weaker shocks.",
+   "es": "Con el hombre en la sala, el 65 % llegó hasta los 450 voltios. Cuando dio cada orden por teléfono, la obediencia total cayó a cerca de uno de cada cinco, y muchos dieron en secreto descargas más débiles.",
+   "el": "Με τον άντρα μέσα στο δωμάτιο, το 65% έφτασε ως τα 450 βολτ. Όταν έδινε κάθε εντολή από το τηλέφωνο, η πλήρης υπακοή έπεσε περίπου στον έναν στους πέντε, και πολλοί έδιναν κρυφά πιο ήπια σοκ.",
+   "de": "Mit dem Mann im Raum gingen 65 % bis 450 Volt. Als er jede Anweisung per Telefon gab, sank der volle Gehorsam auf etwa einen von fünf, und viele gaben heimlich schwächere Schocks.",
+   "fr": "Avec l'homme dans la pièce, 65 % sont allés jusqu'à 450 volts. Quand il a donné chaque ordre par téléphone, l'obéissance totale est tombée à environ un sur cinq, et beaucoup ont secrètement donné des chocs plus faibles.",
+   "pt": "Com o homem na sala, 65% foram até os 450 volts. Quando ele deu cada ordem por telefone, a obediência total caiu para cerca de uma em cada cinco pessoas, e muitos deram escondido choques mais fracos.",
+   "it": "Con l'uomo nella stanza, il 65% arrivò fino a 450 volt. Quando diede ogni ordine per telefono, l'obbedienza totale scese a circa uno su cinque, e molti diedero di nascosto scosse più deboli."
+  }
+ },
+ "ps006-deja-vu": {
+  "answer": 0,
+  "q": {
+   "en": "During déjà vu, could people predict the next turn?",
+   "es": "Durante el déjà vu, ¿la gente adivinaba el siguiente giro?",
+   "el": "Κατά τη διάρκεια του déjà vu, μπορούσαν οι άνθρωποι να μαντέψουν την επόμενη στροφή;",
+   "de": "Konnten Menschen während eines Déjà-vus die nächste Abzweigung vorhersagen?",
+   "fr": "Pendant un déjà-vu, les gens devinaient-ils le virage suivant ?",
+   "pt": "Durante o déjà vu, as pessoas conseguiam prever a próxima curva?",
+   "it": "Durante il déjà vu, le persone indovinavano la svolta successiva?"
+  },
+  "options": {
+   "en": [
+    "No, they did no better than guessing",
+    "Yes, almost always",
+    "Only on the first walk"
+   ],
+   "es": [
+    "No, no acertaron más que adivinando",
+    "Sí, casi siempre",
+    "Solo en el primer recorrido"
+   ],
+   "el": [
+    "Όχι, δεν τα πήγαν καλύτερα από τα μαντέματα",
+    "Ναι, σχεδόν πάντα",
+    "Μόνο στην πρώτη διαδρομή"
+   ],
+   "de": [
+    "Nein, sie lagen nicht besser als beim Raten",
+    "Ja, fast immer",
+    "Nur beim ersten Gang"
+   ],
+   "fr": [
+    "Non, pas mieux qu'au hasard",
+    "Oui, presque toujours",
+    "Seulement au premier parcours"
+   ],
+   "pt": [
+    "Não, não acertaram mais do que chutando",
+    "Sim, quase sempre",
+    "Só na primeira caminhada"
+   ],
+   "it": [
+    "No, non fecero meglio che tirando a indovinare",
+    "Sì, quasi sempre",
+    "Solo nel primo percorso"
+   ]
+  },
+  "fact": {
+   "en": "Anne Cleary's team paused each walk just before the final turn. During déjà vu people felt more sure they knew it, but they did no better than guessing.",
+   "es": "El equipo de Anne Cleary detenía cada recorrido justo antes del último giro. Durante el déjà vu la gente se sentía más segura, pero no acertaba más que adivinando.",
+   "el": "Η ομάδα της Anne Cleary σταματούσε κάθε διαδρομή λίγο πριν από την τελευταία στροφή. Μέσα στο déjà vu οι άνθρωποι ένιωθαν πιο σίγουροι, αλλά δεν τα πήγαν καλύτερα από τα μαντέματα.",
+   "de": "Das Team von Anne Cleary hielt jeden Gang kurz vor der letzten Abzweigung an. Im Déjà-vu fühlten sich die Leute sicherer, lagen aber nicht besser als beim Raten.",
+   "fr": "L'équipe d'Anne Cleary arrêtait chaque parcours juste avant le dernier virage. Pendant un déjà-vu, les gens se sentaient plus sûrs, mais ne faisaient pas mieux qu'au hasard.",
+   "pt": "A equipe de Anne Cleary parava cada caminhada logo antes da última curva. No déjà vu, as pessoas se sentiam mais seguras, mas não acertavam mais do que chutando.",
+   "it": "Il gruppo di Anne Cleary fermava ogni percorso subito prima dell'ultima svolta. Durante il déjà vu le persone si sentivano più sicure, ma non facevano meglio che tirando a indovinare."
+  }
  }
 }

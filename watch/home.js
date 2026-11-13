@@ -2,6 +2,7 @@
    Fair play (Mike, 2026-11-12): no streaks, no timers, no fake counters, no sounds; progress stays in this browser. */
 (function () {
   var cat = null, game = null, L = "en", chipsOpen = false;
+  var GAMES = ["older", "timeline", "where", "snake", "sudoku", "memory"];
   var state = { view: "map", cat: "history", fmt: "all", country: null, q: "", game: "hub" };
   var $ = function (id) { return document.getElementById(id); };
   var reduce = window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches;
@@ -33,7 +34,8 @@
     var h = location.hash.slice(1), view = h.split("/")[0];
     if (!$("sheet").hidden) closeSheet(true);
     var sub = h.split("/")[1] || "";
-    if (view === "play") state.game = /^c=/.test(sub) ? "older" : (["older", "timeline", "where"].indexOf(sub) >= 0 ? sub : "hub");
+    if (OS.games) OS.games.stop();   // a running snake pauses when the visitor leaves it
+    if (view === "play") state.game = /^c=/.test(sub) ? "older" : (GAMES.indexOf(sub) >= 0 ? sub : "hub");
     if (view === "play" && h.indexOf("/c=") > 0 && game) { newGame(h); }
     show(view);
   }
@@ -220,7 +222,7 @@
   // ------------------------------------------------------------ the game hub
   function renderPlay() {
     var locked = state.game !== "hub" && OS.cloud && !OS.cloud.user();
-    ["hub", "older", "timeline", "where"].forEach(function (k) { $(k === "hub" ? "hub" : "g-" + k).hidden = locked || state.game !== k; });
+    ["hub"].concat(GAMES).forEach(function (k) { var el = $(k === "hub" ? "hub" : "g-" + k); if (el) el.hidden = locked || state.game !== k; });
     $("g-gate").hidden = !locked;
     if (locked) { OS.cloud.gate($("g-gate-box"), state.game); return; }
     if (state.game === "hub") {
@@ -233,6 +235,7 @@
     if (state.game === "older") playRound();
     if (state.game === "timeline") { if (!tl.items.length) tlNew(); else tlRender(); }
     if (state.game === "where") { if (!wh.order.length) whNew(); else whRender(); }
+    if (OS.games && OS.games[state.game]) OS.games.open(state.game);   // Story Snake, Symbol Sudoku, Story Memory
   }
 
   // ------------------------------------------------------------ Timeline: four moments, oldest first
@@ -616,12 +619,15 @@
       if (state.game === "older" && !g.picked) playRound();
       else if (state.game === "timeline") tlRender();
       else if (state.game === "where") whRender();
-      else renderPlay();
+      else renderPlay();   // the hub and the three newer games (games.js) redraw in the new language
     }
     if (game) $("promopics").innerHTML = game.rounds.slice(0, 1).map(function (r) {
       return '<img alt="" src="' + esc(game.items[r.a].img) + '"><img alt="" src="' + esc(game.items[r.b].img) + '">';
     }).join("");
   }
+  // what games.js needs from the home page
+  OS.home = { cat: function () { return cat; }, L: function () { return L; }, playStory: playStory,
+              category: function () { return state.cat; } };
   L = OS.boot(function (l) { L = l; rerender(); if (OS.count) OS.count("lang_switch", l); });
   if (OS.count) OS.count("page", "home");
   if (OS.count) OS.count("lang", L);
